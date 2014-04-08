@@ -1,11 +1,11 @@
-# Kazakh translation for transmission
+# Kazakh translation for leechmission
 # Copyright (C) 2009-2010 HZ
 # This file is distributed under the same license as the PACKAGE package.
 # Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2009.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: transmission\n"
+"Project-Id-Version: leechmission\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2012-02-03 15:22-0600\n"
 "PO-Revision-Date: 2012-02-27 09:07+0000\n"
@@ -55,8 +55,8 @@ msgid "Sort by Si_ze"
 msgstr "Ө_лшемі ойынша сұрыптау"
 
 #: ../gtk/actions.c:70
-msgid "_Show Transmission"
-msgstr "Transmission-ды _көрсету"
+msgid "_Show Leechmission"
+msgstr "Leechmission-ды _көрсету"
 
 #: ../gtk/actions.c:71
 msgid "Message _Log"
@@ -318,7 +318,7 @@ msgid "_Maximum peers:"
 msgstr "Тораптардың ма_ксимал саны:"
 
 #: ../gtk/details.c:559 ../gtk/torrent-cell-renderer.c:201
-#: ../libtransmission/verify.c:273
+#: ../libleechmission/verify.c:273
 msgid "Queued for verification"
 msgstr "Тексеруге кезекте тұр"
 
@@ -869,9 +869,9 @@ msgstr "Көр_сету:"
 
 #: ../gtk/main.c:308
 #, c-format
-msgid "Error registering Transmission as x-scheme-handler/magnet handler: %s"
+msgid "Error registering Leechmission as x-scheme-handler/magnet handler: %s"
 msgstr ""
-"Transmission-ды x-scheme-handler/magnet өңдеушісі ретінде тіркеу сәтсіз: %s"
+"Leechmission-ды x-scheme-handler/magnet өңдеушісі ретінде тіркеу сәтсіз: %s"
 
 #: ../gtk/main.c:477
 #, c-format
@@ -896,9 +896,9 @@ msgstr "Трейге жасырылған күйінде қосылу"
 msgid "Show version number and exit"
 msgstr "Нұсқа ақпаратын шығарып, жұмысты аяқтау"
 
-#: ../gtk/main.c:630 ../gtk/transmission-gtk.desktop.in.h:1
-msgid "Transmission"
-msgstr "Transmission"
+#: ../gtk/main.c:630 ../gtk/leechmission-gtk.desktop.in.h:1
+msgid "Leechmission"
+msgstr "Leechmission"
 
 #. parse the command line
 #: ../gtk/main.c:634
@@ -916,12 +916,12 @@ msgstr ""
 
 #: ../gtk/main.c:739
 msgid ""
-"Transmission is a file-sharing program. When you run a torrent, its data "
+"Leechmission is a file-sharing program. When you run a torrent, its data "
 "will be made available to others by means of upload. You and you alone are "
 "fully responsible for exercising proper judgement and abiding by your local "
 "laws."
 msgstr ""
-"Transmission - бұл файлдармен алмасу бағдарламасы. Торрентті жіберген кезде, "
+"Leechmission - бұл файлдармен алмасу бағдарламасы. Торрентті жіберген кезде, "
 "оның ақпараты басқаларға тарату арқылы қолжетерлік болады. Осы әрекеттің "
 "заңдарға қайшы келмейтініне сіз және тек сіз ғана жауап бересіз."
 
@@ -1363,15 +1363,15 @@ msgid "Seeding to %1$'d of %2$'d connected peer"
 msgid_plural "Seeding to %1$'d of %2$'d connected peers"
 msgstr[0] "Тарату %1$'d торапқа, барлығы %2$'d торап қосулы"
 
-#: ../gtk/transmission-gtk.desktop.in.h:2
+#: ../gtk/leechmission-gtk.desktop.in.h:2
 msgid "BitTorrent Client"
 msgstr "BitTorrent қолданбасы"
 
-#: ../gtk/transmission-gtk.desktop.in.h:3
-msgid "Transmission BitTorrent Client"
-msgstr "Transmission BitTorrent қолданбасы"
+#: ../gtk/leechmission-gtk.desktop.in.h:3
+msgid "Leechmission BitTorrent Client"
+msgstr "Leechmission BitTorrent қолданбасы"
 
-#: ../gtk/transmission-gtk.desktop.in.h:4
+#: ../gtk/leechmission-gtk.desktop.in.h:4
 msgid "Download and share files over BitTorrent"
 msgstr "BitTorrent желісінде файлдарды жүктеңіз және бөлісіңіз"
 
@@ -1410,11 +1410,11 @@ msgstr "(Шегі: %s)"
 #: ../gtk/tr-icon.c:109
 #, c-format
 msgid ""
-"Transmission\n"
+"Leechmission\n"
 "Up: %1$s %2$s\n"
 "Down: %3$s %4$s"
 msgstr ""
-"Transmission\n"
+"Leechmission\n"
 "Тарату: %1$s %2$s\n"
 "Қабылдау: %3$s %4$s"
 
@@ -1434,7 +1434,7 @@ msgstr "Максималды белсе_нді жүктемелер:"
 msgid "Downloads sharing data in the last N minutes are _active:"
 msgstr "Соңғы N белсенді минут ішіндегі т_арату мәліметін жүктеп алу:"
 
-#: ../gtk/tr-prefs.c:286 ../libtransmission/torrent.c:1919
+#: ../gtk/tr-prefs.c:286 ../libleechmission/torrent.c:1919
 msgid "Incomplete"
 msgstr "Аяқталмады"
 
@@ -1481,8 +1481,8 @@ msgid "_Inhibit hibernation when torrents are active"
 msgstr "Белсенді торрентер бар болса, _гибернацияға тыйым салу"
 
 #: ../gtk/tr-prefs.c:384
-msgid "Show Transmission icon in the _notification area"
-msgstr "Transmission таңбашас_ын трейде көрсету"
+msgid "Show Leechmission icon in the _notification area"
+msgstr "Leechmission таңбашас_ын трейде көрсету"
 
 #: ../gtk/tr-prefs.c:389
 msgid "Notification"
@@ -1744,8 +1744,8 @@ msgid "Te_st Port"
 msgstr "Портт_ы тексеру"
 
 #: ../gtk/tr-prefs.c:1222
-msgid "Pick a _random port every time Transmission is started"
-msgstr "Әр р_ет Transmission қосылғанда, кездейсоқ портты таңдау"
+msgid "Pick a _random port every time Leechmission is started"
+msgstr "Әр р_ет Leechmission қосылғанда, кездейсоқ портты таңдау"
 
 #: ../gtk/tr-prefs.c:1226
 msgid "Use UPnP or NAT-PMP port _forwarding from my router"
@@ -1772,8 +1772,8 @@ msgid "uTP is a tool for reducing network congestion."
 msgstr "uTP - бұл желі жүктелуін төмендетуге арналған сайман."
 
 #: ../gtk/tr-prefs.c:1262
-msgid "Transmission Preferences"
-msgstr "Transmission баптаулары"
+msgid "Leechmission Preferences"
+msgstr "Leechmission баптаулары"
 
 #: ../gtk/tr-prefs.c:1276
 msgid "Torrents"
@@ -1935,7 +1935,7 @@ msgstr "ГБ/с"
 msgid "TB/s"
 msgstr "ТБ/с"
 
-#: ../cli/cli.c:115 ../gtk/util.c:87 ../libtransmission/utils.c:1509
+#: ../cli/cli.c:115 ../gtk/util.c:87 ../libleechmission/utils.c:1509
 msgid "None"
 msgstr "Ешнәрсе"
 
@@ -1998,8 +1998,8 @@ msgstr "Түсініксіз URL"
 
 #: ../gtk/util.c:565
 #, c-format
-msgid "Transmission doesn't know how to use \"%s\""
-msgstr "Transmission \"%s\" қалай қолдануды білмейді"
+msgid "Leechmission doesn't know how to use \"%s\""
+msgstr "Leechmission \"%s\" қалай қолдануды білмейді"
 
 #: ../gtk/util.c:570
 #, c-format
@@ -2011,185 +2011,185 @@ msgstr ""
 "магнет сілтемелерінің ішінде \"%s\" болуы керек."
 
 #. did caller give us an uninitialized val?
-#: ../libtransmission/bencode.c:1117
+#: ../libleechmission/bencode.c:1117
 msgid "Invalid metadata"
 msgstr "Метаақпараты қате"
 
-#: ../libtransmission/bencode.c:1723 ../libtransmission/bencode.c:1751
+#: ../libleechmission/bencode.c:1723 ../libleechmission/bencode.c:1751
 #, c-format
 msgid "Couldn't save temporary file \"%1$s\": %2$s"
 msgstr "\"%1$s\" уақытша файлын сақтау мүмкін емес: %2$s"
 
-#: ../libtransmission/bencode.c:1738
+#: ../libleechmission/bencode.c:1738
 #, c-format
 msgid "Saved \"%s\""
 msgstr "Сақталды \"%s\""
 
-#: ../libtransmission/bencode.c:1743 ../libtransmission/blocklist.c:417
-#: ../libtransmission/rpcimpl.c:1260 ../libtransmission/rpcimpl.c:1271
-#: ../libtransmission/rpcimpl.c:1287
+#: ../libleechmission/bencode.c:1743 ../libleechmission/blocklist.c:417
+#: ../libleechmission/rpcimpl.c:1260 ../libleechmission/rpcimpl.c:1271
+#: ../libleechmission/rpcimpl.c:1287
 #, c-format
 msgid "Couldn't save file \"%1$s\": %2$s"
 msgstr "«%1$s» файлын сақтау мүмкін емес: %2$s"
 
-#: ../libtransmission/blocklist.c:86 ../libtransmission/blocklist.c:325
-#: ../libtransmission/utils.c:438
+#: ../libleechmission/blocklist.c:86 ../libleechmission/blocklist.c:325
+#: ../libleechmission/utils.c:438
 #, c-format
 msgid "Couldn't read \"%1$s\": %2$s"
 msgstr "«%1$s» оқу мүмкін емес: %2$s"
 
-#: ../libtransmission/blocklist.c:115
+#: ../libleechmission/blocklist.c:115
 #, c-format
 msgid "Blocklist \"%s\" contains %zu entries"
 msgstr "\"%s\" блоктізімінде %zu жазба бар"
 
 #. don't try to display the actual lines - it causes issues
-#: ../libtransmission/blocklist.c:368
+#: ../libleechmission/blocklist.c:368
 #, c-format
 msgid "blocklist skipped invalid address at line %d"
 msgstr "блоктізімнің %d жолындағы қате адресті аттап өтеміз"
 
-#: ../libtransmission/blocklist.c:420
+#: ../libleechmission/blocklist.c:420
 #, c-format
 msgid "Blocklist \"%s\" updated with %zu entries"
 msgstr "\"%s\" блоктізімі %zu жазбамен жаңартылды"
 
-#: ../libtransmission/fdlimit.c:348 ../libtransmission/utils.c:574
-#: ../libtransmission/utils.c:585
+#: ../libleechmission/fdlimit.c:348 ../libleechmission/utils.c:574
+#: ../libleechmission/utils.c:585
 #, c-format
 msgid "Couldn't create \"%1$s\": %2$s"
 msgstr "«%1$s» жасау сәтсіз аяқталды: %2$s"
 
-#: ../libtransmission/fdlimit.c:369
+#: ../libleechmission/fdlimit.c:369
 #, c-format
 msgid "Couldn't open \"%1$s\": %2$s"
 msgstr "«%1$s» ашу сәтсіз аяқталды: %2$s"
 
-#: ../libtransmission/fdlimit.c:384
+#: ../libleechmission/fdlimit.c:384
 #, c-format
 msgid "Couldn't truncate \"%1$s\": %2$s"
 msgstr "\"%1$s\" үзу мүмкін емес: %2$s"
 
-#: ../libtransmission/fdlimit.c:670
+#: ../libleechmission/fdlimit.c:670
 #, c-format
 msgid "Couldn't create socket: %s"
 msgstr "Сокетті жасау мүмкін емес: %s"
 
-#: ../libtransmission/makemeta.c:63
+#: ../libleechmission/makemeta.c:63
 #, c-format
 msgid "Torrent Creator is skipping file \"%s\": %s"
 msgstr "Торрентті жасау кезінде «%s» файлы аттап өтілген: %s"
 
-#: ../libtransmission/metainfo.c:533
+#: ../libleechmission/metainfo.c:533
 #, c-format
 msgid "Invalid metadata entry \"%s\""
 msgstr "«%s» метаақпараты қате"
 
-#: ../libtransmission/natpmp.c:32
+#: ../libleechmission/natpmp.c:32
 msgid "Port Forwarding (NAT-PMP)"
 msgstr "Порттарды бағдарлау (NAT-PMP)"
 
-#: ../libtransmission/natpmp.c:72
+#: ../libleechmission/natpmp.c:72
 #, c-format
 msgid "%s succeeded (%d)"
 msgstr "%s сәтті (%d)"
 
-#: ../libtransmission/natpmp.c:141
+#: ../libleechmission/natpmp.c:141
 #, c-format
 msgid "Found public address \"%s\""
 msgstr "Сыртқы «%s» адресі табылды"
 
-#: ../libtransmission/natpmp.c:176
+#: ../libleechmission/natpmp.c:176
 #, c-format
 msgid "no longer forwarding port %d"
 msgstr "%d порттың бағдарлауы тоқтатылған"
 
-#: ../libtransmission/natpmp.c:221
+#: ../libleechmission/natpmp.c:221
 #, c-format
 msgid "Port %d forwarded successfully"
 msgstr "%d порты сәтті бағдарланған"
 
-#: ../libtransmission/net.c:268
+#: ../libleechmission/net.c:268
 #, c-format
 msgid "Couldn't set source address %s on %d: %s"
 msgstr "Бастапқы көз адресін %s жаңа %d ауыстыру қатесі: %s"
 
-#: ../libtransmission/net.c:284
+#: ../libleechmission/net.c:284
 #, c-format
 msgid "Couldn't connect socket %d to %s, port %d (errno %d - %s)"
 msgstr "%d  сокетін %s-ке %d портына қосу қатесі (қате коды %d — %s)"
 
-#: ../libtransmission/net.c:360
-msgid "Is another copy of Transmission already running?"
-msgstr "Transmission басқа нұсқасы қосулы тұр ма?"
+#: ../libleechmission/net.c:360
+msgid "Is another copy of Leechmission already running?"
+msgstr "Leechmission басқа нұсқасы қосулы тұр ма?"
 
-#: ../libtransmission/net.c:365
+#: ../libleechmission/net.c:365
 #, c-format
 msgid "Couldn't bind port %d on %s: %s"
 msgstr "%d портын %s көзінде ашу мүмкін емес: %s"
 
-#: ../libtransmission/net.c:367
+#: ../libleechmission/net.c:367
 #, c-format
 msgid "Couldn't bind port %d on %s: %s (%s)"
 msgstr "%d портын, %s ішінде ашу мүмкін емес: %s (%s)"
 
-#: ../libtransmission/peer-msgs.c:1898
+#: ../libleechmission/peer-msgs.c:1898
 #, c-format
 msgid "Please Verify Local Data! Piece #%zu is corrupt."
 msgstr "Жергілікті мәліметті тексеріңіз! #%zu бөлігі зақымдалған."
 
-#: ../libtransmission/port-forwarding.c:31
+#: ../libleechmission/port-forwarding.c:31
 msgid "Port Forwarding"
 msgstr "Порттарды бағдарлау"
 
-#: ../libtransmission/port-forwarding.c:58
+#: ../libleechmission/port-forwarding.c:58
 msgid "Starting"
 msgstr "Қосылуда"
 
-#: ../libtransmission/port-forwarding.c:59
+#: ../libleechmission/port-forwarding.c:59
 msgid "Forwarded"
 msgstr "Бағдарланған"
 
-#: ../libtransmission/port-forwarding.c:60
+#: ../libleechmission/port-forwarding.c:60
 msgid "Stopping"
 msgstr "Тоқтауда"
 
-#: ../libtransmission/port-forwarding.c:61
+#: ../libleechmission/port-forwarding.c:61
 msgid "Not forwarded"
 msgstr "Бағдарланған жоқ"
 
-#: ../libtransmission/port-forwarding.c:91 ../libtransmission/torrent.c:2060
+#: ../libleechmission/port-forwarding.c:91 ../libleechmission/torrent.c:2060
 #, c-format
 msgid "State changed from \"%1$s\" to \"%2$s\""
 msgstr "Қалып күй ескі «%1$s» күйінен жаңа «%2$s» күйіне ауысты"
 
-#: ../libtransmission/port-forwarding.c:181
+#: ../libleechmission/port-forwarding.c:181
 msgid "Stopped"
 msgstr "Тоқтатылды"
 
 #. first %s is the application name
 #. second %s is the version number
-#: ../libtransmission/session.c:722
+#: ../libleechmission/session.c:722
 #, c-format
 msgid "%s %s started"
 msgstr "%s %s қосылған"
 
-#: ../libtransmission/session.c:1943
+#: ../libleechmission/session.c:1943
 #, c-format
 msgid "Loaded %d torrents"
 msgstr "Жүктелген %d торрент"
 
-#: ../libtransmission/torrent.c:525
+#: ../libleechmission/torrent.c:525
 #, c-format
 msgid "Tracker warning: \"%s\""
 msgstr "Трекер ескертуі: «%s»"
 
-#: ../libtransmission/torrent.c:532
+#: ../libleechmission/torrent.c:532
 #, c-format
 msgid "Tracker error: \"%s\""
 msgstr "Трекер қатесі: «%s»"
 
-#: ../libtransmission/torrent.c:787
+#: ../libleechmission/torrent.c:787
 msgid ""
 "No data found! Ensure your drives are connected or use \"Set Location\". To "
 "re-download, remove the torrent and re-add it."
@@ -2198,72 +2198,72 @@ msgstr ""
 "\"Орналасуды орнату\" қолданыңыз. Қайта жүктеп алу үшін, торрентті өшіріңіз "
 "де, оны қайта қосыңыз."
 
-#: ../libtransmission/torrent.c:1677
+#: ../libleechmission/torrent.c:1677
 msgid "Restarted manually -- disabling its seed ratio"
 msgstr "Қолмен қайта қосылған -- тарату рейтингі сөндірілген"
 
-#: ../libtransmission/torrent.c:1829
+#: ../libleechmission/torrent.c:1829
 msgid "Removing torrent"
 msgstr "Торренті өшіру"
 
-#: ../libtransmission/torrent.c:1913
+#: ../libleechmission/torrent.c:1913
 msgid "Done"
 msgstr "Дайын"
 
-#: ../libtransmission/torrent.c:1916
+#: ../libleechmission/torrent.c:1916
 msgid "Complete"
 msgstr "Аяқталды"
 
-#: ../libtransmission/upnp.c:35
+#: ../libleechmission/upnp.c:35
 msgid "Port Forwarding (UPnP)"
 msgstr "Порттарды бағдарлау (UPnP)"
 
-#: ../libtransmission/upnp.c:199
+#: ../libleechmission/upnp.c:199
 #, c-format
 msgid "Found Internet Gateway Device \"%s\""
 msgstr "«%s» шлюзі табылды"
 
-#: ../libtransmission/upnp.c:202
+#: ../libleechmission/upnp.c:202
 #, c-format
 msgid "Local Address is \"%s\""
 msgstr "Жергілікті адрес: «%s»"
 
-#: ../libtransmission/upnp.c:231
+#: ../libleechmission/upnp.c:231
 #, c-format
 msgid "Port %d isn't forwarded"
 msgstr "%d порты бағдарланған жоқ"
 
-#: ../libtransmission/upnp.c:242
+#: ../libleechmission/upnp.c:242
 #, c-format
 msgid "Stopping port forwarding through \"%s\", service \"%s\""
 msgstr "«%s» арқылы порттарды бағдарлауды тоқтату, «%s» қызметі"
 
-#: ../libtransmission/upnp.c:275
+#: ../libleechmission/upnp.c:275
 #, c-format
 msgid ""
 "Port forwarding through \"%s\", service \"%s\". (local address: %s:%d)"
 msgstr ""
 "\"%s\" арқылы порттарды бағдарлау, \"%s\" қызметі. (жергілікті адрес: %s:%d)"
 
-#: ../libtransmission/upnp.c:280
+#: ../libleechmission/upnp.c:280
 msgid "Port forwarding successful!"
 msgstr "Порттарды бағдарлау сәтті!"
 
-#: ../libtransmission/utils.c:452
+#: ../libleechmission/utils.c:452
 msgid "Not a regular file"
 msgstr "Кәдімгі файл емес"
 
-#: ../libtransmission/utils.c:470
+#: ../libleechmission/utils.c:470
 msgid "Memory allocation failed"
 msgstr "Жады бөлу қатесі"
 
 #. Node exists but isn't a folder
-#: ../libtransmission/utils.c:584
+#: ../libleechmission/utils.c:584
 #, c-format
 msgid "File \"%s\" is in the way"
 msgstr "«%s» файлы жол үстінде"
 
-#: ../libtransmission/verify.c:229
+#: ../libleechmission/verify.c:229
 msgid "Verifying torrent"
 msgstr "Торрентті тексеру"
 
@@ -2396,8 +2396,8 @@ msgstr "Торрентті тексеру"
 #~ msgid "Last announce at:"
 #~ msgstr "Соңғы анонс:"
 
-#~ msgid "<big><b>Quit Transmission?</b></big>"
-#~ msgstr "<big><b>Transmission-нан шығу керек пе?</b></big>"
+#~ msgid "<big><b>Quit Leechmission?</b></big>"
+#~ msgstr "<big><b>Leechmission-нан шығу керек пе?</b></big>"
 
 #~ msgid "_Don't ask me again"
 #~ msgstr "К_елесіде сұрамау"
@@ -2418,7 +2418,7 @@ msgstr "Торрентті тексеру"
 #~ msgstr "[торрент файлдары]"
 
 #~ msgid "Copyright 2005-2009 The Transmission Project"
-#~ msgstr "Copyright 2005-2009 Transmission Жобасы"
+#~ msgstr "Copyright 2005-2009 Leechmission Жобасы"
 
 #~ msgid "Torrent created!"
 #~ msgstr "Торрент жасалды!"
@@ -2489,8 +2489,8 @@ msgstr "Торрентті тексеру"
 #~ msgid "Down: %s"
 #~ msgstr "Қабылдау: %s"
 
-#~ msgid "Transmission Bittorrent Client"
-#~ msgstr "Transmission BitTorrent қолданбасы"
+#~ msgid "Leechmission Bittorrent Client"
+#~ msgstr "Leechmission BitTorrent қолданбасы"
 
 #~ msgid "Tier"
 #~ msgstr "Деңгей"
@@ -2521,8 +2521,8 @@ msgstr "Торрентті тексеру"
 #~ msgid "Inhibit _hibernation when torrents are active"
 #~ msgstr "Торрентер белсенді болса,  _гибернацияғы жол бермеу"
 
-#~ msgid "Show Transmission in the system _tray"
-#~ msgstr "Transmission-ды жүйелік сөреде көрсету"
+#~ msgid "Show Leechmission in the system _tray"
+#~ msgstr "Leechmission-ды жүйелік сөреде көрсету"
 
 #~ msgid "Show popup _notifications"
 #~ msgstr "Қалқы_малы хабарламаларды көрсету"
@@ -2698,14 +2698,14 @@ msgstr "Торрентті тексеру"
 #~ msgid "Edit Trackers"
 #~ msgstr "Трекерлерді түзету"
 
-#~ msgid "Transmission cannot be started."
-#~ msgstr "Transmission жұмысты бастай алмай жатыр."
+#~ msgid "Leechmission cannot be started."
+#~ msgstr "Leechmission жұмысты бастай алмай жатыр."
 
 #~ msgid ""
-#~ "Transmission is already running, but is not responding.  To start a new "
-#~ "session, you must first close the existing Transmission process."
+#~ "Leechmission is already running, but is not responding.  To start a new "
+#~ "session, you must first close the existing Leechmission process."
 #~ msgstr ""
-#~ "Transmission жұмыс істеп жатыр, бірақ жауап бермейді. Жаңа сеанспен жұмыс "
+#~ "Leechmission жұмыс істеп жатыр, бірақ жауап бермейді. Жаңа сеанспен жұмыс "
 #~ "істеу үшін, бар үрдісті жабуыңыз қажет."
 
 #~ msgid "_Edit Trackers"
@@ -2744,12 +2744,12 @@ msgstr "Торрентті тексеру"
 #~ "%d сигналы алынды; ұқыпты сөндіріп көреміз. Тұрып қалса, қайталап көріңіз."
 
 #~ msgid ""
-#~ "Transmission is a file-sharing program.  When you run a torrent, its data "
+#~ "Leechmission is a file-sharing program.  When you run a torrent, its data "
 #~ "will be made available to others by means of upload.  You and you alone are "
 #~ "fully responsible for exercising proper judgement and abiding by your local "
 #~ "laws."
 #~ msgstr ""
-#~ "Transmission - файлдармен алмасу бағдарламасы. Торренті қосқан кезде, оның "
+#~ "Leechmission - файлдармен алмасу бағдарламасы. Торренті қосқан кезде, оның "
 #~ "ақпараты басқаларға тарату арқылы қолжетерлік болады. Сіз және тек сіз осы "
 #~ "әрекеттің заңдылығы үшін жауап бересіз."
 
@@ -2891,8 +2891,8 @@ msgstr "Торрентті тексеру"
 #~ msgstr "URL ашу..."
 
 #~ msgid ""
-#~ "Transmission is already running, but is not responding. To start a new "
-#~ "session, you must first close the existing Transmission process."
+#~ "Leechmission is already running, but is not responding. To start a new "
+#~ "session, you must first close the existing Leechmission process."
 #~ msgstr ""
-#~ "Transmission іске қосулы тұр, бірақ жауап қайтармайды. Жаңа сессияны бастау "
-#~ "үшін, бар болып тұрған Transmission үрдісінің жұмысын аяқтауыңыз керек."
+#~ "Leechmission іске қосулы тұр, бірақ жауап қайтармайды. Жаңа сессияны бастау "
+#~ "үшін, бар болып тұрған Leechmission үрдісінің жұмысын аяқтауыңыз керек."

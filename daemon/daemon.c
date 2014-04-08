@@ -23,12 +23,12 @@
 
 #include <event2/buffer.h>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/tr-getopt.h>
-#include <libtransmission/log.h>
-#include <libtransmission/utils.h>
-#include <libtransmission/variant.h>
-#include <libtransmission/version.h>
+#include <libleechmission/leechmission.h>
+#include <libleechmission/tr-getopt.h>
+#include <libleechmission/log.h>
+#include <libleechmission/utils.h>
+#include <libleechmission/variant.h>
+#include <libleechmission/version.h>
 
 #ifdef USE_SYSTEMD_DAEMON
  #include <systemd/sd-daemon.h>
@@ -39,7 +39,7 @@
 
 #include "watch.h"
 
-#define MY_NAME "transmission-daemon"
+#define MY_NAME "leechmission-daemon"
 
 #define MEM_K 1024
 #define MEM_K_STR "KiB"
@@ -78,12 +78,12 @@ static tr_quark key_pidfile = 0;
 static const char *
 getUsage (void)
 {
-    return "Transmission " LONG_VERSION_STRING
-           "  http://www.transmissionbt.com/\n"
+    return "Leechmission " LONG_VERSION_STRING
+           "  http://www.leechmissionbt.com/\n"
            "A fast and easy BitTorrent client\n"
            "\n"
-           MY_NAME " is a headless Transmission session\n"
-           "that can be controlled via transmission-remote\n"
+           MY_NAME " is a headless Leechmission session\n"
+           "that can be controlled via leechmission-remote\n"
            "or the web interface.\n"
            "\n"
            "Usage: " MY_NAME " [options]";
@@ -602,8 +602,8 @@ main (int argc, char ** argv)
         sd_notify (0, "STATUS=Idle.\n"); 
     } 
 
-    sd_notify( 0, "STATUS=Closing transmission session...\n" );
-    printf ("Closing transmission session...");
+    sd_notify( 0, "STATUS=Closing leechmission session...\n" );
+    printf ("Closing leechmission session...");
     tr_sessionSaveSettings (mySession, configDir, &settings);
     dtr_watchdir_free (watchdir);
     tr_sessionClose (mySession);

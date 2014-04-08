@@ -17,7 +17,7 @@
 #include <glib.h>
 #include <gtk/gtk.h>
 
-#include <libtransmission/transmission.h>
+#include <libleechmission/leechmission.h>
 
 extern const int mem_K;
 extern const char * mem_K_str;

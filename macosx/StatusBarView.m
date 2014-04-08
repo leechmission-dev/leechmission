@@ -1,7 +1,7 @@
 /******************************************************************************
  * $Id: StatusBarView.m 13563 2012-10-14 17:33:23Z livings124 $
  * 
- * Copyright (c) 2006-2012 Transmission authors and contributors
+ * Copyright (c) 2006-2012 Leechmission authors and contributors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -139,7 +139,7 @@
     NSRectFillListWithColors(gridRects, colorRects, count);
     
     if (fNoiseImage) {
-        NSAssert([NSApp isOnLionOrBetter], @"we have a noise image, but we're on 10.6"); //https://trac.transmissionbt.com/ticket/5053
+        NSAssert([NSApp isOnLionOrBetter], @"we have a noise image, but we're on 10.6"); //https://trac.leechmissionbt.com/ticket/5053
         [fNoiseImage drawInRect: rect
                        fromRect: [self convertRectToBacking: rect]
                       operation: NSCompositeSourceOver

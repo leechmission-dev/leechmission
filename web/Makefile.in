@@ -392,7 +392,7 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-transmissionlocaledir = @transmissionlocaledir@
+leechmissionlocaledir = @leechmissionlocaledir@
 dist_data_DATA = \
   index.html \
   LICENSE

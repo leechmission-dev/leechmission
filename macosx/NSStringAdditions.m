@@ -1,7 +1,7 @@
 /******************************************************************************
  * $Id: NSStringAdditions.m 14045 2013-03-07 23:55:31Z livings124 $
  *
- * Copyright (c) 2005-2012 Transmission authors and contributors
+ * Copyright (c) 2005-2012 Leechmission authors and contributors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -25,7 +25,7 @@
 #import "NSApplicationAdditions.h"
 #import "NSStringAdditions.h"
 
-#import "transmission.h"
+#import "leechmission.h"
 #import "utils.h"
 
 @interface NSString (Private)
@@ -127,7 +127,7 @@
 
 + (NSString *) stringForRatio: (CGFloat) ratio
 {
-    //N/A is different than libtransmission's
+    //N/A is different than libleechmission's
     if ((int)ratio == TR_RATIO_NA)
         return NSLocalizedString(@"N/A", "No Ratio");
     else if ((int)ratio == TR_RATIO_INF)

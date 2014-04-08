@@ -10,7 +10,7 @@
  * $Id: relocate.c 14132 2013-07-20 16:19:15Z jordan $
  */
 
-#include <libtransmission/transmission.h>
+#include <libleechmission/leechmission.h>
 
 #include <glib/gi18n.h>
 #include <gtk/gtk.h>

@@ -26,10 +26,10 @@ LicenseDialog :: LicenseDialog (QWidget * parent):
   QPlainTextEdit * t = new QPlainTextEdit (this);
   t->setReadOnly (true);
   t->setPlainText (
-"The OS X client, CLI client, and parts of libtransmission are licensed under the terms of the MIT license.\n\n"
-"The Transmission daemon, GTK+ client, Qt client, Web client, and most of libtransmission are licensed under the terms of the GNU GPL version 2, with two special exceptions:\n\n"
-"1. The MIT-licensed portions of Transmission listed above are exempt from GPLv2 clause 2 (b) and may retain their MIT license.\n\n"
-"2. Permission is granted to link the code in this release with the OpenSSL project's 'OpenSSL' library and to distribute the linked executables.  Works derived from Transmission may, at their authors' discretion, keep or delete this exception.");
+"The OS X client, CLI client, and parts of libleechmission are licensed under the terms of the MIT license.\n\n"
+"The Leechmission daemon, GTK+ client, Qt client, Web client, and most of libleechmission are licensed under the terms of the GNU GPL version 2, with two special exceptions:\n\n"
+"1. The MIT-licensed portions of Leechmission listed above are exempt from GPLv2 clause 2 (b) and may retain their MIT license.\n\n"
+"2. Permission is granted to link the code in this release with the OpenSSL project's 'OpenSSL' library and to distribute the linked executables.  Works derived from Leechmission may, at their authors' discretion, keep or delete this exception.");
   v->addWidget (t);
 
   QDialogButtonBox * box = new QDialogButtonBox;

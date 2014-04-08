@@ -1,7 +1,7 @@
 /******************************************************************************
  * $Id: InfoFileViewController.h 13296 2012-05-14 00:00:19Z livings124 $
  *
- * Copyright (c) 2010-2012 Transmission authors and contributors
+ * Copyright (c) 2010-2012 Leechmission authors and contributors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),

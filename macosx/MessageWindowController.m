@@ -1,7 +1,7 @@
 /******************************************************************************
  * $Id: MessageWindowController.m 13870 2013-01-26 19:17:58Z livings124 $
  *
- * Copyright (c) 2006-2012 Transmission authors and contributors
+ * Copyright (c) 2006-2012 Leechmission authors and contributors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -28,7 +28,7 @@
 #import "NSMutableArrayAdditions.h"
 #import "NSStringAdditions.h"
 #import <log.h>
-#import <transmission.h>
+#import <leechmission.h>
 
 #define LEVEL_ERROR 0
 #define LEVEL_INFO  1

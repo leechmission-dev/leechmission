@@ -1,6 +1,6 @@
 1.  Introduction
 
-   This document describes a protocol for interacting with Transmission
+   This document describes a protocol for interacting with Leechmission
    sessions remotely.
 
 1.1  Terminology
@@ -15,7 +15,7 @@
 
 1.2  Resources
 
-   The command-line utility "transmission-remote" uses this RPC API.
+   The command-line utility "leechmission-remote" uses this RPC API.
    Several developers have reported using its --debug JSON output as
    a reference when developing/debugging their own code.
    
@@ -47,30 +47,30 @@
 2.3.  Transport Mechanism
 
    HTTP POSTing a JSON-encoded request is the preferred way of communicating
-   with a Transmission RPC server.  The current Transmission implementation
-   has the default URL as http://host:9091/transmission/rpc.  Clients
+   with a Leechmission RPC server.  The current Leechmission implementation
+   has the default URL as http://host:9091/leechmission/rpc.  Clients
    may use this as a default, but should allow the URL to be reconfigured,
    since the port and path may be changed to allow mapping and/or multiple
    daemons to run on a single server.
 
 2.3.1.  CSRF Protection
 
-   Most Transmission RPC servers require a X-Transmission-Session-Id
+   Most Leechmission RPC servers require a X-Leechmission-Session-Id
    header to be sent with requests, to prevent CSRF attacks.
 
    When your request has the wrong id -- such as when you send your first
    request, or when the server expires the CSRF token -- the
-   Transmission RPC server will return an HTTP 409 error with the
-   right X-Transmission-Session-Id in its own headers.
+   Leechmission RPC server will return an HTTP 409 error with the
+   right X-Leechmission-Session-Id in its own headers.
 
    So, the correct way to handle a 409 response is to update your
-   X-Transmission-Session-Id and to resend the previous request.
+   X-Leechmission-Session-Id and to resend the previous request.
 
 3.  Torrent Requests
 
 3.1.  Torrent Action Requests
 
-   Method name          | libtransmission function
+   Method name          | libleechmission function
    ---------------------+-------------------------------------------------
    "torrent-start"      | tr_torrentStart
    "torrent-start-now"  | tr_torrentStartNow
@@ -142,7 +142,7 @@
        torrents.
 
    Note: For more information on what these fields mean, see the comments
-   in libtransmission/transmission.h.  The "source" column here
+   in libleechmission/leechmission.h.  The "source" column here
    corresponds to the data structure there.
 
    key                         | type                        | source 
@@ -424,7 +424,7 @@
 
    Method name: "torrent-rename-path"
 
-   For more information on the use of this function, see the transmission.h
+   For more information on the use of this function, see the leechmission.h
    documentation of tr_torrentRenamePath(). In particular, note that if this
    call succeeds you'll want to update the torrent's "files" and "name" field
    with torrent-get.
@@ -458,7 +458,7 @@
    "blocklist-enabled"              | boolean    | true means enabled
    "blocklist-size"                 | number     | number of rules in the blocklist
    "cache-size-mb"                  | number     | maximum size of the disk cache (MB)
-   "config-dir"                     | string     | location of transmission's configuration directory
+   "config-dir"                     | string     | location of leechmission's configuration directory
    "download-dir"                   | string     | default path to download torrents
    "download-queue-size"            | number     | max number of torrents to download at once (see download-queue-enabled)
    "download-queue-enabled"         | boolean    | if true, limit how many torrents can be downloaded at once
@@ -507,10 +507,10 @@
                                     +--------------+--------+------------------+
 
    "rpc-version" indicates the RPC interface version supported by the RPC server.
-   It is incremented when a new version of Transmission changes the RPC interface.
+   It is incremented when a new version of Leechmission changes the RPC interface.
 
    "rpc-version-minimum" indicates the oldest API supported by the RPC server.
-   It is changes when a new version of Transmission changes the RPC interface
+   It is changes when a new version of Leechmission changes the RPC interface
    in a way that is not backwards compatible.  There are no plans for this
    to be common behavior.
 
@@ -577,7 +577,7 @@
 
 4.5.  Session shutdown
 
-   This method tells the transmission session to shut down.
+   This method tells the leechmission session to shut down.
 
    Method name: "session-close"
    Request arguments: none
@@ -585,7 +585,7 @@
 
 4.6.  Queue Movement Requests
 
-   Method name          | libtransmission function
+   Method name          | libleechmission function
    ---------------------+-------------------------------------------------
    "queue-move-top"     | tr_torrentQueueMoveTop()
    "queue-move-up"      | tr_torrentQueueMoveUp()
@@ -773,7 +773,7 @@
    1. session-get's 'download-dir-free-space' argument will be removed.
       Its functionality has been superceded by the 'free-space' method.
 
-   2. HTTP POSTs to http://server:port/transmission/upload will fail.
+   2. HTTP POSTs to http://server:port/leechmission/upload will fail.
       This was an undocumented hack to allow web clients to add files without
       client-side access to the file. This functionality is superceded by
       using HTML5's FileReader object + the documented 'torrent-add' method.

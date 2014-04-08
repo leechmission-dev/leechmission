@@ -25,7 +25,7 @@
 #include <gtk/gtk.h>
 #include <glib/gi18n.h>
 
-#include <libtransmission/transmission.h>
+#include <libleechmission/leechmission.h>
 
 #include "dialogs.h"
 #include "tr-core.h"

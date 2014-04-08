@@ -1,7 +1,7 @@
 /******************************************************************************
  * $Id: PrefsController.m 13804 2013-01-19 05:03:00Z livings124 $
  *
- * Copyright (c) 2005-2012 Transmission authors and contributors
+ * Copyright (c) 2005-2012 Leechmission authors and contributors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -32,7 +32,7 @@
 #import "NSStringAdditions.h"
 #import "VDKQueue.h"
 
-#import "transmission.h"
+#import "leechmission.h"
 #import "utils.h"
 
 #import <Growl/Growl.h>
@@ -52,7 +52,7 @@
 #define TOOLBAR_NETWORK     @"TOOLBAR_NETWORK"
 #define TOOLBAR_REMOTE      @"TOOLBAR_REMOTE"
 
-#define RPC_KEYCHAIN_SERVICE    "Transmission:Remote"
+#define RPC_KEYCHAIN_SERVICE    "Leechmission:Remote"
 #define RPC_KEYCHAIN_NAME       "Remote"
 
 #define WEBUI_URL   @"http://localhost:%ld/"
@@ -95,7 +95,7 @@
             [fDefaults setObject: blocklistDate forKey: @"BlocklistNewLastUpdate"];
             [fDefaults removeObjectForKey: @"BlocklistLastUpdate"];
             
-            NSURL * blocklistDir = [[[[NSFileManager defaultManager] URLsForDirectory: NSApplicationDirectory inDomains: NSUserDomainMask] objectAtIndex: 0] URLByAppendingPathComponent: @"Transmission/blocklists/"];
+            NSURL * blocklistDir = [[[[NSFileManager defaultManager] URLsForDirectory: NSApplicationDirectory inDomains: NSUserDomainMask] objectAtIndex: 0] URLByAppendingPathComponent: @"Leechmission/blocklists/"];
             [[NSFileManager defaultManager] moveItemAtURL: [blocklistDir URLByAppendingPathComponent: @"level1.bin"]
                 toURL: [blocklistDir URLByAppendingPathComponent: [NSString stringWithUTF8String: DEFAULT_BLOCKLIST_FILENAME]]
                 error: nil];

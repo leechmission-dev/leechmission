@@ -33,15 +33,15 @@
 #include <glib/gi18n.h>
 #include <glib/gstdio.h>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/variant.h>
+#include <libleechmission/leechmission.h>
+#include <libleechmission/variant.h>
 
 #include "conf.h"
 #include "tr-prefs.h"
 #include "util.h"
 
-#define MY_CONFIG_NAME "transmission"
-#define MY_READABLE_NAME "transmission-gtk"
+#define MY_CONFIG_NAME "leechmission"
+#define MY_READABLE_NAME "leechmission-gtk"
 
 static char * gl_confdir = NULL;
 
@@ -90,7 +90,7 @@ tr_prefs_init_defaults (tr_variant * d)
   tr_variantDictAddStr  (d, TR_KEY_statusbar_stats, "total-ratio");
   tr_variantDictAddBool (d, TR_KEY_torrent_added_notification_enabled, true);
   tr_variantDictAddBool (d, TR_KEY_torrent_complete_notification_enabled, true);
-  tr_variantDictAddStr  (d, TR_KEY_torrent_complete_sound_command, "canberra-gtk-play -i complete-download -d 'transmission torrent downloaded'");
+  tr_variantDictAddStr  (d, TR_KEY_torrent_complete_sound_command, "canberra-gtk-play -i complete-download -d 'leechmission torrent downloaded'");
   tr_variantDictAddBool (d, TR_KEY_torrent_complete_sound_enabled, true);
   tr_variantDictAddBool (d, TR_KEY_show_options_window, TRUE);
   tr_variantDictAddBool (d, TR_KEY_main_window_is_maximized, FALSE);

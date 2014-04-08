@@ -1,4 +1,4 @@
-# Transmission in Greek
+# Leechmission in Greek
 #
 #
 #
@@ -54,8 +54,8 @@ msgid "Sort by Si_ze"
 msgstr "Ταξινόμηση κατά Μέ_γεθος"
 
 #: ../gtk/actions.c:70
-msgid "_Show Transmission"
-msgstr "_Εμφάνιση του Transmission"
+msgid "_Show Leechmission"
+msgstr "_Εμφάνιση του Leechmission"
 
 #: ../gtk/actions.c:71
 msgid "Message _Log"
@@ -317,7 +317,7 @@ msgid "_Maximum peers:"
 msgstr "_Μέγιστος αριθμός ομότιμων χρηστών:"
 
 #: ../gtk/details.c:559 ../gtk/torrent-cell-renderer.c:201
-#: ../libtransmission/verify.c:273
+#: ../libleechmission/verify.c:273
 msgid "Queued for verification"
 msgstr "Σε αναμονή για επαλήθευση"
 
@@ -888,9 +888,9 @@ msgstr "Ε_μφάνιση:"
 
 #: ../gtk/main.c:308
 #, c-format
-msgid "Error registering Transmission as x-scheme-handler/magnet handler: %s"
+msgid "Error registering Leechmission as x-scheme-handler/magnet handler: %s"
 msgstr ""
-"Σφάλμα κατά την εγγραφή του Transmission ως διαχειριστή x-scheme-"
+"Σφάλμα κατά την εγγραφή του Leechmission ως διαχειριστή x-scheme-"
 "handler/magnet: %s"
 
 #: ../gtk/main.c:477
@@ -916,9 +916,9 @@ msgstr "Εκκίνηση ελαχιστοποιημένο στην περιοχ�
 msgid "Show version number and exit"
 msgstr "Εμφάνιση αριθμού έκδοσης και έξοδος"
 
-#: ../gtk/main.c:630 ../gtk/transmission-gtk.desktop.in.h:1
-msgid "Transmission"
-msgstr "Transmission"
+#: ../gtk/main.c:630 ../gtk/leechmission-gtk.desktop.in.h:1
+msgid "Leechmission"
+msgstr "Leechmission"
 
 #. parse the command line
 #: ../gtk/main.c:634
@@ -937,12 +937,12 @@ msgstr ""
 
 #: ../gtk/main.c:739
 msgid ""
-"Transmission is a file-sharing program. When you run a torrent, its data "
+"Leechmission is a file-sharing program. When you run a torrent, its data "
 "will be made available to others by means of upload. You and you alone are "
 "fully responsible for exercising proper judgement and abiding by your local "
 "laws."
 msgstr ""
-"Το Transmission είναι ένα πρόγραμμα διαμοιρασμού αρχείων. Όταν εκτελείτε ένα "
+"Το Leechmission είναι ένα πρόγραμμα διαμοιρασμού αρχείων. Όταν εκτελείτε ένα "
 "torrent, τα δεδομένα του θα διατίθενται σε άλλους μέσω ανεβάσματος (upload). "
 "Εσείς και μόνο εσείς, είστε πλήρως υπεύθυνοι για την ορθή χρήση και την "
 "τήρηση των τοπικών νόμων."
@@ -1419,15 +1419,15 @@ msgstr[0] "Γίνεται αποστολή σε %1$'d από %2$'d συνδεδ�
 msgstr[1] ""
 "Γίνεται αποστολή σε %1$'d από %2$'d συνδεδεμένους ομότιμους χρήστες."
 
-#: ../gtk/transmission-gtk.desktop.in.h:2
+#: ../gtk/leechmission-gtk.desktop.in.h:2
 msgid "BitTorrent Client"
 msgstr "Πελάτης BitTorrent"
 
-#: ../gtk/transmission-gtk.desktop.in.h:3
-msgid "Transmission BitTorrent Client"
-msgstr "Transmission πελάτης BitTorrent"
+#: ../gtk/leechmission-gtk.desktop.in.h:3
+msgid "Leechmission BitTorrent Client"
+msgstr "Leechmission πελάτης BitTorrent"
 
-#: ../gtk/transmission-gtk.desktop.in.h:4
+#: ../gtk/leechmission-gtk.desktop.in.h:4
 msgid "Download and share files over BitTorrent"
 msgstr "Λήψη και διαμοιρασμός των αρχείων μέσω του BitTorrent"
 
@@ -1466,11 +1466,11 @@ msgstr "(Όριο: %s)"
 #: ../gtk/tr-icon.c:109
 #, c-format
 msgid ""
-"Transmission\n"
+"Leechmission\n"
 "Up: %1$s %2$s\n"
 "Down: %3$s %4$s"
 msgstr ""
-"Transmission\n"
+"Leechmission\n"
 "Αποστολή: %1$s %2$s\n"
 "Λήψη: %3$s %4$s"
 
@@ -1492,7 +1492,7 @@ msgstr ""
 "Οι μεταφορτώσεις που ανταλλάσουν δεδομένα τα τελευταία N λεπτά είναι "
 "_ενεργές:"
 
-#: ../gtk/tr-prefs.c:286 ../libtransmission/torrent.c:1919
+#: ../gtk/tr-prefs.c:286 ../libleechmission/torrent.c:1919
 msgid "Incomplete"
 msgstr "Μη ολοκληρωμένο"
 
@@ -1540,8 +1540,8 @@ msgid "_Inhibit hibernation when torrents are active"
 msgstr "_Απαγόρευση αδρανοποίησης όταν υπάρχουν ενεργά torrents"
 
 #: ../gtk/tr-prefs.c:384
-msgid "Show Transmission icon in the _notification area"
-msgstr "Εμφάνιση του εικονιδίου του Transmission στην _περιοχή ειδοποιήσεων"
+msgid "Show Leechmission icon in the _notification area"
+msgstr "Εμφάνιση του εικονιδίου του Leechmission στην _περιοχή ειδοποιήσεων"
 
 #: ../gtk/tr-prefs.c:389
 msgid "Notification"
@@ -1813,8 +1813,8 @@ msgid "Te_st Port"
 msgstr "Δ_οκιμή θύρας"
 
 #: ../gtk/tr-prefs.c:1222
-msgid "Pick a _random port every time Transmission is started"
-msgstr "Χρήση μιας _τυχαίας θύρας κάθε φορά που εκκινείται το Transmission"
+msgid "Pick a _random port every time Leechmission is started"
+msgstr "Χρήση μιας _τυχαίας θύρας κάθε φορά που εκκινείται το Leechmission"
 
 #: ../gtk/tr-prefs.c:1226
 msgid "Use UPnP or NAT-PMP port _forwarding from my router"
@@ -1842,8 +1842,8 @@ msgid "uTP is a tool for reducing network congestion."
 msgstr "Το uTP είναι ένα εργαλείο για τη μείωση της συμφόρησης του δικτύου."
 
 #: ../gtk/tr-prefs.c:1262
-msgid "Transmission Preferences"
-msgstr "Προτιμήσεις του Transmission"
+msgid "Leechmission Preferences"
+msgstr "Προτιμήσεις του Leechmission"
 
 #: ../gtk/tr-prefs.c:1276
 msgid "Torrents"
@@ -2007,7 +2007,7 @@ msgstr "GB/s"
 msgid "TB/s"
 msgstr "TB/s"
 
-#: ../cli/cli.c:115 ../gtk/util.c:87 ../libtransmission/utils.c:1509
+#: ../cli/cli.c:115 ../gtk/util.c:87 ../libleechmission/utils.c:1509
 msgid "None"
 msgstr "Κανένα"
 
@@ -2074,8 +2074,8 @@ msgstr "Μη αναγνωρίσιμο URL"
 
 #: ../gtk/util.c:565
 #, c-format
-msgid "Transmission doesn't know how to use \"%s\""
-msgstr "Το Transmission δεν ξέρει πώς να χρησιμοποιήσει το \"%s\""
+msgid "Leechmission doesn't know how to use \"%s\""
+msgstr "Το Leechmission δεν ξέρει πώς να χρησιμοποιήσει το \"%s\""
 
 #: ../gtk/util.c:570
 #, c-format
@@ -2088,188 +2088,188 @@ msgstr ""
 "που περιέχει \"%s\"."
 
 #. did caller give us an uninitialized val?
-#: ../libtransmission/bencode.c:1117
+#: ../libleechmission/bencode.c:1117
 msgid "Invalid metadata"
 msgstr "Μη έγκυρα μεταδεδομένα"
 
-#: ../libtransmission/bencode.c:1723 ../libtransmission/bencode.c:1751
+#: ../libleechmission/bencode.c:1723 ../libleechmission/bencode.c:1751
 #, c-format
 msgid "Couldn't save temporary file \"%1$s\": %2$s"
 msgstr "Αδύνατη  η αποθήκευση του προσωρινού αρχείου \"%1$s\": %2$s"
 
-#: ../libtransmission/bencode.c:1738
+#: ../libleechmission/bencode.c:1738
 #, c-format
 msgid "Saved \"%s\""
 msgstr "Αποθηκευμένο στο \"%s\""
 
-#: ../libtransmission/bencode.c:1743 ../libtransmission/blocklist.c:417
-#: ../libtransmission/rpcimpl.c:1260 ../libtransmission/rpcimpl.c:1271
-#: ../libtransmission/rpcimpl.c:1287
+#: ../libleechmission/bencode.c:1743 ../libleechmission/blocklist.c:417
+#: ../libleechmission/rpcimpl.c:1260 ../libleechmission/rpcimpl.c:1271
+#: ../libleechmission/rpcimpl.c:1287
 #, c-format
 msgid "Couldn't save file \"%1$s\": %2$s"
 msgstr "Αδύνατη η αποθήκευση του αρχείου \"%1$s\": %2$s"
 
-#: ../libtransmission/blocklist.c:86 ../libtransmission/blocklist.c:325
-#: ../libtransmission/utils.c:438
+#: ../libleechmission/blocklist.c:86 ../libleechmission/blocklist.c:325
+#: ../libleechmission/utils.c:438
 #, c-format
 msgid "Couldn't read \"%1$s\": %2$s"
 msgstr "Αδύνατη η ανάγνωση του \"%1$s\": %2$s"
 
-#: ../libtransmission/blocklist.c:115
+#: ../libleechmission/blocklist.c:115
 #, c-format
 msgid "Blocklist \"%s\" contains %zu entries"
 msgstr "Η Λίστα Αποκλεισμού \"%s\" περιέχει %zu εγγραφές"
 
 #. don't try to display the actual lines - it causes issues
-#: ../libtransmission/blocklist.c:368
+#: ../libleechmission/blocklist.c:368
 #, c-format
 msgid "blocklist skipped invalid address at line %d"
 msgstr ""
 "Η λίστα αποκλεισμού προσπέρασε την λανθασμένη διεύθυνση στη γραμμή %d"
 
-#: ../libtransmission/blocklist.c:420
+#: ../libleechmission/blocklist.c:420
 #, c-format
 msgid "Blocklist \"%s\" updated with %zu entries"
 msgstr "Η Λίστα αποκλεισμού «%s» ενημερώθηκε με «%zu» καταχωρήσεις"
 
-#: ../libtransmission/fdlimit.c:348 ../libtransmission/utils.c:574
-#: ../libtransmission/utils.c:585
+#: ../libleechmission/fdlimit.c:348 ../libleechmission/utils.c:574
+#: ../libleechmission/utils.c:585
 #, c-format
 msgid "Couldn't create \"%1$s\": %2$s"
 msgstr "Δεν μπορεί να δημιουργηθεί το \"%1$s\": %2$s"
 
-#: ../libtransmission/fdlimit.c:369
+#: ../libleechmission/fdlimit.c:369
 #, c-format
 msgid "Couldn't open \"%1$s\": %2$s"
 msgstr "Δεν μπορεί να ανοιχτεί το \"%1$s\": %2$s"
 
-#: ../libtransmission/fdlimit.c:384
+#: ../libleechmission/fdlimit.c:384
 #, c-format
 msgid "Couldn't truncate \"%1$s\": %2$s"
 msgstr "Δεν ήταν δυνατή η περικοπή \"%1$s\": %2$s"
 
-#: ../libtransmission/fdlimit.c:670
+#: ../libleechmission/fdlimit.c:670
 #, c-format
 msgid "Couldn't create socket: %s"
 msgstr "Αδύνατη η δημιουργία υποδοχής: %s"
 
-#: ../libtransmission/makemeta.c:63
+#: ../libleechmission/makemeta.c:63
 #, c-format
 msgid "Torrent Creator is skipping file \"%s\": %s"
 msgstr "Ο Δημιουργός torrent προσπερνάει το αρχείο \"%s\": %s"
 
-#: ../libtransmission/metainfo.c:533
+#: ../libleechmission/metainfo.c:533
 #, c-format
 msgid "Invalid metadata entry \"%s\""
 msgstr "Μη έγκυρη καταχώρηση μεταδεδομένων \"%s\""
 
-#: ../libtransmission/natpmp.c:32
+#: ../libleechmission/natpmp.c:32
 msgid "Port Forwarding (NAT-PMP)"
 msgstr "Προώθηση θύρας (NAT-PMP)"
 
-#: ../libtransmission/natpmp.c:72
+#: ../libleechmission/natpmp.c:72
 #, c-format
 msgid "%s succeeded (%d)"
 msgstr "%s επιτεύχθηκαν (%d)"
 
-#: ../libtransmission/natpmp.c:141
+#: ../libleechmission/natpmp.c:141
 #, c-format
 msgid "Found public address \"%s\""
 msgstr "Βρέθηκε η δημόσια διεύθυνση \"%s\""
 
-#: ../libtransmission/natpmp.c:176
+#: ../libleechmission/natpmp.c:176
 #, c-format
 msgid "no longer forwarding port %d"
 msgstr "η θύρα %d δεν προωθείται πλέον"
 
-#: ../libtransmission/natpmp.c:221
+#: ../libleechmission/natpmp.c:221
 #, c-format
 msgid "Port %d forwarded successfully"
 msgstr "Η προώθηση της  θύρας %d έγινε επιτυχώς"
 
-#: ../libtransmission/net.c:268
+#: ../libleechmission/net.c:268
 #, c-format
 msgid "Couldn't set source address %s on %d: %s"
 msgstr "Αποτυχία προσδορισμού διεύθυνσης προέλευσης %s σε %d: %s"
 
-#: ../libtransmission/net.c:284
+#: ../libleechmission/net.c:284
 #, c-format
 msgid "Couldn't connect socket %d to %s, port %d (errno %d - %s)"
 msgstr "Αδυναμία σύνδεσης της υποδοχής %d στο %s, θύρα %d (errno %d - %s)"
 
-#: ../libtransmission/net.c:360
-msgid "Is another copy of Transmission already running?"
-msgstr "Εκτελείται ήδη κάποιο άλλο αντίγραφο του Transmission;"
+#: ../libleechmission/net.c:360
+msgid "Is another copy of Leechmission already running?"
+msgstr "Εκτελείται ήδη κάποιο άλλο αντίγραφο του Leechmission;"
 
-#: ../libtransmission/net.c:365
+#: ../libleechmission/net.c:365
 #, c-format
 msgid "Couldn't bind port %d on %s: %s"
 msgstr "Δεν συνδέθηκε η θύρα %d στο %s: %s"
 
-#: ../libtransmission/net.c:367
+#: ../libleechmission/net.c:367
 #, c-format
 msgid "Couldn't bind port %d on %s: %s (%s)"
 msgstr "Αδυναμία δέσμευσης της θύρας %d στο %s: %s (%s)"
 
-#: ../libtransmission/peer-msgs.c:1898
+#: ../libleechmission/peer-msgs.c:1898
 #, c-format
 msgid "Please Verify Local Data! Piece #%zu is corrupt."
 msgstr ""
 "Παρακαλώ Επιβεβαιώστε τα Τοπικά Δεδομένα! Το Κομμάτι #%zu είναι "
 "κατεστραμμένο."
 
-#: ../libtransmission/port-forwarding.c:31
+#: ../libleechmission/port-forwarding.c:31
 msgid "Port Forwarding"
 msgstr "Προώθηση θύρας"
 
-#: ../libtransmission/port-forwarding.c:58
+#: ../libleechmission/port-forwarding.c:58
 msgid "Starting"
 msgstr "Εκκίνηση"
 
-#: ../libtransmission/port-forwarding.c:59
+#: ../libleechmission/port-forwarding.c:59
 msgid "Forwarded"
 msgstr "Προωθημένη"
 
-#: ../libtransmission/port-forwarding.c:60
+#: ../libleechmission/port-forwarding.c:60
 msgid "Stopping"
 msgstr "Διακόπτεται"
 
-#: ../libtransmission/port-forwarding.c:61
+#: ../libleechmission/port-forwarding.c:61
 msgid "Not forwarded"
 msgstr "Δεν έγινε προώθηση"
 
-#: ../libtransmission/port-forwarding.c:91 ../libtransmission/torrent.c:2060
+#: ../libleechmission/port-forwarding.c:91 ../libleechmission/torrent.c:2060
 #, c-format
 msgid "State changed from \"%1$s\" to \"%2$s\""
 msgstr "Η κατάσταση άλλαξε από \"%1$s\" σε \"%2$s\""
 
-#: ../libtransmission/port-forwarding.c:181
+#: ../libleechmission/port-forwarding.c:181
 msgid "Stopped"
 msgstr "Διακόπηκε"
 
 #. first %s is the application name
 #. second %s is the version number
-#: ../libtransmission/session.c:722
+#: ../libleechmission/session.c:722
 #, c-format
 msgid "%s %s started"
 msgstr "Η εφαρμογή %s %s ξεκίνησε"
 
-#: ../libtransmission/session.c:1943
+#: ../libleechmission/session.c:1943
 #, c-format
 msgid "Loaded %d torrents"
 msgstr "Φορτώθηκαν %d torrent"
 
-#: ../libtransmission/torrent.c:525
+#: ../libleechmission/torrent.c:525
 #, c-format
 msgid "Tracker warning: \"%s\""
 msgstr "Προειδοποίηση ανιχνευτή: \"%s\""
 
-#: ../libtransmission/torrent.c:532
+#: ../libleechmission/torrent.c:532
 #, c-format
 msgid "Tracker error: \"%s\""
 msgstr "Σφάλμα ανιχνευτή: \"%s\""
 
-#: ../libtransmission/torrent.c:787
+#: ../libleechmission/torrent.c:787
 msgid ""
 "No data found! Ensure your drives are connected or use \"Set Location\". To "
 "re-download, remove the torrent and re-add it."
@@ -2278,73 +2278,73 @@ msgstr ""
 "χρησιμοποιήστε το \"Ορισμός Τοποθεσίας\". Για να ξανά κατεβάσετε, αφαιρέστε "
 "το torrent και προσθέστε το ξανά."
 
-#: ../libtransmission/torrent.c:1677
+#: ../libleechmission/torrent.c:1677
 msgid "Restarted manually -- disabling its seed ratio"
 msgstr ""
 "Επανεκκινήθηκε χειροκίνητα -- απενεργοποίηση της αναλογίας διαμοιρασμού του"
 
-#: ../libtransmission/torrent.c:1829
+#: ../libleechmission/torrent.c:1829
 msgid "Removing torrent"
 msgstr "Γίνεται αφαίρεση του torrent"
 
-#: ../libtransmission/torrent.c:1913
+#: ../libleechmission/torrent.c:1913
 msgid "Done"
 msgstr "Έτοιμο"
 
-#: ../libtransmission/torrent.c:1916
+#: ../libleechmission/torrent.c:1916
 msgid "Complete"
 msgstr "Ολοκληρωμένο"
 
-#: ../libtransmission/upnp.c:35
+#: ../libleechmission/upnp.c:35
 msgid "Port Forwarding (UPnP)"
 msgstr "Προώθηση θύρας (UPnP)"
 
-#: ../libtransmission/upnp.c:199
+#: ../libleechmission/upnp.c:199
 #, c-format
 msgid "Found Internet Gateway Device \"%s\""
 msgstr "Βρέθηκε συσκευή σύνδεσης διαδικτύου \"%s\""
 
-#: ../libtransmission/upnp.c:202
+#: ../libleechmission/upnp.c:202
 #, c-format
 msgid "Local Address is \"%s\""
 msgstr "Η τοπική διεύθυνση είναι \"%s\""
 
-#: ../libtransmission/upnp.c:231
+#: ../libleechmission/upnp.c:231
 #, c-format
 msgid "Port %d isn't forwarded"
 msgstr "Η θύρα %d δεν ανακατευθύνεται"
 
-#: ../libtransmission/upnp.c:242
+#: ../libleechmission/upnp.c:242
 #, c-format
 msgid "Stopping port forwarding through \"%s\", service \"%s\""
 msgstr "Διακόπτεται η προώθηση θύρας μέσω \"%s\", υπηρεσία \"%s\""
 
-#: ../libtransmission/upnp.c:275
+#: ../libleechmission/upnp.c:275
 #, c-format
 msgid ""
 "Port forwarding through \"%s\", service \"%s\". (local address: %s:%d)"
 msgstr ""
 "Προώθηση πόρτας μέσω της \"%s\", υπηρεσία \"%s\". (τοπική διεύθυνση: %s:%d)"
 
-#: ../libtransmission/upnp.c:280
+#: ../libleechmission/upnp.c:280
 msgid "Port forwarding successful!"
 msgstr "Η προώθηση της θύρας έγινε επιτυχώς!"
 
-#: ../libtransmission/utils.c:452
+#: ../libleechmission/utils.c:452
 msgid "Not a regular file"
 msgstr "Δεν είναι κανονικό αρχείο"
 
-#: ../libtransmission/utils.c:470
+#: ../libleechmission/utils.c:470
 msgid "Memory allocation failed"
 msgstr "Η προσπάθεια δέσμευσης μνήμης απέτυχε"
 
 #. Node exists but isn't a folder
-#: ../libtransmission/utils.c:584
+#: ../libleechmission/utils.c:584
 #, c-format
 msgid "File \"%s\" is in the way"
 msgstr "Το αρχείο \"%s\" εμποδίζει"
 
-#: ../libtransmission/verify.c:229
+#: ../libleechmission/verify.c:229
 msgid "Verifying torrent"
 msgstr "Γίνεται επαλήθευση του torrent"
 
@@ -2548,8 +2548,8 @@ msgstr "Γίνεται επαλήθευση του torrent"
 #~ msgid "Announce"
 #~ msgstr "Ανακοίνωση"
 
-#~ msgid "<big><b>Quit Transmission?</b></big>"
-#~ msgstr "<big><b>Έξοδος από το Transmission;</b></big>"
+#~ msgid "<big><b>Quit Leechmission?</b></big>"
+#~ msgstr "<big><b>Έξοδος από το Leechmission;</b></big>"
 
 #~ msgid "Choose Directory"
 #~ msgstr "Επιλογή φακέλου"
@@ -2580,8 +2580,8 @@ msgstr "Γίνεται επαλήθευση του torrent"
 #~ msgid "speed|Down: %1$s, Up: %2$s"
 #~ msgstr "ταχύτητα|Λήψη: %1$s, Αποστολή: %2$s"
 
-#~ msgid "Transmission Bittorrent Client"
-#~ msgstr "Transmission πελάτης Bittorrent"
+#~ msgid "Leechmission Bittorrent Client"
+#~ msgstr "Leechmission πελάτης Bittorrent"
 
 #, c-format
 #~ msgid ""
@@ -2738,7 +2738,7 @@ msgstr "Γίνεται επαλήθευση του torrent"
 #~ msgstr "Όριο ταχύτητας _λήψης (KB/s):"
 
 #~ msgid "Copyright 2005-2009 The Transmission Project"
-#~ msgstr "Το έργο Transmission Copyright 2005-2009"
+#~ msgstr "Το έργο Leechmission Copyright 2005-2009"
 
 #~ msgid "File"
 #~ msgstr "Αρχείο"
@@ -2843,15 +2843,15 @@ msgstr "Γίνεται επαλήθευση του torrent"
 #~ msgstr "Επεξεργασία ανιχνευτών"
 
 #~ msgid ""
-#~ "Transmission is already running, but is not responding.  To start a new "
-#~ "session, you must first close the existing Transmission process."
+#~ "Leechmission is already running, but is not responding.  To start a new "
+#~ "session, you must first close the existing Leechmission process."
 #~ msgstr ""
-#~ "Το Transmission εκτελείται ήδη, αλλά δεν ανταποκρίνεται. Για να ξεκινήσετε "
+#~ "Το Leechmission εκτελείται ήδη, αλλά δεν ανταποκρίνεται. Για να ξεκινήσετε "
 #~ "μια νέα συνεδρία, θα πρέπει αν τερματίσετε πρώτα την υπάρχουσα διεργασία του "
-#~ "Transmission."
+#~ "Leechmission."
 
-#~ msgid "Transmission cannot be started."
-#~ msgstr "Αδύνατη η εκκίνηση του Transmission."
+#~ msgid "Leechmission cannot be started."
+#~ msgstr "Αδύνατη η εκκίνηση του Leechmission."
 
 #~ msgid "Creating torrent..."
 #~ msgstr "Δημιουργία torrent..."
@@ -2899,13 +2899,13 @@ msgstr "Γίνεται επαλήθευση του torrent"
 #~ msgstr[1] "Ενεργοποίηση της _λίστας αποκλεισμένων (περιέχει %'d κανόνες)"
 
 #~ msgid ""
-#~ "Transmission is a file sharing program.  When you run a torrent, its data "
+#~ "Leechmission is a file sharing program.  When you run a torrent, its data "
 #~ "will be made available to others by means of upload.  And of course, any "
 #~ "content you share is your sole responsibility.\n"
 #~ "\n"
 #~ "You probably knew this, so we won't tell you again."
 #~ msgstr ""
-#~ "Το Transmission είναι ένα πρόγραμμα διαμοιρασμού αρχείων. Όταν εκτελείτε ένα "
+#~ "Το Leechmission είναι ένα πρόγραμμα διαμοιρασμού αρχείων. Όταν εκτελείτε ένα "
 #~ "αρχείο torrent, τα δεδομένα του θα γίνουν διαθέσιμα για αποστολή σε άλλους. "
 #~ "Φυσικά, ότι περιεχόμενο διαμοιράζεστε είναι αποκλειστικά δική σας ευθύνη.\n"
 #~ "\n"
@@ -3019,12 +3019,12 @@ msgstr "Γίνεται επαλήθευση του torrent"
 #~ "δεσμοί magnet του BitTorrent περιλαμβάνουν ένα τμήμα που περιέχει το \"%s\"."
 
 #~ msgid ""
-#~ "Transmission is a file-sharing program.  When you run a torrent, its data "
+#~ "Leechmission is a file-sharing program.  When you run a torrent, its data "
 #~ "will be made available to others by means of upload.  You and you alone are "
 #~ "fully responsible for exercising proper judgement and abiding by your local "
 #~ "laws."
 #~ msgstr ""
-#~ "To Transmission είναι ένα πρόγραμμα διαμοιρασμού αρχείων (file-sharing). "
+#~ "To Leechmission είναι ένα πρόγραμμα διαμοιρασμού αρχείων (file-sharing). "
 #~ "Όταν εκτελείτε ένα torrent, τα δεδομένα του θα διατεθούν σε άλλους "
 #~ "ανεβάζοντάς το (upload). Εσείς και μόνο εσείς έχετε την πλήρη ευθύνη για την "
 #~ "ορθή κρίση και τήρηση των τοπικών σας νόμων."
@@ -3045,12 +3045,12 @@ msgstr "Γίνεται επαλήθευση του torrent"
 #~ msgstr "Άνοιγμα _URL"
 
 #~ msgid ""
-#~ "Transmission is already running, but is not responding. To start a new "
-#~ "session, you must first close the existing Transmission process."
+#~ "Leechmission is already running, but is not responding. To start a new "
+#~ "session, you must first close the existing Leechmission process."
 #~ msgstr ""
-#~ "Το Transmission εκτελείται ήδη, αλλά δεν ανταποκρίνεται. Για να ξεκινήσετε "
+#~ "Το Leechmission εκτελείται ήδη, αλλά δεν ανταποκρίνεται. Για να ξεκινήσετε "
 #~ "μια νέα συνεδρία, θα πρέπει πρώτα να κλείσετε την υπάρχουσα διεργασία του "
-#~ "Transmission."
+#~ "Leechmission."
 
 #~ msgid "Open URL..."
 #~ msgstr "Άνοιγμα URL..."

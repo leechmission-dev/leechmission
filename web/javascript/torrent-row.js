@@ -90,12 +90,12 @@ TorrentRendererHelper.renderProgressbar = function(controller, t, progressbar)
 
 TorrentRendererHelper.formatUL = function(t)
 {
-	return '↑ ' + Transmission.fmt.speedBps(t.getUploadSpeed());
+	return '↑ ' + Leechmission.fmt.speedBps(t.getUploadSpeed());
 };
 
 TorrentRendererHelper.formatDL = function(t)
 {
-	return '↓ ' + Transmission.fmt.speedBps(t.getDownloadSpeed());
+	return '↓ ' + Leechmission.fmt.speedBps(t.getDownloadSpeed());
 };
 
 /****
@@ -151,7 +151,7 @@ TorrentRendererFull.prototype =
 		var err,
 		    peer_count,
 		    webseed_count,
-		    fmt = Transmission.fmt;
+		    fmt = Leechmission.fmt;
 
 		if ((err = t.getErrorMessage()))
 			return err;
@@ -206,7 +206,7 @@ TorrentRendererFull.prototype =
 
 		if (t.isChecking())
 			return [ 'Verifying local data (',
-			         Transmission.fmt.percentString(100.0 * t.getRecheckProgress()),
+			         Leechmission.fmt.percentString(100.0 * t.getRecheckProgress()),
 			         '% tested)' ].join('');
 
 		return t.getStateString();
@@ -217,7 +217,7 @@ TorrentRendererFull.prototype =
 		if (t.needsMetaData()) {
 			var percent = 100 * t.getMetadataPercentComplete();
 			return [ "Magnetized transfer - retrieving metadata (",
-			         Transmission.fmt.percentString(percent),
+			         Leechmission.fmt.percentString(percent),
 			         "%)" ].join('');
 		}
 
@@ -228,21 +228,21 @@ TorrentRendererFull.prototype =
 
 		if (is_done) {
 			if (totalSize === sizeWhenDone) // seed: '698.05 MiB'
-				c = [ Transmission.fmt.size(totalSize) ];
+				c = [ Leechmission.fmt.size(totalSize) ];
 			else // partial seed: '127.21 MiB of 698.05 MiB (18.2%)'
-				c = [ Transmission.fmt.size(sizeWhenDone),
+				c = [ Leechmission.fmt.size(sizeWhenDone),
 				      ' of ',
-				      Transmission.fmt.size(t.getTotalSize()),
+				      Leechmission.fmt.size(t.getTotalSize()),
 				      ' (', t.getPercentDoneStr(), '%)' ];
 			// append UL stats: ', uploaded 8.59 GiB (Ratio: 12.3)'
 			c.push(', uploaded ',
-			        Transmission.fmt.size(t.getUploadedEver()),
+			        Leechmission.fmt.size(t.getUploadedEver()),
 			        ' (Ratio ',
-			        Transmission.fmt.ratioString(t.getUploadRatio()),
+			        Leechmission.fmt.ratioString(t.getUploadRatio()),
 			        ')');
 		} else { // not done yet
-			c = [ Transmission.fmt.size(sizeWhenDone - t.getLeftUntilDone()),
-			      ' of ', Transmission.fmt.size(sizeWhenDone),
+			c = [ Leechmission.fmt.size(sizeWhenDone - t.getLeftUntilDone()),
+			      ' of ', Leechmission.fmt.size(sizeWhenDone),
 			      ' (', t.getPercentDoneStr(), '%)' ];
 		}
 
@@ -253,7 +253,7 @@ TorrentRendererFull.prototype =
 			if (eta < 0 || eta >= (999*60*60) /* arbitrary */)
 				c.push('remaining time unknown');
 			else
-				c.push(Transmission.fmt.timeInterval(t.getETA()),
+				c.push(Leechmission.fmt.timeInterval(t.getETA()),
 				        ' remaining');
 		}
 
@@ -340,7 +340,7 @@ TorrentRendererCompact.prototype =
 		}
 		if (t.isSeeding())
 			return [ 'Ratio: ',
-			         Transmission.fmt.ratioString(t.getUploadRatio()),
+			         Leechmission.fmt.ratioString(t.getUploadRatio()),
 			         ', ',
 			         TorrentRendererHelper.formatUL(t) ].join('');
 		return t.getStateString();

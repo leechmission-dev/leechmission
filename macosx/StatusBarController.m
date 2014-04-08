@@ -1,7 +1,7 @@
 /******************************************************************************
  * $Id: StatusBarController.m 13434 2012-08-13 00:52:04Z livings124 $
  * 
- * Copyright (c) 2011-2012 Transmission authors and contributors
+ * Copyright (c) 2011-2012 Leechmission authors and contributors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -25,7 +25,7 @@
 #import "StatusBarController.h"
 #import "NSStringAdditions.h"
 
-#import "transmission.h"
+#import "leechmission.h"
 
 #define STATUS_RATIO_TOTAL      @"RatioTotal"
 #define STATUS_RATIO_SESSION    @"RatioSession"

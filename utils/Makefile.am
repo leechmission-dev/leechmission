@@ -11,21 +11,21 @@ AM_LDFLAGS = \
     @ZLIB_LDFLAGS@
 
 bin_PROGRAMS = \
-    transmission-create \
-    transmission-edit \
-    transmission-show
+    leechmission-create \
+    leechmission-edit \
+    leechmission-show
 
-transmission_create_SOURCES = create.c
-transmission_edit_SOURCES = edit.c
-transmission_show_SOURCES = show.c
+leechmission_create_SOURCES = create.c
+leechmission_edit_SOURCES = edit.c
+leechmission_show_SOURCES = show.c
 
 dist_man_MANS = \
-    transmission-create.1 \
-    transmission-edit.1 \
-    transmission-show.1
+    leechmission-create.1 \
+    leechmission-edit.1 \
+    leechmission-show.1
 
-transmission_create_LDADD = \
-    $(top_builddir)/libtransmission/libtransmission.a \
+leechmission_create_LDADD = \
+    $(top_builddir)/libleechmission/libleechmission.a \
     @LIBUPNP_LIBS@ \
     @LIBNATPMP_LIBS@ \
     @INTLLIBS@ \
@@ -36,5 +36,5 @@ transmission_create_LDADD = \
     @OPENSSL_LIBS@ \
     @ZLIB_LIBS@ \
     @PTHREAD_LIBS@
-transmission_edit_LDADD = $(transmission_create_LDADD)
-transmission_show_LDADD = $(transmission_create_LDADD)
+leechmission_edit_LDADD = $(leechmission_create_LDADD)
+leechmission_show_LDADD = $(leechmission_create_LDADD)

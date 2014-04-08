@@ -1,11 +1,11 @@
-# Biełaruski pierakład Transmission.
-# Copyright (C) Transmission developers
-# This file is distributed under the same license as the transmission package.
+# Biełaruski pierakład Leechmission.
+# Copyright (C) Leechmission developers
+# This file is distributed under the same license as the leechmission package.
 # Ihar Hrachyshka <ihar.hrachyshka@gmail.com>, 2009.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: transmission 1.5.1\n"
+"Project-Id-Version: leechmission 1.5.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-15 11:52+0200\n"
 "PO-Revision-Date: 2009-03-16 15:56+0200\n"
@@ -255,15 +255,15 @@ msgstr "Razbor śpisu blokaŭ..."
 msgid "Blocklist updated with %'d entries"
 msgstr "U śpisie blokaŭ %'d aktualizavanych zapisaŭ"
 
-#: ../gtk/conf.c:63 ../gtk/makemeta-ui.c:142 ../libtransmission/fdlimit.c:228
-#: ../libtransmission/metainfo.c:98 ../libtransmission/utils.c:589
-#: ../libtransmission/utils.c:600
+#: ../gtk/conf.c:63 ../gtk/makemeta-ui.c:142 ../libleechmission/fdlimit.c:228
+#: ../libleechmission/metainfo.c:98 ../libleechmission/utils.c:589
+#: ../libleechmission/utils.c:600
 #, c-format
 msgid "Couldn't create \"%1$s\": %2$s"
 msgstr "Nie ŭdałosia stvaryć \"%1$s\": %2$s"
 
-#: ../gtk/conf.c:88 ../libtransmission/bencode.c:1427
-#: ../libtransmission/fdlimit.c:257
+#: ../gtk/conf.c:88 ../libleechmission/bencode.c:1427
+#: ../libleechmission/fdlimit.c:257
 #, c-format
 msgid "Couldn't open \"%1$s\": %2$s"
 msgstr "Nie ŭdałosia adčynić \"%1$s\": %2$s"
@@ -611,7 +611,7 @@ msgid "Options"
 msgstr "Opcyi"
 
 #: ../gtk/dialogs.c:120
-msgid "<big><b>Quit Transmission?</b></big>"
+msgid "<big><b>Quit Leechmission?</b></big>"
 msgstr "<big><b>Vyjści z Transmisii?</b></big>"
 
 #: ../gtk/dialogs.c:133
@@ -709,7 +709,7 @@ msgid "Where to look for configuration files"
 msgstr "Dzie šukać fajły naładaŭ"
 
 #: ../gtk/main.c:383
-msgid "Transmission"
+msgid "Leechmission"
 msgstr "Transmisija"
 
 #: ../gtk/main.c:390
@@ -756,7 +756,7 @@ msgstr "Chutki j prosty klijent BitTorrent"
 
 #: ../gtk/main.c:1227
 msgid "Copyright 2005-2009 The Transmission Project"
-msgstr "Copyright 2005-2009 Prajekt Transmission"
+msgstr "Copyright 2005-2009 Prajekt Leechmission"
 
 #. Translators: translate "translator-credits" as
 #. your name
@@ -784,8 +784,8 @@ msgstr "Niasłušny adras"
 msgid "Torrent creation cancelled"
 msgstr "Stvareńnie torentu anulavanaje"
 
-#: ../gtk/makemeta-ui.c:128 ../libtransmission/blocklist.c:78
-#: ../libtransmission/blocklist.c:237 ../libtransmission/utils.c:471
+#: ../gtk/makemeta-ui.c:128 ../libleechmission/blocklist.c:78
+#: ../libleechmission/blocklist.c:237 ../libleechmission/utils.c:471
 #, c-format
 msgid "Couldn't read \"%1$s\": %2$s"
 msgstr "Nie ŭdałosia pračytać \"%1$s\": %2$s"
@@ -844,8 +844,8 @@ msgstr "_Kamentar:"
 msgid "_Private torrent"
 msgstr "_Pryvatny torent"
 
-#: ../gtk/msgwin.c:87 ../libtransmission/bencode.c:1433
-#: ../libtransmission/blocklist.c:293
+#: ../gtk/msgwin.c:87 ../libleechmission/bencode.c:1433
+#: ../libleechmission/blocklist.c:293
 #, c-format
 msgid "Couldn't save file \"%1$s\": %2$s"
 msgstr "Nie ŭdałosia zapisać fajł \"%1$s\": %2$s"
@@ -1020,20 +1020,20 @@ msgstr ""
 msgid "Announce URL"
 msgstr "Adras abviestak"
 
-#: ../gtk/transmission.desktop.in.h:1
+#: ../gtk/leechmission.desktop.in.h:1
 msgid "BitTorrent Client"
 msgstr "Klijent BitTorrent"
 
-#: ../gtk/transmission.desktop.in.h:2
+#: ../gtk/leechmission.desktop.in.h:2
 msgid "Download and share files over BitTorrent"
 msgstr "Ściahvaj i rassyłaj fajły praz BitTorrent"
 
-#: ../gtk/transmission.desktop.in.h:3
-msgid "Transmission BitTorrent Client"
+#: ../gtk/leechmission.desktop.in.h:3
+msgid "Leechmission BitTorrent Client"
 msgstr "Transmisija, klijent BitTorrent"
 
 #: ../gtk/tr-core.c:1124
-msgid "Transmission Bittorrent Client"
+msgid "Leechmission Bittorrent Client"
 msgstr "Transmisija, klijent BitTorrent"
 
 #: ../gtk/tr-core.c:1125
@@ -1242,7 +1242,7 @@ msgid "Use UPnP or NAT-PMP port _forwarding from my router"
 msgstr "Užyj UPnP ci _pierakiravańnie portaŭ NAT-PMP z roŭtera"
 
 #: ../gtk/tr-prefs.c:1332
-msgid "Transmission Preferences"
+msgid "Leechmission Preferences"
 msgstr "Nałady Transmisii"
 
 #: ../gtk/tr-prefs.c:1347
@@ -1276,7 +1276,7 @@ msgstr "Čakańnie spraŭdžvańnia lakalnaha źmieściva (%.1f%% spraŭdžana)"
 msgid "%1$s remaining"
 msgstr "zastałosia %1$s"
 
-#: ../gtk/tr-torrent.c:266 ../libtransmission/port-forwarding.c:200
+#: ../gtk/tr-torrent.c:266 ../libleechmission/port-forwarding.c:200
 msgid "Stopped"
 msgstr "Spynieny"
 
@@ -1450,120 +1450,120 @@ msgid "Error opening torrent"
 msgstr "Pamyłka adčynieńnia torentu"
 
 #. did caller give us an uninitialized val?
-#: ../libtransmission/bencode.c:986
+#: ../libleechmission/bencode.c:986
 msgid "Invalid metadata"
 msgstr "Niasłušnyja metaźviestki"
 
-#: ../libtransmission/blocklist.c:110
+#: ../libleechmission/blocklist.c:110
 #, c-format
 msgid "Blocklist \"%s\" contains %'zu entries"
 msgstr "Śpis blokaŭ \"%s\" źmiaščaje %'zu zapisaŭ"
 
-#: ../libtransmission/blocklist.c:303
+#: ../libleechmission/blocklist.c:303
 #, c-format
 msgid "Blocklist \"%1$s\" updated with %2$'d entries"
 msgstr "U śpis blokaŭ \"%1$s\" dadanyja %2$'d zapisaŭ"
 
 #. %s is the torrent name
-#: ../libtransmission/fastresume.c:553 ../libtransmission/fastresume.c:566
+#: ../libleechmission/fastresume.c:553 ../libleechmission/fastresume.c:566
 msgid "Couldn't read resume file"
 msgstr "Nie ŭdałosia pračytać fajł dla ŭznaŭleńnia"
 
-#: ../libtransmission/fdlimit.c:217
+#: ../libleechmission/fdlimit.c:217
 #, c-format
 msgid "Couldn't create \"%1$s\": parent folder \"%2$s\" does not exist"
 msgstr "Nie ŭdałosia stvaryć \"%1$s\": vyšejšy kataloh \"%2$s\" nie isnuje"
 
-#: ../libtransmission/fdlimit.c:240
+#: ../libleechmission/fdlimit.c:240
 #, c-format
 msgid "Preallocated file \"%s\""
 msgstr "Papiarednie prymierkavany fajł \"%s\""
 
-#: ../libtransmission/fdlimit.c:517 ../libtransmission/net.c:391
+#: ../libleechmission/fdlimit.c:517 ../libleechmission/net.c:391
 #, c-format
 msgid "Couldn't create socket: %s"
 msgstr "Nie ŭdałosia stvaryć sokiet: %s"
 
-#: ../libtransmission/makemeta.c:60
+#: ../libleechmission/makemeta.c:60
 #, c-format
 msgid "Torrent Creator is skipping file \"%s\": %s"
 msgstr "Stvaralnik torentaŭ abminuŭ fajł \"%s\": %s"
 
-#: ../libtransmission/metainfo.c:457
+#: ../libleechmission/metainfo.c:457
 #, c-format
 msgid "Invalid metadata entry \"%s\""
 msgstr "Niasłušny zapis metaźviestak \"%s\""
 
-#: ../libtransmission/natpmp.c:31
+#: ../libleechmission/natpmp.c:31
 msgid "Port Forwarding (NAT-PMP)"
 msgstr "Pierakiravańnie portaŭ (NAT-PMP)"
 
-#: ../libtransmission/natpmp.c:68
+#: ../libleechmission/natpmp.c:68
 #, c-format
 msgid "%s succeeded (%d)"
 msgstr "%s zroblena (%d)"
 
-#: ../libtransmission/natpmp.c:136
+#: ../libleechmission/natpmp.c:136
 #, c-format
 msgid "Found public address \"%s\""
 msgstr "Znojdzieny publičny adras \"%s\""
 
-#: ../libtransmission/natpmp.c:171
+#: ../libleechmission/natpmp.c:171
 #, c-format
 msgid "no longer forwarding port %d"
 msgstr "bolš nie pierakiroŭvaje portu %d"
 
-#: ../libtransmission/natpmp.c:218
+#: ../libleechmission/natpmp.c:218
 #, c-format
 msgid "Port %d forwarded successfully"
 msgstr "Port %d paśpiachova pierakiravany"
 
-#: ../libtransmission/net.c:519
+#: ../libleechmission/net.c:519
 #, c-format
 msgid "Couldn't connect socket %d to %s, port %d (errno %d - %s)"
 msgstr "Nie ŭdałosia spałučyć sokiet %d z %s, praz port %d (pamyłka %d - %s)"
 
-#: ../libtransmission/net.c:572
+#: ../libleechmission/net.c:572
 #, c-format
 msgid "Couldn't bind port %d on %s: %s"
 msgstr "Nie ŭdałosia paviazać port %d na %s: %s"
 
-#: ../libtransmission/port-forwarding.c:32
+#: ../libleechmission/port-forwarding.c:32
 msgid "Port Forwarding"
 msgstr "Pierakiravańnie portaŭ"
 
-#: ../libtransmission/port-forwarding.c:64
+#: ../libleechmission/port-forwarding.c:64
 msgid "Starting"
 msgstr "Uruchomleńnie"
 
-#: ../libtransmission/port-forwarding.c:68
+#: ../libleechmission/port-forwarding.c:68
 msgid "Forwarded"
 msgstr "Pierakiravany"
 
-#: ../libtransmission/port-forwarding.c:72
+#: ../libleechmission/port-forwarding.c:72
 msgid "Stopping"
 msgstr "Spynieńnie"
 
-#: ../libtransmission/port-forwarding.c:76
+#: ../libleechmission/port-forwarding.c:76
 msgid "Not forwarded"
 msgstr "Nie pierakiravany"
 
-#: ../libtransmission/port-forwarding.c:99 ../libtransmission/torrent.c:1322
+#: ../libleechmission/port-forwarding.c:99 ../libleechmission/torrent.c:1322
 #, c-format
 msgid "State changed from \"%1$s\" to \"%2$s\""
 msgstr "Stan źmianiŭsia z \"%1$s\" na \"%2$s\""
 
-#: ../libtransmission/port-forwarding.c:115
+#: ../libleechmission/port-forwarding.c:115
 #, c-format
 msgid "Closing port %d on %s"
 msgstr "Začynieńnie portu %d na %s"
 
-#: ../libtransmission/port-forwarding.c:152
+#: ../libleechmission/port-forwarding.c:152
 #, c-format
 msgid "Opened port %d on %s to listen for incoming peer connections"
 msgstr "Adčynieny port %d na %s, dla słuchańnia ŭvachodnych spałučeńniaŭ ad peeraŭ"
 
-#: ../libtransmission/port-forwarding.c:160
+#: ../libleechmission/port-forwarding.c:160
 #, c-format
 msgid ""
 "Couldn't open port %d on %s to listen for incoming peer connections (errno %"
@@ -1573,89 +1573,89 @@ msgstr ""
 
 #. first %s is the application name
 #. second %s is the version number
-#: ../libtransmission/session.c:575
+#: ../libleechmission/session.c:575
 #, c-format
 msgid "%s %s started"
 msgstr "%s %s uruchomlenaja"
 
-#: ../libtransmission/session.c:997
+#: ../libleechmission/session.c:997
 #, c-format
 msgid "Loaded %d torrents"
 msgstr "Zahružanyja %d torentaŭ"
 
-#: ../libtransmission/torrent.c:202
+#: ../libleechmission/torrent.c:202
 #, c-format
 msgid "Got %d peers from tracker"
 msgstr "Atrymanyja %d peeraŭ ad trackera"
 
-#: ../libtransmission/torrent.c:216
+#: ../libleechmission/torrent.c:216
 #, c-format
 msgid "Tracker warning: \"%s\""
 msgstr "Aściaroha trackera: \"%s\""
 
-#: ../libtransmission/torrent.c:223
+#: ../libleechmission/torrent.c:223
 #, c-format
 msgid "Tracker error: \"%s\""
 msgstr "Pamyłka trackera: \"%s\""
 
-#: ../libtransmission/torrent.c:1265
+#: ../libleechmission/torrent.c:1265
 msgid "Done"
 msgstr "Zroblena"
 
-#: ../libtransmission/torrent.c:1268
+#: ../libleechmission/torrent.c:1268
 msgid "Complete"
 msgstr "Skončana"
 
-#: ../libtransmission/torrent.c:1271
+#: ../libleechmission/torrent.c:1271
 msgid "Incomplete"
 msgstr "Nia skončana"
 
-#: ../libtransmission/upnp.c:26
+#: ../libleechmission/upnp.c:26
 msgid "Port Forwarding (UPnP)"
 msgstr "Pierakiravańnie portaŭ (UPnP)"
 
-#: ../libtransmission/upnp.c:103
+#: ../libleechmission/upnp.c:103
 #, c-format
 msgid "Found Internet Gateway Device \"%s\""
 msgstr "Znojdzienaja maršrutnaja pryłada \"%s\""
 
-#: ../libtransmission/upnp.c:106
+#: ../libleechmission/upnp.c:106
 #, c-format
 msgid "Local Address is \"%s\""
 msgstr "Lakalny adras \"%s\""
 
-#: ../libtransmission/upnp.c:139
+#: ../libleechmission/upnp.c:139
 #, c-format
 msgid "Stopping port forwarding through \"%s\", service \"%s\""
 msgstr "Spynieńnie pierakiravańnia portaŭ praz \"%s\", pasłuha \"%s\""
 
-#: ../libtransmission/upnp.c:173
+#: ../libleechmission/upnp.c:173
 #, c-format
 msgid "Port forwarding through \"%s\", service \"%s\".  (local address: %s:%d)"
 msgstr "Pierakiravańnie portaŭ praz \"%s\", pasłuha \"%s\" (lakalny adras: %s:%d)."
 
-#: ../libtransmission/upnp.c:178
+#: ../libleechmission/upnp.c:178
 msgid "Port forwarding successful!"
 msgstr "Paśpiachovaje pierakiravańnie portaŭ!"
 
-#: ../libtransmission/utils.c:485
+#: ../libleechmission/utils.c:485
 msgid "Not a regular file"
 msgstr "Niezvyčajny fajł"
 
-#: ../libtransmission/utils.c:503
+#: ../libleechmission/utils.c:503
 msgid "Memory allocation failed"
 msgstr "Nie ŭdałosia prymierkavać pamiaci"
 
 #. Node exists but isn't a folder
-#: ../libtransmission/utils.c:599
+#: ../libleechmission/utils.c:599
 #, c-format
 msgid "File \"%s\" is in the way"
 msgstr ""
 
-#: ../libtransmission/verify.c:144
+#: ../libleechmission/verify.c:144
 msgid "Verifying torrent"
 msgstr "Spraŭdžvańnie torentu"
 
-#: ../libtransmission/verify.c:183
+#: ../libleechmission/verify.c:183
 msgid "Queued for verification"
 msgstr "U čarzie pa spraŭdžvańnie"

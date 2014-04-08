@@ -15,8 +15,8 @@
 
 #include <string.h>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/utils.h> /* tr_is_same_file () */
+#include <libleechmission/leechmission.h>
+#include <libleechmission/utils.h> /* tr_is_same_file () */
 
 #include "conf.h"
 #include "file-list.h"

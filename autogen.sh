@@ -4,7 +4,7 @@ test -z "$srcdir" && srcdir=.
 
 ORIGDIR=`pwd`
 cd "$srcdir"
-PROJECT=Transmission
+PROJECT=Leechmission
 
 GETTEXTIZE="glib-gettextize"
 $GETTEXTIZE --version < /dev/null > /dev/null 2>&1

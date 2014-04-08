@@ -12,18 +12,18 @@ AM_LDFLAGS = \
     @ZLIB_LDFLAGS@
 
 EXTRA_DIST = \
-    transmission-daemon.service
+    leechmission-daemon.service
 
 dist_man_MANS = \
-    transmission-daemon.1 \
-    transmission-remote.1
+    leechmission-daemon.1 \
+    leechmission-remote.1
 
 bin_PROGRAMS = \
-    transmission-daemon \
-    transmission-remote
+    leechmission-daemon \
+    leechmission-remote
 
 LDADD = \
-    $(top_builddir)/libtransmission/libtransmission.a \
+    $(top_builddir)/libleechmission/libleechmission.a \
     @LIBUPNP_LIBS@ \
     @LIBNATPMP_LIBS@ \
     @DHT_LIBS@ \
@@ -39,5 +39,5 @@ LDADD = \
 noinst_HEADERS = \
     watch.h
 
-transmission_daemon_SOURCES = daemon.c watch.c
-transmission_remote_SOURCES = remote.c
+leechmission_daemon_SOURCES = daemon.c watch.c
+leechmission_remote_SOURCES = remote.c

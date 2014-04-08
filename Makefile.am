@@ -18,7 +18,7 @@ endif
 SUBDIRS = \
   extras \
   third-party \
-  libtransmission \
+  libleechmission \
   utils \
   $(DAEMON_DIR) \
   $(CLI_DIR) \
@@ -34,7 +34,7 @@ EXTRA_DIST = \
   README \
   autogen.sh \
   update-version-h.sh \
-  Transmission.xcodeproj/project.pbxproj
+  Leechmission.xcodeproj/project.pbxproj
 
 dist-hook:
 	rm -rf `find $(distdir)/qt -name .svn`

@@ -1,7 +1,7 @@
 /******************************************************************************
  * $Id: CreatorWindowController.m 13492 2012-09-10 02:37:29Z livings124 $
  *
- * Copyright (c) 2007-2012 Transmission authors and contributors
+ * Copyright (c) 2007-2012 Leechmission authors and contributors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -27,7 +27,7 @@
 #import "NSApplicationAdditions.h"
 #import "NSStringAdditions.h"
 
-#import "transmission.h" // required by utils.h
+#import "leechmission.h" // required by utils.h
 #import "utils.h" // tr_urlIsValidTracker()
 
 #define TRACKER_ADD_TAG 0

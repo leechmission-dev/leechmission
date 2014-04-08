@@ -21,7 +21,7 @@
 
 #include "filters.h"
 
-#include <libtransmission/quark.h>
+#include <libleechmission/quark.h>
 
 extern "C"
 {

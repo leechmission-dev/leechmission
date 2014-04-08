@@ -1,7 +1,7 @@
 /******************************************************************************
  * $Id: Controller.m 14153 2013-08-03 01:24:42Z livings124 $
  * 
- * Copyright (c) 2005-2012 Transmission authors and contributors
+ * Copyright (c) 2005-2012 Leechmission authors and contributors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -58,7 +58,7 @@
 #import "ExpandedPathToPathTransformer.h"
 #import "ExpandedPathToIconTransformer.h"
 
-#import "transmission.h"
+#import "leechmission.h"
 #import "utils.h"
 #import "variant.h"
 
@@ -130,10 +130,10 @@ typedef enum
 
 #define TRANSFER_PLIST  @"Transfers.plist"
 
-#define WEBSITE_URL @"http://www.transmissionbt.com/"
-#define FORUM_URL   @"http://forum.transmissionbt.com/"
-#define TRAC_URL    @"http://trac.transmissionbt.com/"
-#define DONATE_URL  @"http://www.transmissionbt.com/donate.php"
+#define WEBSITE_URL @"http://www.leechmissionbt.com/"
+#define FORUM_URL   @"http://forum.leechmissionbt.com/"
+#define TRAC_URL    @"http://trac.leechmissionbt.com/"
+#define DONATE_URL  @"http://www.leechmissionbt.com/donate.php"
 
 #define DONATE_NAG_TIME (60 * 60 * 24 * 7)
 
@@ -166,16 +166,16 @@ static void sleepCallback(void * controller, io_service_t y, natural_t messageTy
 
 + (void) initialize
 {
-    //make sure another Transmission.app isn't running already
+    //make sure another Leechmission.app isn't running already
     NSArray * apps = [NSRunningApplication runningApplicationsWithBundleIdentifier: [[NSBundle mainBundle] bundleIdentifier]];
     if ([apps count] > 1)
     {
         NSAlert * alert = [[NSAlert alloc] init];
-        [alert addButtonWithTitle: NSLocalizedString(@"OK", "Transmission already running alert -> button")];
-        [alert setMessageText: NSLocalizedString(@"Transmission is already running.",
-                                                "Transmission already running alert -> title")];
-        [alert setInformativeText: NSLocalizedString(@"There is already a copy of Transmission running. "
-            "This copy cannot be opened until that instance is quit.", "Transmission already running alert -> message")];
+        [alert addButtonWithTitle: NSLocalizedString(@"OK", "Leechmission already running alert -> button")];
+        [alert setMessageText: NSLocalizedString(@"Leechmission is already running.",
+                                                "Leechmission already running alert -> title")];
+        [alert setInformativeText: NSLocalizedString(@"There is already a copy of Leechmission running. "
+            "This copy cannot be opened until that instance is quit.", "Leechmission already running alert -> message")];
         [alert setAlertStyle: NSCriticalAlertStyle];
         
         [alert runModal];
@@ -201,8 +201,8 @@ static void sleepCallback(void * controller, io_service_t y, natural_t messageTy
         NSAlert * alert = [[NSAlert alloc] init];
         [alert addButtonWithTitle: NSLocalizedString(@"I Accept", "Legal alert -> button")];
         [alert addButtonWithTitle: NSLocalizedString(@"Quit", "Legal alert -> button")];
-        [alert setMessageText: NSLocalizedString(@"Welcome to Transmission", "Legal alert -> title")];
-        [alert setInformativeText: NSLocalizedString(@"Transmission is a file-sharing program."
+        [alert setMessageText: NSLocalizedString(@"Welcome to Leechmission", "Legal alert -> title")];
+        [alert setInformativeText: NSLocalizedString(@"Leechmission is a file-sharing program."
             " When you run a torrent, its data will be made available to others by means of upload."
             " You and you alone are fully responsible for exercising proper judgement and abiding by your local laws.",
             "Legal alert -> message")];
@@ -321,7 +321,7 @@ static void sleepCallback(void * controller, io_service_t y, natural_t messageTy
             [unitFormatter setAllowsNonnumericFormatting: NO];
             
             [unitFormatter setAllowedUnits: NSByteCountFormatterUseKB];
-            kbString = [unitFormatter stringFromByteCount: 17]; //use a random value to avoid possible pluralization issues with 1 or 0 (an example is if we use 1 for bytes, we'd get "byte" when we'd want "bytes" for the generic libtransmission value at least)
+            kbString = [unitFormatter stringFromByteCount: 17]; //use a random value to avoid possible pluralization issues with 1 or 0 (an example is if we use 1 for bytes, we'd get "byte" when we'd want "bytes" for the generic libleechmission value at least)
             
             [unitFormatter setAllowedUnits: NSByteCountFormatterUseMB];
             mbString = [unitFormatter stringFromByteCount: 17];
@@ -357,7 +357,7 @@ static void sleepCallback(void * controller, io_service_t y, natural_t messageTy
                                     [gbString UTF8String],
                                     [tbString UTF8String]);
         
-        const char * configDir = tr_getDefaultConfigDir("Transmission");
+        const char * configDir = tr_getDefaultConfigDir("Leechmission");
         fLib = tr_sessionInit("macosx", configDir, YES, &settings);
         tr_variantFree(&settings);
         
@@ -630,7 +630,7 @@ static void sleepCallback(void * controller, io_service_t y, natural_t messageTy
             [alert setMessageText: NSLocalizedString(@"Support open-source indie software", "Donation beg -> title")];
             
             NSString * donateMessage = [NSString stringWithFormat: @"%@\n\n%@",
-                NSLocalizedString(@"Transmission is a full-featured torrent application."
+                NSLocalizedString(@"Leechmission is a full-featured torrent application."
                     " A lot of time and effort have gone into development, coding, and refinement."
                     " If you enjoy using it, please consider showing your love with a donation.", "Donation beg -> message"),
                 NSLocalizedString(@"Donate or not, there will be no difference to your torrenting experience.", "Donation beg -> message")];

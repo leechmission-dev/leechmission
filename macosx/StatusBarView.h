@@ -1,7 +1,7 @@
 /******************************************************************************
  * $Id: StatusBarView.h 13454 2012-08-30 02:37:00Z livings124 $
  * 
- * Copyright (c) 2006-2012 Transmission authors and contributors
+ * Copyright (c) 2006-2012 Leechmission authors and contributors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),

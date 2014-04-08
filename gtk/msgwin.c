@@ -17,8 +17,8 @@
 #include <glib/gi18n.h>
 #include <gtk/gtk.h>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/log.h>
+#include <libleechmission/leechmission.h>
+#include <libleechmission/log.h>
 
 #include "conf.h"
 #include "hig.h"

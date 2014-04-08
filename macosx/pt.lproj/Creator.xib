@@ -479,7 +479,7 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 								<int key="NSCellFlags2">33554432</int>
 								<object class="NSCustomResource" key="NSContents">
 									<string key="NSClassName">NSImage</string>
-									<string key="NSResourceName">TransmissionDocument.icns</string>
+									<string key="NSResourceName">LeechmissionDocument.icns</string>
 								</object>
 								<int key="NSAlign">0</int>
 								<int key="NSScale">1</int>
@@ -1634,7 +1634,7 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 			<string key="NSApplicationIcon">{128, 128}</string>
 			<string key="NSRemoveTemplate">{8, 8}</string>
 			<string key="NSSwitch">{15, 15}</string>
-			<string key="TransmissionDocument.icns">{128, 128}</string>
+			<string key="LeechmissionDocument.icns">{128, 128}</string>
 		</dictionary>
 	</data>
 </archive>

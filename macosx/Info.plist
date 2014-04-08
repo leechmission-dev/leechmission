@@ -12,7 +12,7 @@
 				<string>torrent</string>
 			</array>
 			<key>CFBundleTypeIconFile</key>
-			<string>TransmissionDocument</string>
+			<string>LeechmissionDocument</string>
 			<key>CFBundleTypeName</key>
 			<string>BitTorrent Document</string>
 			<key>CFBundleTypeRole</key>
@@ -26,21 +26,21 @@
 		</dict>
 	</array>
 	<key>CFBundleExecutable</key>
-	<string>Transmission</string>
+	<string>Leechmission</string>
 	<key>CFBundleGetInfoString</key>
 	<string>VERSION_STRING_INFOPLIST (SVN_REVISION_NUM)</string>
 	<key>CFBundleHelpBookFolder</key>
-	<string>TransmissionHelp</string>
+	<string>LeechmissionHelp</string>
 	<key>CFBundleHelpBookName</key>
-	<string>Transmission Help</string>
+	<string>Leechmission Help</string>
 	<key>CFBundleIconFile</key>
-	<string>Transmission</string>
+	<string>Leechmission</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.m0k.transmission</string>
+	<string>org.m0k.leechmission</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>Transmission</string>
+	<string>Leechmission</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -76,7 +76,7 @@
 	<array>
 		<dict>
 			<key>NSPortName</key>
-			<string>Transmission</string>
+			<string>Leechmission</string>
 			<key>NSSendTypes</key>
 			<array>
 				<string>NSStringPboardType</string>
@@ -89,7 +89,7 @@
 	<key>SUAllowsAutomaticUpdates</key>
 	<false/>
 	<key>SUFeedURL</key>
-	<string>http://update.transmissionbt.com/appcast.xml</string>
+	<string>http://update.leechmissionbt.com/appcast.xml</string>
 	<key>SUPublicDSAKeyFile</key>
 	<string>sparkle_dsa_pub.pem</string>
 	<key>SUScheduledCheckInterval</key>
@@ -106,7 +106,7 @@
 			<key>UTTypeDescription</key>
 			<string>BitTorrent Document</string>
 			<key>UTTypeIconFile</key>
-			<string>TransmissionDocument</string>
+			<string>LeechmissionDocument</string>
 			<key>UTTypeIdentifier</key>
 			<string>org.bittorrent.torrent</string>
 			<key>UTTypeReferenceURL</key>

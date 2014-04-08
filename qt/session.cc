@@ -32,12 +32,12 @@
 
 #include <event2/buffer.h>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/rpcimpl.h>
-#include <libtransmission/utils.h> // tr_free
-#include <libtransmission/variant.h>
-#include <libtransmission/version.h> // LONG_VERSION
-#include <libtransmission/web.h>
+#include <libleechmission/leechmission.h>
+#include <libleechmission/rpcimpl.h>
+#include <libleechmission/utils.h> // tr_free
+#include <libleechmission/variant.h>
+#include <libleechmission/version.h> // LONG_VERSION
+#include <libleechmission/web.h>
 
 #include "add-data.h"
 #include "prefs.h"
@@ -334,7 +334,7 @@ Session :: start ()
       url.setScheme ("http");
       url.setHost (myPrefs.get<QString> (Prefs::SESSION_REMOTE_HOST));
       url.setPort (myPrefs.get<int> (Prefs::SESSION_REMOTE_PORT));
-      url.setPath ("/transmission/rpc");
+      url.setPath ("/leechmission/rpc");
       if (myPrefs.get<bool> (Prefs::SESSION_REMOTE_AUTH))
         {
           url.setUserName (myPrefs.get<QString> (Prefs::SESSION_REMOTE_USERNAME));
@@ -671,7 +671,7 @@ Session :: localSessionCallback (tr_session * s, struct evbuffer * json, void * 
 
   Session * self = static_cast<Session*> (vself);
 
-  /* this callback is invoked in the libtransmission thread, so we don't want
+  /* this callback is invoked in the libleechmission thread, so we don't want
      to process the response here... let's push it over to the Qt thread. */
   self->responseReceived (QByteArray ( (const char *)evbuffer_pullup (json, -1),
                                      (int)evbuffer_get_length (json)));
@@ -1131,7 +1131,7 @@ Session :: launchWebInterface ()
   if (!mySession) // remote session
     {
       url = myUrl;
-      url.setPath ("/transmission/web/");
+      url.setPath ("/leechmission/web/");
     }
   else // local session
     {

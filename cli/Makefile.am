@@ -10,14 +10,14 @@ AM_CFLAGS = \
 AM_LDFLAGS = \
     @ZLIB_LDFLAGS@
 
-bin_PROGRAMS = transmission-cli
+bin_PROGRAMS = leechmission-cli
 
-dist_man_MANS = transmission-cli.1
+dist_man_MANS = leechmission-cli.1
 
-transmission_cli_SOURCES = cli.c
+leechmission_cli_SOURCES = cli.c
 
-transmission_cli_LDADD = \
-    $(top_builddir)/libtransmission/libtransmission.a \
+leechmission_cli_LDADD = \
+    $(top_builddir)/libleechmission/libleechmission.a \
     @LIBNATPMP_LIBS@ \
     @LIBUPNP_LIBS@ \
     @DHT_LIBS@ \

@@ -1,7 +1,7 @@
 /******************************************************************************
  * $Id: InfoActivityViewController.m 14052 2013-03-12 03:33:54Z livings124 $
  *
- * Copyright (c) 2010-2012 Transmission authors and contributors
+ * Copyright (c) 2010-2012 Leechmission authors and contributors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -27,7 +27,7 @@
 #import "PiecesView.h"
 #import "Torrent.h"
 
-#include "transmission.h" // required by utils.h
+#include "leechmission.h" // required by utils.h
 #include "utils.h" //tr_getRatio()
 
 #define PIECES_CONTROL_PROGRESS 0

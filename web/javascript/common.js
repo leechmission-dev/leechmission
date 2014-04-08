@@ -5,7 +5,7 @@
  * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
-var transmission,
+var leechmission,
     dialog,
     isMobileDevice = RegExp("(iPhone|iPod|Android)").test(navigator.userAgent),
     scroll_timeout;
@@ -74,8 +74,8 @@ $(document).ready(function() {
 	// Initialise the dialog controller
 	dialog = new Dialog();
 
-	// Initialise the main Transmission controller
-	transmission = new Transmission();
+	// Initialise the main Leechmission controller
+	leechmission = new Leechmission();
 });
 
 /**

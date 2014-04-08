@@ -31,9 +31,9 @@
 #include <QTimer>
 #include <QVBoxLayout>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/makemeta.h>
-#include <libtransmission/utils.h>
+#include <libleechmission/leechmission.h>
+#include <libleechmission/makemeta.h>
+#include <libleechmission/utils.h>
 
 #include "formatter.h"
 #include "hig.h"

@@ -15,7 +15,7 @@
 #include <glib/gi18n.h>
 #include <gtk/gtk.h>
 
-#include <libtransmission/transmission.h>
+#include <libleechmission/leechmission.h>
 
 #include "actions.h"
 #include "conf.h"
@@ -67,7 +67,7 @@ sort_changed_cb (GtkAction            * action UNUSED,
 
 static GtkToggleActionEntry show_toggle_entries[] =
 {
-    { "toggle-main-window", NULL, N_("_Show Transmission"), NULL, NULL, G_CALLBACK (action_cb), TRUE },
+    { "toggle-main-window", NULL, N_("_Show Leechmission"), NULL, NULL, G_CALLBACK (action_cb), TRUE },
     { "toggle-message-log", NULL, N_("Message _Log"), NULL, NULL, G_CALLBACK (action_cb), FALSE }
 };
 
@@ -144,7 +144,7 @@ static const BuiltinIconInfo my_fallback_icons[] =
     { tr_icon_logo_48,  WINDOW_ICON          },
     { tr_icon_logo_24,  TRAY_ICON            },
     { tr_icon_logo_48,  NOTIFICATION_ICON    },
-    { tr_icon_lock,     "transmission-lock"  },
+    { tr_icon_lock,     "leechmission-lock"  },
     { utilities_icon,   "utilities"          },
     { blue_turtle,      "alt-speed-on"       },
     { grey_turtle,      "alt-speed-off"      },

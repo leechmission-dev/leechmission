@@ -46,8 +46,8 @@ Dialog.prototype = {
 	{
 		$('body.dialog_showing').removeClass('dialog_showing');
 		this._container.hide();
-		transmission.hideMobileAddressbar();
-		transmission.updateButtonStates();
+		leechmission.hideMobileAddressbar();
+		leechmission.updateButtonStates();
 	},
 
 	onCancelClicked: function(event)
@@ -85,9 +85,9 @@ Dialog.prototype = {
 		this._callback_data = callback_data;
 		$('body').addClass('dialog_showing');
 		this._container.show();
-		transmission.updateButtonStates();
+		leechmission.updateButtonStates();
 		if (isMobileDevice)
-			transmission.hideMobileAddressbar();
+			leechmission.hideMobileAddressbar();
 	},
 
 	/*
@@ -105,9 +105,9 @@ Dialog.prototype = {
 		$('#upload_container').hide();
 		$('#move_container').hide();
 		$('body').addClass('dialog_showing');
-		transmission.updateButtonStates();
+		leechmission.updateButtonStates();
 		if (isMobileDevice)
-			transmission.hideMobileAddressbar();
+			leechmission.hideMobileAddressbar();
 		this._container.show();
 	}
 	

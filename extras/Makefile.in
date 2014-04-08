@@ -301,7 +301,7 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-transmissionlocaledir = @transmissionlocaledir@
+leechmissionlocaledir = @leechmissionlocaledir@
 EXTRA_DIST = rpc-spec.txt \
              send-email-when-torrent-done.sh
 

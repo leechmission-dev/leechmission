@@ -26,8 +26,8 @@
 #define GTR_CONFIG_H
 
 #include <inttypes.h>
-#include <libtransmission/transmission.h> /* tr_variant, tr_session */
-#include <libtransmission/quark.h>
+#include <libleechmission/leechmission.h> /* tr_variant, tr_session */
+#include <libleechmission/quark.h>
 
 void                gtr_pref_init            (const char * config_dir);
 

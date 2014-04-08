@@ -1,7 +1,7 @@
 /******************************************************************************
  * $Id: PortChecker.m 13492 2012-09-10 02:37:29Z livings124 $
  *
- * Copyright (c) 2006-2012 Transmission authors and contributors
+ * Copyright (c) 2006-2012 Leechmission authors and contributors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -24,7 +24,7 @@
 
 #import "PortChecker.h"
 
-#define CHECKER_URL(port) [NSString stringWithFormat: @"http://portcheck.transmissionbt.com/%ld", port]
+#define CHECKER_URL(port) [NSString stringWithFormat: @"http://portcheck.leechmissionbt.com/%ld", port]
 #define CHECK_FIRE 3.0
 
 @interface PortChecker (Private)

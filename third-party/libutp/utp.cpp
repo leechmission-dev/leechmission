@@ -323,7 +323,7 @@ struct OutgoingPacket {
 	size_t length;
 	size_t payload;
 	uint64 time_sent; // microseconds
-	uint transmissions:31;
+	uint leechmissions:31;
 	bool need_resend:1;
 	byte data[1];
 };
@@ -1012,12 +1012,12 @@ void UTPSocket::send_packet(OutgoingPacket *pkt)
 	// at slow rates (max window < packet size)
 	size_t max_send = min(max_window, opt_sndbuf, max_window_user);
 
-	if (pkt->transmissions == 0 || pkt->need_resend) {
+	if (pkt->leechmissions == 0 || pkt->need_resend) {
 		cur_window += pkt->payload;
 	}
 
 	size_t packet_size = get_packet_size();
-	if (pkt->transmissions == 0 && max_send < packet_size) {
+	if (pkt->leechmissions == 0 && max_send < packet_size) {
 		assert(state == CS_FIN_SENT ||
 			   (int32)pkt->payload <= send_quota / 100);
 		send_quota = send_quota - (int32)(pkt->payload * 100);
@@ -1033,11 +1033,11 @@ void UTPSocket::send_packet(OutgoingPacket *pkt)
 		p1->ack_nr = ack_nr;
 	}
 	pkt->time_sent = UTP_GetMicroseconds();
-	pkt->transmissions++;
+	pkt->leechmissions++;
 	sent_ack();
 	send_data((PacketFormat*)pkt->data, pkt->length,
 		(state == CS_SYN_SENT) ? connect_overhead
-		: (pkt->transmissions == 1) ? payload_bandwidth
+		: (pkt->leechmissions == 1) ? payload_bandwidth
 		: retransmit_overhead);
 }
 
@@ -1094,7 +1094,7 @@ bool UTPSocket::flush_packets()
 	// signed types are not guaranteed to wrap the way you expect
 	for (uint16 i = seq_nr - cur_window_packets; i != seq_nr; ++i) {
 		OutgoingPacket *pkt = (OutgoingPacket*)outbuf.get(i);
-		if (pkt == 0 || (pkt->transmissions > 0 && pkt->need_resend == false)) continue;
+		if (pkt == 0 || (pkt->leechmissions > 0 && pkt->need_resend == false)) continue;
 		// have we run out of quota?
 		if (!is_writable(pkt->payload)) {
 			return true;
@@ -1144,7 +1144,7 @@ void UTPSocket::write_outgoing_packet(size_t payload, uint flags)
 
 		// if there's any room left in the last packet in the window
 		// and it hasn't been sent yet, fill that frame first
-		if (payload && pkt && !pkt->transmissions && pkt->payload < packet_size) {
+		if (payload && pkt && !pkt->leechmissions && pkt->payload < packet_size) {
 			// Use the previous unsent packet
 			added = min(payload + pkt->payload, max<size_t>(packet_size, pkt->payload)) - pkt->payload;
 			pkt = (OutgoingPacket*)realloc(pkt,
@@ -1161,7 +1161,7 @@ void UTPSocket::write_outgoing_packet(size_t payload, uint flags)
 										  header_size +
 										  added);
 			pkt->payload = 0;
-			pkt->transmissions = 0;
+			pkt->leechmissions = 0;
 			pkt->need_resend = false;
 		}
 
@@ -1230,7 +1230,7 @@ void UTPSocket::check_invariant()
 	size_t outstanding_bytes = 0;
 	for (int i = 0; i < cur_window_packets; ++i) {
 		OutgoingPacket *pkt = (OutgoingPacket*)outbuf.get(seq_nr - i - 1);
-		if (pkt == 0 || pkt->transmissions == 0 || pkt->need_resend) continue;
+		if (pkt == 0 || pkt->leechmissions == 0 || pkt->need_resend) continue;
 		outstanding_bytes += pkt->payload;
 	}
 	assert(outstanding_bytes == cur_window);
@@ -1289,8 +1289,8 @@ void UTPSocket::check_timeouts()
 			/*
 			OutgoingPacket *pkt = (OutgoingPacket*)outbuf.get(seq_nr - cur_window_packets);
 			
-			// If there were a lot of retransmissions, force recomputation of round trip time
-			if (pkt->transmissions >= 4)
+			// If there were a lot of releechmissions, force recomputation of round trip time
+			if (pkt->leechmissions >= 4)
 				rtt = 0;
 			*/
 
@@ -1321,7 +1321,7 @@ void UTPSocket::check_timeouts()
 			// every packet should be considered lost
 			for (int i = 0; i < cur_window_packets; ++i) {
 				OutgoingPacket *pkt = (OutgoingPacket*)outbuf.get(seq_nr - i - 1);
-				if (pkt == 0 || pkt->transmissions == 0 || pkt->need_resend) continue;
+				if (pkt == 0 || pkt->leechmissions == 0 || pkt->need_resend) continue;
 				pkt->need_resend = true;
 				assert(cur_window >= pkt->payload);
 				cur_window -= pkt->payload;
@@ -1407,7 +1407,7 @@ int UTPSocket::ack_packet(uint16 seq)
 	}
 
 	// can't ack packets that haven't been sent yet!
-	if (pkt->transmissions == 0) {
+	if (pkt->leechmissions == 0) {
 		LOG_UTPV("0x%08x: got ack for:%u (never sent, pkt_size:%u need_resend:%u)",
 				 this, seq, (uint)pkt->payload, pkt->need_resend);
 		return 2;
@@ -1419,7 +1419,7 @@ int UTPSocket::ack_packet(uint16 seq)
 	outbuf.put(seq, NULL);
 
 	// if we never re-sent the packet, update the RTT estimate
-	if (pkt->transmissions == 1) {
+	if (pkt->leechmissions == 1) {
 		// Estimate the round trip time.
 		const uint32 ertt = (uint32)((UTP_GetMicroseconds() - pkt->time_sent) / 1000);
 		if (rtt == 0) {
@@ -1473,7 +1473,7 @@ size_t UTPSocket::selective_ack_bytes(uint base, const byte* mask, byte len, int
 		// ignore bits that represents packets we haven't sent yet
 		// or packets that have already been acked
 		OutgoingPacket *pkt = (OutgoingPacket*)outbuf.get(v);
-		if (!pkt || pkt->transmissions == 0)
+		if (!pkt || pkt->leechmissions == 0)
 			continue;
 
 		// Count the number of segments that were successfully received past it.
@@ -1553,9 +1553,9 @@ void UTPSocket::selective_ack(uint base, const byte *mask, byte len)
 		// ignore bits that represents packets we haven't sent yet
 		// or packets that have already been acked
 		OutgoingPacket *pkt = (OutgoingPacket*)outbuf.get(v);
-		if (!pkt || pkt->transmissions == 0) {
-			LOG_UTPV("0x%08x: skipping %u. pkt:%08x transmissions:%u %s",
-					 this, v, pkt, pkt?pkt->transmissions:0, pkt?"(not sent yet?)":"(already acked?)");
+		if (!pkt || pkt->leechmissions == 0) {
+			LOG_UTPV("0x%08x: skipping %u. pkt:%08x leechmissions:%u %s",
+					 this, v, pkt, pkt?pkt->leechmissions:0, pkt?"(not sent yet?)":"(already acked?)");
 			continue;
 		}
 
@@ -1908,7 +1908,7 @@ size_t UTP_ProcessIncoming(UTPSocket *conn, const byte *packet, size_t len, bool
 	for (int i = 0; i < acks; ++i) {
 		int seq = conn->seq_nr - conn->cur_window_packets + i;
 		OutgoingPacket *pkt = (OutgoingPacket*)conn->outbuf.get(seq);
-		if (pkt == 0 || pkt->transmissions == 0) continue;
+		if (pkt == 0 || pkt->leechmissions == 0) continue;
 		assert((int)(pkt->payload) >= 0);
 		acked_bytes += pkt->payload;
 		min_rtt = min<int64>(min_rtt, UTP_GetMicroseconds() - pkt->time_sent);
@@ -2037,7 +2037,7 @@ size_t UTP_ProcessIncoming(UTPSocket *conn, const byte *packet, size_t len, bool
 			if (ack_status == 2) {
 #ifdef _DEBUG
 				OutgoingPacket* pkt = (OutgoingPacket*)conn->outbuf.get(conn->seq_nr - conn->cur_window_packets);
-				assert(pkt->transmissions == 0);
+				assert(pkt->leechmissions == 0);
 #endif
 				break;
 			}
@@ -2067,7 +2067,7 @@ size_t UTP_ProcessIncoming(UTPSocket *conn, const byte *packet, size_t len, bool
 		if (conn->cur_window_packets == 1) {
 			OutgoingPacket *pkt = (OutgoingPacket*)conn->outbuf.get(conn->seq_nr - 1);
 			// do we still have quota?
-			if (pkt->transmissions == 0 &&
+			if (pkt->leechmissions == 0 &&
 				(!(USE_PACKET_PACING) || conn->send_quota / 100 >= (int32)pkt->length)) {
 				conn->send_packet(pkt);
 
@@ -2089,7 +2089,7 @@ size_t UTP_ProcessIncoming(UTPSocket *conn, const byte *packet, size_t len, bool
 				// resend the oldest packet and increment fast_resend_seq_nr
 				// to not allow another fast resend on it again
 				OutgoingPacket *pkt = (OutgoingPacket*)conn->outbuf.get(conn->seq_nr - conn->cur_window_packets);
-				if (pkt && pkt->transmissions > 0) {
+				if (pkt && pkt->leechmissions > 0) {
 					LOG_UTPV("0x%08x: Packet %u fast timeout-retry.", conn, conn->seq_nr - conn->cur_window_packets);
 #ifdef _DEBUG
 					++conn->_stats._fastrexmit;
@@ -2503,7 +2503,7 @@ void UTP_Connect(UTPSocket *conn)
 		p1->ext_len = 8;
 		memset(p1->extensions, 0, 8);
 	}
-	pkt->transmissions = 0;
+	pkt->leechmissions = 0;
 	pkt->length = header_ext_size;
 	pkt->payload = 0;
 

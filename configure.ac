@@ -6,7 +6,7 @@ dnl these should be the only two lines you need to change
 m4_define([user_agent_prefix],[2.82])
 m4_define([peer_id_prefix],[-TR2820-])
 
-AC_INIT([transmission],[user_agent_prefix],[http://trac.transmissionbt.com/newticket])
+AC_INIT([leechmission],[user_agent_prefix],[http://trac.leechmissionbt.com/newticket])
 AC_SUBST(USERAGENT_PREFIX,[user_agent_prefix])
 AC_SUBST(PEERID_PREFIX,[peer_id_prefix])
 
@@ -15,7 +15,7 @@ m4_ifdef([AM_SILENT_RULES],[AM_SILENT_RULES([yes])])
 AC_CONFIG_MACRO_DIR([m4])
 
 dnl AM_CONFIG_HEADER(config.h)
-AC_CONFIG_SRCDIR(libtransmission/transmission.h)
+AC_CONFIG_SRCDIR(libleechmission/leechmission.h)
 AM_INIT_AUTOMAKE([1.9 tar-pax no-dist-gzip dist-xz])
 LT_INIT
 
@@ -229,7 +229,7 @@ if test "x$want_utp" = "xyes" ; then
     if test "x$have_utp" = "xyes"; then
         LIBUTP_CFLAGS="-I\$(top_srcdir)/third-party/"
         LIBUTP_LIBS="\$(top_builddir)/third-party/libutp/libutp.a"
-        LIBUTP_LIBS_QT="\$\${TRANSMISSION_TOP}/third-party/libutp/libutp.a"
+        LIBUTP_LIBS_QT="\$\${LEECHMISSION_TOP}/third-party/libutp/libutp.a"
         if test "x$libutp_extra_libs" != "x" ; then
             LIBUTP_LIBS="$LIBUTP_LIBS $libutp_extra_libs"
             LIBUTP_LIBS_QT="$LIBUTP_LIBS_QT $libutp_extra_libs"
@@ -305,7 +305,7 @@ AM_CONDITIONAL([BUILD_MINIUPNP],[test "x$upnp_version" = "xnone"])
 if test "x$upnp_version" = "xnone" ; then
     LIBUPNP_CFLAGS="-I\$(top_srcdir)/third-party/"
     LIBUPNP_LIBS="\$(top_builddir)/third-party/miniupnp/libminiupnp.a"
-    LIBUPNP_LIBS_QT="\$\${TRANSMISSION_TOP}/third-party/miniupnp/libminiupnp.a"
+    LIBUPNP_LIBS_QT="\$\${LEECHMISSION_TOP}/third-party/miniupnp/libminiupnp.a"
     dnl because this is the version that we bundle...
     AC_DEFINE(HAVE_MINIUPNP_16, 1, [Define to 1 if you have miniupnpc version 1.6])
 else
@@ -327,7 +327,7 @@ dnl  Allow usage of system natpmp library
 
 LIBNATPMP_CFLAGS="-I\$(top_srcdir)/third-party/libnatpmp/" 
 LIBNATPMP_LIBS="\$(top_builddir)/third-party/libnatpmp/libnatpmp.a" 
-LIBNATPMP_LIBS_QT="\$\${TRANSMISSION_TOP}/third-party/libnatpmp/libnatpmp.a" 
+LIBNATPMP_LIBS_QT="\$\${LEECHMISSION_TOP}/third-party/libnatpmp/libnatpmp.a" 
 build_bundled_natpmp="yes" 
 AC_ARG_ENABLE([external-natpmp], 
               AS_HELP_STRING([--enable-external-natpmp],[Use system external-natpmp]), 
@@ -406,12 +406,12 @@ if test "x$enable_nls" = "xyes" ; then
              [IT_PROG_INTLTOOL([0.35.0],[no-xml])],
              [AC_MSG_ERROR("--enable-nls requires intltool to be installed.")])
     AC_CHECK_HEADERS([libintl.h])
-    GETTEXT_PACKAGE=transmission-gtk
+    GETTEXT_PACKAGE=leechmission-gtk
     AC_SUBST(GETTEXT_PACKAGE)
     AC_DEFINE_UNQUOTED([GETTEXT_PACKAGE],["$GETTEXT_PACKAGE"],[Gettext package])
     AM_GLIB_GNU_GETTEXT
-    transmissionlocaledir='${prefix}/${DATADIRNAME}/locale'
-    AC_SUBST(transmissionlocaledir)
+    leechmissionlocaledir='${prefix}/${DATADIRNAME}/locale'
+    AC_SUBST(leechmissionlocaledir)
 fi
 AC_SUBST(INTLLIBS)
 
@@ -430,7 +430,7 @@ case $host_os in
      CXXFLAGS="$CXXFLAGS -mms-bitfields -mwin32 -mwindows"
      CPPFLAGS="$CPPFLAGS -DWIN32 -D_WIN32 -DWIN32_LEAN_AND_MEAN"
      LIBS="$LIBS -liphlpapi -lshell32 -lws2_32"
-     transmissionlocaledir="locale"
+     leechmissionlocaledir="locale"
      if test -z "$host_alias"; then
        hostaliaswindres=
      else
@@ -447,11 +447,11 @@ case $host_os in
 esac
 
 AC_ARG_ENABLE([lightweight],
-              AS_HELP_STRING([--enable-lightweight],[optimize libtransmission for low-resource systems: smaller cache size, prefer unencrypted peer connections, etc.]),
+              AS_HELP_STRING([--enable-lightweight],[optimize libleechmission for low-resource systems: smaller cache size, prefer unencrypted peer connections, etc.]),
               [enable_lightweight=${enableval}],
               [enable_lightweight="no"])
 if test "x$enable_lightweight" = "xyes" ; then
-  AC_DEFINE([TR_LIGHTWEIGHT],[1],[optimize libtransmission for low-resource systems])
+  AC_DEFINE([TR_LIGHTWEIGHT],[1],[optimize libleechmission for low-resource systems])
 fi
 
 AC_ARG_ENABLE([cli],
@@ -477,7 +477,7 @@ if test "x$build_mac" = "xyes" ; then
     # Make sure the proper Mac SDK is installed
     if test ! -d /Developer/SDKs/MacOSX10.5.sdk; then
       cat << EOF
-You need to install the Mac OS X 10.5 SDK in order to build Transmission
+You need to install the Mac OS X 10.5 SDK in order to build Leechmission
 with --enable-mac:
   Get your Xcode CD or package
   Restart the install
@@ -502,11 +502,11 @@ dnl
 dnl  Generate the output
 
 AC_CONFIG_FILES([Makefile
-                 transmission-gtk.spec
+                 leechmission-gtk.spec
                  cli/Makefile
                  daemon/Makefile
                  extras/Makefile
-                 libtransmission/Makefile
+                 libleechmission/Makefile
                  utils/Makefile
                  third-party/Makefile
                  third-party/dht/Makefile
@@ -522,9 +522,9 @@ AC_CONFIG_FILES([Makefile
                  web/style/Makefile
                  web/style/jqueryui/Makefile
                  web/style/jqueryui/images/Makefile
-                 web/style/transmission/Makefile
-                 web/style/transmission/images/Makefile
-                 web/style/transmission/images/buttons/Makefile
+                 web/style/leechmission/Makefile
+                 web/style/leechmission/images/Makefile
+                 web/style/leechmission/images/buttons/Makefile
                  web/javascript/Makefile
                  web/javascript/jquery/Makefile
                  po/Makefile.in])
@@ -538,7 +538,7 @@ Configuration:
    Source code location:                              ${srcdir}
    Compiler:                                          ${CXX}
 
-   Build libtransmission:                             yes
+   Build libleechmission:                             yes
       * optimized for low-resource systems:           ${enable_lightweight}
       * µTP enabled:                                  ${build_utp}
 

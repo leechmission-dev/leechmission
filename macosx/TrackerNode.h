@@ -1,7 +1,7 @@
 /******************************************************************************
  * $Id: TrackerNode.h 13251 2012-03-13 02:52:11Z livings124 $
  *
- * Copyright (c) 2009-2012 Transmission authors and contributors
+ * Copyright (c) 2009-2012 Leechmission authors and contributors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  *****************************************************************************/
 
 #import <Cocoa/Cocoa.h>
-#import <transmission.h>
+#import <leechmission.h>
 
 @class Torrent;
 

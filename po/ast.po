@@ -1,11 +1,11 @@
-# Asturian translation for transmission
+# Asturian translation for leechmission
 # Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
-# This file is distributed under the same license as the transmission package.
+# This file is distributed under the same license as the leechmission package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: transmission\n"
+"Project-Id-Version: leechmission\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2012-02-03 15:22-0600\n"
 "PO-Revision-Date: 2013-01-19 22:05+0000\n"
@@ -55,8 +55,8 @@ msgid "Sort by Si_ze"
 msgstr "Axeitar por Tama_ñu"
 
 #: ../gtk/actions.c:70
-msgid "_Show Transmission"
-msgstr "Amo_sar Transmission"
+msgid "_Show Leechmission"
+msgstr "Amo_sar Leechmission"
 
 #: ../gtk/actions.c:71
 msgid "Message _Log"
@@ -318,7 +318,7 @@ msgid "_Maximum peers:"
 msgstr "_Máximos peers:"
 
 #: ../gtk/details.c:559 ../gtk/torrent-cell-renderer.c:201
-#: ../libtransmission/verify.c:273
+#: ../libleechmission/verify.c:273
 msgid "Queued for verification"
 msgstr "En cola pa verificación"
 
@@ -885,9 +885,9 @@ msgstr "_Amosar:"
 
 #: ../gtk/main.c:308
 #, c-format
-msgid "Error registering Transmission as x-scheme-handler/magnet handler: %s"
+msgid "Error registering Leechmission as x-scheme-handler/magnet handler: %s"
 msgstr ""
-"Fallu rexistrando Transmission como un remanador de x-scheme y/o magnets: %s"
+"Fallu rexistrando Leechmission como un remanador de x-scheme y/o magnets: %s"
 
 #: ../gtk/main.c:477
 #, c-format
@@ -913,9 +913,9 @@ msgstr "Aniciar minimizáu nel área de notificación"
 msgid "Show version number and exit"
 msgstr "Amosar númberu versión y salir"
 
-#: ../gtk/main.c:630 ../gtk/transmission-gtk.desktop.in.h:1
-msgid "Transmission"
-msgstr "Transmission"
+#: ../gtk/main.c:630 ../gtk/leechmission-gtk.desktop.in.h:1
+msgid "Leechmission"
+msgstr "Leechmission"
 
 #. parse the command line
 #: ../gtk/main.c:634
@@ -934,12 +934,12 @@ msgstr ""
 
 #: ../gtk/main.c:739
 msgid ""
-"Transmission is a file-sharing program. When you run a torrent, its data "
+"Leechmission is a file-sharing program. When you run a torrent, its data "
 "will be made available to others by means of upload. You and you alone are "
 "fully responsible for exercising proper judgement and abiding by your local "
 "laws."
 msgstr ""
-"Transmission ye un programa pa compartir ficheros. Cuando executes un "
+"Leechmission ye un programa pa compartir ficheros. Cuando executes un "
 "torrent, los tos datos van tar disponibles nel restu d'usuarios pa xubilos. "
 "Tu y namái tu, yes responsable dafechu d'exercer un criteriu correutu y "
 "cumplir les lleis llocales."
@@ -1388,15 +1388,15 @@ msgid_plural "Seeding to %1$'d of %2$'d connected peers"
 msgstr[0] "Semando en %1$'d de %2$'d par coneutáu"
 msgstr[1] "Semando en %1$'d de %2$'d pares coneutaos"
 
-#: ../gtk/transmission-gtk.desktop.in.h:2
+#: ../gtk/leechmission-gtk.desktop.in.h:2
 msgid "BitTorrent Client"
 msgstr "Veceru de BitTorrent"
 
-#: ../gtk/transmission-gtk.desktop.in.h:3
-msgid "Transmission BitTorrent Client"
-msgstr "Cliente BitTorrent Transmission"
+#: ../gtk/leechmission-gtk.desktop.in.h:3
+msgid "Leechmission BitTorrent Client"
+msgstr "Cliente BitTorrent Leechmission"
 
-#: ../gtk/transmission-gtk.desktop.in.h:4
+#: ../gtk/leechmission-gtk.desktop.in.h:4
 msgid "Download and share files over BitTorrent"
 msgstr "Baxar y compartir ficheros per aciu de BitTorrent"
 
@@ -1435,11 +1435,11 @@ msgstr "(Llímite: %s)"
 #: ../gtk/tr-icon.c:109
 #, c-format
 msgid ""
-"Transmission\n"
+"Leechmission\n"
 "Up: %1$s %2$s\n"
 "Down: %3$s %4$s"
 msgstr ""
-"Transmission\n"
+"Leechmission\n"
 "Xuba: %1$s %2$s\n"
 "Descarga: %3$s %4$s"
 
@@ -1459,7 +1459,7 @@ msgstr "Máximu de _descargues actives:"
 msgid "Downloads sharing data in the last N minutes are _active:"
 msgstr "Datos de compartición de descargues nos caberos N minutos  _activos:"
 
-#: ../gtk/tr-prefs.c:286 ../libtransmission/torrent.c:1919
+#: ../gtk/tr-prefs.c:286 ../libleechmission/torrent.c:1919
 msgid "Incomplete"
 msgstr "Incompleto"
 
@@ -1506,8 +1506,8 @@ msgid "_Inhibit hibernation when torrents are active"
 msgstr "_Inhibir la hibernación cuando hai torrents activos"
 
 #: ../gtk/tr-prefs.c:384
-msgid "Show Transmission icon in the _notification area"
-msgstr "Amosar l'iconu de Transmission na estaya de _notificación"
+msgid "Show Leechmission icon in the _notification area"
+msgstr "Amosar l'iconu de Leechmission na estaya de _notificación"
 
 #: ../gtk/tr-prefs.c:389
 msgid "Notification"
@@ -1773,8 +1773,8 @@ msgid "Te_st Port"
 msgstr "_Comprobar puertu"
 
 #: ../gtk/tr-prefs.c:1222
-msgid "Pick a _random port every time Transmission is started"
-msgstr "Escoyer un puertu al debal_u cada vegada qu'anicie Transmission"
+msgid "Pick a _random port every time Leechmission is started"
+msgstr "Escoyer un puertu al debal_u cada vegada qu'anicie Leechmission"
 
 #: ../gtk/tr-prefs.c:1226
 msgid "Use UPnP or NAT-PMP port _forwarding from my router"
@@ -1801,8 +1801,8 @@ msgid "uTP is a tool for reducing network congestion."
 msgstr "uTP ye una ferramienta p'amenorgar la conxestión de rede"
 
 #: ../gtk/tr-prefs.c:1262
-msgid "Transmission Preferences"
-msgstr "Preferencies Transmission"
+msgid "Leechmission Preferences"
+msgstr "Preferencies Leechmission"
 
 #: ../gtk/tr-prefs.c:1276
 msgid "Torrents"
@@ -1966,7 +1966,7 @@ msgstr "XB/s"
 msgid "TB/s"
 msgstr "TB/s"
 
-#: ../cli/cli.c:115 ../gtk/util.c:87 ../libtransmission/utils.c:1509
+#: ../cli/cli.c:115 ../gtk/util.c:87 ../libleechmission/utils.c:1509
 msgid "None"
 msgstr "Nengún"
 
@@ -2033,7 +2033,7 @@ msgstr "URL non reconocida"
 
 #: ../gtk/util.c:565
 #, c-format
-msgid "Transmission doesn't know how to use \"%s\""
+msgid "Leechmission doesn't know how to use \"%s\""
 msgstr "Tranmission nun sabe cómo usar «%s»"
 
 #: ../gtk/util.c:570
@@ -2046,185 +2046,185 @@ msgstr ""
 "enllaces magnet de BitTorrent tienen una seición que contién «%s»."
 
 #. did caller give us an uninitialized val?
-#: ../libtransmission/bencode.c:1117
+#: ../libleechmission/bencode.c:1117
 msgid "Invalid metadata"
 msgstr "Metadatos nun válidos"
 
-#: ../libtransmission/bencode.c:1723 ../libtransmission/bencode.c:1751
+#: ../libleechmission/bencode.c:1723 ../libleechmission/bencode.c:1751
 #, c-format
 msgid "Couldn't save temporary file \"%1$s\": %2$s"
 msgstr "Nun pudo guardase'l ficheru temporal «%1$s»: %2$s"
 
-#: ../libtransmission/bencode.c:1738
+#: ../libleechmission/bencode.c:1738
 #, c-format
 msgid "Saved \"%s\""
 msgstr "«%s» guardáu"
 
-#: ../libtransmission/bencode.c:1743 ../libtransmission/blocklist.c:417
-#: ../libtransmission/rpcimpl.c:1260 ../libtransmission/rpcimpl.c:1271
-#: ../libtransmission/rpcimpl.c:1287
+#: ../libleechmission/bencode.c:1743 ../libleechmission/blocklist.c:417
+#: ../libleechmission/rpcimpl.c:1260 ../libleechmission/rpcimpl.c:1271
+#: ../libleechmission/rpcimpl.c:1287
 #, c-format
 msgid "Couldn't save file \"%1$s\": %2$s"
 msgstr "Nun puede guardase ficheru \"%1$s\": %2$s"
 
-#: ../libtransmission/blocklist.c:86 ../libtransmission/blocklist.c:325
-#: ../libtransmission/utils.c:438
+#: ../libleechmission/blocklist.c:86 ../libleechmission/blocklist.c:325
+#: ../libleechmission/utils.c:438
 #, c-format
 msgid "Couldn't read \"%1$s\": %2$s"
 msgstr "Nun puede lleese \"%1$s\": %2$s"
 
-#: ../libtransmission/blocklist.c:115
+#: ../libleechmission/blocklist.c:115
 #, c-format
 msgid "Blocklist \"%s\" contains %zu entries"
 msgstr "La llista de bloquéu «%s» contién %zu entraes"
 
 #. don't try to display the actual lines - it causes issues
-#: ../libtransmission/blocklist.c:368
+#: ../libleechmission/blocklist.c:368
 #, c-format
 msgid "blocklist skipped invalid address at line %d"
 msgstr "la llista de bloquéu saltó una direición inválida na llinia %d"
 
-#: ../libtransmission/blocklist.c:420
+#: ../libleechmission/blocklist.c:420
 #, c-format
 msgid "Blocklist \"%s\" updated with %zu entries"
 msgstr "Llista prieta «%s» anovada con %zu entraes"
 
-#: ../libtransmission/fdlimit.c:348 ../libtransmission/utils.c:574
-#: ../libtransmission/utils.c:585
+#: ../libleechmission/fdlimit.c:348 ../libleechmission/utils.c:574
+#: ../libleechmission/utils.c:585
 #, c-format
 msgid "Couldn't create \"%1$s\": %2$s"
 msgstr "Nun puede crease \"%1$s\": %2$s"
 
-#: ../libtransmission/fdlimit.c:369
+#: ../libleechmission/fdlimit.c:369
 #, c-format
 msgid "Couldn't open \"%1$s\": %2$s"
 msgstr "Nun puede abrise \"%1$s\": %2$s"
 
-#: ../libtransmission/fdlimit.c:384
+#: ../libleechmission/fdlimit.c:384
 #, c-format
 msgid "Couldn't truncate \"%1$s\": %2$s"
 msgstr "Nun pudo interrumpise «%1$s»: %2$s"
 
-#: ../libtransmission/fdlimit.c:670
+#: ../libleechmission/fdlimit.c:670
 #, c-format
 msgid "Couldn't create socket: %s"
 msgstr "Nun pudó crease socket: %s"
 
-#: ../libtransmission/makemeta.c:63
+#: ../libleechmission/makemeta.c:63
 #, c-format
 msgid "Torrent Creator is skipping file \"%s\": %s"
 msgstr "Creador Torrent saltóse ficheru \"%s\": %s"
 
-#: ../libtransmission/metainfo.c:533
+#: ../libleechmission/metainfo.c:533
 #, c-format
 msgid "Invalid metadata entry \"%s\""
 msgstr "Entrada de metadatos \"%s\" nun válida"
 
-#: ../libtransmission/natpmp.c:32
+#: ../libleechmission/natpmp.c:32
 msgid "Port Forwarding (NAT-PMP)"
 msgstr "Reunvíu de puertos (NAT-PMP)"
 
-#: ../libtransmission/natpmp.c:72
+#: ../libleechmission/natpmp.c:72
 #, c-format
 msgid "%s succeeded (%d)"
 msgstr "%s fechos (%d)"
 
-#: ../libtransmission/natpmp.c:141
+#: ../libleechmission/natpmp.c:141
 #, c-format
 msgid "Found public address \"%s\""
 msgstr "Atopada direición pública \"%s\""
 
-#: ../libtransmission/natpmp.c:176
+#: ../libleechmission/natpmp.c:176
 #, c-format
 msgid "no longer forwarding port %d"
 msgstr "yá nun se reunvía'l el puertu %d"
 
-#: ../libtransmission/natpmp.c:221
+#: ../libleechmission/natpmp.c:221
 #, c-format
 msgid "Port %d forwarded successfully"
 msgstr "Puertu %d reunviáu exitosamente"
 
-#: ../libtransmission/net.c:268
+#: ../libleechmission/net.c:268
 #, c-format
 msgid "Couldn't set source address %s on %d: %s"
 msgstr "Nun pudo afitase la direición fonte %s en %d: %s"
 
-#: ../libtransmission/net.c:284
+#: ../libleechmission/net.c:284
 #, c-format
 msgid "Couldn't connect socket %d to %s, port %d (errno %d - %s)"
 msgstr "Nun puede conectase socket %d a %s, puertu %d (errno %d - %s)"
 
-#: ../libtransmission/net.c:360
-msgid "Is another copy of Transmission already running?"
-msgstr "¿Hai otra copia de Transmission executándose yá?"
+#: ../libleechmission/net.c:360
+msgid "Is another copy of Leechmission already running?"
+msgstr "¿Hai otra copia de Leechmission executándose yá?"
 
-#: ../libtransmission/net.c:365
+#: ../libleechmission/net.c:365
 #, c-format
 msgid "Couldn't bind port %d on %s: %s"
 msgstr "Nun puede coneutase col puertu %d en %s: %s"
 
-#: ../libtransmission/net.c:367
+#: ../libleechmission/net.c:367
 #, c-format
 msgid "Couldn't bind port %d on %s: %s (%s)"
 msgstr "Nun pudo vinculase al puertu %d en %s: %s (%s)"
 
-#: ../libtransmission/peer-msgs.c:1898
+#: ../libleechmission/peer-msgs.c:1898
 #, c-format
 msgid "Please Verify Local Data! Piece #%zu is corrupt."
 msgstr "¡Verifica los tos datos llocales! La pieza #%zu ta frañada."
 
-#: ../libtransmission/port-forwarding.c:31
+#: ../libleechmission/port-forwarding.c:31
 msgid "Port Forwarding"
 msgstr "Reunvíu de puertos"
 
-#: ../libtransmission/port-forwarding.c:58
+#: ../libleechmission/port-forwarding.c:58
 msgid "Starting"
 msgstr "Entamando"
 
-#: ../libtransmission/port-forwarding.c:59
+#: ../libleechmission/port-forwarding.c:59
 msgid "Forwarded"
 msgstr "Reunviáu"
 
-#: ../libtransmission/port-forwarding.c:60
+#: ../libleechmission/port-forwarding.c:60
 msgid "Stopping"
 msgstr "Parando"
 
-#: ../libtransmission/port-forwarding.c:61
+#: ../libleechmission/port-forwarding.c:61
 msgid "Not forwarded"
 msgstr "Non reunviáu"
 
-#: ../libtransmission/port-forwarding.c:91 ../libtransmission/torrent.c:2060
+#: ../libleechmission/port-forwarding.c:91 ../libleechmission/torrent.c:2060
 #, c-format
 msgid "State changed from \"%1$s\" to \"%2$s\""
 msgstr "Camudáu estáu dende \"%1$s\" a \"%2$s\""
 
-#: ../libtransmission/port-forwarding.c:181
+#: ../libleechmission/port-forwarding.c:181
 msgid "Stopped"
 msgstr "Paráu"
 
 #. first %s is the application name
 #. second %s is the version number
-#: ../libtransmission/session.c:722
+#: ../libleechmission/session.c:722
 #, c-format
 msgid "%s %s started"
 msgstr "%s %s Entamáu"
 
-#: ../libtransmission/session.c:1943
+#: ../libleechmission/session.c:1943
 #, c-format
 msgid "Loaded %d torrents"
 msgstr "Cargaos %d torrents"
 
-#: ../libtransmission/torrent.c:525
+#: ../libleechmission/torrent.c:525
 #, c-format
 msgid "Tracker warning: \"%s\""
 msgstr "Avisu de tracker: \"%s\""
 
-#: ../libtransmission/torrent.c:532
+#: ../libleechmission/torrent.c:532
 #, c-format
 msgid "Tracker error: \"%s\""
 msgstr "Fallu tracker: \"%s\""
 
-#: ../libtransmission/torrent.c:787
+#: ../libleechmission/torrent.c:787
 msgid ""
 "No data found! Ensure your drives are connected or use \"Set Location\". To "
 "re-download, remove the torrent and re-add it."
@@ -2233,48 +2233,48 @@ msgstr ""
 "usa «Afitar llocalización». Pa volver a baxalo, desanicia'l torrent y vuelvi "
 "a amestalu."
 
-#: ../libtransmission/torrent.c:1677
+#: ../libleechmission/torrent.c:1677
 msgid "Restarted manually -- disabling its seed ratio"
 msgstr ""
 "Reanicióse de mou manual -- desactivando la rellación de compartición"
 
-#: ../libtransmission/torrent.c:1829
+#: ../libleechmission/torrent.c:1829
 msgid "Removing torrent"
 msgstr "Desaniciando torrent"
 
-#: ../libtransmission/torrent.c:1913
+#: ../libleechmission/torrent.c:1913
 msgid "Done"
 msgstr "Fecho"
 
-#: ../libtransmission/torrent.c:1916
+#: ../libleechmission/torrent.c:1916
 msgid "Complete"
 msgstr "Completáu"
 
-#: ../libtransmission/upnp.c:35
+#: ../libleechmission/upnp.c:35
 msgid "Port Forwarding (UPnP)"
 msgstr "Reunvíu de puertos (UPnP)"
 
-#: ../libtransmission/upnp.c:199
+#: ../libleechmission/upnp.c:199
 #, c-format
 msgid "Found Internet Gateway Device \"%s\""
 msgstr "Atopáu Preseu Gateway Internet \"%s\""
 
-#: ../libtransmission/upnp.c:202
+#: ../libleechmission/upnp.c:202
 #, c-format
 msgid "Local Address is \"%s\""
 msgstr "Direición Llocal ye \"%s\""
 
-#: ../libtransmission/upnp.c:231
+#: ../libleechmission/upnp.c:231
 #, c-format
 msgid "Port %d isn't forwarded"
 msgstr "El puertu %d nun ta redirixíu"
 
-#: ../libtransmission/upnp.c:242
+#: ../libleechmission/upnp.c:242
 #, c-format
 msgid "Stopping port forwarding through \"%s\", service \"%s\""
 msgstr "Parando reunvíu de puertos a traviés de \"%s\", serviciu \"%s\""
 
-#: ../libtransmission/upnp.c:275
+#: ../libleechmission/upnp.c:275
 #, c-format
 msgid ""
 "Port forwarding through \"%s\", service \"%s\". (local address: %s:%d)"
@@ -2282,25 +2282,25 @@ msgstr ""
 "Reunvíu de puertos a traviés de «%s», serviciu «%s». (direición llocal: "
 "%s:%d)"
 
-#: ../libtransmission/upnp.c:280
+#: ../libleechmission/upnp.c:280
 msgid "Port forwarding successful!"
 msgstr "¡Reunvíu de puertos exitosu!"
 
-#: ../libtransmission/utils.c:452
+#: ../libleechmission/utils.c:452
 msgid "Not a regular file"
 msgstr "Nun ye un ficheru normal"
 
-#: ../libtransmission/utils.c:470
+#: ../libleechmission/utils.c:470
 msgid "Memory allocation failed"
 msgstr "Falló la llocalización de memoria"
 
 #. Node exists but isn't a folder
-#: ../libtransmission/utils.c:584
+#: ../libleechmission/utils.c:584
 #, c-format
 msgid "File \"%s\" is in the way"
 msgstr "Ficheru \"%s\" ta nel camín"
 
-#: ../libtransmission/verify.c:229
+#: ../libleechmission/verify.c:229
 msgid "Verifying torrent"
 msgstr "Verificando torrent"
 
@@ -2423,8 +2423,8 @@ msgstr "Verificando torrent"
 #~ msgid "Announce"
 #~ msgstr "Anunciu"
 
-#~ msgid "<big><b>Quit Transmission?</b></big>"
-#~ msgstr "<big><b>¿Zarrar Transmission?</b></big>"
+#~ msgid "<big><b>Quit Leechmission?</b></big>"
+#~ msgstr "<big><b>¿Zarrar Leechmission?</b></big>"
 
 #~ msgid "_Don't ask me again"
 #~ msgstr "_Nun entrugame otra vegada"
@@ -2479,8 +2479,8 @@ msgstr "Verificando torrent"
 #~ msgid "Waiting to verify local data"
 #~ msgstr "Esperando pa verificar datos llocales"
 
-#~ msgid "Transmission Bittorrent Client"
-#~ msgstr "Cliente BitTorrent Transmission"
+#~ msgid "Leechmission Bittorrent Client"
+#~ msgstr "Cliente BitTorrent Leechmission"
 
 #~ msgid "BitTorrent Activity"
 #~ msgstr "Actividá BitTorrent"
@@ -2828,11 +2828,11 @@ msgstr "Verificando torrent"
 #~ msgstr "Abrir URL..."
 
 #~ msgid ""
-#~ "Transmission is already running, but is not responding. To start a new "
-#~ "session, you must first close the existing Transmission process."
+#~ "Leechmission is already running, but is not responding. To start a new "
+#~ "session, you must first close the existing Leechmission process."
 #~ msgstr ""
-#~ "Transmission ta executándose, pero nun respuende. P'aniciar una sesión "
-#~ "nueva, tienes de zarrar enantes el procesu esistente de Transmission."
+#~ "Leechmission ta executándose, pero nun respuende. P'aniciar una sesión "
+#~ "nueva, tienes de zarrar enantes el procesu esistente de Leechmission."
 
 #, c-format
 #~ msgid "%1$s (%2$.1f%%); %3$s Unverified"

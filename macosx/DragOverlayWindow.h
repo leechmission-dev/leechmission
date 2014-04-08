@@ -1,7 +1,7 @@
 /******************************************************************************
  * $Id: DragOverlayWindow.h 13162 2012-01-14 17:12:04Z livings124 $
  *
- * Copyright (c) 2007-2012 Transmission authors and contributors
+ * Copyright (c) 2007-2012 Leechmission authors and contributors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  *****************************************************************************/
 
 #import <Cocoa/Cocoa.h>
-#import <transmission.h>
+#import <leechmission.h>
 
 @interface DragOverlayWindow : NSWindow
 {

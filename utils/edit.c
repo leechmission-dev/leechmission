@@ -16,13 +16,13 @@
 
 #include <event2/buffer.h>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/tr-getopt.h>
-#include <libtransmission/utils.h>
-#include <libtransmission/variant.h>
-#include <libtransmission/version.h>
+#include <libleechmission/leechmission.h>
+#include <libleechmission/tr-getopt.h>
+#include <libleechmission/utils.h>
+#include <libleechmission/variant.h>
+#include <libleechmission/version.h>
 
-#define MY_NAME "transmission-edit"
+#define MY_NAME "leechmission-edit"
 
 static int fileCount = 0;
 static bool showVersion = false;

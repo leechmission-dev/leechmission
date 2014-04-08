@@ -23,8 +23,8 @@
 #include <QPixmapCache>
 #include <QStyleOptionProgressBar>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/utils.h>
+#include <libleechmission/leechmission.h>
+#include <libleechmission/utils.h>
 
 #include "torrent.h"
 #include "torrent-delegate-min.h"

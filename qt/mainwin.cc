@@ -19,9 +19,9 @@
 #include <QFileDialog>
 #include <QMessageBox>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/utils.h>
-#include <libtransmission/version.h>
+#include <libleechmission/leechmission.h>
+#include <libleechmission/utils.h>
+#include <libleechmission/version.h>
 
 #include "about.h"
 #include "add-data.h"
@@ -681,13 +681,13 @@ TrMainWindow :: copyMagnetLinkToClipboard ()
 void
 TrMainWindow :: openDonate ()
 {
-  QDesktopServices :: openUrl (QUrl ("http://www.transmissionbt.com/donate.php"));
+  QDesktopServices :: openUrl (QUrl ("http://www.leechmissionbt.com/donate.php"));
 }
 
 void
 TrMainWindow :: openHelp ()
 {
-  const char * fmt = "http://www.transmissionbt.com/help/gtk/%d.%dx";
+  const char * fmt = "http://www.leechmissionbt.com/help/gtk/%d.%dx";
   int major, minor;
   sscanf (SHORT_VERSION_STRING, "%d.%d", &major, &minor);
   char url[128];
@@ -698,7 +698,7 @@ TrMainWindow :: openHelp ()
 void
 TrMainWindow :: refreshTitle ()
 {
-  QString title ("Transmission");
+  QString title ("Leechmission");
   const QUrl url (mySession.getRemoteUrl ());
   if (!url.isEmpty ())
     title += tr (" - %1:%2").arg (url.host ()).arg (url.port ());

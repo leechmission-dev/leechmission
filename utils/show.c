@@ -20,14 +20,14 @@
 
 #include <event2/buffer.h>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/tr-getopt.h>
-#include <libtransmission/utils.h>
-#include <libtransmission/web.h> /* tr_webGetResponseStr () */
-#include <libtransmission/variant.h>
-#include <libtransmission/version.h>
+#include <libleechmission/leechmission.h>
+#include <libleechmission/tr-getopt.h>
+#include <libleechmission/utils.h>
+#include <libleechmission/web.h> /* tr_webGetResponseStr () */
+#include <libleechmission/variant.h>
+#include <libleechmission/version.h>
 
-#define MY_NAME "transmission-show"
+#define MY_NAME "leechmission-show"
 #define TIMEOUT_SECS 30
 
 #define MEM_K 1024

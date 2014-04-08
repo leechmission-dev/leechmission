@@ -55,8 +55,8 @@ msgid "Sort by Si_ze"
 msgstr "Bo_yuta göre Sırala"
 
 #: ../gtk/actions.c:70
-msgid "_Show Transmission"
-msgstr "_Transmission'ı Göster"
+msgid "_Show Leechmission"
+msgstr "_Leechmission'ı Göster"
 
 #: ../gtk/actions.c:71
 msgid "Message _Log"
@@ -318,7 +318,7 @@ msgid "_Maximum peers:"
 msgstr "_Azami eş:"
 
 #: ../gtk/details.c:559 ../gtk/torrent-cell-renderer.c:201
-#: ../libtransmission/verify.c:273
+#: ../libleechmission/verify.c:273
 msgid "Queued for verification"
 msgstr "Doğrulama için kuyrukta"
 
@@ -882,9 +882,9 @@ msgstr "_Göster"
 
 #: ../gtk/main.c:308
 #, c-format
-msgid "Error registering Transmission as x-scheme-handler/magnet handler: %s"
+msgid "Error registering Leechmission as x-scheme-handler/magnet handler: %s"
 msgstr ""
-"Transmission'un bir x-scheme-handler/magnet işleyicisi olarak kaydında hata: "
+"Leechmission'un bir x-scheme-handler/magnet işleyicisi olarak kaydında hata: "
 "%s"
 
 #: ../gtk/main.c:477
@@ -910,9 +910,9 @@ msgstr "Bildirim alanında küçültülmüş olarak başlat"
 msgid "Show version number and exit"
 msgstr "Sürüm numarasını göster ve çık"
 
-#: ../gtk/main.c:630 ../gtk/transmission-gtk.desktop.in.h:1
-msgid "Transmission"
-msgstr "Transmission"
+#: ../gtk/main.c:630 ../gtk/leechmission-gtk.desktop.in.h:1
+msgid "Leechmission"
+msgstr "Leechmission"
 
 #. parse the command line
 #: ../gtk/main.c:634
@@ -931,12 +931,12 @@ msgstr ""
 
 #: ../gtk/main.c:739
 msgid ""
-"Transmission is a file-sharing program. When you run a torrent, its data "
+"Leechmission is a file-sharing program. When you run a torrent, its data "
 "will be made available to others by means of upload. You and you alone are "
 "fully responsible for exercising proper judgement and abiding by your local "
 "laws."
 msgstr ""
-"Transmission bir dosya-paylaşım yazılımıdır. Bir torrent çalıştırdığınızda, "
+"Leechmission bir dosya-paylaşım yazılımıdır. Bir torrent çalıştırdığınızda, "
 "veriler karşıya yükleme yoluyla herkesin erişimine açılacaktır. Uygun karar "
 "verme ve yerel yasalarınıza uyma konusunda tüm sorumluluk yalnız size aittir."
 
@@ -974,7 +974,7 @@ msgstr "Hızlı ve kolay bir BitTorrent istemcisi"
 
 #: ../gtk/main.c:1337
 msgid "Copyright (c) The Transmission Project"
-msgstr "(c) Telif Hakkı Transmission projesine aittir."
+msgstr "(c) Telif Hakkı Leechmission projesine aittir."
 
 #. Translators: translate "translator-credits" as your name
 #. to have it appear in the credits in the "About"
@@ -1429,15 +1429,15 @@ msgid_plural "Seeding to %1$'d of %2$'d connected peers"
 msgstr[0] "Bağlı eşe gönderiliyor: %1$'d / %2$'d"
 msgstr[1] "Bağlı eşe gönderiliyor: %1$'d / %2$'d"
 
-#: ../gtk/transmission-gtk.desktop.in.h:2
+#: ../gtk/leechmission-gtk.desktop.in.h:2
 msgid "BitTorrent Client"
 msgstr "BitTorrent İstemcisi"
 
-#: ../gtk/transmission-gtk.desktop.in.h:3
-msgid "Transmission BitTorrent Client"
-msgstr "Transmission BitTorrent İstemcisi"
+#: ../gtk/leechmission-gtk.desktop.in.h:3
+msgid "Leechmission BitTorrent Client"
+msgstr "Leechmission BitTorrent İstemcisi"
 
-#: ../gtk/transmission-gtk.desktop.in.h:4
+#: ../gtk/leechmission-gtk.desktop.in.h:4
 msgid "Download and share files over BitTorrent"
 msgstr "Dosyaları BitTorrent üzerinden indir ve paylaş"
 
@@ -1476,11 +1476,11 @@ msgstr "(Sınır: %s)"
 #: ../gtk/tr-icon.c:109
 #, c-format
 msgid ""
-"Transmission\n"
+"Leechmission\n"
 "Up: %1$s %2$s\n"
 "Down: %3$s %4$s"
 msgstr ""
-"Transmission\n"
+"Leechmission\n"
 "Gön: %1$s %2$s\n"
 "İnd: %3$s %4$s"
 
@@ -1500,7 +1500,7 @@ msgstr "En fazla _etkin indirme sayısı:"
 msgid "Downloads sharing data in the last N minutes are _active:"
 msgstr "Son N dakikada veri paylaşan _etkin indirmeler:"
 
-#: ../gtk/tr-prefs.c:286 ../libtransmission/torrent.c:1919
+#: ../gtk/tr-prefs.c:286 ../libleechmission/torrent.c:1919
 msgid "Incomplete"
 msgstr "Tamamlanmadı"
 
@@ -1547,8 +1547,8 @@ msgid "_Inhibit hibernation when torrents are active"
 msgstr "Torrentler indirilirken _uykuya geçmeyi engelle"
 
 #: ../gtk/tr-prefs.c:384
-msgid "Show Transmission icon in the _notification area"
-msgstr "Transmission simgesini _bildirim alanında göster"
+msgid "Show Leechmission icon in the _notification area"
+msgstr "Leechmission simgesini _bildirim alanında göster"
 
 #: ../gtk/tr-prefs.c:389
 msgid "Notification"
@@ -1812,8 +1812,8 @@ msgid "Te_st Port"
 msgstr "Bağlantı Noktasını Sı_na"
 
 #: ../gtk/tr-prefs.c:1222
-msgid "Pick a _random port every time Transmission is started"
-msgstr "Transmission her başlatıldığında _rastgele bir bağlantı noktası seç."
+msgid "Pick a _random port every time Leechmission is started"
+msgstr "Leechmission her başlatıldığında _rastgele bir bağlantı noktası seç."
 
 #: ../gtk/tr-prefs.c:1226
 msgid "Use UPnP or NAT-PMP port _forwarding from my router"
@@ -1841,8 +1841,8 @@ msgid "uTP is a tool for reducing network congestion."
 msgstr "uTP, ağ tıkanıklığını azaltmaya yarayan bir araçtır."
 
 #: ../gtk/tr-prefs.c:1262
-msgid "Transmission Preferences"
-msgstr "Transmission Tercihleri"
+msgid "Leechmission Preferences"
+msgstr "Leechmission Tercihleri"
 
 #: ../gtk/tr-prefs.c:1276
 msgid "Torrents"
@@ -2006,7 +2006,7 @@ msgstr "GB/sn"
 msgid "TB/s"
 msgstr "TB/sn"
 
-#: ../cli/cli.c:115 ../gtk/util.c:87 ../libtransmission/utils.c:1509
+#: ../cli/cli.c:115 ../gtk/util.c:87 ../libleechmission/utils.c:1509
 msgid "None"
 msgstr "Hiçbiri"
 
@@ -2073,8 +2073,8 @@ msgstr "Tanınmayan Web Adresi"
 
 #: ../gtk/util.c:565
 #, c-format
-msgid "Transmission doesn't know how to use \"%s\""
-msgstr "Transmission nasıl kullanılacağını bilmiyor: \"%s\""
+msgid "Leechmission doesn't know how to use \"%s\""
+msgstr "Leechmission nasıl kullanılacağını bilmiyor: \"%s\""
 
 #: ../gtk/util.c:570
 #, c-format
@@ -2086,186 +2086,186 @@ msgstr ""
 "BitTorrent magnet bağlantılarında \"%s\" içeren bir bölüm bulunur."
 
 #. did caller give us an uninitialized val?
-#: ../libtransmission/bencode.c:1117
+#: ../libleechmission/bencode.c:1117
 msgid "Invalid metadata"
 msgstr "Geçersiz üstveri"
 
-#: ../libtransmission/bencode.c:1723 ../libtransmission/bencode.c:1751
+#: ../libleechmission/bencode.c:1723 ../libleechmission/bencode.c:1751
 #, c-format
 msgid "Couldn't save temporary file \"%1$s\": %2$s"
 msgstr "Geçici dosya kaydedilemedi, \"%1$s\": %2$s"
 
-#: ../libtransmission/bencode.c:1738
+#: ../libleechmission/bencode.c:1738
 #, c-format
 msgid "Saved \"%s\""
 msgstr "Kaydedildi: \"%s\""
 
-#: ../libtransmission/bencode.c:1743 ../libtransmission/blocklist.c:417
-#: ../libtransmission/rpcimpl.c:1260 ../libtransmission/rpcimpl.c:1271
-#: ../libtransmission/rpcimpl.c:1287
+#: ../libleechmission/bencode.c:1743 ../libleechmission/blocklist.c:417
+#: ../libleechmission/rpcimpl.c:1260 ../libleechmission/rpcimpl.c:1271
+#: ../libleechmission/rpcimpl.c:1287
 #, c-format
 msgid "Couldn't save file \"%1$s\": %2$s"
 msgstr "Dosya kaydedilemedi \"%1$s\": %2$s"
 
-#: ../libtransmission/blocklist.c:86 ../libtransmission/blocklist.c:325
-#: ../libtransmission/utils.c:438
+#: ../libleechmission/blocklist.c:86 ../libleechmission/blocklist.c:325
+#: ../libleechmission/utils.c:438
 #, c-format
 msgid "Couldn't read \"%1$s\": %2$s"
 msgstr "Okunamadı, \"%1$s\": %2$s"
 
-#: ../libtransmission/blocklist.c:115
+#: ../libleechmission/blocklist.c:115
 #, c-format
 msgid "Blocklist \"%s\" contains %zu entries"
 msgstr "Engelleme listesi \"%s\", %zu adet girdi içerir"
 
 #. don't try to display the actual lines - it causes issues
-#: ../libtransmission/blocklist.c:368
+#: ../libleechmission/blocklist.c:368
 #, c-format
 msgid "blocklist skipped invalid address at line %d"
 msgstr ""
 "%d satırındaki geçersiz adres yüzünden engelli listesi alımı atlandı."
 
-#: ../libtransmission/blocklist.c:420
+#: ../libleechmission/blocklist.c:420
 #, c-format
 msgid "Blocklist \"%s\" updated with %zu entries"
 msgstr "\"%s\" engelleme listesi %zu öğe ile güncellendi"
 
-#: ../libtransmission/fdlimit.c:348 ../libtransmission/utils.c:574
-#: ../libtransmission/utils.c:585
+#: ../libleechmission/fdlimit.c:348 ../libleechmission/utils.c:574
+#: ../libleechmission/utils.c:585
 #, c-format
 msgid "Couldn't create \"%1$s\": %2$s"
 msgstr "Oluşturulamadı, \"%1$s\": %2$s"
 
-#: ../libtransmission/fdlimit.c:369
+#: ../libleechmission/fdlimit.c:369
 #, c-format
 msgid "Couldn't open \"%1$s\": %2$s"
 msgstr "Açılamadı, \"%1$s\": %2$s"
 
-#: ../libtransmission/fdlimit.c:384
+#: ../libleechmission/fdlimit.c:384
 #, c-format
 msgid "Couldn't truncate \"%1$s\": %2$s"
 msgstr "Kesilemedi, \"%1$s\": %2$s"
 
-#: ../libtransmission/fdlimit.c:670
+#: ../libleechmission/fdlimit.c:670
 #, c-format
 msgid "Couldn't create socket: %s"
 msgstr "Soket oluşturulamadı: %s"
 
-#: ../libtransmission/makemeta.c:63
+#: ../libleechmission/makemeta.c:63
 #, c-format
 msgid "Torrent Creator is skipping file \"%s\": %s"
 msgstr "Torrent Oluşturucunun atladığı dosya, \"%s\": %s"
 
-#: ../libtransmission/metainfo.c:533
+#: ../libleechmission/metainfo.c:533
 #, c-format
 msgid "Invalid metadata entry \"%s\""
 msgstr "Geçersiz \"%s\" üstveri girişi"
 
-#: ../libtransmission/natpmp.c:32
+#: ../libleechmission/natpmp.c:32
 msgid "Port Forwarding (NAT-PMP)"
 msgstr "Bağlantı Noktası Yönlendirme (NAT-PMP)"
 
-#: ../libtransmission/natpmp.c:72
+#: ../libleechmission/natpmp.c:72
 #, c-format
 msgid "%s succeeded (%d)"
 msgstr "%s başarıldı (%d)"
 
-#: ../libtransmission/natpmp.c:141
+#: ../libleechmission/natpmp.c:141
 #, c-format
 msgid "Found public address \"%s\""
 msgstr "Genel adres bulundu \"%s\""
 
-#: ../libtransmission/natpmp.c:176
+#: ../libleechmission/natpmp.c:176
 #, c-format
 msgid "no longer forwarding port %d"
 msgstr "Bağlantı noktası %d artık yönlendirilmiyor"
 
-#: ../libtransmission/natpmp.c:221
+#: ../libleechmission/natpmp.c:221
 #, c-format
 msgid "Port %d forwarded successfully"
 msgstr "Bağlantı noktası %d başarıyla yönlendirildi"
 
-#: ../libtransmission/net.c:268
+#: ../libleechmission/net.c:268
 #, c-format
 msgid "Couldn't set source address %s on %d: %s"
 msgstr "%s kaynak adresi %d üzerinde ayarlanamadı: %s"
 
-#: ../libtransmission/net.c:284
+#: ../libleechmission/net.c:284
 #, c-format
 msgid "Couldn't connect socket %d to %s, port %d (errno %d - %s)"
 msgstr "%d soketi, %s'e bağlanamadı, port %d (errno %d - %s)"
 
-#: ../libtransmission/net.c:360
-msgid "Is another copy of Transmission already running?"
-msgstr "Halihazırda diğer bir Transmission kopyası mı çalışıyor?"
+#: ../libleechmission/net.c:360
+msgid "Is another copy of Leechmission already running?"
+msgstr "Halihazırda diğer bir Leechmission kopyası mı çalışıyor?"
 
-#: ../libtransmission/net.c:365
+#: ../libleechmission/net.c:365
 #, c-format
 msgid "Couldn't bind port %d on %s: %s"
 msgstr "%d bağlantı noktası %s: %s üzerine bağlanamadı"
 
-#: ../libtransmission/net.c:367
+#: ../libleechmission/net.c:367
 #, c-format
 msgid "Couldn't bind port %d on %s: %s (%s)"
 msgstr "%d bağlantı noktası %s üzerine bağlanamaz: %s (%s)"
 
-#: ../libtransmission/peer-msgs.c:1898
+#: ../libleechmission/peer-msgs.c:1898
 #, c-format
 msgid "Please Verify Local Data! Piece #%zu is corrupt."
 msgstr "Lütfen Yerel Veriyi Doğrulayın! #%zu parçası bozuk."
 
-#: ../libtransmission/port-forwarding.c:31
+#: ../libleechmission/port-forwarding.c:31
 msgid "Port Forwarding"
 msgstr "Bağlantı Noktası Yönlendirme"
 
-#: ../libtransmission/port-forwarding.c:58
+#: ../libleechmission/port-forwarding.c:58
 msgid "Starting"
 msgstr "Başlıyor"
 
-#: ../libtransmission/port-forwarding.c:59
+#: ../libleechmission/port-forwarding.c:59
 msgid "Forwarded"
 msgstr "Yönlendirildi"
 
-#: ../libtransmission/port-forwarding.c:60
+#: ../libleechmission/port-forwarding.c:60
 msgid "Stopping"
 msgstr "Durduruluyor"
 
-#: ../libtransmission/port-forwarding.c:61
+#: ../libleechmission/port-forwarding.c:61
 msgid "Not forwarded"
 msgstr "Yönlendirilmedi"
 
-#: ../libtransmission/port-forwarding.c:91 ../libtransmission/torrent.c:2060
+#: ../libleechmission/port-forwarding.c:91 ../libleechmission/torrent.c:2060
 #, c-format
 msgid "State changed from \"%1$s\" to \"%2$s\""
 msgstr "Durum değiştirildi:  \"%1$s\" > \"%2$s\""
 
-#: ../libtransmission/port-forwarding.c:181
+#: ../libleechmission/port-forwarding.c:181
 msgid "Stopped"
 msgstr "Durduruldu"
 
 #. first %s is the application name
 #. second %s is the version number
-#: ../libtransmission/session.c:722
+#: ../libleechmission/session.c:722
 #, c-format
 msgid "%s %s started"
 msgstr "%s %s başlatıldı"
 
-#: ../libtransmission/session.c:1943
+#: ../libleechmission/session.c:1943
 #, c-format
 msgid "Loaded %d torrents"
 msgstr "%d torrent yüklendi"
 
-#: ../libtransmission/torrent.c:525
+#: ../libleechmission/torrent.c:525
 #, c-format
 msgid "Tracker warning: \"%s\""
 msgstr "İzleyici uyarısı: \"%s\""
 
-#: ../libtransmission/torrent.c:532
+#: ../libleechmission/torrent.c:532
 #, c-format
 msgid "Tracker error: \"%s\""
 msgstr "İzleyici hatası: \"%s\""
 
-#: ../libtransmission/torrent.c:787
+#: ../libleechmission/torrent.c:787
 msgid ""
 "No data found! Ensure your drives are connected or use \"Set Location\". To "
 "re-download, remove the torrent and re-add it."
@@ -2274,72 +2274,72 @@ msgstr ""
 "Ayarla\"yı kullanın. Yeniden indirmek için, torrenti kaldırın ve yeniden "
 "ekleyin."
 
-#: ../libtransmission/torrent.c:1677
+#: ../libleechmission/torrent.c:1677
 msgid "Restarted manually -- disabling its seed ratio"
 msgstr "Elle yeniden başlatıldı -- gönderim oranı etkizisleştiriliyor"
 
-#: ../libtransmission/torrent.c:1829
+#: ../libleechmission/torrent.c:1829
 msgid "Removing torrent"
 msgstr "Torrent kaldırılıyor"
 
-#: ../libtransmission/torrent.c:1913
+#: ../libleechmission/torrent.c:1913
 msgid "Done"
 msgstr "Bitti"
 
-#: ../libtransmission/torrent.c:1916
+#: ../libleechmission/torrent.c:1916
 msgid "Complete"
 msgstr "Tamamlandı"
 
-#: ../libtransmission/upnp.c:35
+#: ../libleechmission/upnp.c:35
 msgid "Port Forwarding (UPnP)"
 msgstr "Bağlantı Noktası Yönlendirme (UPnP)"
 
-#: ../libtransmission/upnp.c:199
+#: ../libleechmission/upnp.c:199
 #, c-format
 msgid "Found Internet Gateway Device \"%s\""
 msgstr "İnternet Ağ Geçidi Aygıtı Bulundu: \"%s\""
 
-#: ../libtransmission/upnp.c:202
+#: ../libleechmission/upnp.c:202
 #, c-format
 msgid "Local Address is \"%s\""
 msgstr "Yerel Adres \"%s\""
 
-#: ../libtransmission/upnp.c:231
+#: ../libleechmission/upnp.c:231
 #, c-format
 msgid "Port %d isn't forwarded"
 msgstr "Bağlantı noktası %d yönlendirilmedi"
 
-#: ../libtransmission/upnp.c:242
+#: ../libleechmission/upnp.c:242
 #, c-format
 msgid "Stopping port forwarding through \"%s\", service \"%s\""
 msgstr ""
 "\"%s\" hizmeti, \"%s\" aracılığıyla bağlantı noktası yönlendirmeyi durduruyor"
 
-#: ../libtransmission/upnp.c:275
+#: ../libleechmission/upnp.c:275
 #, c-format
 msgid ""
 "Port forwarding through \"%s\", service \"%s\". (local address: %s:%d)"
 msgstr "\"%s\" portu üzerinden, \"%s\" servisi. (yerel adres: %s:%d)"
 
-#: ../libtransmission/upnp.c:280
+#: ../libleechmission/upnp.c:280
 msgid "Port forwarding successful!"
 msgstr "Bağlantı noktası yönlendirme başarılı!"
 
-#: ../libtransmission/utils.c:452
+#: ../libleechmission/utils.c:452
 msgid "Not a regular file"
 msgstr "Düzenli bir dosya değil"
 
-#: ../libtransmission/utils.c:470
+#: ../libleechmission/utils.c:470
 msgid "Memory allocation failed"
 msgstr "Bellek tahsisi başarısız"
 
 #. Node exists but isn't a folder
-#: ../libtransmission/utils.c:584
+#: ../libleechmission/utils.c:584
 #, c-format
 msgid "File \"%s\" is in the way"
 msgstr "Dosya \"%s\" yol üstünde bulunuyor"
 
-#: ../libtransmission/verify.c:229
+#: ../libleechmission/verify.c:229
 msgid "Verifying torrent"
 msgstr "Torrent doğrulanıyor"
 
@@ -2547,8 +2547,8 @@ msgstr "Torrent doğrulanıyor"
 #~ msgid "Waiting to verify local data"
 #~ msgstr "Yerel verinin doğrulanması bekleniyor"
 
-#~ msgid "Transmission Bittorrent Client"
-#~ msgstr "Transmission Bittorrent İstemcisi"
+#~ msgid "Leechmission Bittorrent Client"
+#~ msgstr "Leechmission Bittorrent İstemcisi"
 
 #~ msgid "Tier"
 #~ msgstr "Bağlayıcı"
@@ -2637,7 +2637,7 @@ msgstr "Torrent doğrulanıyor"
 #~ msgstr "Sistem tepsisinde başlat"
 
 #~ msgid "Copyright 2005-2009 The Transmission Project"
-#~ msgstr "Telif Hakkı 2005-2009 Transmission Projesi"
+#~ msgstr "Telif Hakkı 2005-2009 Leechmission Projesi"
 
 #~ msgid "Show _icon in the desktop Notification Area"
 #~ msgstr "Masaüstü bildirim alanında _simgeyi göster"
@@ -2744,8 +2744,8 @@ msgstr "Torrent doğrulanıyor"
 #~ msgid "%1$s (%2$.1f%%)"
 #~ msgstr "%1$s (%2$.1f%%)"
 
-#~ msgid "<big><b>Quit Transmission?</b></big>"
-#~ msgstr "<big><b>Transmission' dan çık?</b></big>"
+#~ msgid "<big><b>Quit Leechmission?</b></big>"
+#~ msgstr "<big><b>Leechmission' dan çık?</b></big>"
 
 #~ msgid "Torrent created!"
 #~ msgstr "Torrent oluşturuldu!"
@@ -2759,8 +2759,8 @@ msgstr "Torrent doğrulanıyor"
 #~ msgid "This may take a moment..."
 #~ msgstr "Bu işlem biraz zaman alabilir..."
 
-#~ msgid "Show Transmission in the system _tray"
-#~ msgstr "Transmission' u sistem _tepsisinde göster"
+#~ msgid "Show Leechmission in the system _tray"
+#~ msgstr "Leechmission' u sistem _tepsisinde göster"
 
 #~ msgid "Show popup _notifications"
 #~ msgstr "_Bildirim pencereleri göster"
@@ -2837,8 +2837,8 @@ msgstr "Torrent doğrulanıyor"
 #~ msgid "_Edit Trackers"
 #~ msgstr "_İzleyicileri Düzenle"
 
-#~ msgid "Transmission cannot be started."
-#~ msgstr "Transmission başlatılamıyor."
+#~ msgid "Leechmission cannot be started."
+#~ msgstr "Leechmission başlatılamıyor."
 
 #~ msgid ""
 #~ "Can't find local data.  Try \"Set Location\" to find it, or restart the "
@@ -2897,11 +2897,11 @@ msgstr "Torrent doğrulanıyor"
 #~ msgstr "_Torrenti orana ulaşana kadar dağıt:"
 
 #~ msgid ""
-#~ "Transmission is already running, but is not responding.  To start a new "
-#~ "session, you must first close the existing Transmission process."
+#~ "Leechmission is already running, but is not responding.  To start a new "
+#~ "session, you must first close the existing Leechmission process."
 #~ msgstr ""
-#~ "Transmission zaten çalışıyor fakat cevap vermiyor. Yeni bir oturum başlatmak "
-#~ "için, ilk önce mevcut Transmission işlemini kapatmanız gerekli."
+#~ "Leechmission zaten çalışıyor fakat cevap vermiyor. Yeni bir oturum başlatmak "
+#~ "için, ilk önce mevcut Leechmission işlemini kapatmanız gerekli."
 
 #, c-format
 #~ msgid ""
@@ -2911,13 +2911,13 @@ msgstr "Torrent doğrulanıyor"
 #~ "tekrar deneyin."
 
 #~ msgid ""
-#~ "Transmission is a file sharing program.  When you run a torrent, its data "
+#~ "Leechmission is a file sharing program.  When you run a torrent, its data "
 #~ "will be made available to others by means of upload.  And of course, any "
 #~ "content you share is your sole responsibility.\n"
 #~ "\n"
 #~ "You probably knew this, so we won't tell you again."
 #~ msgstr ""
-#~ "Transmission bir dosya paylaşım programıdır. Bir torrent dosyasını "
+#~ "Leechmission bir dosya paylaşım programıdır. Bir torrent dosyasını "
 #~ "çalıştırdığınızda, bu veriler gönderim yoluyla diğer insanlar tarafından da "
 #~ "erişilebilir hale gelecektir. Tabii ki, her türlü içeriğin paylaşımı sizin "
 #~ "sorumluluğunuzdadır.\n"
@@ -2992,12 +2992,12 @@ msgstr "Torrent doğrulanıyor"
 #~ msgstr "Torrent tamamlandığında be_tiği çağır"
 
 #~ msgid ""
-#~ "Transmission is a file-sharing program.  When you run a torrent, its data "
+#~ "Leechmission is a file-sharing program.  When you run a torrent, its data "
 #~ "will be made available to others by means of upload.  You and you alone are "
 #~ "fully responsible for exercising proper judgement and abiding by your local "
 #~ "laws."
 #~ msgstr ""
-#~ "Transmission, bir dosya paylaşım programıdır. Bir torrent çalıştırdığınızda, "
+#~ "Leechmission, bir dosya paylaşım programıdır. Bir torrent çalıştırdığınızda, "
 #~ "bu başkaları tarafından kopyalanabilir durumda olacaktır. Yerel "
 #~ "kanunlarınıza göre bir yargılama sürecinde tüm sorumluluk sizdedir."
 
@@ -3091,11 +3091,11 @@ msgstr "Torrent doğrulanıyor"
 #~ msgstr "_URL Aç..."
 
 #~ msgid ""
-#~ "Transmission is already running, but is not responding. To start a new "
-#~ "session, you must first close the existing Transmission process."
+#~ "Leechmission is already running, but is not responding. To start a new "
+#~ "session, you must first close the existing Leechmission process."
 #~ msgstr ""
-#~ "Transmission zaten çalışıyor fakat yanıt vermiyor. Yeni bir oturum başlatmak "
-#~ "için önce var olan Transmission işlemini kapatmalısınız."
+#~ "Leechmission zaten çalışıyor fakat yanıt vermiyor. Yeni bir oturum başlatmak "
+#~ "için önce var olan Leechmission işlemini kapatmalısınız."
 
 #~ msgid "Limit _download speed (KiB/s):"
 #~ msgstr "_İndirme hızını limitle"

@@ -16,8 +16,8 @@
 #include <glib/gi18n.h>
 #include <gtk/gtk.h>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/utils.h>
+#include <libleechmission/leechmission.h>
+#include <libleechmission/utils.h>
 
 #include "file-list.h"
 #include "hig.h"

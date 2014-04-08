@@ -78,8 +78,8 @@ PRE_UNINSTALL = :
 POST_UNINSTALL = :
 build_triplet = @build@
 host_triplet = @host@
-bin_PROGRAMS = transmission-create$(EXEEXT) transmission-edit$(EXEEXT) \
-	transmission-show$(EXEEXT)
+bin_PROGRAMS = leechmission-create$(EXEEXT) leechmission-edit$(EXEEXT) \
+	leechmission-show$(EXEEXT)
 subdir = utils
 DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am \
 	$(top_srcdir)/depcomp $(dist_man_MANS)
@@ -97,22 +97,22 @@ CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)" "$(DESTDIR)$(man1dir)"
 PROGRAMS = $(bin_PROGRAMS)
-am_transmission_create_OBJECTS = create.$(OBJEXT)
-transmission_create_OBJECTS = $(am_transmission_create_OBJECTS)
-transmission_create_DEPENDENCIES =  \
-	$(top_builddir)/libtransmission/libtransmission.a
+am_leechmission_create_OBJECTS = create.$(OBJEXT)
+leechmission_create_OBJECTS = $(am_leechmission_create_OBJECTS)
+leechmission_create_DEPENDENCIES =  \
+	$(top_builddir)/libleechmission/libleechmission.a
 AM_V_lt = $(am__v_lt_@AM_V@)
 am__v_lt_ = $(am__v_lt_@AM_DEFAULT_V@)
 am__v_lt_0 = --silent
 am__v_lt_1 = 
-am_transmission_edit_OBJECTS = edit.$(OBJEXT)
-transmission_edit_OBJECTS = $(am_transmission_edit_OBJECTS)
+am_leechmission_edit_OBJECTS = edit.$(OBJEXT)
+leechmission_edit_OBJECTS = $(am_leechmission_edit_OBJECTS)
 am__DEPENDENCIES_1 =  \
-	$(top_builddir)/libtransmission/libtransmission.a
-transmission_edit_DEPENDENCIES = $(am__DEPENDENCIES_1)
-am_transmission_show_OBJECTS = show.$(OBJEXT)
-transmission_show_OBJECTS = $(am_transmission_show_OBJECTS)
-transmission_show_DEPENDENCIES = $(am__DEPENDENCIES_1)
+	$(top_builddir)/libleechmission/libleechmission.a
+leechmission_edit_DEPENDENCIES = $(am__DEPENDENCIES_1)
+am_leechmission_show_OBJECTS = show.$(OBJEXT)
+leechmission_show_OBJECTS = $(am_leechmission_show_OBJECTS)
+leechmission_show_DEPENDENCIES = $(am__DEPENDENCIES_1)
 AM_V_P = $(am__v_P_@AM_V@)
 am__v_P_ = $(am__v_P_@AM_DEFAULT_V@)
 am__v_P_0 = false
@@ -147,10 +147,10 @@ AM_V_CCLD = $(am__v_CCLD_@AM_V@)
 am__v_CCLD_ = $(am__v_CCLD_@AM_DEFAULT_V@)
 am__v_CCLD_0 = @echo "  CCLD    " $@;
 am__v_CCLD_1 = 
-SOURCES = $(transmission_create_SOURCES) $(transmission_edit_SOURCES) \
-	$(transmission_show_SOURCES)
-DIST_SOURCES = $(transmission_create_SOURCES) \
-	$(transmission_edit_SOURCES) $(transmission_show_SOURCES)
+SOURCES = $(leechmission_create_SOURCES) $(leechmission_edit_SOURCES) \
+	$(leechmission_show_SOURCES)
+DIST_SOURCES = $(leechmission_create_SOURCES) \
+	$(leechmission_edit_SOURCES) $(leechmission_show_SOURCES)
 am__can_run_installinfo = \
   case $$AM_UPDATE_INFO_DIR in \
     n|no|NO) false;; \
@@ -395,7 +395,7 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-transmissionlocaledir = @transmissionlocaledir@
+leechmissionlocaledir = @leechmissionlocaledir@
 AM_CPPFLAGS = -I@top_srcdir@
 AM_CFLAGS = \
     @LIBEVENT_CFLAGS@ \
@@ -407,16 +407,16 @@ AM_CFLAGS = \
 AM_LDFLAGS = \
     @ZLIB_LDFLAGS@
 
-transmission_create_SOURCES = create.c
-transmission_edit_SOURCES = edit.c
-transmission_show_SOURCES = show.c
+leechmission_create_SOURCES = create.c
+leechmission_edit_SOURCES = edit.c
+leechmission_show_SOURCES = show.c
 dist_man_MANS = \
-    transmission-create.1 \
-    transmission-edit.1 \
-    transmission-show.1
+    leechmission-create.1 \
+    leechmission-edit.1 \
+    leechmission-show.1
 
-transmission_create_LDADD = \
-    $(top_builddir)/libtransmission/libtransmission.a \
+leechmission_create_LDADD = \
+    $(top_builddir)/libleechmission/libleechmission.a \
     @LIBUPNP_LIBS@ \
     @LIBNATPMP_LIBS@ \
     @INTLLIBS@ \
@@ -428,8 +428,8 @@ transmission_create_LDADD = \
     @ZLIB_LIBS@ \
     @PTHREAD_LIBS@
 
-transmission_edit_LDADD = $(transmission_create_LDADD)
-transmission_show_LDADD = $(transmission_create_LDADD)
+leechmission_edit_LDADD = $(leechmission_create_LDADD)
+leechmission_show_LDADD = $(leechmission_create_LDADD)
 all: all-am
 
 .SUFFIXES:
@@ -514,17 +514,17 @@ clean-binPROGRAMS:
 	echo " rm -f" $$list; \
 	rm -f $$list
 
-transmission-create$(EXEEXT): $(transmission_create_OBJECTS) $(transmission_create_DEPENDENCIES) $(EXTRA_transmission_create_DEPENDENCIES) 
-	@rm -f transmission-create$(EXEEXT)
-	$(AM_V_CCLD)$(LINK) $(transmission_create_OBJECTS) $(transmission_create_LDADD) $(LIBS)
+leechmission-create$(EXEEXT): $(leechmission_create_OBJECTS) $(leechmission_create_DEPENDENCIES) $(EXTRA_leechmission_create_DEPENDENCIES) 
+	@rm -f leechmission-create$(EXEEXT)
+	$(AM_V_CCLD)$(LINK) $(leechmission_create_OBJECTS) $(leechmission_create_LDADD) $(LIBS)
 
-transmission-edit$(EXEEXT): $(transmission_edit_OBJECTS) $(transmission_edit_DEPENDENCIES) $(EXTRA_transmission_edit_DEPENDENCIES) 
-	@rm -f transmission-edit$(EXEEXT)
-	$(AM_V_CCLD)$(LINK) $(transmission_edit_OBJECTS) $(transmission_edit_LDADD) $(LIBS)
+leechmission-edit$(EXEEXT): $(leechmission_edit_OBJECTS) $(leechmission_edit_DEPENDENCIES) $(EXTRA_leechmission_edit_DEPENDENCIES) 
+	@rm -f leechmission-edit$(EXEEXT)
+	$(AM_V_CCLD)$(LINK) $(leechmission_edit_OBJECTS) $(leechmission_edit_LDADD) $(LIBS)
 
-transmission-show$(EXEEXT): $(transmission_show_OBJECTS) $(transmission_show_DEPENDENCIES) $(EXTRA_transmission_show_DEPENDENCIES) 
-	@rm -f transmission-show$(EXEEXT)
-	$(AM_V_CCLD)$(LINK) $(transmission_show_OBJECTS) $(transmission_show_LDADD) $(LIBS)
+leechmission-show$(EXEEXT): $(leechmission_show_OBJECTS) $(leechmission_show_DEPENDENCIES) $(EXTRA_leechmission_show_DEPENDENCIES) 
+	@rm -f leechmission-show$(EXEEXT)
+	$(AM_V_CCLD)$(LINK) $(leechmission_show_OBJECTS) $(leechmission_show_LDADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)

@@ -1,7 +1,7 @@
 /******************************************************************************
  * $Id: DragOverlayWindow.m 13340 2012-06-10 02:35:58Z livings124 $
  *
- * Copyright (c) 2007-2012 Transmission authors and contributors
+ * Copyright (c) 2007-2012 Leechmission authors and contributors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -142,7 +142,7 @@
         name = [NSString stringWithFormat: NSLocalizedString(@"%@ Torrent Files", "Drag overlay -> torrents"),
                 [NSString formattedUInteger: count]];
         secondString = [secondString stringByAppendingString: @" total"];
-        icon = [NSImage imageNamed: @"TransmissionDocument.icns"];
+        icon = [NSImage imageNamed: @"LeechmissionDocument.icns"];
     }
     
     [[self contentView] setOverlay: icon mainLine: name subLine: secondString];

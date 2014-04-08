@@ -43,8 +43,8 @@
 #include <QTreeWidgetItem>
 #include <QVBoxLayout>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/utils.h> // tr_getRatio ()
+#include <libleechmission/leechmission.h>
+#include <libleechmission/utils.h> // tr_getRatio ()
 
 #include "details.h"
 #include "file-tree.h"

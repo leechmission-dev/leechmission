@@ -49,7 +49,7 @@
 				<int key="NSWindowBacking">2</int>
 				<string key="NSWindowRect">{{71, 712}, {515, 248}}</string>
 				<int key="NSWTFlags">1881671680</int>
-				<string key="NSWindowTitle">Transmission</string>
+				<string key="NSWindowTitle">Leechmission</string>
 				<string key="NSWindowClass">NSWindow</string>
 				<object class="NSMutableString" key="NSViewClass">
 					<characters key="NS.bytes">View</characters>
@@ -744,7 +744,7 @@ tAi1fbb8uIm6JrvQvYK/NsDpwpzET8YEx7vJc8srzOTOntBY0hTT0tWP10rY/9qs3E/d6N914P3iguQD
 				<string key="NSScreenRect">{{0, 0}, {1440, 878}}</string>
 				<string key="NSMinSize">{350, 27}</string>
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
-				<string key="NSFrameAutosaveName">TransmissionWindow</string>
+				<string key="NSFrameAutosaveName">LeechmissionWindow</string>
 				<bool key="NSWindowIsRestorable">NO</bool>
 			</object>
 			<object class="NSMenu" id="421442763">
@@ -752,7 +752,7 @@ tAi1fbb8uIm6JrvQvYK/NsDpwpzET8YEx7vJc8srzOTOntBY0hTT0tWP10rY/9qs3E/d6N914P3iguQD
 				<array class="NSMutableArray" key="NSMenuItems">
 					<object class="NSMenuItem" id="945940321">
 						<reference key="NSMenu" ref="421442763"/>
-						<string key="NSTitle">Transmission</string>
+						<string key="NSTitle">Leechmission</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSKeyEquivModMask">1048576</int>
 						<int key="NSMnemonicLoc">2147483647</int>
@@ -766,11 +766,11 @@ tAi1fbb8uIm6JrvQvYK/NsDpwpzET8YEx7vJc8srzOTOntBY0hTT0tWP10rY/9qs3E/d6N914P3iguQD
 						</object>
 						<string key="NSAction">submenuAction:</string>
 						<object class="NSMenu" key="NSSubmenu" id="152009435">
-							<string key="NSTitle">Transmission</string>
+							<string key="NSTitle">Leechmission</string>
 							<array class="NSMutableArray" key="NSMenuItems">
 								<object class="NSMenuItem" id="174327838">
 									<reference key="NSMenu" ref="152009435"/>
-									<string key="NSTitle">Sobre o Transmission</string>
+									<string key="NSTitle">Sobre o Leechmission</string>
 									<string key="NSKeyEquiv"/>
 									<int key="NSMnemonicLoc">2147483647</int>
 									<reference key="NSOnImage" ref="246127200"/>
@@ -854,7 +854,7 @@ tAi1fbb8uIm6JrvQvYK/NsDpwpzET8YEx7vJc8srzOTOntBY0hTT0tWP10rY/9qs3E/d6N914P3iguQD
 								</object>
 								<object class="NSMenuItem" id="673101588">
 									<reference key="NSMenu" ref="152009435"/>
-									<string key="NSTitle">Ocultar o Transmission</string>
+									<string key="NSTitle">Ocultar o Leechmission</string>
 									<string key="NSKeyEquiv">h</string>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
@@ -892,7 +892,7 @@ tAi1fbb8uIm6JrvQvYK/NsDpwpzET8YEx7vJc8srzOTOntBY0hTT0tWP10rY/9qs3E/d6N914P3iguQD
 								</object>
 								<object class="NSMenuItem" id="468556684">
 									<reference key="NSMenu" ref="152009435"/>
-									<string key="NSTitle">Encerrar o Transmission</string>
+									<string key="NSTitle">Encerrar o Leechmission</string>
 									<string key="NSKeyEquiv">q</string>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
@@ -1739,7 +1739,7 @@ tAi1fbb8uIm6JrvQvYK/NsDpwpzET8YEx7vJc8srzOTOntBY0hTT0tWP10rY/9qs3E/d6N914P3iguQD
 								</object>
 								<object class="NSMenuItem" id="557213574">
 									<reference key="NSMenu" ref="986610193"/>
-									<string key="NSTitle">Transmission</string>
+									<string key="NSTitle">Leechmission</string>
 									<string key="NSKeyEquiv">1</string>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
@@ -1802,7 +1802,7 @@ tAi1fbb8uIm6JrvQvYK/NsDpwpzET8YEx7vJc8srzOTOntBY0hTT0tWP10rY/9qs3E/d6N914P3iguQD
 							<array class="NSMutableArray" key="NSMenuItems">
 								<object class="NSMenuItem" id="474872353">
 									<reference key="NSMenu" ref="393698794"/>
-									<string key="NSTitle">Ajuda do Transmission</string>
+									<string key="NSTitle">Ajuda do Leechmission</string>
 									<string key="NSKeyEquiv">?</string>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
@@ -1822,7 +1822,7 @@ tAi1fbb8uIm6JrvQvYK/NsDpwpzET8YEx7vJc8srzOTOntBY0hTT0tWP10rY/9qs3E/d6N914P3iguQD
 								</object>
 								<object class="NSMenuItem" id="422984009">
 									<reference key="NSMenu" ref="393698794"/>
-									<string key="NSTitle">Página do Transmission</string>
+									<string key="NSTitle">Página do Leechmission</string>
 									<string key="NSKeyEquiv"/>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
@@ -4051,7 +4051,7 @@ tAi1fbb8uIm6JrvQvYK/NsDpwpzET8YEx7vJc8srzOTOntBY0hTT0tWP10rY/9qs3E/d6N914P3iguQD
 							<reference ref="303120456"/>
 						</array>
 						<reference key="parent" ref="0"/>
-						<string key="objectName">Transmission</string>
+						<string key="objectName">Leechmission</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">2</int>

@@ -11,7 +11,7 @@ endif
 
 AM_CPPFLAGS = \
     -I$(top_srcdir) \
-    -DTRANSMISSIONLOCALEDIR=\""$(transmissionlocaledir)"\" \
+    -DLEECHMISSIONLOCALEDIR=\""$(leechmissionlocaledir)"\" \
     $(GTK_EXTRA_CPPFLAGS)
 
 AM_CFLAGS = \
@@ -49,16 +49,16 @@ noinst_HEADERS = \
     relocate.h \
     stats.h \
     torrent-cell-renderer.h \
-    transmission-resources.h \
+    leechmission-resources.h \
     tr-core.h \
     tr-icon.h \
     tr-prefs.h \
     tr-window.h \
     util.h
 
-bin_PROGRAMS = transmission-gtk
+bin_PROGRAMS = leechmission-gtk
 
-transmission_gtk_SOURCES = \
+leechmission_gtk_SOURCES = \
     actions.c \
     conf.c \
     details.c \
@@ -76,17 +76,17 @@ transmission_gtk_SOURCES = \
     relocate.c \
     stats.c \
     torrent-cell-renderer.c \
-    transmission-resources.c \
+    leechmission-resources.c \
     tr-core.c \
     tr-icon.c \
     tr-prefs.c \
     tr-window.c \
     util.c
 
-dist_man_MANS = transmission-gtk.1
+dist_man_MANS = leechmission-gtk.1
 
-transmission_gtk_LDADD = \
-    $(top_builddir)/libtransmission/libtransmission.a \
+leechmission_gtk_LDADD = \
+    $(top_builddir)/libleechmission/libleechmission.a \
     @LIBUPNP_LIBS@ \
     @LIBNATPMP_LIBS@ \
     @DHT_LIBS@ \
@@ -99,50 +99,50 @@ transmission_gtk_LDADD = \
     @ZLIB_LIBS@ \
     @PTHREAD_LIBS@
 
-DESKTOP_IN_FILES=transmission-gtk.desktop.in
+DESKTOP_IN_FILES=leechmission-gtk.desktop.in
 DESKTOP_FILES=$(DESKTOP_IN_FILES:.desktop.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
 Productivitydir = $(datadir)/applications
 Productivity_DATA = $(DESKTOP_FILES)
 
-icon_DATA = transmission.png
+icon_DATA = leechmission.png
 icondir = $(datadir)/pixmaps
 
-UI_FILES = transmission-ui.xml 
+UI_FILES = leechmission-ui.xml 
 
-transmission-resources.c: transmission.gresource.xml $(UI_FILES) 
+leechmission-resources.c: leechmission.gresource.xml $(UI_FILES) 
 	$(AM_V_GEN)glib-compile-resources --target=$@ --sourcedir=$(srcdir) \
-	  --generate-source --c-name transmission $< 
+	  --generate-source --c-name leechmission $< 
 
-transmission-resources.h: transmission.gresource.xml $(UI_FILES) 
+leechmission-resources.h: leechmission.gresource.xml $(UI_FILES) 
 	$(AM_V_GEN)glib-compile-resources --target=$@ --sourcedir=$(srcdir) \
-	  --generate-header --c-name transmission $< 
+	  --generate-header --c-name leechmission $< 
 
 CLEANFILES += \
-	transmission-resources.c \
-	transmission-resources.h
+	leechmission-resources.c \
+	leechmission-resources.h
 BUILT_SOURCES += \
-	transmission-resources.c \
-	transmission-resources.h
+	leechmission-resources.c \
+	leechmission-resources.h
 
 EXTRA_DIST = \
 	$(DESKTOP_IN_FILES) \
 	$(UI_FILES) \
-	transmission.gresource.xml \
-	transmission.png
+	leechmission.gresource.xml \
+	leechmission.png
 
 DISTCLEANFILES = \
-	transmission-gtk.desktop
+	leechmission-gtk.desktop
 
 if WIN32
 
-transmission.res: transmission.rc
-	$(WINDRES) -J rc -i transmission.rc -O coff -o transmission.res
+leechmission.res: leechmission.rc
+	$(WINDRES) -J rc -i leechmission.rc -O coff -o leechmission.res
 
-BUILT_SOURCES += transmission.res
-CLEANFILES += transmission.res
-transmission_gtk_LDADD += transmission.res
-transmission_gtk_LDFLAGS = -mwindows
+BUILT_SOURCES += leechmission.res
+CLEANFILES += leechmission.res
+leechmission_gtk_LDADD += leechmission.res
+leechmission_gtk_LDFLAGS = -mwindows
 
 endif

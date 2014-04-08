@@ -1,7 +1,7 @@
 /******************************************************************************
  * $Id: Controller.h 14042 2013-03-04 04:18:21Z livings124 $
  *
- * Copyright (c) 2005-2012 Transmission authors and contributors
+ * Copyright (c) 2005-2012 Leechmission authors and contributors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  *****************************************************************************/
 
 #import <Cocoa/Cocoa.h>
-#import <transmission.h>
+#import <leechmission.h>
 #import <Quartz/Quartz.h>
 #import <Growl/Growl.h>
 #import "VDKQueue.h"

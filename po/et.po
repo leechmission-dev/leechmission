@@ -1,11 +1,11 @@
-# Estonian translation for transmission
+# Estonian translation for leechmission
 # Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
-# This file is distributed under the same license as the transmission package.
+# This file is distributed under the same license as the leechmission package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: transmission 2.50\n"
+"Project-Id-Version: leechmission 2.50\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2012-02-03 15:22-0600\n"
 "PO-Revision-Date: 2012-04-13 08:45+0000\n"
@@ -55,8 +55,8 @@ msgid "Sort by Si_ze"
 msgstr "Järjesta _suuruse järgi"
 
 #: ../gtk/actions.c:70
-msgid "_Show Transmission"
-msgstr "_Transmission on nähtaval"
+msgid "_Show Leechmission"
+msgstr "_Leechmission on nähtaval"
 
 #: ../gtk/actions.c:71
 msgid "Message _Log"
@@ -318,7 +318,7 @@ msgid "_Maximum peers:"
 msgstr "_Suurim partnerite arv:"
 
 #: ../gtk/details.c:559 ../gtk/torrent-cell-renderer.c:201
-#: ../libtransmission/verify.c:273
+#: ../libleechmission/verify.c:273
 msgid "Queued for verification"
 msgstr "Kontrollimise ootel"
 
@@ -883,9 +883,9 @@ msgstr "_Näita:"
 
 #: ../gtk/main.c:308
 #, c-format
-msgid "Error registering Transmission as x-scheme-handler/magnet handler: %s"
+msgid "Error registering Leechmission as x-scheme-handler/magnet handler: %s"
 msgstr ""
-"Viga Transmissioni registreerimisel x-scheme-handler/magnetkäsitlejaks: %s"
+"Viga Leechmissioni registreerimisel x-scheme-handler/magnetkäsitlejaks: %s"
 
 #: ../gtk/main.c:477
 #, c-format
@@ -911,9 +911,9 @@ msgstr "Käivitamine minimeerituna teatealale"
 msgid "Show version number and exit"
 msgstr "Versiooninumbri näitamine ja programmi töö lõpetamine"
 
-#: ../gtk/main.c:630 ../gtk/transmission-gtk.desktop.in.h:1
-msgid "Transmission"
-msgstr "Transmission"
+#: ../gtk/main.c:630 ../gtk/leechmission-gtk.desktop.in.h:1
+msgid "Leechmission"
+msgstr "Leechmission"
 
 #. parse the command line
 #: ../gtk/main.c:634
@@ -931,12 +931,12 @@ msgstr ""
 
 #: ../gtk/main.c:739
 msgid ""
-"Transmission is a file-sharing program. When you run a torrent, its data "
+"Leechmission is a file-sharing program. When you run a torrent, its data "
 "will be made available to others by means of upload. You and you alone are "
 "fully responsible for exercising proper judgement and abiding by your local "
 "laws."
 msgstr ""
-"Transmission on failide jagamise rakendus. Torreteid kasutades teed sa nende "
+"Leechmission on failide jagamise rakendus. Torreteid kasutades teed sa nende "
 "sisu ka teistele kättesaadavaks. Failijagamist puudutavate kohalike seaduste "
 "mõistmise ja täitmise eest oled vastutav Sina ainuisikuliselt."
 
@@ -974,7 +974,7 @@ msgstr "Väle ja lihtne BitTorrenti klient"
 
 #: ../gtk/main.c:1337
 msgid "Copyright (c) The Transmission Project"
-msgstr "Autoriõigused (c) Transmissioni projekt"
+msgstr "Autoriõigused (c) Leechmissioni projekt"
 
 #. Translators: translate "translator-credits" as your name
 #. to have it appear in the credits in the "About"
@@ -1390,15 +1390,15 @@ msgid_plural "Seeding to %1$'d of %2$'d connected peers"
 msgstr[0] "Levitamine %1$'d / %2$'d ühendatud partnerile"
 msgstr[1] "Levitamine %1$'d / %2$'d ühendatud partnerile"
 
-#: ../gtk/transmission-gtk.desktop.in.h:2
+#: ../gtk/leechmission-gtk.desktop.in.h:2
 msgid "BitTorrent Client"
 msgstr "BitTorrenti klient"
 
-#: ../gtk/transmission-gtk.desktop.in.h:3
-msgid "Transmission BitTorrent Client"
-msgstr "Transmission, BitTorrenti klient"
+#: ../gtk/leechmission-gtk.desktop.in.h:3
+msgid "Leechmission BitTorrent Client"
+msgstr "Leechmission, BitTorrenti klient"
 
-#: ../gtk/transmission-gtk.desktop.in.h:4
+#: ../gtk/leechmission-gtk.desktop.in.h:4
 msgid "Download and share files over BitTorrent"
 msgstr "Laadi alla ja levita faile BitTorrenti kaudu"
 
@@ -1437,11 +1437,11 @@ msgstr "(piirang: %s)"
 #: ../gtk/tr-icon.c:109
 #, c-format
 msgid ""
-"Transmission\n"
+"Leechmission\n"
 "Up: %1$s %2$s\n"
 "Down: %3$s %4$s"
 msgstr ""
-"Transmission\n"
+"Leechmission\n"
 "Üles: %1$s %2$s\n"
 "Alla: %3$s %4$s"
 
@@ -1462,7 +1462,7 @@ msgid "Downloads sharing data in the last N minutes are _active:"
 msgstr ""
 "Aktiivseks loetakse viimase _N minuti jooksul andmeid jaganud torrenteid:"
 
-#: ../gtk/tr-prefs.c:286 ../libtransmission/torrent.c:1919
+#: ../gtk/tr-prefs.c:286 ../libleechmission/torrent.c:1919
 msgid "Incomplete"
 msgstr "Pooleliolevad torrentid"
 
@@ -1509,8 +1509,8 @@ msgid "_Inhibit hibernation when torrents are active"
 msgstr "_Aktiivsete torrentite olemasolul piiratakse talveunne jäämist"
 
 #: ../gtk/tr-prefs.c:384
-msgid "Show Transmission icon in the _notification area"
-msgstr "_Transmissioni ikooni näidatakse teatealal"
+msgid "Show Leechmission icon in the _notification area"
+msgstr "_Leechmissioni ikooni näidatakse teatealal"
 
 #: ../gtk/tr-prefs.c:389
 msgid "Notification"
@@ -1776,8 +1776,8 @@ msgid "Te_st Port"
 msgstr "Kontrolli _porti"
 
 #: ../gtk/tr-prefs.c:1222
-msgid "Pick a _random port every time Transmission is started"
-msgstr "Transmissioni käivitamisel määratakse alati _juhuslik port"
+msgid "Pick a _random port every time Leechmission is started"
+msgstr "Leechmissioni käivitamisel määratakse alati _juhuslik port"
 
 #: ../gtk/tr-prefs.c:1226
 msgid "Use UPnP or NAT-PMP port _forwarding from my router"
@@ -1804,8 +1804,8 @@ msgid "uTP is a tool for reducing network congestion."
 msgstr "uTP on võrguummistuste vältimise tööriist."
 
 #: ../gtk/tr-prefs.c:1262
-msgid "Transmission Preferences"
-msgstr "Transmissioni eelistused"
+msgid "Leechmission Preferences"
+msgstr "Leechmissioni eelistused"
 
 #: ../gtk/tr-prefs.c:1276
 msgid "Torrents"
@@ -1969,7 +1969,7 @@ msgstr "GB/s"
 msgid "TB/s"
 msgstr "TB/s"
 
-#: ../cli/cli.c:115 ../gtk/util.c:87 ../libtransmission/utils.c:1509
+#: ../cli/cli.c:115 ../gtk/util.c:87 ../libleechmission/utils.c:1509
 msgid "None"
 msgstr "Puudub"
 
@@ -2036,8 +2036,8 @@ msgstr "Tundmatu URL"
 
 #: ../gtk/util.c:565
 #, c-format
-msgid "Transmission doesn't know how to use \"%s\""
-msgstr "Transmission ei oska URL-i \"%s\" kasutada"
+msgid "Leechmission doesn't know how to use \"%s\""
+msgstr "Leechmission ei oska URL-i \"%s\" kasutada"
 
 #: ../gtk/util.c:570
 #, c-format
@@ -2049,185 +2049,185 @@ msgstr ""
 "BitTorrenti magnetlinkides sisaldub \"%s\"."
 
 #. did caller give us an uninitialized val?
-#: ../libtransmission/bencode.c:1117
+#: ../libleechmission/bencode.c:1117
 msgid "Invalid metadata"
 msgstr "Vigased metaandmed"
 
-#: ../libtransmission/bencode.c:1723 ../libtransmission/bencode.c:1751
+#: ../libleechmission/bencode.c:1723 ../libleechmission/bencode.c:1751
 #, c-format
 msgid "Couldn't save temporary file \"%1$s\": %2$s"
 msgstr "Ajutist faili \"%1$s\" pole võimalik salvestada: %2$s"
 
-#: ../libtransmission/bencode.c:1738
+#: ../libleechmission/bencode.c:1738
 #, c-format
 msgid "Saved \"%s\""
 msgstr "Salvestatud \"%s\""
 
-#: ../libtransmission/bencode.c:1743 ../libtransmission/blocklist.c:417
-#: ../libtransmission/rpcimpl.c:1260 ../libtransmission/rpcimpl.c:1271
-#: ../libtransmission/rpcimpl.c:1287
+#: ../libleechmission/bencode.c:1743 ../libleechmission/blocklist.c:417
+#: ../libleechmission/rpcimpl.c:1260 ../libleechmission/rpcimpl.c:1271
+#: ../libleechmission/rpcimpl.c:1287
 #, c-format
 msgid "Couldn't save file \"%1$s\": %2$s"
 msgstr "Faili \"%1$s\" pole võimalik salvestada: %2$s"
 
-#: ../libtransmission/blocklist.c:86 ../libtransmission/blocklist.c:325
-#: ../libtransmission/utils.c:438
+#: ../libleechmission/blocklist.c:86 ../libleechmission/blocklist.c:325
+#: ../libleechmission/utils.c:438
 #, c-format
 msgid "Couldn't read \"%1$s\": %2$s"
 msgstr "\"%1$s\" pole võimalik lugeda: %2$s"
 
-#: ../libtransmission/blocklist.c:115
+#: ../libleechmission/blocklist.c:115
 #, c-format
 msgid "Blocklist \"%s\" contains %zu entries"
 msgstr "Blokinimekirjas \"%s\" on %zu kirjet"
 
 #. don't try to display the actual lines - it causes issues
-#: ../libtransmission/blocklist.c:368
+#: ../libleechmission/blocklist.c:368
 #, c-format
 msgid "blocklist skipped invalid address at line %d"
 msgstr "blokinimekiri jättis vahele sobimatu aadressi real %d"
 
-#: ../libtransmission/blocklist.c:420
+#: ../libleechmission/blocklist.c:420
 #, c-format
 msgid "Blocklist \"%s\" updated with %zu entries"
 msgstr "Blokinimekirjas \"%s\" uuendati %zu kirjet"
 
-#: ../libtransmission/fdlimit.c:348 ../libtransmission/utils.c:574
-#: ../libtransmission/utils.c:585
+#: ../libleechmission/fdlimit.c:348 ../libleechmission/utils.c:574
+#: ../libleechmission/utils.c:585
 #, c-format
 msgid "Couldn't create \"%1$s\": %2$s"
 msgstr "Kataloogi \"%1$s\" pole võimalik luua: %2$s"
 
-#: ../libtransmission/fdlimit.c:369
+#: ../libleechmission/fdlimit.c:369
 #, c-format
 msgid "Couldn't open \"%1$s\": %2$s"
 msgstr "Faili \"%1$s\" pole võimalik avada: %2$s"
 
-#: ../libtransmission/fdlimit.c:384
+#: ../libleechmission/fdlimit.c:384
 #, c-format
 msgid "Couldn't truncate \"%1$s\": %2$s"
 msgstr "Faili \"%1$s\" pole võimalik kärpida: %2$s"
 
-#: ../libtransmission/fdlimit.c:670
+#: ../libleechmission/fdlimit.c:670
 #, c-format
 msgid "Couldn't create socket: %s"
 msgstr "Soklit pole võimalik luua: %s"
 
-#: ../libtransmission/makemeta.c:63
+#: ../libleechmission/makemeta.c:63
 #, c-format
 msgid "Torrent Creator is skipping file \"%s\": %s"
 msgstr "Torrenti autor jätab vahele faili \"%s\": %s"
 
-#: ../libtransmission/metainfo.c:533
+#: ../libleechmission/metainfo.c:533
 #, c-format
 msgid "Invalid metadata entry \"%s\""
 msgstr "Vigane metateabe kirje \"%s\""
 
-#: ../libtransmission/natpmp.c:32
+#: ../libleechmission/natpmp.c:32
 msgid "Port Forwarding (NAT-PMP)"
 msgstr "Pordi suunamine (NAT-PMP)"
 
-#: ../libtransmission/natpmp.c:72
+#: ../libleechmission/natpmp.c:72
 #, c-format
 msgid "%s succeeded (%d)"
 msgstr "%s õnnestus (%d)"
 
-#: ../libtransmission/natpmp.c:141
+#: ../libleechmission/natpmp.c:141
 #, c-format
 msgid "Found public address \"%s\""
 msgstr "Leiti avalik aadress \"%s\""
 
-#: ../libtransmission/natpmp.c:176
+#: ../libleechmission/natpmp.c:176
 #, c-format
 msgid "no longer forwarding port %d"
 msgstr "porti %d enam ei suunata"
 
-#: ../libtransmission/natpmp.c:221
+#: ../libleechmission/natpmp.c:221
 #, c-format
 msgid "Port %d forwarded successfully"
 msgstr "Pordi %d suunamine edukas"
 
-#: ../libtransmission/net.c:268
+#: ../libleechmission/net.c:268
 #, c-format
 msgid "Couldn't set source address %s on %d: %s"
 msgstr "Lähteaadressi %s polnud %d jaoks võimalik määrata: %s"
 
-#: ../libtransmission/net.c:284
+#: ../libleechmission/net.c:284
 #, c-format
 msgid "Couldn't connect socket %d to %s, port %d (errno %d - %s)"
 msgstr "Sokli %d %s ühendamine nurjus, port %d (viga %d - %s)"
 
-#: ../libtransmission/net.c:360
-msgid "Is another copy of Transmission already running?"
-msgstr "Kas ka teine instants Transmissionist töötab?"
+#: ../libleechmission/net.c:360
+msgid "Is another copy of Leechmission already running?"
+msgstr "Kas ka teine instants Leechmissionist töötab?"
 
-#: ../libtransmission/net.c:365
+#: ../libleechmission/net.c:365
 #, c-format
 msgid "Couldn't bind port %d on %s: %s"
 msgstr "Porti %d polnud %s jaoks võimalik siduda: %s"
 
-#: ../libtransmission/net.c:367
+#: ../libleechmission/net.c:367
 #, c-format
 msgid "Couldn't bind port %d on %s: %s (%s)"
 msgstr "Ei suudetud siduda porti %d kohas %s: %s (%s)"
 
-#: ../libtransmission/peer-msgs.c:1898
+#: ../libleechmission/peer-msgs.c:1898
 #, c-format
 msgid "Please Verify Local Data! Piece #%zu is corrupt."
 msgstr "Kontrolli kohalikke andmeid! Tükk nr %zu on rikutud."
 
-#: ../libtransmission/port-forwarding.c:31
+#: ../libleechmission/port-forwarding.c:31
 msgid "Port Forwarding"
 msgstr "Pordi suunamine"
 
-#: ../libtransmission/port-forwarding.c:58
+#: ../libleechmission/port-forwarding.c:58
 msgid "Starting"
 msgstr "Alustamine"
 
-#: ../libtransmission/port-forwarding.c:59
+#: ../libleechmission/port-forwarding.c:59
 msgid "Forwarded"
 msgstr "Suunatud"
 
-#: ../libtransmission/port-forwarding.c:60
+#: ../libleechmission/port-forwarding.c:60
 msgid "Stopping"
 msgstr "Peatamine"
 
-#: ../libtransmission/port-forwarding.c:61
+#: ../libleechmission/port-forwarding.c:61
 msgid "Not forwarded"
 msgstr "Pole suunatud"
 
-#: ../libtransmission/port-forwarding.c:91 ../libtransmission/torrent.c:2060
+#: ../libleechmission/port-forwarding.c:91 ../libleechmission/torrent.c:2060
 #, c-format
 msgid "State changed from \"%1$s\" to \"%2$s\""
 msgstr "Olek muutus \"%1$s\"-st \"%2$s\"-ks"
 
-#: ../libtransmission/port-forwarding.c:181
+#: ../libleechmission/port-forwarding.c:181
 msgid "Stopped"
 msgstr "Peatatud"
 
 #. first %s is the application name
 #. second %s is the version number
-#: ../libtransmission/session.c:722
+#: ../libleechmission/session.c:722
 #, c-format
 msgid "%s %s started"
 msgstr "%s %s alustatud"
 
-#: ../libtransmission/session.c:1943
+#: ../libleechmission/session.c:1943
 #, c-format
 msgid "Loaded %d torrents"
 msgstr "Laaditi %d torrentit"
 
-#: ../libtransmission/torrent.c:525
+#: ../libleechmission/torrent.c:525
 #, c-format
 msgid "Tracker warning: \"%s\""
 msgstr "Järjepidaja hoiatus: \"%s\""
 
-#: ../libtransmission/torrent.c:532
+#: ../libleechmission/torrent.c:532
 #, c-format
 msgid "Tracker error: \"%s\""
 msgstr "Järjepidaja veateade: \"%s\""
 
-#: ../libtransmission/torrent.c:787
+#: ../libleechmission/torrent.c:787
 msgid ""
 "No data found! Ensure your drives are connected or use \"Set Location\". To "
 "re-download, remove the torrent and re-add it."
@@ -2235,71 +2235,71 @@ msgstr ""
 "Andmed ei leitud! Veendu, et kettad on ühendatud või määra torrenti asukoht. "
 "Uuesti allalaadimiseks eemalda torrent ja lisa uuesti."
 
-#: ../libtransmission/torrent.c:1677
+#: ../libleechmission/torrent.c:1677
 msgid "Restarted manually -- disabling its seed ratio"
 msgstr "Taaskäivitati käsitsi -- jagamise suhe keelatakse"
 
-#: ../libtransmission/torrent.c:1829
+#: ../libleechmission/torrent.c:1829
 msgid "Removing torrent"
 msgstr "Torrenti eemaldamine"
 
-#: ../libtransmission/torrent.c:1913
+#: ../libleechmission/torrent.c:1913
 msgid "Done"
 msgstr "Valmis"
 
-#: ../libtransmission/torrent.c:1916
+#: ../libleechmission/torrent.c:1916
 msgid "Complete"
 msgstr "Valmis"
 
-#: ../libtransmission/upnp.c:35
+#: ../libleechmission/upnp.c:35
 msgid "Port Forwarding (UPnP)"
 msgstr "Portide suunamine (UPnP)"
 
-#: ../libtransmission/upnp.c:199
+#: ../libleechmission/upnp.c:199
 #, c-format
 msgid "Found Internet Gateway Device \"%s\""
 msgstr "Leitud interneti lüüsi seade \"%s\""
 
-#: ../libtransmission/upnp.c:202
+#: ../libleechmission/upnp.c:202
 #, c-format
 msgid "Local Address is \"%s\""
 msgstr "Kohalik aadress on \"%s\""
 
-#: ../libtransmission/upnp.c:231
+#: ../libleechmission/upnp.c:231
 #, c-format
 msgid "Port %d isn't forwarded"
 msgstr "Port %d ei ole suunatud"
 
-#: ../libtransmission/upnp.c:242
+#: ../libleechmission/upnp.c:242
 #, c-format
 msgid "Stopping port forwarding through \"%s\", service \"%s\""
 msgstr "Portide suunamise peatamine \"%s\" kaudu, teenus \"%s\""
 
-#: ../libtransmission/upnp.c:275
+#: ../libleechmission/upnp.c:275
 #, c-format
 msgid ""
 "Port forwarding through \"%s\", service \"%s\". (local address: %s:%d)"
 msgstr "Pordi suuname \"%s\" kaudu, teenus \"%s\" (kohalik aadress: %s:%d)."
 
-#: ../libtransmission/upnp.c:280
+#: ../libleechmission/upnp.c:280
 msgid "Port forwarding successful!"
 msgstr "Pordi suunamine on edukas!"
 
-#: ../libtransmission/utils.c:452
+#: ../libleechmission/utils.c:452
 msgid "Not a regular file"
 msgstr "Pole tavaline fail"
 
-#: ../libtransmission/utils.c:470
+#: ../libleechmission/utils.c:470
 msgid "Memory allocation failed"
 msgstr "Mälu eraldamine nurjus"
 
 #. Node exists but isn't a folder
-#: ../libtransmission/utils.c:584
+#: ../libleechmission/utils.c:584
 #, c-format
 msgid "File \"%s\" is in the way"
 msgstr "Fail \"%s\" on teel"
 
-#: ../libtransmission/verify.c:229
+#: ../libleechmission/verify.c:229
 msgid "Verifying torrent"
 msgstr "Torrenti kontrollimine"
 
@@ -2421,8 +2421,8 @@ msgstr "Torrenti kontrollimine"
 #~ msgid "Torrent file:"
 #~ msgstr "Torrenti fail:"
 
-#~ msgid "<big><b>Quit Transmission?</b></big>"
-#~ msgstr "<big><b>Kas lõpetada Transmission?</b></big>"
+#~ msgid "<big><b>Quit Leechmission?</b></big>"
+#~ msgstr "<big><b>Kas lõpetada Leechmission?</b></big>"
 
 #~ msgid "Start minimized in system tray"
 #~ msgstr "Käivitatakse teatealasse minimeerituna"
@@ -2480,8 +2480,8 @@ msgstr "Torrenti kontrollimine"
 #~ msgid "BitTorrent Activity"
 #~ msgstr "BitTorrenti aktiivsus"
 
-#~ msgid "Transmission Bittorrent Client"
-#~ msgstr "Transmission, Bittorrenti klient"
+#~ msgid "Leechmission Bittorrent Client"
+#~ msgstr "Leechmission, Bittorrenti klient"
 
 #, c-format
 #~ msgid "Couldn't disable desktop hibernation: %s"
@@ -2790,7 +2790,7 @@ msgstr "Torrenti kontrollimine"
 #~ msgstr "Midagi pole saadetud"
 
 #~ msgid "Copyright 2005-2009 The Transmission Project"
-#~ msgstr "Autoriõigus 2005-2009 Transmissioni projekt"
+#~ msgstr "Autoriõigus 2005-2009 Leechmissioni projekt"
 
 #~ msgid "File"
 #~ msgstr "Fail"
@@ -2804,8 +2804,8 @@ msgstr "Torrenti kontrollimine"
 #~ msgid "Inhibit _hibernation when torrents are active"
 #~ msgstr "Masina _uinumine on keelatud, kui torrentid on aktiivsed"
 
-#~ msgid "Show Transmission in the system _tray"
-#~ msgstr "Transmissionit näidatakse _süsteemisalves"
+#~ msgid "Show Leechmission in the system _tray"
+#~ msgstr "Leechmissionit näidatakse _süsteemisalves"
 
 #~ msgid "Show popup _notifications"
 #~ msgstr "Hüpikteateid _kuvatakse"
@@ -2869,23 +2869,23 @@ msgstr "Torrenti kontrollimine"
 #~ msgstr "Rohkem masinaid küsitakse just praegu... <small>%s</small>"
 
 #~ msgid ""
-#~ "Transmission is already running, but is not responding.  To start a new "
-#~ "session, you must first close the existing Transmission process."
+#~ "Leechmission is already running, but is not responding.  To start a new "
+#~ "session, you must first close the existing Leechmission process."
 #~ msgstr ""
-#~ "Transmission juba käib, aga ei vasta. Enne uue sessiooni käivitamist tuleb "
-#~ "olemalolev Transmissioni protsess sulgeda."
+#~ "Leechmission juba käib, aga ei vasta. Enne uue sessiooni käivitamist tuleb "
+#~ "olemalolev Leechmissioni protsess sulgeda."
 
-#~ msgid "Transmission cannot be started."
-#~ msgstr "Transmissionit pole võimalik käivitada."
+#~ msgid "Leechmission cannot be started."
+#~ msgstr "Leechmissionit pole võimalik käivitada."
 
 #~ msgid ""
-#~ "Transmission is a file sharing program.  When you run a torrent, its data "
+#~ "Leechmission is a file sharing program.  When you run a torrent, its data "
 #~ "will be made available to others by means of upload.  And of course, any "
 #~ "content you share is your sole responsibility.\n"
 #~ "\n"
 #~ "You probably knew this, so we won't tell you again."
 #~ msgstr ""
-#~ "Transmission on failijagamise rakendus. Kui sa jagad torrentit, on selle "
+#~ "Leechmission on failijagamise rakendus. Kui sa jagad torrentit, on selle "
 #~ "sisu teistele kättesaadav. Ning loomulikult vastutad jagatavate andmete eest "
 #~ "sina.\n"
 #~ "\n"
@@ -2970,11 +2970,11 @@ msgstr "Torrenti kontrollimine"
 #~ msgstr "_Asukoha määramine..."
 
 #~ msgid ""
-#~ "Transmission is already running, but is not responding. To start a new "
-#~ "session, you must first close the existing Transmission process."
+#~ "Leechmission is already running, but is not responding. To start a new "
+#~ "session, you must first close the existing Leechmission process."
 #~ msgstr ""
-#~ "Transmission juba töötab, aga ei vasta. Uue seansi käivitamiseks pead enne "
-#~ "eelmise Transmissioni protsessi sulgema."
+#~ "Leechmission juba töötab, aga ei vasta. Uue seansi käivitamiseks pead enne "
+#~ "eelmise Leechmissioni protsessi sulgema."
 
 #~ msgid "GiB/s"
 #~ msgstr "GiB/s"

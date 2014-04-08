@@ -5,7 +5,7 @@
  * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
-Transmission.fmt = (function()
+Leechmission.fmt = (function()
 {
 	var speed_K = 1000;
 	var speed_B_str =  'B/s';

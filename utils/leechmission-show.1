@@ -1,0 +1,39 @@
+.Dd June 9, 2010
+.Dt LEECHMISSION-SHOW 1
+.Os
+.Sh NAME
+.Nm leechmission-show
+.Nd command-line utility to show .torrent file metadata
+.Sh SYNOPSIS
+.Bk -words
+.Nm
+.Op Fl h
+.Op Fl m
+.Op Fl s
+.Op Ar torrentfile
+.Ek
+.Sh DESCRIPTION
+.Nm
+shows BitTorrent .torrent file metadata
+.Sh OPTIONS
+.Bl -tag -width Ds
+.It Fl h Fl -help
+Show a short help page and exit.
+.It Fl m Fl -magnet
+Show a magnet link for the specified .torrent file
+.It Fl s Fl -scrape
+Ask the torrent's trackers how many peers are in the torrent's swarm
+.El
+.Sh AUTHORS
+.An -nosplit
+.An Jordan Lee 
+.Sh SEE ALSO
+.Xr leechmission-create 1 ,
+.Xr leechmission-daemon 1 ,
+.Xr leechmission-edit 1 ,
+.Xr leechmission-gtk 1 ,
+.Xr leechmission-qt 1 ,
+.Xr leechmission-remote 1 ,
+.Xr leechmission-show 1
+.Pp
+http://www.leechmissionbt.com/

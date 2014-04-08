@@ -15,13 +15,13 @@
 #include <stdlib.h> /* strtoul(), EXIT_FAILURE */
 #include <unistd.h> /* getcwd() */
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/makemeta.h>
-#include <libtransmission/tr-getopt.h>
-#include <libtransmission/utils.h>
-#include <libtransmission/version.h>
+#include <libleechmission/leechmission.h>
+#include <libleechmission/makemeta.h>
+#include <libleechmission/tr-getopt.h>
+#include <libleechmission/utils.h>
+#include <libleechmission/version.h>
 
-#define MY_NAME "transmission-create"
+#define MY_NAME "leechmission-create"
 
 #define MAX_TRACKERS 128
 static const uint32_t KiB = 1024;

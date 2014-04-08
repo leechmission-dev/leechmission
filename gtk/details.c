@@ -16,8 +16,8 @@
 #include <glib/gi18n.h>
 #include <gtk/gtk.h>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/utils.h> /* tr_free */
+#include <libleechmission/leechmission.h>
+#include <libleechmission/utils.h> /* tr_free */
 
 #include "actions.h"
 #include "conf.h"
@@ -1294,7 +1294,7 @@ initPeerRow (GtkListStore        * store,
                       PEER_COL_ADDRESS, peer->addr,
                       PEER_COL_ADDRESS_COLLATED, collated_name,
                       PEER_COL_CLIENT, client,
-                      PEER_COL_ENCRYPTION_STOCK_ID, peer->isEncrypted ? "transmission-lock" : NULL,
+                      PEER_COL_ENCRYPTION_STOCK_ID, peer->isEncrypted ? "leechmission-lock" : NULL,
                       PEER_COL_KEY, key,
                       PEER_COL_TORRENT_NAME, torrentName,
                       -1);

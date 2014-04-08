@@ -12,8 +12,8 @@
 
 #include <gtk/gtk.h>
 #include <glib/gi18n.h>
-#include <libtransmission/transmission.h>
-#include <libtransmission/utils.h> /* tr_truncd () */
+#include <libleechmission/leechmission.h>
+#include <libleechmission/utils.h> /* tr_truncd () */
 #include "hig.h"
 #include "icons.h"
 #include "torrent-cell-renderer.h"

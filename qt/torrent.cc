@@ -22,9 +22,9 @@
 #include <QUrl>
 #include <QVariant>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/utils.h> /* tr_new0, tr_strdup */
-#include <libtransmission/variant.h>
+#include <libleechmission/leechmission.h>
+#include <libleechmission/utils.h> /* tr_new0, tr_strdup */
+#include <libleechmission/variant.h>
 
 #include "app.h"
 #include "prefs.h"

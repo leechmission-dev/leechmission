@@ -25,9 +25,9 @@
 
 #include <dirent.h> /* readdir */
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/log.h>
-#include <libtransmission/utils.h> /* tr_buildPath (), tr_logAddInfo () */
+#include <libleechmission/leechmission.h>
+#include <libleechmission/log.h>
+#include <libleechmission/utils.h> /* tr_buildPath (), tr_logAddInfo () */
 #include "watch.h"
 
 struct dtr_watchdir

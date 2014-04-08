@@ -20,7 +20,7 @@
 #include <QSortFilterProxyModel>
 #include <QStringList>
 
-#include <libtransmission/transmission.h> // priorities
+#include <libleechmission/leechmission.h> // priorities
 
 #include "file-tree.h"
 #include "formatter.h"

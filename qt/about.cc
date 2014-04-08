@@ -21,8 +21,8 @@
 #include <QVBoxLayout>
 #include <QWidget>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/version.h>
+#include <libleechmission/leechmission.h>
+#include <libleechmission/version.h>
 
 #include "about.h"
 #include "hig.h"
@@ -32,19 +32,19 @@ AboutDialog :: AboutDialog (QWidget * parent):
   QDialog (parent, Qt::Dialog),
   myLicenseDialog (new LicenseDialog (this))
 {
-  setWindowTitle (tr ("About Transmission"));
+  setWindowTitle (tr ("About Leechmission"));
   QLabel * l;
   QVBoxLayout * v = new QVBoxLayout (this);
 
   l = new QLabel;
-  l->setPixmap (QPixmap (QString::fromUtf8 (":/icons/transmission-48.png")));
+  l->setPixmap (QPixmap (QString::fromUtf8 (":/icons/leechmission-48.png")));
   l->setAlignment (Qt::AlignCenter);
   v->addWidget (l);
 
   QFont f (font ());
   f.setWeight (QFont::Bold);
   f.setPointSize (int (f.pointSize () * 1.2));
-  l = new QLabel (tr ("<big>Transmission %1</big>").arg (QString::fromUtf8 (LONG_VERSION_STRING)));
+  l = new QLabel (tr ("<big>Leechmission %1</big>").arg (QString::fromUtf8 (LONG_VERSION_STRING)));
   l->setAlignment (Qt::AlignCenter);
   l->setFont (f);
   l->setMargin (8);
@@ -59,7 +59,7 @@ AboutDialog :: AboutDialog (QWidget * parent):
   l->setAlignment (Qt::AlignCenter);
   v->addWidget (l);
 
-  l = new QLabel (QString::fromUtf8 ("<a href=\"http://www.transmissionbt.com/\">http://www.transmissionbt.com/</a>"));
+  l = new QLabel (QString::fromUtf8 ("<a href=\"http://www.leechmissionbt.com/\">http://www.leechmissionbt.com/</a>"));
   l->setOpenExternalLinks (true);
   l->setAlignment (Qt::AlignCenter);
   v->addWidget (l);

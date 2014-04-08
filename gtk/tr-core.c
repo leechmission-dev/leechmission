@@ -31,11 +31,11 @@
 
 #include <event2/buffer.h>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/log.h>
-#include <libtransmission/rpcimpl.h>
-#include <libtransmission/utils.h> /* tr_free */
-#include <libtransmission/variant.h>
+#include <libleechmission/leechmission.h>
+#include <libleechmission/log.h>
+#include <libleechmission/rpcimpl.h>
+#include <libleechmission/utils.h> /* tr_free */
+#include <libleechmission/variant.h>
 
 #include "actions.h"
 #include "conf.h"
@@ -936,7 +936,7 @@ on_torrent_completeness_changed_idle (gpointer gdata)
   return G_SOURCE_REMOVE;
 }
 
-/* this is called in the libtransmission thread, *NOT* the GTK+ thread,
+/* this is called in the libleechmission thread, *NOT* the GTK+ thread,
    so delegate to the GTK+ thread before calling notify's dbus code... */
 static void
 on_torrent_completeness_changed (tr_torrent       * tor,
@@ -1022,7 +1022,7 @@ on_torrent_metadata_changed_idle (gpointer gdata)
   return G_SOURCE_REMOVE;
 }
 
-/* this is called in the libtransmission thread, *NOT* the GTK+ thread,
+/* this is called in the libleechmission thread, *NOT* the GTK+ thread,
    so delegate to the GTK+ thread before changing our list store... */
 static void
 on_torrent_metadata_changed (tr_torrent * tor, void * gcore)
@@ -1541,7 +1541,7 @@ gtr_inhibit_hibernation (guint * cookie)
   GVariant * response;
   GDBusConnection * connection;
   GError * err = NULL;
-  const char * application = "Transmission BitTorrent Client";
+  const char * application = "Leechmission BitTorrent Client";
   const char * reason = "BitTorrent Activity";
   const int toplevel_xid = 0;
   const int flags = 4; /* Inhibit suspending the session or computer */

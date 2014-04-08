@@ -1,4 +1,4 @@
 SUBDIRS = \
   jqueryui \
-  transmission
+  leechmission
 

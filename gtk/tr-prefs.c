@@ -15,9 +15,9 @@
 #include <unistd.h>
 #include <glib/gi18n.h>
 #include <gtk/gtk.h>
-#include <libtransmission/transmission.h>
-#include <libtransmission/utils.h>
-#include <libtransmission/version.h>
+#include <libleechmission/leechmission.h>
+#include <libleechmission/utils.h>
+#include <libleechmission/version.h>
 #include "conf.h"
 #include "hig.h"
 #include "tr-core.h"
@@ -394,7 +394,7 @@ desktopPage (GObject * core)
     w = new_check_button (s, TR_KEY_inhibit_desktop_hibernation, core);
     hig_workarea_add_wide_control (t, &row, w);
 
-    s = _("Show Transmission icon in the _notification area");
+    s = _("Show Leechmission icon in the _notification area");
     w = new_check_button (s, TR_KEY_show_notification_area_icon, core);
     hig_workarea_add_wide_control (t, &row, w);
 
@@ -1209,7 +1209,7 @@ networkPage (GObject * core)
   data->prefsTag = g_signal_connect (TR_CORE (core), "prefs-changed", G_CALLBACK (onCorePrefsChanged), data);
   g_object_weak_ref (G_OBJECT (t), networkPageDestroyed, data);
 
-  s = _("Pick a _random port every time Transmission is started");
+  s = _("Pick a _random port every time Leechmission is started");
   w = new_check_button (s, TR_KEY_peer_port_random_on_start, core);
   hig_workarea_add_wide_control (t, &row, w);
 
@@ -1305,14 +1305,14 @@ gtr_prefs_dialog_new (GtkWindow * parent, GObject * core)
   data->core = TR_CORE (core);
   data->core_prefs_tag = g_signal_connect (TR_CORE (core), "prefs-changed", G_CALLBACK (on_core_prefs_changed), data);
 
-  d = gtk_dialog_new_with_buttons (_("Transmission Preferences"),
+  d = gtk_dialog_new_with_buttons (_("Leechmission Preferences"),
                                    parent,
                                    GTK_DIALOG_DESTROY_WITH_PARENT,
                                    GTK_STOCK_HELP, GTK_RESPONSE_HELP,
                                    GTK_STOCK_CLOSE, GTK_RESPONSE_CLOSE,
                                    NULL);
   g_object_weak_ref (G_OBJECT(d), on_prefs_dialog_destroyed, data);
-  gtk_window_set_role (GTK_WINDOW (d), "transmission-preferences-dialog");
+  gtk_window_set_role (GTK_WINDOW (d), "leechmission-preferences-dialog");
   gtk_container_set_border_width (GTK_CONTAINER (d), GUI_PAD);
 
   n = gtk_notebook_new ();

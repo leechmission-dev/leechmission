@@ -78,7 +78,7 @@ PRE_UNINSTALL = :
 POST_UNINSTALL = :
 build_triplet = @build@
 host_triplet = @host@
-bin_PROGRAMS = transmission-cli$(EXEEXT)
+bin_PROGRAMS = leechmission-cli$(EXEEXT)
 subdir = cli
 DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am \
 	$(top_srcdir)/depcomp $(dist_man_MANS)
@@ -96,10 +96,10 @@ CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)" "$(DESTDIR)$(man1dir)"
 PROGRAMS = $(bin_PROGRAMS)
-am_transmission_cli_OBJECTS = cli.$(OBJEXT)
-transmission_cli_OBJECTS = $(am_transmission_cli_OBJECTS)
-transmission_cli_DEPENDENCIES =  \
-	$(top_builddir)/libtransmission/libtransmission.a
+am_leechmission_cli_OBJECTS = cli.$(OBJEXT)
+leechmission_cli_OBJECTS = $(am_leechmission_cli_OBJECTS)
+leechmission_cli_DEPENDENCIES =  \
+	$(top_builddir)/libleechmission/libleechmission.a
 AM_V_lt = $(am__v_lt_@AM_V@)
 am__v_lt_ = $(am__v_lt_@AM_DEFAULT_V@)
 am__v_lt_0 = --silent
@@ -138,8 +138,8 @@ AM_V_CCLD = $(am__v_CCLD_@AM_V@)
 am__v_CCLD_ = $(am__v_CCLD_@AM_DEFAULT_V@)
 am__v_CCLD_0 = @echo "  CCLD    " $@;
 am__v_CCLD_1 = 
-SOURCES = $(transmission_cli_SOURCES)
-DIST_SOURCES = $(transmission_cli_SOURCES)
+SOURCES = $(leechmission_cli_SOURCES)
+DIST_SOURCES = $(leechmission_cli_SOURCES)
 am__can_run_installinfo = \
   case $$AM_UPDATE_INFO_DIR in \
     n|no|NO) false;; \
@@ -384,7 +384,7 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-transmissionlocaledir = @transmissionlocaledir@
+leechmissionlocaledir = @leechmissionlocaledir@
 AM_CPPFLAGS = -I@top_srcdir@
 AM_CFLAGS = \
     @LIBEVENT_CFLAGS@ \
@@ -396,10 +396,10 @@ AM_CFLAGS = \
 AM_LDFLAGS = \
     @ZLIB_LDFLAGS@
 
-dist_man_MANS = transmission-cli.1
-transmission_cli_SOURCES = cli.c
-transmission_cli_LDADD = \
-    $(top_builddir)/libtransmission/libtransmission.a \
+dist_man_MANS = leechmission-cli.1
+leechmission_cli_SOURCES = cli.c
+leechmission_cli_LDADD = \
+    $(top_builddir)/libleechmission/libleechmission.a \
     @LIBNATPMP_LIBS@ \
     @LIBUPNP_LIBS@ \
     @DHT_LIBS@ \
@@ -495,9 +495,9 @@ clean-binPROGRAMS:
 	echo " rm -f" $$list; \
 	rm -f $$list
 
-transmission-cli$(EXEEXT): $(transmission_cli_OBJECTS) $(transmission_cli_DEPENDENCIES) $(EXTRA_transmission_cli_DEPENDENCIES) 
-	@rm -f transmission-cli$(EXEEXT)
-	$(AM_V_CCLD)$(LINK) $(transmission_cli_OBJECTS) $(transmission_cli_LDADD) $(LIBS)
+leechmission-cli$(EXEEXT): $(leechmission_cli_OBJECTS) $(leechmission_cli_DEPENDENCIES) $(EXTRA_leechmission_cli_DEPENDENCIES) 
+	@rm -f leechmission-cli$(EXEEXT)
+	$(AM_V_CCLD)$(LINK) $(leechmission_cli_OBJECTS) $(leechmission_cli_LDADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)

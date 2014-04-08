@@ -15,15 +15,15 @@
 #ifdef HAVE_LIBAPPINDICATOR
  #include <libappindicator/app-indicator.h>
 #endif
-#include <libtransmission/transmission.h>
-#include <libtransmission/utils.h>
+#include <libleechmission/leechmission.h>
+#include <libleechmission/utils.h>
 #include "actions.h"
 #include "tr-icon.h"
 #include "util.h"
 
 static TR_DEFINE_QUARK (tr_core, core)
 
-#define ICON_NAME "transmission"
+#define ICON_NAME "leechmission"
 
 #ifdef HAVE_LIBAPPINDICATOR
 void
@@ -100,7 +100,7 @@ gtr_icon_refresh (gpointer vicon)
    * %2$s: current upload limit, if any
    * %3$s: current download speed
    * %4$s: current download limit, if any */
-  g_snprintf (tip, sizeof (tip), _("Transmission\nUp: %1$s %2$s\nDown: %3$s %4$s"), up, upLimit, down, downLimit);
+  g_snprintf (tip, sizeof (tip), _("Leechmission\nUp: %1$s %2$s\nDown: %3$s %4$s"), up, upLimit, down, downLimit);
 
   gtk_status_icon_set_tooltip_text (GTK_STATUS_ICON (icon), tip);
 }

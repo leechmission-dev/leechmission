@@ -13,8 +13,8 @@
 #include <cassert>
 #include <iostream>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/variant.h>
+#include <libleechmission/leechmission.h>
+#include <libleechmission/variant.h>
 
 #include "torrent-delegate.h"
 #include "torrent-model.h"

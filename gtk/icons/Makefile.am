@@ -5,23 +5,23 @@ public_icons_themes = \
 	$(NULL)
 
 public_icons = \
-	hicolor_apps_16x16_transmission.png \
-	hicolor_apps_22x22_transmission.png \
-	hicolor_apps_24x24_transmission.png \
-	hicolor_apps_32x32_transmission.png \
-	hicolor_apps_48x48_transmission.png \
-	hicolor_apps_256x256_transmission.png \
-	hicolor_apps_scalable_transmission.svg \
+	hicolor_apps_16x16_leechmission.png \
+	hicolor_apps_22x22_leechmission.png \
+	hicolor_apps_24x24_leechmission.png \
+	hicolor_apps_32x32_leechmission.png \
+	hicolor_apps_48x48_leechmission.png \
+	hicolor_apps_256x256_leechmission.png \
+	hicolor_apps_scalable_leechmission.svg \
 	$(NULL)
 
 private_icons = \
 	$(NULL)
 
 noinst_DATA = \
-	hicolor_apps_16x16_transmission.svg \
-	hicolor_apps_22x22_transmission.svg \
-	hicolor_apps_32x32_transmission.svg \
-	transmission.svg \
+	hicolor_apps_16x16_leechmission.svg \
+	hicolor_apps_22x22_leechmission.svg \
+	hicolor_apps_32x32_leechmission.svg \
+	leechmission.svg \
 	$(NULL)
 
 EXTRA_DIST = \

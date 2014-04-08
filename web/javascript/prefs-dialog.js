@@ -239,7 +239,7 @@ function PrefsDialog(remote) {
 
     onDialogClosed = function()
     {
-        transmission.hideMobileAddressbar();
+        leechmission.hideMobileAddressbar();
 
         $(data.dialog).trigger('closed', getValues());
     };
@@ -295,7 +295,7 @@ function PrefsDialog(remote) {
 
     this.show = function ()
     {
-        transmission.hideMobileAddressbar();
+        leechmission.hideMobileAddressbar();
 
         setBlocklistButtonEnabled(true);
         data.remote.checkPort(onPortChecked,this);
@@ -304,7 +304,7 @@ function PrefsDialog(remote) {
 
     this.close = function ()
     {
-        transmission.hideMobileAddressbar();
+        leechmission.hideMobileAddressbar();
         data.elements.root.dialog('close');
     },
 

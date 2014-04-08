@@ -299,7 +299,7 @@ PrefsDialog :: createDesktopTab( )
     HIG * hig = new HIG( this );
     hig->addSectionTitle( tr( "Desktop" ) );
 
-      hig->addWideControl( checkBoxNew( tr( "Show Transmission icon in the &notification area" ), Prefs::SHOW_TRAY_ICON ) );
+      hig->addWideControl( checkBoxNew( tr( "Show Leechmission icon in the &notification area" ), Prefs::SHOW_TRAY_ICON ) );
       hig->addWideControl( checkBoxNew( tr( "Start &minimized in notification area" ), Prefs::START_MINIMIZED ) );
 
     hig->addSectionDivider( );
@@ -354,7 +354,7 @@ PrefsDialog :: createNetworkTab( )
 
     hig->addRow( tr( "&Port for incoming connections:" ), s );
     hig->addRow( QString(), h, 0 );
-    hig->addWideControl( checkBoxNew( tr( "Pick a &random port every time Transmission is started" ), Prefs :: PEER_PORT_RANDOM_ON_START ) );
+    hig->addWideControl( checkBoxNew( tr( "Pick a &random port every time Leechmission is started" ), Prefs :: PEER_PORT_RANDOM_ON_START ) );
     hig->addWideControl( checkBoxNew( tr( "Use UPnP or NAT-PMP port &forwarding from my router" ), Prefs::PORT_FORWARDING ) );
 
     hig->addSectionDivider( );
@@ -637,7 +637,7 @@ PrefsDialog :: PrefsDialog( Session& session, Prefs& prefs, QWidget * parent ):
     myPrefs( prefs ),
     myLayout( new QVBoxLayout( this ) )
 {
-    setWindowTitle( tr( "Transmission Preferences" ) );
+    setWindowTitle( tr( "Leechmission Preferences" ) );
 
     QTabWidget * t = new QTabWidget( this );
     t->addTab( createSpeedTab( ),        tr( "Speed" ) );

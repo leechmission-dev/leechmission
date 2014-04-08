@@ -29,15 +29,15 @@
 #define CURL_DISABLE_TYPECHECK /* otherwise -Wunreachable-code goes insane */
 #include <curl/curl.h>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/log.h>
-#include <libtransmission/rpcimpl.h>
-#include <libtransmission/tr-getopt.h>
-#include <libtransmission/utils.h>
-#include <libtransmission/variant.h>
-#include <libtransmission/version.h>
+#include <libleechmission/leechmission.h>
+#include <libleechmission/log.h>
+#include <libleechmission/rpcimpl.h>
+#include <libleechmission/tr-getopt.h>
+#include <libleechmission/utils.h>
+#include <libleechmission/variant.h>
+#include <libleechmission/version.h>
 
-#define MY_NAME "transmission-remote"
+#define MY_NAME "leechmission-remote"
 #define DEFAULT_HOST "localhost"
 #define DEFAULT_PORT atoi (TR_DEFAULT_RPC_PORT_STR)
 #define DEFAULT_URL TR_DEFAULT_RPC_URL_STR "rpc/"
@@ -205,7 +205,7 @@ getUsage (void)
     return
         MY_NAME" "LONG_VERSION_STRING"\n"
         "A fast and easy BitTorrent client\n"
-        "http://www.transmissionbt.com/\n"
+        "http://www.leechmissionbt.com/\n"
         "\n"
         "Usage: " MY_NAME
         " [host] [options]\n"
@@ -214,7 +214,7 @@ getUsage (void)
                 "       "
         MY_NAME " [host:port] [options]\n"
                 "       "
-        MY_NAME " [http(s?)://host:port/transmission/] [options]\n"
+        MY_NAME " [http(s?)://host:port/leechmission/] [options]\n"
                 "\n"
                 "See the man page for detailed explanations and many examples.";
 }
@@ -247,7 +247,7 @@ static tr_option opts[] =
     { 910, "encryption-required",    "Encrypt all peer connections", "er", 0, NULL },
     { 911, "encryption-preferred",   "Prefer encrypted peer connections", "ep", 0, NULL },
     { 912, "encryption-tolerated",   "Prefer unencrypted peer connections", "et", 0, NULL },
-    { 850, "exit",                   "Tell the transmission session to shut down", NULL, 0, NULL },
+    { 850, "exit",                   "Tell the leechmission session to shut down", NULL, 0, NULL },
     { 940, "files",                  "List the current torrent(s)' files", "f",  0, NULL },
     { 'g', "get",                    "Mark files for download", "g",  1, "<files>" },
     { 'G', "no-get",                 "Mark files for not downloading", "G",  1, "<files>" },
@@ -260,7 +260,7 @@ static tr_option opts[] =
     { 921, "session-stats",          "Show the session's statistics", "st", 0, NULL },
     { 'l', "list",                   "List all torrents", "l",  0, NULL },
     { 960, "move",                   "Move current torrent's data to a new folder", NULL, 1, "<path>" },
-    { 961, "find",                   "Tell Transmission where to find a torrent's data", NULL, 1, "<path>" },
+    { 961, "find",                   "Tell Leechmission where to find a torrent's data", NULL, 1, "<path>" },
     { 'm', "portmap",                "Enable portmapping via NAT-PMP or UPnP", "m",  0, NULL },
     { 'M', "no-portmap",             "Disable portmapping", "M",  0, NULL },
     { 'n', "auth",                   "Set username and password", "n",  1, "<user:pw>" },
@@ -2368,7 +2368,7 @@ processArgs (const char * rpcurl, int argc, const char ** argv)
     return status;
 }
 
-/* [host:port] or [host] or [port] or [http (s?)://host:port/transmission/] */
+/* [host:port] or [host] or [port] or [http (s?)://host:port/leechmission/] */
 static void
 getHostAndPortAndRpcUrl (int * argc, char ** argv,
                          char ** host, int * port, char ** rpcurl)

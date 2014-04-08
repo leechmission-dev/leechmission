@@ -1,7 +1,7 @@
 /******************************************************************************
  * $Id: Torrent.m 14119 2013-07-14 14:35:57Z livings124 $
  *
- * Copyright (c) 2006-2012 Transmission authors and contributors
+ * Copyright (c) 2006-2012 Leechmission authors and contributors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -29,7 +29,7 @@
 #import "TrackerNode.h"
 
 #import "log.h"
-#import "transmission.h" // required by utils.h
+#import "leechmission.h" // required by utils.h
 #import "utils.h" // tr_new()
 
 #define ETA_IDLE_DISPLAY_SEC (2*60)
@@ -929,7 +929,7 @@ int trashDataFile(const char * filename)
         && !(error = [NSString stringWithCString: fStat->errorString encoding: NSISOLatin1StringEncoding]))
         error = [NSString stringWithFormat: @"(%@)", NSLocalizedString(@"unreadable error", "Torrent -> error string unreadable")];
     
-    //libtransmission uses "Set Location", Mac client uses "Move data file to..." - very hacky!
+    //libleechmission uses "Set Location", Mac client uses "Move data file to..." - very hacky!
     error = [error stringByReplacingOccurrencesOfString: @"Set Location" withString: [@"Move Data File To" stringByAppendingEllipsis]];
     
     return error;
@@ -1650,7 +1650,7 @@ int trashDataFile(const char * filename)
         fHandle = torrentStruct;
     else
     {
-        //set libtransmission settings for initialization
+        //set libleechmission settings for initialization
         tr_ctor * ctor = tr_ctorNew(lib);
         
         tr_ctorSetPaused(ctor, TR_FORCE, YES);

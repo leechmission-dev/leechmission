@@ -26,8 +26,8 @@ class QStringList;
 
 class AddData;
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/quark.h>
+#include <libleechmission/leechmission.h>
+#include <libleechmission/quark.h>
 
 extern "C"
 {
@@ -67,7 +67,7 @@ class Session: public QObject
 
   public:
 
-    /** returns true if the transmission session is being run inside this client */
+    /** returns true if the leechmission session is being run inside this client */
     bool isServer () const;
 
     /** returns true if isServer () is true or if the remote address is the localhost */

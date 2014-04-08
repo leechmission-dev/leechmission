@@ -12,8 +12,8 @@
 
 #include <QFile>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/utils.h> // tr_base64_encode()
+#include <libleechmission/leechmission.h>
+#include <libleechmission/utils.h> // tr_base64_encode()
 
 #include "add-data.h"
 #include "utils.h"

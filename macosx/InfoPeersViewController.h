@@ -1,7 +1,7 @@
 /******************************************************************************
  * $Id: InfoPeersViewController.h 13293 2012-04-29 00:53:34Z livings124 $
  *
- * Copyright (c) 2010-2012 Transmission authors and contributors
+ * Copyright (c) 2010-2012 Leechmission authors and contributors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),

@@ -1,12 +1,12 @@
-# Latvian translation for transmission
+# Latvian translation for leechmission
 # Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
-# This file is distributed under the same license as the transmission package.
+# This file is distributed under the same license as the leechmission package.
 #
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008.
 # Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2009, 2010, 2011, 2012.
 msgid ""
 msgstr ""
-"Project-Id-Version: transmission\n"
+"Project-Id-Version: leechmission\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2012-02-03 15:22-0600\n"
 "PO-Revision-Date: 2012-04-08 19:47+0000\n"
@@ -57,7 +57,7 @@ msgid "Sort by Si_ze"
 msgstr "Kārtot pēc i_zmēra"
 
 #: ../gtk/actions.c:70
-msgid "_Show Transmission"
+msgid "_Show Leechmission"
 msgstr "Rādīt Tran_smission"
 
 #: ../gtk/actions.c:71
@@ -320,7 +320,7 @@ msgid "_Maximum peers:"
 msgstr "_Maksimālais dalībnieku skaits:"
 
 #: ../gtk/details.c:559 ../gtk/torrent-cell-renderer.c:201
-#: ../libtransmission/verify.c:273
+#: ../libleechmission/verify.c:273
 msgid "Queued for verification"
 msgstr "Rindā uz pārbaudīšanu"
 
@@ -896,9 +896,9 @@ msgstr "_Rādīt:"
 
 #: ../gtk/main.c:308
 #, c-format
-msgid "Error registering Transmission as x-scheme-handler/magnet handler: %s"
+msgid "Error registering Leechmission as x-scheme-handler/magnet handler: %s"
 msgstr ""
-"Kļūda, reģistrējot Transmission kā x-scheme-handler/magnet apstrādātāju — %s"
+"Kļūda, reģistrējot Leechmission kā x-scheme-handler/magnet apstrādātāju — %s"
 
 #: ../gtk/main.c:477
 #, c-format
@@ -924,9 +924,9 @@ msgstr "Palaist minimizētu paziņojumu laukā"
 msgid "Show version number and exit"
 msgstr "Rādīt versijas numuru un iziet"
 
-#: ../gtk/main.c:630 ../gtk/transmission-gtk.desktop.in.h:1
-msgid "Transmission"
-msgstr "Transmission"
+#: ../gtk/main.c:630 ../gtk/leechmission-gtk.desktop.in.h:1
+msgid "Leechmission"
+msgstr "Leechmission"
 
 #. parse the command line
 #: ../gtk/main.c:634
@@ -945,12 +945,12 @@ msgstr ""
 
 #: ../gtk/main.c:739
 msgid ""
-"Transmission is a file-sharing program. When you run a torrent, its data "
+"Leechmission is a file-sharing program. When you run a torrent, its data "
 "will be made available to others by means of upload. You and you alone are "
 "fully responsible for exercising proper judgement and abiding by your local "
 "laws."
 msgstr ""
-"Transmission ir datņu koplietošanas programma. Kad jūs palaižat torentu, "
+"Leechmission ir datņu koplietošanas programma. Kad jūs palaižat torentu, "
 "augšupielādējot tā dati būs pieejami cietiem. Jūs un tikai jūs esat "
 "atbildīgi par sekām likuma priekšā."
 
@@ -1413,15 +1413,15 @@ msgstr[0] "Augšupielādē %1$'d no %2$'d savienota dalībnieka"
 msgstr[1] "Augšupielādē %1$'d no %2$'d savienotiem dalībniekiem"
 msgstr[2] "Augšupielādē %1$'d no %2$'d savienotiem dalībniekiem"
 
-#: ../gtk/transmission-gtk.desktop.in.h:2
+#: ../gtk/leechmission-gtk.desktop.in.h:2
 msgid "BitTorrent Client"
 msgstr "BitTorrent klients"
 
-#: ../gtk/transmission-gtk.desktop.in.h:3
-msgid "Transmission BitTorrent Client"
-msgstr "Transmission BitTorrent klients"
+#: ../gtk/leechmission-gtk.desktop.in.h:3
+msgid "Leechmission BitTorrent Client"
+msgstr "Leechmission BitTorrent klients"
 
-#: ../gtk/transmission-gtk.desktop.in.h:4
+#: ../gtk/leechmission-gtk.desktop.in.h:4
 msgid "Download and share files over BitTorrent"
 msgstr "Lejupielādēt un dalīties ar datnēm caur BitTorrent"
 
@@ -1460,11 +1460,11 @@ msgstr "(Ierobežojums: %s)"
 #: ../gtk/tr-icon.c:109
 #, c-format
 msgid ""
-"Transmission\n"
+"Leechmission\n"
 "Up: %1$s %2$s\n"
 "Down: %3$s %4$s"
 msgstr ""
-"Transmission\n"
+"Leechmission\n"
 "Augšup: %1$s %2$s\n"
 "Lejup: %3$s %4$s"
 
@@ -1484,7 +1484,7 @@ msgstr "Maksimums aktīvo _lejupielāžu:"
 msgid "Downloads sharing data in the last N minutes are _active:"
 msgstr "Lejupielādes, kas koplieto datus pēdējās N minūtes, ir _aktīvas:"
 
-#: ../gtk/tr-prefs.c:286 ../libtransmission/torrent.c:1919
+#: ../gtk/tr-prefs.c:286 ../libleechmission/torrent.c:1919
 msgid "Incomplete"
 msgstr "Nepabeigts"
 
@@ -1531,8 +1531,8 @@ msgid "_Inhibit hibernation when torrents are active"
 msgstr "Nomākt iemidzināšanu, kad torenti ir aktīvi"
 
 #: ../gtk/tr-prefs.c:384
-msgid "Show Transmission icon in the _notification area"
-msgstr "Rādīt Transmission ikonu _paziņojumu laukā"
+msgid "Show Leechmission icon in the _notification area"
+msgstr "Rādīt Leechmission ikonu _paziņojumu laukā"
 
 #: ../gtk/tr-prefs.c:389
 msgid "Notification"
@@ -1800,8 +1800,8 @@ msgid "Te_st Port"
 msgstr "_Pārbaudīt portu"
 
 #: ../gtk/tr-prefs.c:1222
-msgid "Pick a _random port every time Transmission is started"
-msgstr "Izvēlēties _patvaļīgu portu katrā Transmission palaišanas reizē"
+msgid "Pick a _random port every time Leechmission is started"
+msgstr "Izvēlēties _patvaļīgu portu katrā Leechmission palaišanas reizē"
 
 #: ../gtk/tr-prefs.c:1226
 msgid "Use UPnP or NAT-PMP port _forwarding from my router"
@@ -1828,8 +1828,8 @@ msgid "uTP is a tool for reducing network congestion."
 msgstr "uTP ir rīks tīkla pārslogojuma mazināšanai."
 
 #: ../gtk/tr-prefs.c:1262
-msgid "Transmission Preferences"
-msgstr "Transmission iestatījumi"
+msgid "Leechmission Preferences"
+msgstr "Leechmission iestatījumi"
 
 #: ../gtk/tr-prefs.c:1276
 msgid "Torrents"
@@ -1995,7 +1995,7 @@ msgstr "GB/s"
 msgid "TB/s"
 msgstr "TB/s"
 
-#: ../cli/cli.c:115 ../gtk/util.c:87 ../libtransmission/utils.c:1509
+#: ../cli/cli.c:115 ../gtk/util.c:87 ../libleechmission/utils.c:1509
 msgid "None"
 msgstr "Nekas"
 
@@ -2066,8 +2066,8 @@ msgstr "Neatpazīts URL"
 
 #: ../gtk/util.c:565
 #, c-format
-msgid "Transmission doesn't know how to use \"%s\""
-msgstr "Transmission nezina, kā izmantot “%s”"
+msgid "Leechmission doesn't know how to use \"%s\""
+msgstr "Leechmission nezina, kā izmantot “%s”"
 
 #: ../gtk/util.c:570
 #, c-format
@@ -2079,185 +2079,185 @@ msgstr ""
 "BitTorrent magnet saitēm ir sadaļa, kas satur “%s”."
 
 #. did caller give us an uninitialized val?
-#: ../libtransmission/bencode.c:1117
+#: ../libleechmission/bencode.c:1117
 msgid "Invalid metadata"
 msgstr "Nederīgi metadati"
 
-#: ../libtransmission/bencode.c:1723 ../libtransmission/bencode.c:1751
+#: ../libleechmission/bencode.c:1723 ../libleechmission/bencode.c:1751
 #, c-format
 msgid "Couldn't save temporary file \"%1$s\": %2$s"
 msgstr "Nevarēja saglabāt pagaidu datni “%1$s” — %2$s"
 
-#: ../libtransmission/bencode.c:1738
+#: ../libleechmission/bencode.c:1738
 #, c-format
 msgid "Saved \"%s\""
 msgstr "Saglabāts “%s”"
 
-#: ../libtransmission/bencode.c:1743 ../libtransmission/blocklist.c:417
-#: ../libtransmission/rpcimpl.c:1260 ../libtransmission/rpcimpl.c:1271
-#: ../libtransmission/rpcimpl.c:1287
+#: ../libleechmission/bencode.c:1743 ../libleechmission/blocklist.c:417
+#: ../libleechmission/rpcimpl.c:1260 ../libleechmission/rpcimpl.c:1271
+#: ../libleechmission/rpcimpl.c:1287
 #, c-format
 msgid "Couldn't save file \"%1$s\": %2$s"
 msgstr "Nevarēja saglabāt datni “%1$s” — %2$s"
 
-#: ../libtransmission/blocklist.c:86 ../libtransmission/blocklist.c:325
-#: ../libtransmission/utils.c:438
+#: ../libleechmission/blocklist.c:86 ../libleechmission/blocklist.c:325
+#: ../libleechmission/utils.c:438
 #, c-format
 msgid "Couldn't read \"%1$s\": %2$s"
 msgstr "Nevarēja nolasīt “%1$s” — %2$s"
 
-#: ../libtransmission/blocklist.c:115
+#: ../libleechmission/blocklist.c:115
 #, c-format
 msgid "Blocklist \"%s\" contains %zu entries"
 msgstr "Bloķēšanas saraksts “%s” satur %zu ierakstus"
 
 #. don't try to display the actual lines - it causes issues
-#: ../libtransmission/blocklist.c:368
+#: ../libleechmission/blocklist.c:368
 #, c-format
 msgid "blocklist skipped invalid address at line %d"
 msgstr "nobloķēto saraksts izlaida nederīgu adresi rindā %d"
 
-#: ../libtransmission/blocklist.c:420
+#: ../libleechmission/blocklist.c:420
 #, c-format
 msgid "Blocklist \"%s\" updated with %zu entries"
 msgstr "Bloķēšanas saraksts “%s” ir atjaunināts ar %zu ierakstiem"
 
-#: ../libtransmission/fdlimit.c:348 ../libtransmission/utils.c:574
-#: ../libtransmission/utils.c:585
+#: ../libleechmission/fdlimit.c:348 ../libleechmission/utils.c:574
+#: ../libleechmission/utils.c:585
 #, c-format
 msgid "Couldn't create \"%1$s\": %2$s"
 msgstr "Nevarēja izveidot “%1$s” — %2$s"
 
-#: ../libtransmission/fdlimit.c:369
+#: ../libleechmission/fdlimit.c:369
 #, c-format
 msgid "Couldn't open \"%1$s\": %2$s"
 msgstr "Nevarēja atvērt “%1$s” — %2$s"
 
-#: ../libtransmission/fdlimit.c:384
+#: ../libleechmission/fdlimit.c:384
 #, c-format
 msgid "Couldn't truncate \"%1$s\": %2$s"
 msgstr "Nevarēja saīsināt “%1$s” — %2$s"
 
-#: ../libtransmission/fdlimit.c:670
+#: ../libleechmission/fdlimit.c:670
 #, c-format
 msgid "Couldn't create socket: %s"
 msgstr "Nevarēja izveidot ligzdu — %s"
 
-#: ../libtransmission/makemeta.c:63
+#: ../libleechmission/makemeta.c:63
 #, c-format
 msgid "Torrent Creator is skipping file \"%s\": %s"
 msgstr "Torenta veidotājs izlaiž datni “%s” — %s"
 
-#: ../libtransmission/metainfo.c:533
+#: ../libleechmission/metainfo.c:533
 #, c-format
 msgid "Invalid metadata entry \"%s\""
 msgstr "Nederīgs metadatu ieraksts “%s”"
 
-#: ../libtransmission/natpmp.c:32
+#: ../libleechmission/natpmp.c:32
 msgid "Port Forwarding (NAT-PMP)"
 msgstr "Portu pārsūtīšana (NAT-PMP)"
 
-#: ../libtransmission/natpmp.c:72
+#: ../libleechmission/natpmp.c:72
 #, c-format
 msgid "%s succeeded (%d)"
 msgstr "%s izdevās (%d)"
 
-#: ../libtransmission/natpmp.c:141
+#: ../libleechmission/natpmp.c:141
 #, c-format
 msgid "Found public address \"%s\""
 msgstr "Atrasta publiskā adrese “%s”"
 
-#: ../libtransmission/natpmp.c:176
+#: ../libleechmission/natpmp.c:176
 #, c-format
 msgid "no longer forwarding port %d"
 msgstr "vairs nepārsūta portu %d"
 
-#: ../libtransmission/natpmp.c:221
+#: ../libleechmission/natpmp.c:221
 #, c-format
 msgid "Port %d forwarded successfully"
 msgstr "Ports %d veiksmīgi pārsūtīts"
 
-#: ../libtransmission/net.c:268
+#: ../libleechmission/net.c:268
 #, c-format
 msgid "Couldn't set source address %s on %d: %s"
 msgstr "Nevar iestatīt avota adresi %s uz %d — %s"
 
-#: ../libtransmission/net.c:284
+#: ../libleechmission/net.c:284
 #, c-format
 msgid "Couldn't connect socket %d to %s, port %d (errno %d - %s)"
 msgstr "Nevar savienot ligzdu %d ar %s, ports %d (kļūdas numurs %d — %s)"
 
-#: ../libtransmission/net.c:360
-msgid "Is another copy of Transmission already running?"
-msgstr "Vai ir palaista cita Transmission instance?"
+#: ../libleechmission/net.c:360
+msgid "Is another copy of Leechmission already running?"
+msgstr "Vai ir palaista cita Leechmission instance?"
 
-#: ../libtransmission/net.c:365
+#: ../libleechmission/net.c:365
 #, c-format
 msgid "Couldn't bind port %d on %s: %s"
 msgstr "Nevar piesaistīt portu %d uz %s — %s"
 
-#: ../libtransmission/net.c:367
+#: ../libleechmission/net.c:367
 #, c-format
 msgid "Couldn't bind port %d on %s: %s (%s)"
 msgstr "Nevar piesaistīt portu %d uz %s — %s (%s)"
 
-#: ../libtransmission/peer-msgs.c:1898
+#: ../libleechmission/peer-msgs.c:1898
 #, c-format
 msgid "Please Verify Local Data! Piece #%zu is corrupt."
 msgstr "Lūdzu, pārbaudiet lokālos datus. Daļa #%zu ir bojāta."
 
-#: ../libtransmission/port-forwarding.c:31
+#: ../libleechmission/port-forwarding.c:31
 msgid "Port Forwarding"
 msgstr "Portu pārsūtīšana"
 
-#: ../libtransmission/port-forwarding.c:58
+#: ../libleechmission/port-forwarding.c:58
 msgid "Starting"
 msgstr "Sāk"
 
-#: ../libtransmission/port-forwarding.c:59
+#: ../libleechmission/port-forwarding.c:59
 msgid "Forwarded"
 msgstr "Pārsūtīts"
 
-#: ../libtransmission/port-forwarding.c:60
+#: ../libleechmission/port-forwarding.c:60
 msgid "Stopping"
 msgstr "Beidz"
 
-#: ../libtransmission/port-forwarding.c:61
+#: ../libleechmission/port-forwarding.c:61
 msgid "Not forwarded"
 msgstr "Nav pārsūtīts"
 
-#: ../libtransmission/port-forwarding.c:91 ../libtransmission/torrent.c:2060
+#: ../libleechmission/port-forwarding.c:91 ../libleechmission/torrent.c:2060
 #, c-format
 msgid "State changed from \"%1$s\" to \"%2$s\""
 msgstr "Stāvoklis mainīts no “%1$s” uz “%2$s”"
 
-#: ../libtransmission/port-forwarding.c:181
+#: ../libleechmission/port-forwarding.c:181
 msgid "Stopped"
 msgstr "Apturēts"
 
 #. first %s is the application name
 #. second %s is the version number
-#: ../libtransmission/session.c:722
+#: ../libleechmission/session.c:722
 #, c-format
 msgid "%s %s started"
 msgstr "%s %s palaists"
 
-#: ../libtransmission/session.c:1943
+#: ../libleechmission/session.c:1943
 #, c-format
 msgid "Loaded %d torrents"
 msgstr "Ielādēti %d torenti"
 
-#: ../libtransmission/torrent.c:525
+#: ../libleechmission/torrent.c:525
 #, c-format
 msgid "Tracker warning: \"%s\""
 msgstr "Sekotāja brīdinājums — “%s”"
 
-#: ../libtransmission/torrent.c:532
+#: ../libleechmission/torrent.c:532
 #, c-format
 msgid "Tracker error: \"%s\""
 msgstr "Sekotāja kļūda — “%s”"
 
-#: ../libtransmission/torrent.c:787
+#: ../libleechmission/torrent.c:787
 msgid ""
 "No data found! Ensure your drives are connected or use \"Set Location\". To "
 "re-download, remove the torrent and re-add it."
@@ -2266,71 +2266,71 @@ msgstr ""
 "“Iestatīt atrašanās vietu”. Lai atkal lejupielādētu, izņemiet torentu un "
 "atkal pievienojiet."
 
-#: ../libtransmission/torrent.c:1677
+#: ../libleechmission/torrent.c:1677
 msgid "Restarted manually -- disabling its seed ratio"
 msgstr "Pārstartēts manuāli — atstata došanas samēru"
 
-#: ../libtransmission/torrent.c:1829
+#: ../libleechmission/torrent.c:1829
 msgid "Removing torrent"
 msgstr "Izņem torentu"
 
-#: ../libtransmission/torrent.c:1913
+#: ../libleechmission/torrent.c:1913
 msgid "Done"
 msgstr "Izdarīts"
 
-#: ../libtransmission/torrent.c:1916
+#: ../libleechmission/torrent.c:1916
 msgid "Complete"
 msgstr "Pabeigts"
 
-#: ../libtransmission/upnp.c:35
+#: ../libleechmission/upnp.c:35
 msgid "Port Forwarding (UPnP)"
 msgstr "Portu pārsūtīšana (UPnP)"
 
-#: ../libtransmission/upnp.c:199
+#: ../libleechmission/upnp.c:199
 #, c-format
 msgid "Found Internet Gateway Device \"%s\""
 msgstr "Atrasta interneta vārtejas ierīce “%s”"
 
-#: ../libtransmission/upnp.c:202
+#: ../libleechmission/upnp.c:202
 #, c-format
 msgid "Local Address is \"%s\""
 msgstr "Lokālā adrese ir “%s”"
 
-#: ../libtransmission/upnp.c:231
+#: ../libleechmission/upnp.c:231
 #, c-format
 msgid "Port %d isn't forwarded"
 msgstr "Ports %d nav pārsūtīts"
 
-#: ../libtransmission/upnp.c:242
+#: ../libleechmission/upnp.c:242
 #, c-format
 msgid "Stopping port forwarding through \"%s\", service \"%s\""
 msgstr "Aptur portu pārsūtīšanu caur “%s”, pakalpojums “%s”"
 
-#: ../libtransmission/upnp.c:275
+#: ../libleechmission/upnp.c:275
 #, c-format
 msgid ""
 "Port forwarding through \"%s\", service \"%s\". (local address: %s:%d)"
 msgstr "Portu pārsūtīšana caur “%s”, serviss “%s”. (lokālā adrese — %s:%d)"
 
-#: ../libtransmission/upnp.c:280
+#: ../libleechmission/upnp.c:280
 msgid "Port forwarding successful!"
 msgstr "Portu pārsūtīšana veiksmīga!"
 
-#: ../libtransmission/utils.c:452
+#: ../libleechmission/utils.c:452
 msgid "Not a regular file"
 msgstr "Nav parasta datne"
 
-#: ../libtransmission/utils.c:470
+#: ../libleechmission/utils.c:470
 msgid "Memory allocation failed"
 msgstr "Neizdevās rezervēt atmiņu"
 
 #. Node exists but isn't a folder
-#: ../libtransmission/utils.c:584
+#: ../libleechmission/utils.c:584
 #, c-format
 msgid "File \"%s\" is in the way"
 msgstr "Datne “%s” ir ceļā"
 
-#: ../libtransmission/verify.c:229
+#: ../libleechmission/verify.c:229
 msgid "Verifying torrent"
 msgstr "Pārbauda torentu"
 
@@ -2456,8 +2456,8 @@ msgstr "Pārbauda torentu"
 #~ msgid "%.1f%%"
 #~ msgstr "%.1f%%"
 
-#~ msgid "<big><b>Quit Transmission?</b></big>"
-#~ msgstr "<big><b>Aizvērt Transmission?</b></big>"
+#~ msgid "<big><b>Quit Leechmission?</b></big>"
+#~ msgstr "<big><b>Aizvērt Leechmission?</b></big>"
 
 #~ msgid "Torrent created!"
 #~ msgstr "Torrents izveidots!"
@@ -2594,14 +2594,14 @@ msgstr "Pārbauda torentu"
 #~ msgstr "Palaist minimizētu sistēmas paplātē"
 
 #~ msgid ""
-#~ "Transmission is already running, but is not responding.  To start a new "
-#~ "session, you must first close the existing Transmission process."
+#~ "Leechmission is already running, but is not responding.  To start a new "
+#~ "session, you must first close the existing Leechmission process."
 #~ msgstr ""
-#~ "Transmission jau ir palaists, bet nereaģē. Lai sāktu jaunu sesiju, jums "
-#~ "vispirms ir jāaizver esošais Transmission process."
+#~ "Leechmission jau ir palaists, bet nereaģē. Lai sāktu jaunu sesiju, jums "
+#~ "vispirms ir jāaizver esošais Leechmission process."
 
-#~ msgid "Transmission cannot be started."
-#~ msgstr "Nevar palaist Transmission."
+#~ msgid "Leechmission cannot be started."
+#~ msgstr "Nevar palaist Leechmission."
 
 #~ msgid "Sending upload/download totals to tracker..."
 #~ msgstr "Sūta augšupielādes/lejupielādes kopsummas sekotājam..."
@@ -2659,8 +2659,8 @@ msgstr "Pārbauda torentu"
 #~ msgid "Announce URL"
 #~ msgstr "Announce URL"
 
-#~ msgid "Transmission Bittorrent Client"
-#~ msgstr "Transmission Bittorrent klients"
+#~ msgid "Leechmission Bittorrent Client"
+#~ msgstr "Leechmission Bittorrent klients"
 
 #~ msgid "BitTorrent Activity"
 #~ msgstr "BitTorrent aktivitāte"
@@ -2674,8 +2674,8 @@ msgstr "Pārbauda torentu"
 #~ msgid "Inhibit _hibernation when torrents are active"
 #~ msgstr "Atturēt no _iemigšanas, kad torrenti ir aktīvi"
 
-#~ msgid "Show Transmission in the system _tray"
-#~ msgstr "Rādīt Transmission sistēmas _paplātē"
+#~ msgid "Show Leechmission in the system _tray"
+#~ msgstr "Rādīt Leechmission sistēmas _paplātē"
 
 #~ msgid "Show popup _notifications"
 #~ msgstr "Rādīt izlecošos _paziņojumus"
@@ -2853,13 +2853,13 @@ msgstr "Pārbauda torentu"
 #~ "vēlreiz."
 
 #~ msgid ""
-#~ "Transmission is a file sharing program.  When you run a torrent, its data "
+#~ "Leechmission is a file sharing program.  When you run a torrent, its data "
 #~ "will be made available to others by means of upload.  And of course, any "
 #~ "content you share is your sole responsibility.\n"
 #~ "\n"
 #~ "You probably knew this, so we won't tell you again."
 #~ msgstr ""
-#~ "Transmission ir failu koplietošanas programma. Kad palaižat torrentu, tā "
+#~ "Leechmission ir failu koplietošanas programma. Kad palaižat torrentu, tā "
 #~ "dati būs pieejami citiem. Protams, viss saturs, ar kuru jūs dalieties, ir "
 #~ "jūsu atbildība.\n"
 #~ "\n"
@@ -2910,12 +2910,12 @@ msgstr "Pārbauda torentu"
 #~ msgstr "Ierindots"
 
 #~ msgid ""
-#~ "Transmission is a file-sharing program.  When you run a torrent, its data "
+#~ "Leechmission is a file-sharing program.  When you run a torrent, its data "
 #~ "will be made available to others by means of upload.  You and you alone are "
 #~ "fully responsible for exercising proper judgement and abiding by your local "
 #~ "laws."
 #~ msgstr ""
-#~ "Transmission ir failu koplietošanas programma. Kad jūs palaižat torreny, tā "
+#~ "Leechmission ir failu koplietošanas programma. Kad jūs palaižat torreny, tā "
 #~ "dati būs pieejami citiem augšuplādes realizācijas formā.  Jūs un Tu esat "
 #~ "pilnīgi atbildīgi par pienācīgi veiktu spriedumu, ievērojot vietējos likumus "
 #~ "un likumdošanas prasības."
@@ -2956,11 +2956,11 @@ msgstr "Pārbauda torentu"
 #~ msgstr "Gaida, kamēr pārbaudīs lokālos datus"
 
 #~ msgid ""
-#~ "Transmission is already running, but is not responding. To start a new "
-#~ "session, you must first close the existing Transmission process."
+#~ "Leechmission is already running, but is not responding. To start a new "
+#~ "session, you must first close the existing Leechmission process."
 #~ msgstr ""
-#~ "Transmission jau ir palaists, bet neatbild. Lai sāktu jaunu sesiju, vispirms "
-#~ "jāaizver esošais Transmission process."
+#~ "Leechmission jau ir palaists, bet neatbild. Lai sāktu jaunu sesiju, vispirms "
+#~ "jāaizver esošais Leechmission process."
 
 #~ msgid "Creating torrent..."
 #~ msgstr "Veido torrentu..."

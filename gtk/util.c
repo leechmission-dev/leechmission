@@ -19,10 +19,10 @@
 #include <glib/gi18n.h>
 #include <gio/gio.h> /* g_file_trash () */
 
-#include <libtransmission/transmission.h> /* TR_RATIO_NA, TR_RATIO_INF */
-#include <libtransmission/utils.h> /* tr_strratio () */
-#include <libtransmission/web.h> /* tr_webResponseStr () */
-#include <libtransmission/version.h> /* SHORT_VERSION_STRING */
+#include <libleechmission/leechmission.h> /* TR_RATIO_NA, TR_RATIO_INF */
+#include <libleechmission/utils.h> /* tr_strratio () */
+#include <libleechmission/web.h> /* tr_webResponseStr () */
+#include <libleechmission/version.h> /* SHORT_VERSION_STRING */
 
 #include "conf.h"
 #include "hig.h"
@@ -350,7 +350,7 @@ gtr_get_help_uri (void)
   if (!uri)
     {
       int major, minor;
-      const char * fmt = "http://www.transmissionbt.com/help/gtk/%d.%dx";
+      const char * fmt = "http://www.leechmissionbt.com/help/gtk/%d.%dx";
       sscanf (SHORT_VERSION_STRING, "%d.%d", &major, &minor);
       uri = g_strdup_printf (fmt, major, minor / 10);
     }
@@ -567,7 +567,7 @@ gtr_unrecognized_url_dialog (GtkWidget * parent, const char * url)
                                           GTK_BUTTONS_CLOSE,
                                           "%s", _("Unrecognized URL"));
 
-  g_string_append_printf (gstr, _("Transmission doesn't know how to use \"%s\""), url);
+  g_string_append_printf (gstr, _("Leechmission doesn't know how to use \"%s\""), url);
 
   if (gtr_is_magnet_link (url) && (strstr (url, xt) == NULL))
     {

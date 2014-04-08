@@ -1,7 +1,7 @@
 /******************************************************************************
  * $Id: BadgeView.m 13340 2012-06-10 02:35:58Z livings124 $
  *
- * Copyright (c) 2007-2012 Transmission authors and contributors
+ * Copyright (c) 2007-2012 Leechmission authors and contributors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),

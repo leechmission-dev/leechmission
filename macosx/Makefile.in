@@ -301,7 +301,7 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-transmissionlocaledir = @transmissionlocaledir@
+leechmissionlocaledir = @leechmissionlocaledir@
 EXTRA_DIST = \
     Credits.rtf \
     AboutWindow.xib \
@@ -318,11 +318,11 @@ EXTRA_DIST = \
     URLSheetWindow.xib \
     Defaults.plist \
     Info.plist \
-    Transmission_Prefix.pch \
+    Leechmission_Prefix.pch \
     Growl.framework \
     Sparkle.framework \
     sparkle_dsa_pub.pem \
-    TransmissionHelp \
+    LeechmissionHelp \
     QuickLookPlugin \
     VDKQueue \
     Images \
@@ -678,16 +678,16 @@ dist-hook:
 @BUILD_MAC_TRUE@	@(cd .. && xcodebuild -alltargets -activeconfiguration clean | grep -v "^$$")
 
 define PACKAGE_RULE1
-	$(RM) tmp "Transmission $(VERSION_PACKAGE)" \
-	  Transmission-$(VERSION_PACKAGE).dmg
+	$(RM) tmp "Leechmission $(VERSION_PACKAGE)" \
+	  Leechmission-$(VERSION_PACKAGE).dmg
 	mkdir -p tmp
-	cp -R macosx/Transmission.app tmp/
+	cp -R macosx/Leechmission.app tmp/
 endef
 define PACKAGE_RULE2
-	mv tmp "Transmission $(VERSION_PACKAGE)"
+	mv tmp "Leechmission $(VERSION_PACKAGE)"
 	hdiutil create -format UDZO -imagekey zlib-level=9 -srcfolder \
-	  "Transmission $(VERSION_PACKAGE)" Transmission-$(VERSION_PACKAGE).dmg
-	rm -rf "Transmission $(VERSION_PACKAGE)"
+	  "Leechmission $(VERSION_PACKAGE)" Leechmission-$(VERSION_PACKAGE).dmg
+	rm -rf "Leechmission $(VERSION_PACKAGE)"
 endef
 
 package:
@@ -696,7 +696,7 @@ package:
 
 package-release:
 	$(PACKAGE_RULE1)
-	strip -S tmp/Transmission.app/Contents/MacOS/Transmission
+	strip -S tmp/Leechmission.app/Contents/MacOS/Leechmission
 	$(PACKAGE_RULE2)
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.

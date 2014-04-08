@@ -13,9 +13,9 @@
 #include <glib/gi18n.h>
 #include <gtk/gtk.h>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/makemeta.h>
-#include <libtransmission/utils.h> /* tr_formatter_mem_B () */
+#include <libleechmission/leechmission.h>
+#include <libleechmission/makemeta.h>
+#include <libleechmission/utils.h> /* tr_formatter_mem_B () */
 
 #include "hig.h"
 #include "makemeta-ui.h"

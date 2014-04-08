@@ -392,7 +392,7 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-transmissionlocaledir = @transmissionlocaledir@
+leechmissionlocaledir = @leechmissionlocaledir@
 SUBDIRS = images 
 dist_data_DATA = jqueryui-1.8.16.css
 all: all-recursive

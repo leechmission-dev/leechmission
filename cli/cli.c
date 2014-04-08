@@ -27,12 +27,12 @@
 #include <string.h> /* memcmp () */
 #include <signal.h>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/tr-getopt.h>
-#include <libtransmission/utils.h> /* tr_wait_msec */
-#include <libtransmission/variant.h>
-#include <libtransmission/version.h>
-#include <libtransmission/web.h> /* tr_webRun */
+#include <libleechmission/leechmission.h>
+#include <libleechmission/tr-getopt.h>
+#include <libleechmission/utils.h> /* tr_wait_msec */
+#include <libleechmission/variant.h>
+#include <libleechmission/version.h>
+#include <libleechmission/web.h> /* tr_webRun */
 
 /***
 ****
@@ -63,8 +63,8 @@
 ***/
 
 #define LINEWIDTH 80
-#define MY_CONFIG_NAME "transmission"
-#define MY_READABLE_NAME "transmission-cli"
+#define MY_CONFIG_NAME "leechmission"
+#define MY_READABLE_NAME "leechmission-cli"
 
 static bool showVersion              = false;
 static bool verify                   = false;
@@ -244,7 +244,7 @@ main (int argc, char ** argv)
       return EXIT_FAILURE;
     }
 
-  /* load the defaults from config file + libtransmission defaults */
+  /* load the defaults from config file + libleechmission defaults */
   tr_variantInitDict (&settings, 0);
   configDir = getConfigDir (argc, (const char**)argv);
   tr_sessionLoadSettings (&settings, configDir, MY_CONFIG_NAME);
@@ -301,8 +301,8 @@ main (int argc, char ** argv)
   else
     {
       fprintf (stderr, "ERROR: Unrecognized torrent \"%s\".\n", torrentPath);
-      fprintf (stderr, " * If you're trying to create a torrent, use transmission-create.\n");
-      fprintf (stderr, " * If you're trying to see a torrent's info, use transmission-show.\n");
+      fprintf (stderr, " * If you're trying to create a torrent, use leechmission-create.\n");
+      fprintf (stderr, " * If you're trying to see a torrent's info, use leechmission-show.\n");
       tr_sessionClose (h);
       return EXIT_FAILURE;
     }

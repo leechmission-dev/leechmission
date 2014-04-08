@@ -34,10 +34,10 @@
 #include <gio/gio.h>
 #include <gtk/gtk.h>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/rpcimpl.h>
-#include <libtransmission/utils.h>
-#include <libtransmission/version.h>
+#include <libleechmission/leechmission.h>
+#include <libleechmission/rpcimpl.h>
+#include <libleechmission/utils.h>
+#include <libleechmission/version.h>
 
 #include "actions.h"
 #include "conf.h"
@@ -56,17 +56,17 @@
 #include "tr-window.h"
 #include "util.h"
 
-#define MY_CONFIG_NAME "transmission"
-#define MY_READABLE_NAME "transmission-gtk"
+#define MY_CONFIG_NAME "leechmission"
+#define MY_READABLE_NAME "leechmission-gtk"
 
-#define TR_RESOURCE_PATH "/com/transmissionbt/transmission/"
+#define TR_RESOURCE_PATH "/com/leechmissionbt/leechmission/"
 
 #define SHOW_LICENSE
 static const char * LICENSE =
-"The OS X client, CLI client, and parts of libtransmission are licensed under the terms of the MIT license.\n\n"
-"The Transmission daemon, GTK+ client, Qt client, Web client, and most of libtransmission are licensed under the terms of the GNU GPL version 2, with two special exceptions:\n\n"
-"1. The MIT-licensed portions of Transmission listed above are exempt from GPLv2 clause 2 (b) and may retain their MIT license.\n\n"
-"2. Permission is granted to link the code in this release with the OpenSSL project's 'OpenSSL' library and to distribute the linked executables. Works derived from Transmission may, at their authors' discretion, keep or delete this exception.";
+"The OS X client, CLI client, and parts of libleechmission are licensed under the terms of the MIT license.\n\n"
+"The Leechmission daemon, GTK+ client, Qt client, Web client, and most of libleechmission are licensed under the terms of the GNU GPL version 2, with two special exceptions:\n\n"
+"1. The MIT-licensed portions of Leechmission listed above are exempt from GPLv2 clause 2 (b) and may retain their MIT license.\n\n"
+"2. Permission is granted to link the code in this release with the OpenSSL project's 'OpenSSL' library and to distribute the linked executables. Works derived from Leechmission may, at their authors' discretion, keep or delete this exception.";
 
 struct cbdata
 {
@@ -310,14 +310,14 @@ register_magnet_link_handler (void)
   const char * const content_type = "x-scheme-handler/magnet";
 
   error = NULL;
-  app = g_app_info_create_from_commandline ("transmission-gtk",
-                                            "transmission-gtk",
+  app = g_app_info_create_from_commandline ("leechmission-gtk",
+                                            "leechmission-gtk",
                                             G_APP_INFO_CREATE_SUPPORTS_URIS,
                                             &error);
   g_app_info_set_as_default_for_type (app, content_type, &error);
   if (error != NULL)
     {
-      g_warning (_("Error registering Transmission as a %s handler: %s"),
+      g_warning (_("Error registering Leechmission as a %s handler: %s"),
                  content_type,
                  error->message);
       g_error_free (error);
@@ -513,7 +513,7 @@ on_startup (GApplication * application, gpointer user_data)
   if ((str = gtr_pref_string_get (TR_KEY_incomplete_dir)))
     g_mkdir_with_parents (str, 0777);
 
-  /* initialize the libtransmission session */
+  /* initialize the libleechmission session */
   session = tr_sessionInit ("gtk", cbdata->config_dir, TRUE, gtr_pref_get_all ());
 
   gtr_pref_flag_set (TR_KEY_alt_speed_enabled, tr_sessionUsesAltSpeed (session));
@@ -524,7 +524,7 @@ on_startup (GApplication * application, gpointer user_data)
   error = NULL;
   ui_manager = gtk_ui_manager_new ();
   gtr_actions_init (ui_manager, cbdata);
-  gtk_ui_manager_add_ui_from_resource (ui_manager, TR_RESOURCE_PATH "transmission-ui.xml", &error);
+  gtk_ui_manager_add_ui_from_resource (ui_manager, TR_RESOURCE_PATH "leechmission-ui.xml", &error);
   g_assert_no_error (error);
   gtk_ui_manager_ensure_update (ui_manager);
 
@@ -560,7 +560,7 @@ on_activate (GApplication * app UNUSED, struct cbdata * cbdata)
 
   /* GApplication emits an 'activate' signal when bootstrapping the primary.
    * Ordinarily we handle that by presenting the main window, but if the user
-   * user started Transmission minimized, ignore that initial signal... */
+   * user started Leechmission minimized, ignore that initial signal... */
   if (cbdata->is_iconified && (cbdata->activation_count == 1))
     return;
 
@@ -626,7 +626,7 @@ main (int argc, char ** argv)
 
   /* init i18n */
   setlocale (LC_ALL, "");
-  bindtextdomain (MY_READABLE_NAME, TRANSMISSIONLOCALEDIR);
+  bindtextdomain (MY_READABLE_NAME, LEECHMISSIONLOCALEDIR);
   bind_textdomain_codeset (MY_READABLE_NAME, "UTF-8");
   textdomain (MY_READABLE_NAME);
 
@@ -635,7 +635,7 @@ main (int argc, char ** argv)
   g_type_init ();
 #endif
   gtk_init (&argc, &argv);
-  g_set_application_name (_("Transmission"));
+  g_set_application_name (_("Leechmission"));
   gtk_window_set_default_icon_name (MY_CONFIG_NAME);
 
   /* parse the command line */
@@ -672,7 +672,7 @@ main (int argc, char ** argv)
 
   /* init the application for the specified config dir */
   stat (cbdata.config_dir, &sb);
-  application_id = g_strdup_printf ("com.transmissionbt.transmission_%lu_%lu", (unsigned long)sb.st_dev, (unsigned long)sb.st_ino);
+  application_id = g_strdup_printf ("com.leechmissionbt.leechmission_%lu_%lu", (unsigned long)sb.st_dev, (unsigned long)sb.st_ino);
   app = gtk_application_new (application_id, G_APPLICATION_HANDLES_OPEN);
   g_signal_connect (app, "open", G_CALLBACK (on_open), &cbdata);
   g_signal_connect (app, "startup", G_CALLBACK (on_startup), &cbdata);
@@ -744,7 +744,7 @@ app_setup (GtkWindow * wind, struct cbdata * cbdata)
                                               GTK_MESSAGE_OTHER,
                                               GTK_BUTTONS_NONE,
                                               "%s",
-        _("Transmission is a file sharing program. When you run a torrent, its data will be made available to others by means of upload. Any content you share is your sole responsibility."));
+        _("Leechmission is a file sharing program. When you run a torrent, its data will be made available to others by means of upload. Any content you share is your sole responsibility."));
       gtk_dialog_add_button (GTK_DIALOG (w), GTK_STOCK_CANCEL, GTK_RESPONSE_REJECT);
       gtk_dialog_add_button (GTK_DIALOG (w), _("I _Agree"), GTK_RESPONSE_ACCEPT);
       gtk_dialog_set_default_response (GTK_DIALOG (w), GTK_RESPONSE_ACCEPT);
@@ -1355,7 +1355,7 @@ update_model_loop (gpointer gdata)
 static void
 show_about_dialog (GtkWindow * parent)
 {
-  const char * uri = "http://www.transmissionbt.com/";
+  const char * uri = "http://www.leechmissionbt.com/";
   const char * authors[] = { "Jordan Lee (Backend; GTK+)",
                              "Mitchell Livingston (Backend; OS X)",
                              NULL };
@@ -1534,7 +1534,7 @@ gtr_actions_handler (const char * action_name, gpointer user_data)
     }
   else if (!g_strcmp0 (action_name, "donate"))
     {
-      gtr_open_uri ("http://www.transmissionbt.com/donate.php");
+      gtr_open_uri ("http://www.leechmissionbt.com/donate.php");
     }
   else if (!g_strcmp0 (action_name, "pause-all-torrents"))
     {

@@ -1,7 +1,7 @@
 /******************************************************************************
  * $Id: NSApplicationAdditions.m 13411 2012-07-25 12:46:49Z livings124 $
  *
- * Copyright (c) 2009-2012 Transmission authors and contributors
+ * Copyright (c) 2009-2012 Leechmission authors and contributors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),

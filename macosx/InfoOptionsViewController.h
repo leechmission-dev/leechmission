@@ -1,7 +1,7 @@
 /******************************************************************************
  * $Id: InfoOptionsViewController.h 13480 2012-09-08 18:09:02Z livings124 $
  *
- * Copyright (c) 2010-2012 Transmission authors and contributors
+ * Copyright (c) 2010-2012 Leechmission authors and contributors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),

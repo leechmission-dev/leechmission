@@ -79,8 +79,8 @@ PRE_UNINSTALL = :
 POST_UNINSTALL = :
 build_triplet = @build@
 host_triplet = @host@
-bin_PROGRAMS = transmission-daemon$(EXEEXT) \
-	transmission-remote$(EXEEXT)
+bin_PROGRAMS = leechmission-daemon$(EXEEXT) \
+	leechmission-remote$(EXEEXT)
 subdir = daemon
 DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am \
 	$(top_srcdir)/depcomp $(dist_man_MANS) $(noinst_HEADERS)
@@ -98,20 +98,20 @@ CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)" "$(DESTDIR)$(man1dir)"
 PROGRAMS = $(bin_PROGRAMS)
-am_transmission_daemon_OBJECTS = daemon.$(OBJEXT) watch.$(OBJEXT)
-transmission_daemon_OBJECTS = $(am_transmission_daemon_OBJECTS)
-transmission_daemon_LDADD = $(LDADD)
-transmission_daemon_DEPENDENCIES =  \
-	$(top_builddir)/libtransmission/libtransmission.a
+am_leechmission_daemon_OBJECTS = daemon.$(OBJEXT) watch.$(OBJEXT)
+leechmission_daemon_OBJECTS = $(am_leechmission_daemon_OBJECTS)
+leechmission_daemon_LDADD = $(LDADD)
+leechmission_daemon_DEPENDENCIES =  \
+	$(top_builddir)/libleechmission/libleechmission.a
 AM_V_lt = $(am__v_lt_@AM_V@)
 am__v_lt_ = $(am__v_lt_@AM_DEFAULT_V@)
 am__v_lt_0 = --silent
 am__v_lt_1 = 
-am_transmission_remote_OBJECTS = remote.$(OBJEXT)
-transmission_remote_OBJECTS = $(am_transmission_remote_OBJECTS)
-transmission_remote_LDADD = $(LDADD)
-transmission_remote_DEPENDENCIES =  \
-	$(top_builddir)/libtransmission/libtransmission.a
+am_leechmission_remote_OBJECTS = remote.$(OBJEXT)
+leechmission_remote_OBJECTS = $(am_leechmission_remote_OBJECTS)
+leechmission_remote_LDADD = $(LDADD)
+leechmission_remote_DEPENDENCIES =  \
+	$(top_builddir)/libleechmission/libleechmission.a
 AM_V_P = $(am__v_P_@AM_V@)
 am__v_P_ = $(am__v_P_@AM_DEFAULT_V@)
 am__v_P_0 = false
@@ -146,10 +146,10 @@ AM_V_CCLD = $(am__v_CCLD_@AM_V@)
 am__v_CCLD_ = $(am__v_CCLD_@AM_DEFAULT_V@)
 am__v_CCLD_0 = @echo "  CCLD    " $@;
 am__v_CCLD_1 = 
-SOURCES = $(transmission_daemon_SOURCES) \
-	$(transmission_remote_SOURCES)
-DIST_SOURCES = $(transmission_daemon_SOURCES) \
-	$(transmission_remote_SOURCES)
+SOURCES = $(leechmission_daemon_SOURCES) \
+	$(leechmission_remote_SOURCES)
+DIST_SOURCES = $(leechmission_daemon_SOURCES) \
+	$(leechmission_remote_SOURCES)
 am__can_run_installinfo = \
   case $$AM_UPDATE_INFO_DIR in \
     n|no|NO) false;; \
@@ -395,7 +395,7 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-transmissionlocaledir = @transmissionlocaledir@
+leechmissionlocaledir = @leechmissionlocaledir@
 AM_CPPFLAGS = -I@top_srcdir@ -DEMBEDDED
 AM_CFLAGS = \
     @LIBEVENT_CFLAGS@ \
@@ -409,14 +409,14 @@ AM_LDFLAGS = \
     @ZLIB_LDFLAGS@
 
 EXTRA_DIST = \
-    transmission-daemon.service
+    leechmission-daemon.service
 
 dist_man_MANS = \
-    transmission-daemon.1 \
-    transmission-remote.1
+    leechmission-daemon.1 \
+    leechmission-remote.1
 
 LDADD = \
-    $(top_builddir)/libtransmission/libtransmission.a \
+    $(top_builddir)/libleechmission/libleechmission.a \
     @LIBUPNP_LIBS@ \
     @LIBNATPMP_LIBS@ \
     @DHT_LIBS@ \
@@ -432,8 +432,8 @@ LDADD = \
 noinst_HEADERS = \
     watch.h
 
-transmission_daemon_SOURCES = daemon.c watch.c
-transmission_remote_SOURCES = remote.c
+leechmission_daemon_SOURCES = daemon.c watch.c
+leechmission_remote_SOURCES = remote.c
 all: all-am
 
 .SUFFIXES:
@@ -518,13 +518,13 @@ clean-binPROGRAMS:
 	echo " rm -f" $$list; \
 	rm -f $$list
 
-transmission-daemon$(EXEEXT): $(transmission_daemon_OBJECTS) $(transmission_daemon_DEPENDENCIES) $(EXTRA_transmission_daemon_DEPENDENCIES) 
-	@rm -f transmission-daemon$(EXEEXT)
-	$(AM_V_CCLD)$(LINK) $(transmission_daemon_OBJECTS) $(transmission_daemon_LDADD) $(LIBS)
+leechmission-daemon$(EXEEXT): $(leechmission_daemon_OBJECTS) $(leechmission_daemon_DEPENDENCIES) $(EXTRA_leechmission_daemon_DEPENDENCIES) 
+	@rm -f leechmission-daemon$(EXEEXT)
+	$(AM_V_CCLD)$(LINK) $(leechmission_daemon_OBJECTS) $(leechmission_daemon_LDADD) $(LIBS)
 
-transmission-remote$(EXEEXT): $(transmission_remote_OBJECTS) $(transmission_remote_DEPENDENCIES) $(EXTRA_transmission_remote_DEPENDENCIES) 
-	@rm -f transmission-remote$(EXEEXT)
-	$(AM_V_CCLD)$(LINK) $(transmission_remote_OBJECTS) $(transmission_remote_LDADD) $(LIBS)
+leechmission-remote$(EXEEXT): $(leechmission_remote_OBJECTS) $(leechmission_remote_DEPENDENCIES) $(EXTRA_leechmission_remote_DEPENDENCIES) 
+	@rm -f leechmission-remote$(EXEEXT)
+	$(AM_V_CCLD)$(LINK) $(leechmission_remote_OBJECTS) $(leechmission_remote_LDADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)

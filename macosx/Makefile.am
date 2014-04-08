@@ -14,11 +14,11 @@ EXTRA_DIST = \
     URLSheetWindow.xib \
     Defaults.plist \
     Info.plist \
-    Transmission_Prefix.pch \
+    Leechmission_Prefix.pch \
     Growl.framework \
     Sparkle.framework \
     sparkle_dsa_pub.pem \
-    TransmissionHelp \
+    LeechmissionHelp \
     QuickLookPlugin \
     VDKQueue \
     Images \
@@ -180,16 +180,16 @@ clean-local:
 endif
 
 define PACKAGE_RULE1
-	$(RM) tmp "Transmission $(VERSION_PACKAGE)" \
-	  Transmission-$(VERSION_PACKAGE).dmg
+	$(RM) tmp "Leechmission $(VERSION_PACKAGE)" \
+	  Leechmission-$(VERSION_PACKAGE).dmg
 	mkdir -p tmp
-	cp -R macosx/Transmission.app tmp/
+	cp -R macosx/Leechmission.app tmp/
 endef
 define PACKAGE_RULE2
-	mv tmp "Transmission $(VERSION_PACKAGE)"
+	mv tmp "Leechmission $(VERSION_PACKAGE)"
 	hdiutil create -format UDZO -imagekey zlib-level=9 -srcfolder \
-	  "Transmission $(VERSION_PACKAGE)" Transmission-$(VERSION_PACKAGE).dmg
-	rm -rf "Transmission $(VERSION_PACKAGE)"
+	  "Leechmission $(VERSION_PACKAGE)" Leechmission-$(VERSION_PACKAGE).dmg
+	rm -rf "Leechmission $(VERSION_PACKAGE)"
 endef
 
 package:
@@ -198,5 +198,5 @@ package:
 
 package-release:
 	$(PACKAGE_RULE1)
-	strip -S tmp/Transmission.app/Contents/MacOS/Transmission
+	strip -S tmp/Leechmission.app/Contents/MacOS/Leechmission
 	$(PACKAGE_RULE2)

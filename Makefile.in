@@ -81,7 +81,7 @@ subdir = .
 DIST_COMMON = INSTALL NEWS README AUTHORS ChangeLog \
 	$(srcdir)/Makefile.in $(srcdir)/Makefile.am \
 	$(top_srcdir)/configure $(am__configure_deps) \
-	$(srcdir)/transmission-gtk.spec.in \
+	$(srcdir)/leechmission-gtk.spec.in \
 	$(top_srcdir)/qt/config.pri.in COPYING config.guess config.sub \
 	install-sh missing ltmain.sh
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
@@ -96,7 +96,7 @@ am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 am__CONFIG_DISTCLEAN_FILES = config.status config.cache config.log \
  configure.lineno config.status.lineno
 mkinstalldirs = $(install_sh) -d
-CONFIG_CLEAN_FILES = transmission-gtk.spec qt/config.pri
+CONFIG_CLEAN_FILES = leechmission-gtk.spec qt/config.pri
 CONFIG_CLEAN_VPATH_FILES =
 AM_V_P = $(am__v_P_@AM_V@)
 am__v_P_ = $(am__v_P_@AM_DEFAULT_V@)
@@ -153,7 +153,7 @@ am__define_uniq_tagged_files = \
 ETAGS = etags
 CTAGS = ctags
 CSCOPE = cscope
-DIST_SUBDIRS = extras third-party libtransmission utils daemon cli gtk \
+DIST_SUBDIRS = extras third-party libleechmission utils daemon cli gtk \
 	po macosx web
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 distdir = $(PACKAGE)-$(VERSION)
@@ -386,7 +386,7 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-transmissionlocaledir = @transmissionlocaledir@
+leechmissionlocaledir = @leechmissionlocaledir@
 ACLOCAL_AMFLAGS = -I m4
 @BUILD_CLI_TRUE@CLI_DIR = cli
 @BUILD_DAEMON_TRUE@@WIN32_FALSE@DAEMON_DIR = daemon
@@ -395,7 +395,7 @@ ACLOCAL_AMFLAGS = -I m4
 SUBDIRS = \
   extras \
   third-party \
-  libtransmission \
+  libleechmission \
   utils \
   $(DAEMON_DIR) \
   $(CLI_DIR) \
@@ -411,7 +411,7 @@ EXTRA_DIST = \
   README \
   autogen.sh \
   update-version-h.sh \
-  Transmission.xcodeproj/project.pbxproj
+  Leechmission.xcodeproj/project.pbxproj
 
 DISTCLEANFILES = \
   intltool-extract \
@@ -455,7 +455,7 @@ $(top_srcdir)/configure:  $(am__configure_deps)
 $(ACLOCAL_M4):  $(am__aclocal_m4_deps)
 	$(am__cd) $(srcdir) && $(ACLOCAL) $(ACLOCAL_AMFLAGS)
 $(am__aclocal_m4_deps):
-transmission-gtk.spec: $(top_builddir)/config.status $(srcdir)/transmission-gtk.spec.in
+leechmission-gtk.spec: $(top_builddir)/config.status $(srcdir)/leechmission-gtk.spec.in
 	cd $(top_builddir) && $(SHELL) ./config.status $@
 qt/config.pri: $(top_builddir)/config.status $(top_srcdir)/qt/config.pri.in
 	cd $(top_builddir) && $(SHELL) ./config.status $@

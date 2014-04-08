@@ -1,11 +1,11 @@
-# Japanese translation for transmission
+# Japanese translation for leechmission
 # Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
-# This file is distributed under the same license as the transmission package.
+# This file is distributed under the same license as the leechmission package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: transmission\n"
+"Project-Id-Version: leechmission\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2012-02-03 15:22-0600\n"
 "PO-Revision-Date: 2013-05-16 11:20+0000\n"
@@ -55,8 +55,8 @@ msgid "Sort by Si_ze"
 msgstr "サイズ順に並び替え(_Z)"
 
 #: ../gtk/actions.c:70
-msgid "_Show Transmission"
-msgstr "Transmission ウインドウを表示(_S)"
+msgid "_Show Leechmission"
+msgstr "Leechmission ウインドウを表示(_S)"
 
 #: ../gtk/actions.c:71
 msgid "Message _Log"
@@ -318,7 +318,7 @@ msgid "_Maximum peers:"
 msgstr "ピア最大数(_M):"
 
 #: ../gtk/details.c:559 ../gtk/torrent-cell-renderer.c:201
-#: ../libtransmission/verify.c:273
+#: ../libleechmission/verify.c:273
 msgid "Queued for verification"
 msgstr "検証待ち"
 
@@ -867,8 +867,8 @@ msgstr "表示(_S):"
 
 #: ../gtk/main.c:308
 #, c-format
-msgid "Error registering Transmission as x-scheme-handler/magnet handler: %s"
-msgstr "Transmission を x-scheme-handler/magnet のハンドラとして登録する際にエラーが発生しました: %s"
+msgid "Error registering Leechmission as x-scheme-handler/magnet handler: %s"
+msgstr "Leechmission を x-scheme-handler/magnet のハンドラとして登録する際にエラーが発生しました: %s"
 
 #: ../gtk/main.c:477
 #, c-format
@@ -892,9 +892,9 @@ msgstr "通知エリアで最小化した状態で起動する"
 msgid "Show version number and exit"
 msgstr "バージョンを表示して終了"
 
-#: ../gtk/main.c:630 ../gtk/transmission-gtk.desktop.in.h:1
-msgid "Transmission"
-msgstr "Transmission"
+#: ../gtk/main.c:630 ../gtk/leechmission-gtk.desktop.in.h:1
+msgid "Leechmission"
+msgstr "Leechmission"
 
 #. parse the command line
 #: ../gtk/main.c:634
@@ -912,12 +912,12 @@ msgstr ""
 
 #: ../gtk/main.c:739
 msgid ""
-"Transmission is a file-sharing program. When you run a torrent, its data "
+"Leechmission is a file-sharing program. When you run a torrent, its data "
 "will be made available to others by means of upload. You and you alone are "
 "fully responsible for exercising proper judgement and abiding by your local "
 "laws."
 msgstr ""
-"Transmissionはファイル共有プログラムです。torrentを実行する際、そのデータはアップロードで他の人に利用できるようになります。あなたやあな"
+"Leechmissionはファイル共有プログラムです。torrentを実行する際、そのデータはアップロードで他の人に利用できるようになります。あなたやあな"
 "た自身は、適切な判断の行使とあなたの地域法を遵守することに全面的に責任があります。"
 
 #: ../gtk/main.c:741
@@ -1379,15 +1379,15 @@ msgid "Seeding to %1$'d of %2$'d connected peer"
 msgid_plural "Seeding to %1$'d of %2$'d connected peers"
 msgstr[0] "%1$'d ピアにシード (全 %2$'d ピア)"
 
-#: ../gtk/transmission-gtk.desktop.in.h:2
+#: ../gtk/leechmission-gtk.desktop.in.h:2
 msgid "BitTorrent Client"
 msgstr "BitTorrent クライアント"
 
-#: ../gtk/transmission-gtk.desktop.in.h:3
-msgid "Transmission BitTorrent Client"
-msgstr "Transmission BitTorrent クライアント"
+#: ../gtk/leechmission-gtk.desktop.in.h:3
+msgid "Leechmission BitTorrent Client"
+msgstr "Leechmission BitTorrent クライアント"
 
-#: ../gtk/transmission-gtk.desktop.in.h:4
+#: ../gtk/leechmission-gtk.desktop.in.h:4
 msgid "Download and share files over BitTorrent"
 msgstr "BitTorrentでファイルをダウンロードおよび共有します"
 
@@ -1426,11 +1426,11 @@ msgstr "(制限: %s)"
 #: ../gtk/tr-icon.c:109
 #, c-format
 msgid ""
-"Transmission\n"
+"Leechmission\n"
 "Up: %1$s %2$s\n"
 "Down: %3$s %4$s"
 msgstr ""
-"Transmission\n"
+"Leechmission\n"
 "アップロード: %1$s %2$s\n"
 "ダウンロード: %3$s %4$s"
 
@@ -1450,7 +1450,7 @@ msgstr "最大同時ダウンロード数(_D):"
 msgid "Downloads sharing data in the last N minutes are _active:"
 msgstr ""
 
-#: ../gtk/tr-prefs.c:286 ../libtransmission/torrent.c:1919
+#: ../gtk/tr-prefs.c:286 ../libleechmission/torrent.c:1919
 msgid "Incomplete"
 msgstr "未完成"
 
@@ -1497,8 +1497,8 @@ msgid "_Inhibit hibernation when torrents are active"
 msgstr "Torrent動作中はハイバネートさせない(_I)"
 
 #: ../gtk/tr-prefs.c:384
-msgid "Show Transmission icon in the _notification area"
-msgstr "通知エリアに Transmission のアイコンを表示(_N)"
+msgid "Show Leechmission icon in the _notification area"
+msgstr "通知エリアに Leechmission のアイコンを表示(_N)"
 
 #: ../gtk/tr-prefs.c:389
 msgid "Notification"
@@ -1759,8 +1759,8 @@ msgid "Te_st Port"
 msgstr "テスト(_S)"
 
 #: ../gtk/tr-prefs.c:1222
-msgid "Pick a _random port every time Transmission is started"
-msgstr "Transmissionがスタートする度にランダムなポートを選択する(_R)"
+msgid "Pick a _random port every time Leechmission is started"
+msgstr "Leechmissionがスタートする度にランダムなポートを選択する(_R)"
 
 #: ../gtk/tr-prefs.c:1226
 msgid "Use UPnP or NAT-PMP port _forwarding from my router"
@@ -1787,8 +1787,8 @@ msgid "uTP is a tool for reducing network congestion."
 msgstr "uTPはネットワークの輻輳を少なくするツールです。"
 
 #: ../gtk/tr-prefs.c:1262
-msgid "Transmission Preferences"
-msgstr "Transmission 設定"
+msgid "Leechmission Preferences"
+msgstr "Leechmission 設定"
 
 #: ../gtk/tr-prefs.c:1276
 msgid "Torrents"
@@ -1950,7 +1950,7 @@ msgstr "GB/s"
 msgid "TB/s"
 msgstr "TB/s"
 
-#: ../cli/cli.c:115 ../gtk/util.c:87 ../libtransmission/utils.c:1509
+#: ../cli/cli.c:115 ../gtk/util.c:87 ../libleechmission/utils.c:1509
 msgid "None"
 msgstr "なし"
 
@@ -2013,8 +2013,8 @@ msgstr "認識されない URL"
 
 #: ../gtk/util.c:565
 #, c-format
-msgid "Transmission doesn't know how to use \"%s\""
-msgstr "Transmissionは、\"%s\"の使用方法を把握していません"
+msgid "Leechmission doesn't know how to use \"%s\""
+msgstr "Leechmissionは、\"%s\"の使用方法を把握していません"
 
 #: ../gtk/util.c:570
 #, c-format
@@ -2026,255 +2026,255 @@ msgstr ""
 "っています。"
 
 #. did caller give us an uninitialized val?
-#: ../libtransmission/bencode.c:1117
+#: ../libleechmission/bencode.c:1117
 msgid "Invalid metadata"
 msgstr "無効なメタデータ"
 
-#: ../libtransmission/bencode.c:1723 ../libtransmission/bencode.c:1751
+#: ../libleechmission/bencode.c:1723 ../libleechmission/bencode.c:1751
 #, c-format
 msgid "Couldn't save temporary file \"%1$s\": %2$s"
 msgstr "一時ファイル \"%1$s\" を保存できませんでした: %2$s"
 
-#: ../libtransmission/bencode.c:1738
+#: ../libleechmission/bencode.c:1738
 #, c-format
 msgid "Saved \"%s\""
 msgstr "\"%s\"として保存しました"
 
-#: ../libtransmission/bencode.c:1743 ../libtransmission/blocklist.c:417
-#: ../libtransmission/rpcimpl.c:1260 ../libtransmission/rpcimpl.c:1271
-#: ../libtransmission/rpcimpl.c:1287
+#: ../libleechmission/bencode.c:1743 ../libleechmission/blocklist.c:417
+#: ../libleechmission/rpcimpl.c:1260 ../libleechmission/rpcimpl.c:1271
+#: ../libleechmission/rpcimpl.c:1287
 #, c-format
 msgid "Couldn't save file \"%1$s\": %2$s"
 msgstr "\"%1$s\" 保存失敗: %2$s"
 
-#: ../libtransmission/blocklist.c:86 ../libtransmission/blocklist.c:325
-#: ../libtransmission/utils.c:438
+#: ../libleechmission/blocklist.c:86 ../libleechmission/blocklist.c:325
+#: ../libleechmission/utils.c:438
 #, c-format
 msgid "Couldn't read \"%1$s\": %2$s"
 msgstr "\"%1$s\" 読み込み失敗: %2$s"
 
-#: ../libtransmission/blocklist.c:115
+#: ../libleechmission/blocklist.c:115
 #, c-format
 msgid "Blocklist \"%s\" contains %zu entries"
 msgstr "ブロックリスト\"%s\"には%zu個のエントリが存在します"
 
 #. don't try to display the actual lines - it causes issues
-#: ../libtransmission/blocklist.c:368
+#: ../libleechmission/blocklist.c:368
 #, c-format
 msgid "blocklist skipped invalid address at line %d"
 msgstr "ブロックリストの%d行目にある不正なアドレスをスキップしました"
 
-#: ../libtransmission/blocklist.c:420
+#: ../libleechmission/blocklist.c:420
 #, c-format
 msgid "Blocklist \"%s\" updated with %zu entries"
 msgstr "ブロックリスト\"%s\"の%zu個のエントリを更新しました"
 
-#: ../libtransmission/fdlimit.c:348 ../libtransmission/utils.c:574
-#: ../libtransmission/utils.c:585
+#: ../libleechmission/fdlimit.c:348 ../libleechmission/utils.c:574
+#: ../libleechmission/utils.c:585
 #, c-format
 msgid "Couldn't create \"%1$s\": %2$s"
 msgstr "\"%1$s\" 作成失敗: %2$s"
 
-#: ../libtransmission/fdlimit.c:369
+#: ../libleechmission/fdlimit.c:369
 #, c-format
 msgid "Couldn't open \"%1$s\": %2$s"
 msgstr "\"%1$s\" オープン失敗: %2$s"
 
-#: ../libtransmission/fdlimit.c:384
+#: ../libleechmission/fdlimit.c:384
 #, c-format
 msgid "Couldn't truncate \"%1$s\": %2$s"
 msgstr "\"%1$s\"を切り捨てできませんでした: %2$s"
 
-#: ../libtransmission/fdlimit.c:670
+#: ../libleechmission/fdlimit.c:670
 #, c-format
 msgid "Couldn't create socket: %s"
 msgstr "ソケット作成失敗: %s"
 
-#: ../libtransmission/makemeta.c:63
+#: ../libleechmission/makemeta.c:63
 #, c-format
 msgid "Torrent Creator is skipping file \"%s\": %s"
 msgstr "Torrent Creatorはファイル\"%s\"をスキップしています: %s"
 
-#: ../libtransmission/metainfo.c:533
+#: ../libleechmission/metainfo.c:533
 #, c-format
 msgid "Invalid metadata entry \"%s\""
 msgstr "無効なメタデータのエントリー \"%s\""
 
-#: ../libtransmission/natpmp.c:32
+#: ../libleechmission/natpmp.c:32
 msgid "Port Forwarding (NAT-PMP)"
 msgstr "ポートフォワーディング (NAT-PMP)"
 
-#: ../libtransmission/natpmp.c:72
+#: ../libleechmission/natpmp.c:72
 #, c-format
 msgid "%s succeeded (%d)"
 msgstr "%s に成功しました (%d)"
 
-#: ../libtransmission/natpmp.c:141
+#: ../libleechmission/natpmp.c:141
 #, c-format
 msgid "Found public address \"%s\""
 msgstr "パブリックアドレス\"%s\"が見つかりました"
 
-#: ../libtransmission/natpmp.c:176
+#: ../libleechmission/natpmp.c:176
 #, c-format
 msgid "no longer forwarding port %d"
 msgstr "ポート %d のフォワードを行わない"
 
-#: ../libtransmission/natpmp.c:221
+#: ../libleechmission/natpmp.c:221
 #, c-format
 msgid "Port %d forwarded successfully"
 msgstr "ポート %d の開通に成功しました"
 
-#: ../libtransmission/net.c:268
+#: ../libleechmission/net.c:268
 #, c-format
 msgid "Couldn't set source address %s on %d: %s"
 msgstr "ソースアドレス%s (%d)を設定できませんでした: %s"
 
-#: ../libtransmission/net.c:284
+#: ../libleechmission/net.c:284
 #, c-format
 msgid "Couldn't connect socket %d to %s, port %d (errno %d - %s)"
 msgstr ""
 
-#: ../libtransmission/net.c:360
-msgid "Is another copy of Transmission already running?"
-msgstr "他の Transmission プログラムをすでに実行していませんか?"
+#: ../libleechmission/net.c:360
+msgid "Is another copy of Leechmission already running?"
+msgstr "他の Leechmission プログラムをすでに実行していませんか?"
 
-#: ../libtransmission/net.c:365
+#: ../libleechmission/net.c:365
 #, c-format
 msgid "Couldn't bind port %d on %s: %s"
 msgstr "%2$s: %3$s に対するポート %1$d のバインドに失敗しました"
 
-#: ../libtransmission/net.c:367
+#: ../libleechmission/net.c:367
 #, c-format
 msgid "Couldn't bind port %d on %s: %s (%s)"
 msgstr "ポート%d、アドレス%sのbind()に失敗しました： %s (%s)"
 
-#: ../libtransmission/peer-msgs.c:1898
+#: ../libleechmission/peer-msgs.c:1898
 #, c-format
 msgid "Please Verify Local Data! Piece #%zu is corrupt."
 msgstr "ローカルデータを検証してください! ピース #%zu は破損しています。"
 
-#: ../libtransmission/port-forwarding.c:31
+#: ../libleechmission/port-forwarding.c:31
 msgid "Port Forwarding"
 msgstr "ポートフォワーディング"
 
-#: ../libtransmission/port-forwarding.c:58
+#: ../libleechmission/port-forwarding.c:58
 msgid "Starting"
 msgstr "開始"
 
-#: ../libtransmission/port-forwarding.c:59
+#: ../libleechmission/port-forwarding.c:59
 msgid "Forwarded"
 msgstr "転送済み"
 
-#: ../libtransmission/port-forwarding.c:60
+#: ../libleechmission/port-forwarding.c:60
 msgid "Stopping"
 msgstr "停止"
 
-#: ../libtransmission/port-forwarding.c:61
+#: ../libleechmission/port-forwarding.c:61
 msgid "Not forwarded"
 msgstr "転送されていません"
 
-#: ../libtransmission/port-forwarding.c:91 ../libtransmission/torrent.c:2060
+#: ../libleechmission/port-forwarding.c:91 ../libleechmission/torrent.c:2060
 #, c-format
 msgid "State changed from \"%1$s\" to \"%2$s\""
 msgstr "状態が \"%1$s\" から \"%2$s\" に変化しました"
 
-#: ../libtransmission/port-forwarding.c:181
+#: ../libleechmission/port-forwarding.c:181
 msgid "Stopped"
 msgstr "停止しました"
 
 #. first %s is the application name
 #. second %s is the version number
-#: ../libtransmission/session.c:722
+#: ../libleechmission/session.c:722
 #, c-format
 msgid "%s %s started"
 msgstr "%s %s が開始しました"
 
-#: ../libtransmission/session.c:1943
+#: ../libleechmission/session.c:1943
 #, c-format
 msgid "Loaded %d torrents"
 msgstr "%d torrentをロードしました"
 
-#: ../libtransmission/torrent.c:525
+#: ../libleechmission/torrent.c:525
 #, c-format
 msgid "Tracker warning: \"%s\""
 msgstr "トラッカー警告: \"%s\""
 
-#: ../libtransmission/torrent.c:532
+#: ../libleechmission/torrent.c:532
 #, c-format
 msgid "Tracker error: \"%s\""
 msgstr "トラッカーエラー: \"%s\""
 
-#: ../libtransmission/torrent.c:787
+#: ../libleechmission/torrent.c:787
 msgid ""
 "No data found! Ensure your drives are connected or use \"Set Location\". To "
 "re-download, remove the torrent and re-add it."
 msgstr ""
 
-#: ../libtransmission/torrent.c:1677
+#: ../libleechmission/torrent.c:1677
 msgid "Restarted manually -- disabling its seed ratio"
 msgstr ""
 
-#: ../libtransmission/torrent.c:1829
+#: ../libleechmission/torrent.c:1829
 msgid "Removing torrent"
 msgstr "torrent の削除"
 
-#: ../libtransmission/torrent.c:1913
+#: ../libleechmission/torrent.c:1913
 msgid "Done"
 msgstr "完了"
 
-#: ../libtransmission/torrent.c:1916
+#: ../libleechmission/torrent.c:1916
 msgid "Complete"
 msgstr "完了"
 
-#: ../libtransmission/upnp.c:35
+#: ../libleechmission/upnp.c:35
 msgid "Port Forwarding (UPnP)"
 msgstr "ポートフォワーディング (UPnP)"
 
-#: ../libtransmission/upnp.c:199
+#: ../libleechmission/upnp.c:199
 #, c-format
 msgid "Found Internet Gateway Device \"%s\""
 msgstr ""
 
-#: ../libtransmission/upnp.c:202
+#: ../libleechmission/upnp.c:202
 #, c-format
 msgid "Local Address is \"%s\""
 msgstr "ローカルアドレス \"%s\""
 
-#: ../libtransmission/upnp.c:231
+#: ../libleechmission/upnp.c:231
 #, c-format
 msgid "Port %d isn't forwarded"
 msgstr "ポート %d は開通していません"
 
-#: ../libtransmission/upnp.c:242
+#: ../libleechmission/upnp.c:242
 #, c-format
 msgid "Stopping port forwarding through \"%s\", service \"%s\""
 msgstr ""
 
-#: ../libtransmission/upnp.c:275
+#: ../libleechmission/upnp.c:275
 #, c-format
 msgid ""
 "Port forwarding through \"%s\", service \"%s\". (local address: %s:%d)"
 msgstr ""
 
-#: ../libtransmission/upnp.c:280
+#: ../libleechmission/upnp.c:280
 msgid "Port forwarding successful!"
 msgstr "ポートフォワーディングは成功しました!"
 
-#: ../libtransmission/utils.c:452
+#: ../libleechmission/utils.c:452
 msgid "Not a regular file"
 msgstr ""
 
-#: ../libtransmission/utils.c:470
+#: ../libleechmission/utils.c:470
 msgid "Memory allocation failed"
 msgstr "メモリ割り当てに失敗しました"
 
 #. Node exists but isn't a folder
-#: ../libtransmission/utils.c:584
+#: ../libleechmission/utils.c:584
 #, c-format
 msgid "File \"%s\" is in the way"
 msgstr ""
 
-#: ../libtransmission/verify.c:229
+#: ../libleechmission/verify.c:229
 msgid "Verifying torrent"
 msgstr "Torrent の検証中"
 
@@ -2427,7 +2427,7 @@ msgstr "Torrent の検証中"
 #~ msgid "Limit _upload speed (KB/s):"
 #~ msgstr "アップロード速度上限(_U) (KB/s):"
 
-#~ msgid "<big><b>Quit Transmission?</b></big>"
+#~ msgid "<big><b>Quit Leechmission?</b></big>"
 #~ msgstr "<big><b>終了しますか?</b></big>"
 
 #~ msgid "Torrent creation cancelled"
@@ -2471,8 +2471,8 @@ msgstr "Torrent の検証中"
 #~ msgid "F_older"
 #~ msgstr "フォルダ(_O)"
 
-#~ msgid "Transmission Bittorrent Client"
-#~ msgstr "Transmission Bittorrent クライアント"
+#~ msgid "Leechmission Bittorrent Client"
+#~ msgstr "Leechmission Bittorrent クライアント"
 
 #, c-format
 #~ msgid ""
@@ -2656,8 +2656,8 @@ msgstr "Torrent の検証中"
 #~ msgid "Progress"
 #~ msgstr "進捗率"
 
-#~ msgid "Show Transmission in the system _tray"
-#~ msgstr "Transmissionをシステムトレイに表示する(_T)"
+#~ msgid "Show Leechmission in the system _tray"
+#~ msgstr "Leechmissionをシステムトレイに表示する(_T)"
 
 #~ msgid "Show popup _notifications"
 #~ msgstr "ポップアップ通知を表示する(_N)"
@@ -2838,10 +2838,10 @@ msgstr "Torrent の検証中"
 #~ msgstr "URL を開く..."
 
 #~ msgid ""
-#~ "Transmission is already running, but is not responding. To start a new "
-#~ "session, you must first close the existing Transmission process."
+#~ "Leechmission is already running, but is not responding. To start a new "
+#~ "session, you must first close the existing Leechmission process."
 #~ msgstr ""
-#~ "Transmissionはすでに起動していますが、応答がありません。新しいセッションを開始するには、まず存在するTransmissionのプロセスを閉じて"
+#~ "Leechmissionはすでに起動していますが、応答がありません。新しいセッションを開始するには、まず存在するLeechmissionのプロセスを閉じて"
 #~ "ください。"
 
 #~ msgid "This may take a moment..."

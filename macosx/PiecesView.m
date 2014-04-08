@@ -1,7 +1,7 @@
 /******************************************************************************
  * $Id: PiecesView.m 14050 2013-03-12 02:56:35Z livings124 $
  *
- * Copyright (c) 2006-2012 Transmission authors and contributors
+ * Copyright (c) 2006-2012 Leechmission authors and contributors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -26,7 +26,7 @@
 #import "Torrent.h"
 #import "InfoWindowController.h"
 
-#import "transmission.h"
+#import "leechmission.h"
 #import "utils.h"
 
 #define MAX_ACROSS 18

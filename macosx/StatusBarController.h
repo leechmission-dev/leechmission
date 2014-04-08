@@ -1,7 +1,7 @@
 /******************************************************************************
  * $Id: StatusBarController.h 13343 2012-06-10 13:47:32Z livings124 $
  * 
- * Copyright (c) 2011-2012 Transmission authors and contributors
+ * Copyright (c) 2011-2012 Leechmission authors and contributors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -24,7 +24,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-#import <transmission.h>
+#import <leechmission.h>
 
 @interface StatusBarController : NSViewController
 {

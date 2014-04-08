@@ -28,9 +28,9 @@
 #include <QWidget>
 #include <QLineEdit>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/utils.h> /* mime64 */
-#include <libtransmission/variant.h>
+#include <libleechmission/leechmission.h>
+#include <libleechmission/utils.h> /* mime64 */
+#include <libleechmission/variant.h>
 
 #include "add-data.h"
 #include "file-tree.h"

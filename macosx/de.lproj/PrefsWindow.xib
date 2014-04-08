@@ -397,7 +397,7 @@
 						<object class="NSButtonCell" key="NSCell" id="891757673">
 							<int key="NSCellFlags">67239424</int>
 							<int key="NSCellFlags2">134217728</int>
-							<string key="NSContents">Transmission als Standardprogramm nutzen</string>
+							<string key="NSContents">Leechmission als Standardprogramm nutzen</string>
 							<reference key="NSSupport" ref="86725571"/>
 							<reference key="NSControlView" ref="609293684"/>
 							<int key="NSButtonFlags">-2038284033</int>
@@ -4212,7 +4212,7 @@ AAABAAAAAQ</bytes>
 						<object class="NSTextFieldCell" key="NSCell" id="644224844">
 							<int key="NSCellFlags">67239424</int>
 							<int key="NSCellFlags2">272760832</int>
-							<string key="NSContents">Hierdurch kann Transmission mit einem Web-Browser bedient werden.</string>
+							<string key="NSContents">Hierdurch kann Leechmission mit einem Web-Browser bedient werden.</string>
 							<reference key="NSSupport" ref="26"/>
 							<reference key="NSControlView" ref="535988411"/>
 							<reference key="NSBackgroundColor" ref="977951849"/>

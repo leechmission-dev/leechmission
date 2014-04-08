@@ -1,7 +1,7 @@
 /******************************************************************************
  * $Id: InfoPeersViewController.m 13434 2012-08-13 00:52:04Z livings124 $
  *
- * Copyright (c) 2010-2012 Transmission authors and contributors
+ * Copyright (c) 2010-2012 Leechmission authors and contributors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -29,7 +29,7 @@
 #import "Torrent.h"
 #import "WebSeedTableView.h"
 
-#import "transmission.h" // required by utils.h
+#import "leechmission.h" // required by utils.h
 #import "utils.h"
 
 @interface InfoPeersViewController (Private)

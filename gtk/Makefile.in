@@ -80,10 +80,10 @@ PRE_UNINSTALL = :
 POST_UNINSTALL = :
 build_triplet = @build@
 host_triplet = @host@
-bin_PROGRAMS = transmission-gtk$(EXEEXT)
-@WIN32_TRUE@am__append_1 = transmission.res
-@WIN32_TRUE@am__append_2 = transmission.res
-@WIN32_TRUE@am__append_3 = transmission.res
+bin_PROGRAMS = leechmission-gtk$(EXEEXT)
+@WIN32_TRUE@am__append_1 = leechmission.res
+@WIN32_TRUE@am__append_2 = leechmission.res
+@WIN32_TRUE@am__append_3 = leechmission.res
 subdir = gtk
 DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am \
 	$(top_srcdir)/depcomp $(dist_man_MANS) $(noinst_HEADERS)
@@ -102,27 +102,27 @@ CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)" "$(DESTDIR)$(man1dir)" \
 	"$(DESTDIR)$(Productivitydir)" "$(DESTDIR)$(icondir)"
 PROGRAMS = $(bin_PROGRAMS)
-am_transmission_gtk_OBJECTS = actions.$(OBJEXT) conf.$(OBJEXT) \
+am_leechmission_gtk_OBJECTS = actions.$(OBJEXT) conf.$(OBJEXT) \
 	details.$(OBJEXT) dialogs.$(OBJEXT) favicon.$(OBJEXT) \
 	file-list.$(OBJEXT) filter.$(OBJEXT) hig.$(OBJEXT) \
 	icons.$(OBJEXT) main.$(OBJEXT) makemeta-ui.$(OBJEXT) \
 	msgwin.$(OBJEXT) notify.$(OBJEXT) open-dialog.$(OBJEXT) \
 	relocate.$(OBJEXT) stats.$(OBJEXT) \
 	torrent-cell-renderer.$(OBJEXT) \
-	transmission-resources.$(OBJEXT) tr-core.$(OBJEXT) \
+	leechmission-resources.$(OBJEXT) tr-core.$(OBJEXT) \
 	tr-icon.$(OBJEXT) tr-prefs.$(OBJEXT) tr-window.$(OBJEXT) \
 	util.$(OBJEXT)
-transmission_gtk_OBJECTS = $(am_transmission_gtk_OBJECTS)
-transmission_gtk_DEPENDENCIES =  \
-	$(top_builddir)/libtransmission/libtransmission.a \
+leechmission_gtk_OBJECTS = $(am_leechmission_gtk_OBJECTS)
+leechmission_gtk_DEPENDENCIES =  \
+	$(top_builddir)/libleechmission/libleechmission.a \
 	$(am__append_3)
 AM_V_lt = $(am__v_lt_@AM_V@)
 am__v_lt_ = $(am__v_lt_@AM_DEFAULT_V@)
 am__v_lt_0 = --silent
 am__v_lt_1 = 
-transmission_gtk_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
+leechmission_gtk_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CCLD) \
-	$(AM_CFLAGS) $(CFLAGS) $(transmission_gtk_LDFLAGS) $(LDFLAGS) \
+	$(AM_CFLAGS) $(CFLAGS) $(leechmission_gtk_LDFLAGS) $(LDFLAGS) \
 	-o $@
 AM_V_P = $(am__v_P_@AM_V@)
 am__v_P_ = $(am__v_P_@AM_DEFAULT_V@)
@@ -158,8 +158,8 @@ AM_V_CCLD = $(am__v_CCLD_@AM_V@)
 am__v_CCLD_ = $(am__v_CCLD_@AM_DEFAULT_V@)
 am__v_CCLD_0 = @echo "  CCLD    " $@;
 am__v_CCLD_1 = 
-SOURCES = $(transmission_gtk_SOURCES)
-DIST_SOURCES = $(transmission_gtk_SOURCES)
+SOURCES = $(leechmission_gtk_SOURCES)
+DIST_SOURCES = $(leechmission_gtk_SOURCES)
 RECURSIVE_TARGETS = all-recursive check-recursive cscopelist-recursive \
 	ctags-recursive dvi-recursive html-recursive info-recursive \
 	install-data-recursive install-dvi-recursive \
@@ -448,10 +448,10 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-transmissionlocaledir = @transmissionlocaledir@
-BUILT_SOURCES = transmission-resources.c transmission-resources.h \
+leechmissionlocaledir = @leechmissionlocaledir@
+BUILT_SOURCES = leechmission-resources.c leechmission-resources.h \
 	$(am__append_1)
-CLEANFILES = transmission-resources.c transmission-resources.h \
+CLEANFILES = leechmission-resources.c leechmission-resources.h \
 	$(am__append_2)
 SUBDIRS = icons
 @TR_UNSTABLE_TRUE@GTK_EXTRA_CPPFLAGS = -DG_DISABLE_DEPRECATED -DGDK_PIXBUF_DISABLE_DEPRECATED -DGDK_DISABLE_DEPRECATED -DGTK_DISABLE_DEPRECATED -DPANGO_DISABLE_DEPRECATED
@@ -460,7 +460,7 @@ SUBDIRS = icons
 # -DG_DISABLE_SINGLE_INCLUDES -DGTK_DISABLE_SINGLE_INCLUDES
 AM_CPPFLAGS = \
     -I$(top_srcdir) \
-    -DTRANSMISSIONLOCALEDIR=\""$(transmissionlocaledir)"\" \
+    -DLEECHMISSIONLOCALEDIR=\""$(leechmissionlocaledir)"\" \
     $(GTK_EXTRA_CPPFLAGS)
 
 AM_CFLAGS = \
@@ -498,14 +498,14 @@ noinst_HEADERS = \
     relocate.h \
     stats.h \
     torrent-cell-renderer.h \
-    transmission-resources.h \
+    leechmission-resources.h \
     tr-core.h \
     tr-icon.h \
     tr-prefs.h \
     tr-window.h \
     util.h
 
-transmission_gtk_SOURCES = \
+leechmission_gtk_SOURCES = \
     actions.c \
     conf.c \
     details.c \
@@ -523,37 +523,37 @@ transmission_gtk_SOURCES = \
     relocate.c \
     stats.c \
     torrent-cell-renderer.c \
-    transmission-resources.c \
+    leechmission-resources.c \
     tr-core.c \
     tr-icon.c \
     tr-prefs.c \
     tr-window.c \
     util.c
 
-dist_man_MANS = transmission-gtk.1
-transmission_gtk_LDADD =  \
-	$(top_builddir)/libtransmission/libtransmission.a \
+dist_man_MANS = leechmission-gtk.1
+leechmission_gtk_LDADD =  \
+	$(top_builddir)/libleechmission/libleechmission.a \
 	@LIBUPNP_LIBS@ @LIBNATPMP_LIBS@ @DHT_LIBS@ @LIBUTP_LIBS@ \
 	@GTK_LIBS@ @LIBAPPINDICATOR_LIBS@ @LIBEVENT_LIBS@ \
 	@LIBCURL_LIBS@ @OPENSSL_LIBS@ @ZLIB_LIBS@ @PTHREAD_LIBS@ \
 	$(am__append_3)
-DESKTOP_IN_FILES = transmission-gtk.desktop.in
+DESKTOP_IN_FILES = leechmission-gtk.desktop.in
 DESKTOP_FILES = $(DESKTOP_IN_FILES:.desktop.in=.desktop)
 Productivitydir = $(datadir)/applications
 Productivity_DATA = $(DESKTOP_FILES)
-icon_DATA = transmission.png
+icon_DATA = leechmission.png
 icondir = $(datadir)/pixmaps
-UI_FILES = transmission-ui.xml 
+UI_FILES = leechmission-ui.xml 
 EXTRA_DIST = \
 	$(DESKTOP_IN_FILES) \
 	$(UI_FILES) \
-	transmission.gresource.xml \
-	transmission.png
+	leechmission.gresource.xml \
+	leechmission.png
 
 DISTCLEANFILES = \
-	transmission-gtk.desktop
+	leechmission-gtk.desktop
 
-@WIN32_TRUE@transmission_gtk_LDFLAGS = -mwindows
+@WIN32_TRUE@leechmission_gtk_LDFLAGS = -mwindows
 all: $(BUILT_SOURCES)
 	$(MAKE) $(AM_MAKEFLAGS) all-recursive
 
@@ -639,9 +639,9 @@ clean-binPROGRAMS:
 	echo " rm -f" $$list; \
 	rm -f $$list
 
-transmission-gtk$(EXEEXT): $(transmission_gtk_OBJECTS) $(transmission_gtk_DEPENDENCIES) $(EXTRA_transmission_gtk_DEPENDENCIES) 
-	@rm -f transmission-gtk$(EXEEXT)
-	$(AM_V_CCLD)$(transmission_gtk_LINK) $(transmission_gtk_OBJECTS) $(transmission_gtk_LDADD) $(LIBS)
+leechmission-gtk$(EXEEXT): $(leechmission_gtk_OBJECTS) $(leechmission_gtk_DEPENDENCIES) $(EXTRA_leechmission_gtk_DEPENDENCIES) 
+	@rm -f leechmission-gtk$(EXEEXT)
+	$(AM_V_CCLD)$(leechmission_gtk_LINK) $(leechmission_gtk_OBJECTS) $(leechmission_gtk_LDADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)
@@ -670,7 +670,7 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/tr-icon.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/tr-prefs.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/tr-window.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/transmission-resources.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/leechmission-resources.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/util.Po@am__quote@
 
 .c.o:
@@ -1078,16 +1078,16 @@ uninstall-man: uninstall-man1
 
 @INTLTOOL_DESKTOP_RULE@
 
-transmission-resources.c: transmission.gresource.xml $(UI_FILES) 
+leechmission-resources.c: leechmission.gresource.xml $(UI_FILES) 
 	$(AM_V_GEN)glib-compile-resources --target=$@ --sourcedir=$(srcdir) \
-	  --generate-source --c-name transmission $< 
+	  --generate-source --c-name leechmission $< 
 
-transmission-resources.h: transmission.gresource.xml $(UI_FILES) 
+leechmission-resources.h: leechmission.gresource.xml $(UI_FILES) 
 	$(AM_V_GEN)glib-compile-resources --target=$@ --sourcedir=$(srcdir) \
-	  --generate-header --c-name transmission $< 
+	  --generate-header --c-name leechmission $< 
 
-@WIN32_TRUE@transmission.res: transmission.rc
-@WIN32_TRUE@	$(WINDRES) -J rc -i transmission.rc -O coff -o transmission.res
+@WIN32_TRUE@leechmission.res: leechmission.rc
+@WIN32_TRUE@	$(WINDRES) -J rc -i leechmission.rc -O coff -o leechmission.res
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

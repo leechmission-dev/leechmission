@@ -16,9 +16,9 @@
 #include <gtk/gtk.h>
 #include "tr-core.h"
 
-#define WINDOW_ICON        "transmission-main-window-icon"
-#define TRAY_ICON          "transmission-tray-icon"
-#define NOTIFICATION_ICON  "transmission-notification-icon"
+#define WINDOW_ICON        "leechmission-main-window-icon"
+#define TRAY_ICON          "leechmission-tray-icon"
+#define NOTIFICATION_ICON  "leechmission-notification-icon"
 
 
 void        gtr_actions_init (GtkUIManager * ui_manager, gpointer callback_user_data);

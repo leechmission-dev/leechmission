@@ -27,8 +27,8 @@
 #include <gtk/gtk.h>
 #include <glib/gi18n.h>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/utils.h> /* tr_formatter_speed_KBps () */
+#include <libleechmission/leechmission.h>
+#include <libleechmission/utils.h> /* tr_formatter_speed_KBps () */
 
 #include "actions.h"
 #include "conf.h"

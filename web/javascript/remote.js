@@ -21,13 +21,13 @@ var RPC = {
 	_UpSpeedLimited         : 'speed-limit-up-enabled'
 };
 
-function TransmissionRemote(controller)
+function LeechmissionRemote(controller)
 {
 	this.initialize(controller);
 	return this;
 }
 
-TransmissionRemote.prototype =
+LeechmissionRemote.prototype =
 {
 	/*
 	 * Constructor
@@ -40,14 +40,14 @@ TransmissionRemote.prototype =
 
 	/*
 	 * Display an error if an ajax request fails, and stop sending requests
-	 * or on a 409, globally set the X-Transmission-Session-Id and resend
+	 * or on a 409, globally set the X-Leechmission-Session-Id and resend
 	 */
 	ajaxError: function(request, error_string, exception, ajaxObject) {
 		var token,
 		   remote = this;
 
-		// set the Transmission-Session-Id on a 409
-		if (request.status === 409 && (token = request.getResponseHeader('X-Transmission-Session-Id'))){
+		// set the Leechmission-Session-Id on a 409
+		if (request.status === 409 && (token = request.getResponseHeader('X-Leechmission-Session-Id'))){
 			remote._token = token;
 			$.ajax(ajaxObject);
 			return;
@@ -69,7 +69,7 @@ TransmissionRemote.prototype =
 	},
 
 	appendSessionId: function(XHR) {
-		XHR.setRequestHeader('X-Transmission-Session-Id', this._token);
+		XHR.setRequestHeader('X-Leechmission-Session-Id', this._token);
 	},
 
 	sendRequest: function(data, callback, context, async) {

@@ -16,7 +16,7 @@
 #include <QFileSystemWatcher>
 #include <QTimer>
 
-#include <libtransmission/transmission.h>
+#include <libleechmission/leechmission.h>
 
 #include "prefs.h"
 #include "torrent-model.h"

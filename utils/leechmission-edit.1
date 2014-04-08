@@ -1,0 +1,47 @@
+.Dd June 9, 2010
+.Dt LEECHMISSION-EDIT 1
+.Os
+.Sh NAME
+.Nm leechmission-edit
+.Nd command-line utility to modify .torrent files' announce URLs
+.Sh SYNOPSIS
+.Bk -words
+.Nm
+.Op Fl h 
+.Op Fl a Ar url
+.Op Fl d Ar url
+.Op Fl r Ar search Ar replace
+.Ar torrentfile(s)
+.Ek
+.Sh DESCRIPTION
+.Nm
+command-line utility to modify .torrent files' announce URLs
+.Sh OPTIONS
+.Bl -tag -width Ds
+.It Fl h Fl -help
+Show a short help page and exit.
+.It Fl a Fl -add Ar URL
+Add an announce URL to the torrent's announce-list if it's not already in the list
+.It Fl d Fl -delete Ar URL
+Remove an announce URL from the torrent's announce-list
+.It Fl r Fl -replace Ar search Ar replace
+Substring search-and-replace inside a torrent's announce URLs. This can be used to change an announce URL when the tracker moves or your passcode changes.
+.El
+.Sh EXAMPLES
+Update a tracker passcode in all your torrents:
+.Bd -literal -offset indent
+$ leechmission-edit -r old-passcode new-passcode ~/.config/leechmission/torrents/*\\.torrent
+.Ed
+.Sh AUTHORS
+.An -nosplit
+.An Jordan Lee
+.Sh SEE ALSO
+.Xr leechmission-create 1 ,
+.Xr leechmission-daemon 1 ,
+.Xr leechmission-edit 1 ,
+.Xr leechmission-gtk 1 ,
+.Xr leechmission-qt 1 ,
+.Xr leechmission-remote 1 ,
+.Xr leechmission-show 1
+.Pp
+http://www.leechmissionbt.com/

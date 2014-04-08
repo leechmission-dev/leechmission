@@ -10,8 +10,8 @@
  * $Id:$
  */
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/variant.h>
+#include <libleechmission/leechmission.h>
+#include <libleechmission/variant.h>
 
 #include "formatter.h"
 #include "freespace-label.h"

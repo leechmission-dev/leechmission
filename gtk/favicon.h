@@ -14,7 +14,7 @@
 #define GTR_FAVICON_CACHE_H
 
 #include <gtk/gtk.h>
-#include <libtransmission/transmission.h>
+#include <libleechmission/leechmission.h>
 
 void gtr_get_favicon (tr_session  * session,
                       const char  * host,

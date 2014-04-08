@@ -11,7 +11,7 @@ replace_if_differs ()
     fi
 }
 
-echo "creating libtransmission/version.h"
+echo "creating libleechmission/version.h"
 
 user_agent_prefix=`grep m4_define configure.ac | sed "s/[][)(]/,/g" | grep user_agent_prefix  | cut -d , -f 6`
 
@@ -29,7 +29,7 @@ else
     svn_revision=`awk '/\\$Id: /{ if ($4>i) i=$4 } END {print i}' */*.cc */*.[chm] */*.po`
 fi
 
-cat > libtransmission/version.h.new << EOF
+cat > libleechmission/version.h.new << EOF
 #define PEERID_PREFIX             "${peer_id_prefix}"
 #define USERAGENT_PREFIX          "${user_agent_prefix}"
 #define SVN_REVISION              "${svn_revision}"
@@ -46,6 +46,6 @@ case "${peer_id_prefix}" in
     *X-) echo '#define TR_BETA_RELEASE           1' ;;
     *Z-) echo '#define TR_NIGHTLY_RELEASE        1' ;;
     *)   echo '#define TR_STABLE_RELEASE         1' ;;
-esac >> "libtransmission/version.h.new"
+esac >> "libleechmission/version.h.new"
 
-replace_if_differs libtransmission/version.h.new libtransmission/version.h
+replace_if_differs libleechmission/version.h.new libleechmission/version.h

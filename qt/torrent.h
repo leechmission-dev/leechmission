@@ -23,8 +23,8 @@
 #include <QTemporaryFile>
 #include <QVariant>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/quark.h>
+#include <libleechmission/leechmission.h>
+#include <libleechmission/quark.h>
 
 #include "speed.h"
 #include "types.h"

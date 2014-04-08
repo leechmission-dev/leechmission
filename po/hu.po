@@ -1,12 +1,12 @@
-# Hungarian translation of Transmission
+# Hungarian translation of Leechmission
 # Copyright (C) 2007 Free Software Foundation, Inc
-# This file is distributed under the same license as the Transmission package.
+# This file is distributed under the same license as the Leechmission package.
 #
 # Kalman Kemenczy <kkemenczy@novell.com>, 2007.
 # Gabor Kelemen <kelemeng@gnome.hu>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: transmission\n"
+"Project-Id-Version: leechmission\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-03 15:22-0600\n"
 "PO-Revision-Date: 2012-03-05 08:59+0000\n"
@@ -56,8 +56,8 @@ msgid "Sort by Si_ze"
 msgstr "_Méret szerinti rendezés"
 
 #: ../gtk/actions.c:70
-msgid "_Show Transmission"
-msgstr "_Transmission megjelenítése"
+msgid "_Show Leechmission"
+msgstr "_Leechmission megjelenítése"
 
 #: ../gtk/actions.c:71
 msgid "Message _Log"
@@ -319,7 +319,7 @@ msgid "_Maximum peers:"
 msgstr "_Partnerszám maximum:"
 
 #: ../gtk/details.c:559 ../gtk/torrent-cell-renderer.c:201
-#: ../libtransmission/verify.c:273
+#: ../libleechmission/verify.c:273
 msgid "Queued for verification"
 msgstr "Ellenőrzéshez sorba állítva"
 
@@ -885,9 +885,9 @@ msgstr "_Megjelenítés:"
 
 #: ../gtk/main.c:308
 #, c-format
-msgid "Error registering Transmission as x-scheme-handler/magnet handler: %s"
+msgid "Error registering Leechmission as x-scheme-handler/magnet handler: %s"
 msgstr ""
-"Hiba a Transmission regisztrálásában, mint x-scheme és mágnes link kezelő: %s"
+"Hiba a Leechmission regisztrálásában, mint x-scheme és mágnes link kezelő: %s"
 
 #: ../gtk/main.c:477
 #, c-format
@@ -913,9 +913,9 @@ msgstr "Az értesítési területen minimalizálva induljon"
 msgid "Show version number and exit"
 msgstr "Verziószám megjelenítése és kilépés"
 
-#: ../gtk/main.c:630 ../gtk/transmission-gtk.desktop.in.h:1
-msgid "Transmission"
-msgstr "Transmission"
+#: ../gtk/main.c:630 ../gtk/leechmission-gtk.desktop.in.h:1
+msgid "Leechmission"
+msgstr "Leechmission"
 
 #. parse the command line
 #: ../gtk/main.c:634
@@ -933,12 +933,12 @@ msgstr ""
 
 #: ../gtk/main.c:739
 msgid ""
-"Transmission is a file-sharing program. When you run a torrent, its data "
+"Leechmission is a file-sharing program. When you run a torrent, its data "
 "will be made available to others by means of upload. You and you alone are "
 "fully responsible for exercising proper judgement and abiding by your local "
 "laws."
 msgstr ""
-"A Transmission egy fájlmegosztó program. Egy torrent futtatása során a hozzá "
+"A Leechmission egy fájlmegosztó program. Egy torrent futtatása során a hozzá "
 "tartozó adatok feltöltés útján elérhetővé válnak más felhasználók számára "
 "is. Ön, és csak Ön felelős a program használatáért és a helyi törvények "
 "betartásáért."
@@ -1414,15 +1414,15 @@ msgid_plural "Seeding to %1$'d of %2$'d connected peers"
 msgstr[0] "Megosztás %1$'d / %2$'d csatlakozott partnerrel"
 msgstr[1] "Megosztás %1$'d / %2$'d csatlakozott partnerrel"
 
-#: ../gtk/transmission-gtk.desktop.in.h:2
+#: ../gtk/leechmission-gtk.desktop.in.h:2
 msgid "BitTorrent Client"
 msgstr "BitTorrent kliens"
 
-#: ../gtk/transmission-gtk.desktop.in.h:3
-msgid "Transmission BitTorrent Client"
-msgstr "Transmission Bittorrent kliens"
+#: ../gtk/leechmission-gtk.desktop.in.h:3
+msgid "Leechmission BitTorrent Client"
+msgstr "Leechmission Bittorrent kliens"
 
-#: ../gtk/transmission-gtk.desktop.in.h:4
+#: ../gtk/leechmission-gtk.desktop.in.h:4
 msgid "Download and share files over BitTorrent"
 msgstr "Fájlok letöltése és megosztása BitTorrenten keresztül"
 
@@ -1461,11 +1461,11 @@ msgstr "(Korlát: %s)"
 #: ../gtk/tr-icon.c:109
 #, c-format
 msgid ""
-"Transmission\n"
+"Leechmission\n"
 "Up: %1$s %2$s\n"
 "Down: %3$s %4$s"
 msgstr ""
-"Transmission\n"
+"Leechmission\n"
 "Fel: %1$s %2$s\n"
 "Le: %3$s %4$s"
 
@@ -1485,7 +1485,7 @@ msgstr "_Aktív letöltések maximum:"
 msgid "Downloads sharing data in the last N minutes are _active:"
 msgstr "Az adatokat megosztó letöltések az utolsó N percben _aktívak:"
 
-#: ../gtk/tr-prefs.c:286 ../libtransmission/torrent.c:1919
+#: ../gtk/tr-prefs.c:286 ../libleechmission/torrent.c:1919
 msgid "Incomplete"
 msgstr "Hiányos"
 
@@ -1532,8 +1532,8 @@ msgid "_Inhibit hibernation when torrents are active"
 msgstr "H_ibernálás tiltása, ha vannak aktív torrentek"
 
 #: ../gtk/tr-prefs.c:384
-msgid "Show Transmission icon in the _notification area"
-msgstr "Transmission iko_n megjelenítése az értesítési területen"
+msgid "Show Leechmission icon in the _notification area"
+msgstr "Leechmission iko_n megjelenítése az értesítési területen"
 
 #: ../gtk/tr-prefs.c:389
 msgid "Notification"
@@ -1800,7 +1800,7 @@ msgid "Te_st Port"
 msgstr "P_ort tesztelése"
 
 #: ../gtk/tr-prefs.c:1222
-msgid "Pick a _random port every time Transmission is started"
+msgid "Pick a _random port every time Leechmission is started"
 msgstr "Véletlenszerű port _választása minden indításkor"
 
 #: ../gtk/tr-prefs.c:1226
@@ -1828,8 +1828,8 @@ msgid "uTP is a tool for reducing network congestion."
 msgstr "Az uTP protokoll próbálja csökkenteni a hálózat torlódását"
 
 #: ../gtk/tr-prefs.c:1262
-msgid "Transmission Preferences"
-msgstr "Transmission beállításai"
+msgid "Leechmission Preferences"
+msgstr "Leechmission beállításai"
 
 #: ../gtk/tr-prefs.c:1276
 msgid "Torrents"
@@ -1993,7 +1993,7 @@ msgstr "GB/s"
 msgid "TB/s"
 msgstr "TB/s"
 
-#: ../cli/cli.c:115 ../gtk/util.c:87 ../libtransmission/utils.c:1509
+#: ../cli/cli.c:115 ../gtk/util.c:87 ../libleechmission/utils.c:1509
 msgid "None"
 msgstr "Nincs"
 
@@ -2060,8 +2060,8 @@ msgstr "Ismeretlen URL"
 
 #: ../gtk/util.c:565
 #, c-format
-msgid "Transmission doesn't know how to use \"%s\""
-msgstr "A Transmission nem tudja használni: „%s”"
+msgid "Leechmission doesn't know how to use \"%s\""
+msgstr "A Leechmission nem tudja használni: „%s”"
 
 #: ../gtk/util.c:570
 #, c-format
@@ -2073,187 +2073,187 @@ msgstr ""
 "BitTorrent mágnes linkek egy szakasza az alábbit tartalmazza: „%s”."
 
 #. did caller give us an uninitialized val?
-#: ../libtransmission/bencode.c:1117
+#: ../libleechmission/bencode.c:1117
 msgid "Invalid metadata"
 msgstr "Érvénytelen metaadat"
 
-#: ../libtransmission/bencode.c:1723 ../libtransmission/bencode.c:1751
+#: ../libleechmission/bencode.c:1723 ../libleechmission/bencode.c:1751
 #, c-format
 msgid "Couldn't save temporary file \"%1$s\": %2$s"
 msgstr "A következő ideiglenes fájl nem menthető: „%1$s”: %2$s"
 
-#: ../libtransmission/bencode.c:1738
+#: ../libleechmission/bencode.c:1738
 #, c-format
 msgid "Saved \"%s\""
 msgstr "„%s” elmentve"
 
-#: ../libtransmission/bencode.c:1743 ../libtransmission/blocklist.c:417
-#: ../libtransmission/rpcimpl.c:1260 ../libtransmission/rpcimpl.c:1271
-#: ../libtransmission/rpcimpl.c:1287
+#: ../libleechmission/bencode.c:1743 ../libleechmission/blocklist.c:417
+#: ../libleechmission/rpcimpl.c:1260 ../libleechmission/rpcimpl.c:1271
+#: ../libleechmission/rpcimpl.c:1287
 #, c-format
 msgid "Couldn't save file \"%1$s\": %2$s"
 msgstr "A fájl („%1$s”) nem menthető: %2$s"
 
-#: ../libtransmission/blocklist.c:86 ../libtransmission/blocklist.c:325
-#: ../libtransmission/utils.c:438
+#: ../libleechmission/blocklist.c:86 ../libleechmission/blocklist.c:325
+#: ../libleechmission/utils.c:438
 #, c-format
 msgid "Couldn't read \"%1$s\": %2$s"
 msgstr "„%1$s” nem olvasható be: %2$s"
 
-#: ../libtransmission/blocklist.c:115
+#: ../libleechmission/blocklist.c:115
 #, c-format
 msgid "Blocklist \"%s\" contains %zu entries"
 msgstr "A „%s” tiltólista %zu elemű."
 
 #. don't try to display the actual lines - it causes issues
-#: ../libtransmission/blocklist.c:368
+#: ../libleechmission/blocklist.c:368
 #, c-format
 msgid "blocklist skipped invalid address at line %d"
 msgstr "a tiltólista %d sorában az érvénytelen elemet kihagytuk"
 
-#: ../libtransmission/blocklist.c:420
+#: ../libleechmission/blocklist.c:420
 #, c-format
 msgid "Blocklist \"%s\" updated with %zu entries"
 msgstr "„%s” tiltólista frissítve %zu bejegyzéssel"
 
-#: ../libtransmission/fdlimit.c:348 ../libtransmission/utils.c:574
-#: ../libtransmission/utils.c:585
+#: ../libleechmission/fdlimit.c:348 ../libleechmission/utils.c:574
+#: ../libleechmission/utils.c:585
 #, c-format
 msgid "Couldn't create \"%1$s\": %2$s"
 msgstr "„%1$s” nem hozható létre: %2$s"
 
-#: ../libtransmission/fdlimit.c:369
+#: ../libleechmission/fdlimit.c:369
 #, c-format
 msgid "Couldn't open \"%1$s\": %2$s"
 msgstr "„%1$s” nem nyitható meg: %2$s"
 
-#: ../libtransmission/fdlimit.c:384
+#: ../libleechmission/fdlimit.c:384
 #, c-format
 msgid "Couldn't truncate \"%1$s\": %2$s"
 msgstr "Nem sikerült csökkenteni a(z) „%1$s” fájl méretét: %2$s"
 
-#: ../libtransmission/fdlimit.c:670
+#: ../libleechmission/fdlimit.c:670
 #, c-format
 msgid "Couldn't create socket: %s"
 msgstr "A socket létrehozása sikertelen: %s"
 
-#: ../libtransmission/makemeta.c:63
+#: ../libleechmission/makemeta.c:63
 #, c-format
 msgid "Torrent Creator is skipping file \"%s\": %s"
 msgstr "A torrentkészítő kihagyja a(z) „%s” fájlt: %s"
 
-#: ../libtransmission/metainfo.c:533
+#: ../libleechmission/metainfo.c:533
 #, c-format
 msgid "Invalid metadata entry \"%s\""
 msgstr "Érvénytelen metaadat-bejegyzés „%s”"
 
-#: ../libtransmission/natpmp.c:32
+#: ../libleechmission/natpmp.c:32
 msgid "Port Forwarding (NAT-PMP)"
 msgstr "Portátirányítás (NAT-PMP)"
 
-#: ../libtransmission/natpmp.c:72
+#: ../libleechmission/natpmp.c:72
 #, c-format
 msgid "%s succeeded (%d)"
 msgstr "%s sikeres (%d)"
 
-#: ../libtransmission/natpmp.c:141
+#: ../libleechmission/natpmp.c:141
 #, c-format
 msgid "Found public address \"%s\""
 msgstr "Talált publikus cím: „%s”"
 
-#: ../libtransmission/natpmp.c:176
+#: ../libleechmission/natpmp.c:176
 #, c-format
 msgid "no longer forwarding port %d"
 msgstr "a port (%d) már nincs átirányítva"
 
-#: ../libtransmission/natpmp.c:221
+#: ../libleechmission/natpmp.c:221
 #, c-format
 msgid "Port %d forwarded successfully"
 msgstr "A port (%d) sikeresen átirányítva"
 
-#: ../libtransmission/net.c:268
+#: ../libleechmission/net.c:268
 #, c-format
 msgid "Couldn't set source address %s on %d: %s"
 msgstr "Nem állítható be a forráscím (%s) ezen: %d: %s"
 
-#: ../libtransmission/net.c:284
+#: ../libleechmission/net.c:284
 #, c-format
 msgid "Couldn't connect socket %d to %s, port %d (errno %d - %s)"
 msgstr ""
 "A foglalat (%d) nem csatlakoztatható a következőhöz: %s, port: %d (hibaszám: "
 "%d - %s)"
 
-#: ../libtransmission/net.c:360
-msgid "Is another copy of Transmission already running?"
+#: ../libleechmission/net.c:360
+msgid "Is another copy of Leechmission already running?"
 msgstr "Már fut a Transmisson egy példánya?"
 
-#: ../libtransmission/net.c:365
+#: ../libleechmission/net.c:365
 #, c-format
 msgid "Couldn't bind port %d on %s: %s"
 msgstr "Nem lehet csatlakoztatni a portot (%d) ezen: %s: %s"
 
-#: ../libtransmission/net.c:367
+#: ../libleechmission/net.c:367
 #, c-format
 msgid "Couldn't bind port %d on %s: %s (%s)"
 msgstr "Nem lehet csatlakozni %2$s %1$d portjához: %3$s (%4$s)"
 
-#: ../libtransmission/peer-msgs.c:1898
+#: ../libleechmission/peer-msgs.c:1898
 #, c-format
 msgid "Please Verify Local Data! Piece #%zu is corrupt."
 msgstr "Ellenőrizze a helyi adatot! A következő darab sérült: #%zu"
 
-#: ../libtransmission/port-forwarding.c:31
+#: ../libleechmission/port-forwarding.c:31
 msgid "Port Forwarding"
 msgstr "Portátirányítás"
 
-#: ../libtransmission/port-forwarding.c:58
+#: ../libleechmission/port-forwarding.c:58
 msgid "Starting"
 msgstr "Indítás"
 
-#: ../libtransmission/port-forwarding.c:59
+#: ../libleechmission/port-forwarding.c:59
 msgid "Forwarded"
 msgstr "Továbbítva"
 
-#: ../libtransmission/port-forwarding.c:60
+#: ../libleechmission/port-forwarding.c:60
 msgid "Stopping"
 msgstr "Leállítás"
 
-#: ../libtransmission/port-forwarding.c:61
+#: ../libleechmission/port-forwarding.c:61
 msgid "Not forwarded"
 msgstr "Nincs átirányítva"
 
-#: ../libtransmission/port-forwarding.c:91 ../libtransmission/torrent.c:2060
+#: ../libleechmission/port-forwarding.c:91 ../libleechmission/torrent.c:2060
 #, c-format
 msgid "State changed from \"%1$s\" to \"%2$s\""
 msgstr "Az állapot megváltoztatva: „%1$s” -> „%2$s”"
 
-#: ../libtransmission/port-forwarding.c:181
+#: ../libleechmission/port-forwarding.c:181
 msgid "Stopped"
 msgstr "Leállítva"
 
 #. first %s is the application name
 #. second %s is the version number
-#: ../libtransmission/session.c:722
+#: ../libleechmission/session.c:722
 #, c-format
 msgid "%s %s started"
 msgstr "%s %s elindítva"
 
-#: ../libtransmission/session.c:1943
+#: ../libleechmission/session.c:1943
 #, c-format
 msgid "Loaded %d torrents"
 msgstr "%d torrent betöltve"
 
-#: ../libtransmission/torrent.c:525
+#: ../libleechmission/torrent.c:525
 #, c-format
 msgid "Tracker warning: \"%s\""
 msgstr "Követőfigyelmeztetés: „%s”"
 
-#: ../libtransmission/torrent.c:532
+#: ../libleechmission/torrent.c:532
 #, c-format
 msgid "Tracker error: \"%s\""
 msgstr "Követőhiba: „%s”"
 
-#: ../libtransmission/torrent.c:787
+#: ../libleechmission/torrent.c:787
 msgid ""
 "No data found! Ensure your drives are connected or use \"Set Location\". To "
 "re-download, remove the torrent and re-add it."
@@ -2262,72 +2262,72 @@ msgstr ""
 "„Hely megadása” lehetőséget. Újbóli letöltéshez távolítsa el, majd újra adja "
 "hozzá a torrent fájlt."
 
-#: ../libtransmission/torrent.c:1677
+#: ../libleechmission/torrent.c:1677
 msgid "Restarted manually -- disabling its seed ratio"
 msgstr "Újraindítva kézzel -- a seed arány kikapcsolása"
 
-#: ../libtransmission/torrent.c:1829
+#: ../libleechmission/torrent.c:1829
 msgid "Removing torrent"
 msgstr "Torrent eltávolítása"
 
-#: ../libtransmission/torrent.c:1913
+#: ../libleechmission/torrent.c:1913
 msgid "Done"
 msgstr "Kész"
 
-#: ../libtransmission/torrent.c:1916
+#: ../libleechmission/torrent.c:1916
 msgid "Complete"
 msgstr "Befejezve"
 
-#: ../libtransmission/upnp.c:35
+#: ../libleechmission/upnp.c:35
 msgid "Port Forwarding (UPnP)"
 msgstr "Portátirányítás (UPnP)"
 
-#: ../libtransmission/upnp.c:199
+#: ../libleechmission/upnp.c:199
 #, c-format
 msgid "Found Internet Gateway Device \"%s\""
 msgstr "Megtalált internetátjáró-eszköz: „%s”"
 
-#: ../libtransmission/upnp.c:202
+#: ../libleechmission/upnp.c:202
 #, c-format
 msgid "Local Address is \"%s\""
 msgstr "A helyi cím: „%s”"
 
-#: ../libtransmission/upnp.c:231
+#: ../libleechmission/upnp.c:231
 #, c-format
 msgid "Port %d isn't forwarded"
 msgstr "A port (%d) nincs továbbítva"
 
-#: ../libtransmission/upnp.c:242
+#: ../libleechmission/upnp.c:242
 #, c-format
 msgid "Stopping port forwarding through \"%s\", service \"%s\""
 msgstr "Portátirányítás leállítása ezen keresztül: „%s”, „%s” szolgáltatás"
 
-#: ../libtransmission/upnp.c:275
+#: ../libleechmission/upnp.c:275
 #, c-format
 msgid ""
 "Port forwarding through \"%s\", service \"%s\". (local address: %s:%d)"
 msgstr ""
 "Portátirányítás ezen keresztül: „%s”, „%s” szolgáltatás.(helyi cím: %s:%d)"
 
-#: ../libtransmission/upnp.c:280
+#: ../libleechmission/upnp.c:280
 msgid "Port forwarding successful!"
 msgstr "A portátirányítás sikeres!"
 
-#: ../libtransmission/utils.c:452
+#: ../libleechmission/utils.c:452
 msgid "Not a regular file"
 msgstr "Nem szabályos fájl"
 
-#: ../libtransmission/utils.c:470
+#: ../libleechmission/utils.c:470
 msgid "Memory allocation failed"
 msgstr "A memóriafoglalás meghiúsult"
 
 #. Node exists but isn't a folder
-#: ../libtransmission/utils.c:584
+#: ../libleechmission/utils.c:584
 #, c-format
 msgid "File \"%s\" is in the way"
 msgstr "A(z) „%s” fájl útban van"
 
-#: ../libtransmission/verify.c:229
+#: ../libleechmission/verify.c:229
 msgid "Verifying torrent"
 msgstr "Torrent ellenőrzése"
 
@@ -2531,8 +2531,8 @@ msgstr "Torrent ellenőrzése"
 #~ msgid "Listening _port:"
 #~ msgstr "Figyelő_port:"
 
-#~ msgid "<big><b>Quit Transmission?</b></big>"
-#~ msgstr "<big><b>Kilép a Transmissionból?</b></big>"
+#~ msgid "<big><b>Quit Leechmission?</b></big>"
+#~ msgstr "<big><b>Kilép a Leechmissionból?</b></big>"
 
 #~ msgid "Use peer e_xchange"
 #~ msgstr "Partner_csere használata"
@@ -2669,8 +2669,8 @@ msgstr "Torrent ellenőrzése"
 #~ msgid "Couldn't read resume file"
 #~ msgstr "A folytatáshoz szükséges adatok nem olvashatók"
 
-#~ msgid "Transmission Bittorrent Client"
-#~ msgstr "Transmission Bittorrent kliens"
+#~ msgid "Leechmission Bittorrent Client"
+#~ msgstr "Leechmission Bittorrent kliens"
 
 #, c-format
 #~ msgid ""
@@ -2835,7 +2835,7 @@ msgstr "Torrent ellenőrzése"
 #~ msgstr[0] "A tiltólista %'d szabályt tartalmaz."
 #~ msgstr[1] "A tiltólista %'d szabályt tartalmaz."
 
-#~ msgid "Show Transmission in the system _tray"
+#~ msgid "Show Leechmission in the system _tray"
 #~ msgstr "Ikon megjelenítése az értesítési területen"
 
 #~ msgid "Show popup _notifications"
@@ -2929,14 +2929,14 @@ msgstr "Torrent ellenőrzése"
 #~ msgstr "Követők szerkesztése"
 
 #~ msgid ""
-#~ "Transmission is already running, but is not responding.  To start a new "
-#~ "session, you must first close the existing Transmission process."
+#~ "Leechmission is already running, but is not responding.  To start a new "
+#~ "session, you must first close the existing Leechmission process."
 #~ msgstr ""
-#~ "A Transmission már fut, de nem válaszol. Új munkamenet kezdéséhez először be "
-#~ "kell zárnia a jelenlegi Transmission folyamatot."
+#~ "A Leechmission már fut, de nem válaszol. Új munkamenet kezdéséhez először be "
+#~ "kell zárnia a jelenlegi Leechmission folyamatot."
 
-#~ msgid "Transmission cannot be started."
-#~ msgstr "A Transmission nem indítható el."
+#~ msgid "Leechmission cannot be started."
+#~ msgstr "A Leechmission nem indítható el."
 
 #~ msgid "Download complete"
 #~ msgstr "A letöltés kész"
@@ -2977,13 +2977,13 @@ msgstr "Torrent ellenőrzése"
 #~ "próbálja újra!"
 
 #~ msgid ""
-#~ "Transmission is a file sharing program.  When you run a torrent, its data "
+#~ "Leechmission is a file sharing program.  When you run a torrent, its data "
 #~ "will be made available to others by means of upload.  And of course, any "
 #~ "content you share is your sole responsibility.\n"
 #~ "\n"
 #~ "You probably knew this, so we won't tell you again."
 #~ msgstr ""
-#~ "A Transmission egy fájlmegosztó program. Egy torrent futtatása során a hozzá "
+#~ "A Leechmission egy fájlmegosztó program. Egy torrent futtatása során a hozzá "
 #~ "tartozó adatok elérhetővé válnak más felhasználók számára is. Természetesen "
 #~ "minden megosztott állományáért Ön vállal felelősséget. \n"
 #~ "\n"
@@ -3042,10 +3042,10 @@ msgstr "Torrent ellenőrzése"
 #~ msgstr "Ellenőrzés"
 
 #~ msgid ""
-#~ "Transmission is already running, but is not responding. To start a new "
-#~ "session, you must first close the existing Transmission process."
+#~ "Leechmission is already running, but is not responding. To start a new "
+#~ "session, you must first close the existing Leechmission process."
 #~ msgstr ""
-#~ "A Transmission már fut, de nem válaszol. Ahhoz, hogy új munkamenetet "
+#~ "A Leechmission már fut, de nem válaszol. Ahhoz, hogy új munkamenetet "
 #~ "indíthasson, először zárja be a jelenlegit."
 
 #~ msgid "Adding"

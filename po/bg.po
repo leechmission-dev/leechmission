@@ -1,13 +1,13 @@
 # $Id: bg.po 14101 2013-06-26 02:22:32Z jordan $
 #
-# Bulgarian translation of Transmission.
-# This file is distributed under the same license as the Transmission package.
+# Bulgarian translation of Leechmission.
+# This file is distributed under the same license as the Leechmission package.
 # Lubomir Marinov <lubomir.marinov@gmail.com>, 2006.
 # Miroslav Hadzhiev (Хаджиев) <extigyro@gmail.com>, 2011.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Transmission HEAD\n"
+"Project-Id-Version: Leechmission HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-03 15:22-0600\n"
 "PO-Revision-Date: 2013-02-20 17:26+0000\n"
@@ -57,8 +57,8 @@ msgid "Sort by Si_ze"
 msgstr "Подреждане по раз_мер"
 
 #: ../gtk/actions.c:70
-msgid "_Show Transmission"
-msgstr "_Показване на Transmission"
+msgid "_Show Leechmission"
+msgstr "_Показване на Leechmission"
 
 #: ../gtk/actions.c:71
 msgid "Message _Log"
@@ -320,7 +320,7 @@ msgid "_Maximum peers:"
 msgstr "_Максимално посредници:"
 
 #: ../gtk/details.c:559 ../gtk/torrent-cell-renderer.c:201
-#: ../libtransmission/verify.c:273
+#: ../libleechmission/verify.c:273
 msgid "Queued for verification"
 msgstr "Нареден за проверка"
 
@@ -884,9 +884,9 @@ msgstr "_Показване:"
 
 #: ../gtk/main.c:308
 #, c-format
-msgid "Error registering Transmission as x-scheme-handler/magnet handler: %s"
+msgid "Error registering Leechmission as x-scheme-handler/magnet handler: %s"
 msgstr ""
-"Грежка при регистриране на Transmission като x-scheme-handler/magnet "
+"Грежка при регистриране на Leechmission като x-scheme-handler/magnet "
 "handler: %s"
 
 #: ../gtk/main.c:477
@@ -912,9 +912,9 @@ msgstr "Стартиране в минимизирано състояние в �
 msgid "Show version number and exit"
 msgstr "Покажи номера на версията и завърши работата"
 
-#: ../gtk/main.c:630 ../gtk/transmission-gtk.desktop.in.h:1
-msgid "Transmission"
-msgstr "BitTorrent клиент (Transmission)"
+#: ../gtk/main.c:630 ../gtk/leechmission-gtk.desktop.in.h:1
+msgid "Leechmission"
+msgstr "BitTorrent клиент (Leechmission)"
 
 #. parse the command line
 #: ../gtk/main.c:634
@@ -933,12 +933,12 @@ msgstr ""
 
 #: ../gtk/main.c:739
 msgid ""
-"Transmission is a file-sharing program. When you run a torrent, its data "
+"Leechmission is a file-sharing program. When you run a torrent, its data "
 "will be made available to others by means of upload. You and you alone are "
 "fully responsible for exercising proper judgement and abiding by your local "
 "laws."
 msgstr ""
-"Transmission е програма за споделяне на файлове. При стартиране на торент, "
+"Leechmission е програма за споделяне на файлове. При стартиране на торент, "
 "данните ще бъдат предоставени на други потребители за изтегляне. Вие и само "
 "вие носите пълната отговорност за спазването с приложимите федерални и "
 "местни закони."
@@ -1403,15 +1403,15 @@ msgid_plural "Seeding to %1$'d of %2$'d connected peers"
 msgstr[0] "Изпращане на %1$'d с %2$'d свързан посредник"
 msgstr[1] "Изпращане на %1$'d с %2$'d свързани посредници"
 
-#: ../gtk/transmission-gtk.desktop.in.h:2
+#: ../gtk/leechmission-gtk.desktop.in.h:2
 msgid "BitTorrent Client"
 msgstr "BitTorrent клиент"
 
-#: ../gtk/transmission-gtk.desktop.in.h:3
-msgid "Transmission BitTorrent Client"
-msgstr "BitTorrent клиент (Transmission)"
+#: ../gtk/leechmission-gtk.desktop.in.h:3
+msgid "Leechmission BitTorrent Client"
+msgstr "BitTorrent клиент (Leechmission)"
 
-#: ../gtk/transmission-gtk.desktop.in.h:4
+#: ../gtk/leechmission-gtk.desktop.in.h:4
 msgid "Download and share files over BitTorrent"
 msgstr "Изтегляне и споделяне на файлове чрез BitTorrent"
 
@@ -1450,11 +1450,11 @@ msgstr "(Ограничение: %s)"
 #: ../gtk/tr-icon.c:109
 #, c-format
 msgid ""
-"Transmission\n"
+"Leechmission\n"
 "Up: %1$s %2$s\n"
 "Down: %3$s %4$s"
 msgstr ""
-"Transmission\n"
+"Leechmission\n"
 "Качване: %1$s %2$s\n"
 "Изтегляне: %3$s %4$s"
 
@@ -1476,7 +1476,7 @@ msgstr ""
 "Изтегляне на данните от разпределението за последните N-минути от "
 "_активността:"
 
-#: ../gtk/tr-prefs.c:286 ../libtransmission/torrent.c:1919
+#: ../gtk/tr-prefs.c:286 ../libleechmission/torrent.c:1919
 msgid "Incomplete"
 msgstr "Незавършен"
 
@@ -1523,7 +1523,7 @@ msgid "_Inhibit hibernation when torrents are active"
 msgstr "_Спиране на перехода към спящ режим при активни торенти"
 
 #: ../gtk/tr-prefs.c:384
-msgid "Show Transmission icon in the _notification area"
+msgid "Show Leechmission icon in the _notification area"
 msgstr "Показване на иконка в _областта за известия"
 
 #: ../gtk/tr-prefs.c:389
@@ -1790,8 +1790,8 @@ msgid "Te_st Port"
 msgstr "Те_стване на порта"
 
 #: ../gtk/tr-prefs.c:1222
-msgid "Pick a _random port every time Transmission is started"
-msgstr "Използване на _произволен порт при всяко изпълнение на Transmission"
+msgid "Pick a _random port every time Leechmission is started"
+msgstr "Използване на _произволен порт при всяко изпълнение на Leechmission"
 
 #: ../gtk/tr-prefs.c:1226
 msgid "Use UPnP or NAT-PMP port _forwarding from my router"
@@ -1819,7 +1819,7 @@ msgid "uTP is a tool for reducing network congestion."
 msgstr "uTP - това е инструмент за намаляване на натоварването на мрежата."
 
 #: ../gtk/tr-prefs.c:1262
-msgid "Transmission Preferences"
+msgid "Leechmission Preferences"
 msgstr "Настройки"
 
 #: ../gtk/tr-prefs.c:1276
@@ -1984,7 +1984,7 @@ msgstr "ГБ/сек"
 msgid "TB/s"
 msgstr "ТБ/сек"
 
-#: ../cli/cli.c:115 ../gtk/util.c:87 ../libtransmission/utils.c:1509
+#: ../cli/cli.c:115 ../gtk/util.c:87 ../libleechmission/utils.c:1509
 msgid "None"
 msgstr "Няма"
 
@@ -2051,8 +2051,8 @@ msgstr "Непознат адрес"
 
 #: ../gtk/util.c:565
 #, c-format
-msgid "Transmission doesn't know how to use \"%s\""
-msgstr "Transmission не знае как да обработи „%s“"
+msgid "Leechmission doesn't know how to use \"%s\""
+msgstr "Leechmission не знае как да обработи „%s“"
 
 #: ../gtk/util.c:570
 #, c-format
@@ -2064,185 +2064,185 @@ msgstr ""
 "Магнет връзките за BitTorrent имат раздел, съдържащ \"%s\"."
 
 #. did caller give us an uninitialized val?
-#: ../libtransmission/bencode.c:1117
+#: ../libleechmission/bencode.c:1117
 msgid "Invalid metadata"
 msgstr "Невалидни метаданни"
 
-#: ../libtransmission/bencode.c:1723 ../libtransmission/bencode.c:1751
+#: ../libleechmission/bencode.c:1723 ../libleechmission/bencode.c:1751
 #, c-format
 msgid "Couldn't save temporary file \"%1$s\": %2$s"
 msgstr "Временният файл „%1$s“ не може да бъде запазен: %2$s"
 
-#: ../libtransmission/bencode.c:1738
+#: ../libleechmission/bencode.c:1738
 #, c-format
 msgid "Saved \"%s\""
 msgstr "„%s“ е запазен"
 
-#: ../libtransmission/bencode.c:1743 ../libtransmission/blocklist.c:417
-#: ../libtransmission/rpcimpl.c:1260 ../libtransmission/rpcimpl.c:1271
-#: ../libtransmission/rpcimpl.c:1287
+#: ../libleechmission/bencode.c:1743 ../libleechmission/blocklist.c:417
+#: ../libleechmission/rpcimpl.c:1260 ../libleechmission/rpcimpl.c:1271
+#: ../libleechmission/rpcimpl.c:1287
 #, c-format
 msgid "Couldn't save file \"%1$s\": %2$s"
 msgstr "Файлът \"%1$s\" не може да бъде запазен: %2$s"
 
-#: ../libtransmission/blocklist.c:86 ../libtransmission/blocklist.c:325
-#: ../libtransmission/utils.c:438
+#: ../libleechmission/blocklist.c:86 ../libleechmission/blocklist.c:325
+#: ../libleechmission/utils.c:438
 #, c-format
 msgid "Couldn't read \"%1$s\": %2$s"
 msgstr "\"%1$s\" не може да бъде прочетено: %2$s"
 
-#: ../libtransmission/blocklist.c:115
+#: ../libleechmission/blocklist.c:115
 #, c-format
 msgid "Blocklist \"%s\" contains %zu entries"
 msgstr "Блоклиста \"%s\" съдържа %zu записа"
 
 #. don't try to display the actual lines - it causes issues
-#: ../libtransmission/blocklist.c:368
+#: ../libleechmission/blocklist.c:368
 #, c-format
 msgid "blocklist skipped invalid address at line %d"
 msgstr "В черният списък има пропуснат грешен адрес в реда %d"
 
-#: ../libtransmission/blocklist.c:420
+#: ../libleechmission/blocklist.c:420
 #, c-format
 msgid "Blocklist \"%s\" updated with %zu entries"
 msgstr "В черният списък «%s» има актуализирани %zu записи"
 
-#: ../libtransmission/fdlimit.c:348 ../libtransmission/utils.c:574
-#: ../libtransmission/utils.c:585
+#: ../libleechmission/fdlimit.c:348 ../libleechmission/utils.c:574
+#: ../libleechmission/utils.c:585
 #, c-format
 msgid "Couldn't create \"%1$s\": %2$s"
 msgstr "„%1$s“ не може да бъде създаден: %2$s"
 
-#: ../libtransmission/fdlimit.c:369
+#: ../libleechmission/fdlimit.c:369
 #, c-format
 msgid "Couldn't open \"%1$s\": %2$s"
 msgstr "„%1$s“ не може да бъде отворен: %2$s"
 
-#: ../libtransmission/fdlimit.c:384
+#: ../libleechmission/fdlimit.c:384
 #, c-format
 msgid "Couldn't truncate \"%1$s\": %2$s"
 msgstr "Не може да се спре \"%1$s\": %2$s"
 
-#: ../libtransmission/fdlimit.c:670
+#: ../libleechmission/fdlimit.c:670
 #, c-format
 msgid "Couldn't create socket: %s"
 msgstr "Не може да се създаде сокет: %s"
 
-#: ../libtransmission/makemeta.c:63
+#: ../libleechmission/makemeta.c:63
 #, c-format
 msgid "Torrent Creator is skipping file \"%s\": %s"
 msgstr "При създаването на торента е пропуснат файла «%s»: %s"
 
-#: ../libtransmission/metainfo.c:533
+#: ../libleechmission/metainfo.c:533
 #, c-format
 msgid "Invalid metadata entry \"%s\""
 msgstr "Невалиден запис от метаданни \"%s\""
 
-#: ../libtransmission/natpmp.c:32
+#: ../libleechmission/natpmp.c:32
 msgid "Port Forwarding (NAT-PMP)"
 msgstr "Пренасочване на портове (NAT-PMP)"
 
-#: ../libtransmission/natpmp.c:72
+#: ../libleechmission/natpmp.c:72
 #, c-format
 msgid "%s succeeded (%d)"
 msgstr "%s успя (%d)"
 
-#: ../libtransmission/natpmp.c:141
+#: ../libleechmission/natpmp.c:141
 #, c-format
 msgid "Found public address \"%s\""
 msgstr "Намерен е публичен адрес \"%s\""
 
-#: ../libtransmission/natpmp.c:176
+#: ../libleechmission/natpmp.c:176
 #, c-format
 msgid "no longer forwarding port %d"
 msgstr "вече не се пренасочва порт %d"
 
-#: ../libtransmission/natpmp.c:221
+#: ../libleechmission/natpmp.c:221
 #, c-format
 msgid "Port %d forwarded successfully"
 msgstr "Портът %d е пренасочен успешно"
 
-#: ../libtransmission/net.c:268
+#: ../libleechmission/net.c:268
 #, c-format
 msgid "Couldn't set source address %s on %d: %s"
 msgstr "Не може да се зададе адреса източник %s на %d: %s"
 
-#: ../libtransmission/net.c:284
+#: ../libleechmission/net.c:284
 #, c-format
 msgid "Couldn't connect socket %d to %s, port %d (errno %d - %s)"
 msgstr "Не може да се свърже сокет %d с %s, порт %d (грешка номер %d - %s)"
 
-#: ../libtransmission/net.c:360
-msgid "Is another copy of Transmission already running?"
-msgstr "Да не би вече да е стартиран още един момент на Transmission?"
+#: ../libleechmission/net.c:360
+msgid "Is another copy of Leechmission already running?"
+msgstr "Да не би вече да е стартиран още един момент на Leechmission?"
 
-#: ../libtransmission/net.c:365
+#: ../libleechmission/net.c:365
 #, c-format
 msgid "Couldn't bind port %d on %s: %s"
 msgstr "Не може да се обвърже порт %d на %s: %s"
 
-#: ../libtransmission/net.c:367
+#: ../libleechmission/net.c:367
 #, c-format
 msgid "Couldn't bind port %d on %s: %s (%s)"
 msgstr "Не може да се обвърже порт %d на %s: %s (%s)"
 
-#: ../libtransmission/peer-msgs.c:1898
+#: ../libleechmission/peer-msgs.c:1898
 #, c-format
 msgid "Please Verify Local Data! Piece #%zu is corrupt."
 msgstr "Моля проверете локалните данни! Частта #%zu е повредена."
 
-#: ../libtransmission/port-forwarding.c:31
+#: ../libleechmission/port-forwarding.c:31
 msgid "Port Forwarding"
 msgstr "Пренасочване на портове"
 
-#: ../libtransmission/port-forwarding.c:58
+#: ../libleechmission/port-forwarding.c:58
 msgid "Starting"
 msgstr "Започване"
 
-#: ../libtransmission/port-forwarding.c:59
+#: ../libleechmission/port-forwarding.c:59
 msgid "Forwarded"
 msgstr "Пренасочен"
 
-#: ../libtransmission/port-forwarding.c:60
+#: ../libleechmission/port-forwarding.c:60
 msgid "Stopping"
 msgstr "Спиране"
 
-#: ../libtransmission/port-forwarding.c:61
+#: ../libleechmission/port-forwarding.c:61
 msgid "Not forwarded"
 msgstr "Не е пренасочен"
 
-#: ../libtransmission/port-forwarding.c:91 ../libtransmission/torrent.c:2060
+#: ../libleechmission/port-forwarding.c:91 ../libleechmission/torrent.c:2060
 #, c-format
 msgid "State changed from \"%1$s\" to \"%2$s\""
 msgstr "Състоянието е променено от \"%1$s\" на \"%2$s\""
 
-#: ../libtransmission/port-forwarding.c:181
+#: ../libleechmission/port-forwarding.c:181
 msgid "Stopped"
 msgstr "Спрян"
 
 #. first %s is the application name
 #. second %s is the version number
-#: ../libtransmission/session.c:722
+#: ../libleechmission/session.c:722
 #, c-format
 msgid "%s %s started"
 msgstr "%s %s е стартирана"
 
-#: ../libtransmission/session.c:1943
+#: ../libleechmission/session.c:1943
 #, c-format
 msgid "Loaded %d torrents"
 msgstr "Заредени %d торента"
 
-#: ../libtransmission/torrent.c:525
+#: ../libleechmission/torrent.c:525
 #, c-format
 msgid "Tracker warning: \"%s\""
 msgstr "Предупреждение от тракера: \"%s\""
 
-#: ../libtransmission/torrent.c:532
+#: ../libleechmission/torrent.c:532
 #, c-format
 msgid "Tracker error: \"%s\""
 msgstr "Грешка на тракера: \"%s\""
 
-#: ../libtransmission/torrent.c:787
+#: ../libleechmission/torrent.c:787
 msgid ""
 "No data found! Ensure your drives are connected or use \"Set Location\". To "
 "re-download, remove the torrent and re-add it."
@@ -2251,71 +2251,71 @@ msgstr ""
 "използвате \"Избор на файл\". За повторно изтегляне, изтрийте торента и след "
 "това го добавете отново."
 
-#: ../libtransmission/torrent.c:1677
+#: ../libleechmission/torrent.c:1677
 msgid "Restarted manually -- disabling its seed ratio"
 msgstr "Рестартирано е ръчно -- изключване на рейтинга на торента"
 
-#: ../libtransmission/torrent.c:1829
+#: ../libleechmission/torrent.c:1829
 msgid "Removing torrent"
 msgstr "Премахване на торент"
 
-#: ../libtransmission/torrent.c:1913
+#: ../libleechmission/torrent.c:1913
 msgid "Done"
 msgstr "Приключен"
 
-#: ../libtransmission/torrent.c:1916
+#: ../libleechmission/torrent.c:1916
 msgid "Complete"
 msgstr "Завършен"
 
-#: ../libtransmission/upnp.c:35
+#: ../libleechmission/upnp.c:35
 msgid "Port Forwarding (UPnP)"
 msgstr "Пренасочване на портове (UPnP)"
 
-#: ../libtransmission/upnp.c:199
+#: ../libleechmission/upnp.c:199
 #, c-format
 msgid "Found Internet Gateway Device \"%s\""
 msgstr "Намерен е Интернет шлюз \"%s\""
 
-#: ../libtransmission/upnp.c:202
+#: ../libleechmission/upnp.c:202
 #, c-format
 msgid "Local Address is \"%s\""
 msgstr "Локалният адрес е \"%s\""
 
-#: ../libtransmission/upnp.c:231
+#: ../libleechmission/upnp.c:231
 #, c-format
 msgid "Port %d isn't forwarded"
 msgstr "Портът %d не е пренасочен"
 
-#: ../libtransmission/upnp.c:242
+#: ../libleechmission/upnp.c:242
 #, c-format
 msgid "Stopping port forwarding through \"%s\", service \"%s\""
 msgstr "Спиране на пренасочването на портове през \"%s\", услуга \"%s\""
 
-#: ../libtransmission/upnp.c:275
+#: ../libleechmission/upnp.c:275
 #, c-format
 msgid ""
 "Port forwarding through \"%s\", service \"%s\". (local address: %s:%d)"
 msgstr "Пренасочване чрез \"%s\", сервиза \"%s\". (локален адрес: %s:%d)"
 
-#: ../libtransmission/upnp.c:280
+#: ../libleechmission/upnp.c:280
 msgid "Port forwarding successful!"
 msgstr "Успешно пренасочване на потове!"
 
-#: ../libtransmission/utils.c:452
+#: ../libleechmission/utils.c:452
 msgid "Not a regular file"
 msgstr "Файлът не е обикновен"
 
-#: ../libtransmission/utils.c:470
+#: ../libleechmission/utils.c:470
 msgid "Memory allocation failed"
 msgstr "Неуспешно заделяне на памет"
 
 #. Node exists but isn't a folder
-#: ../libtransmission/utils.c:584
+#: ../libleechmission/utils.c:584
 #, c-format
 msgid "File \"%s\" is in the way"
 msgstr "Файла «%s» е на път"
 
-#: ../libtransmission/verify.c:229
+#: ../libleechmission/verify.c:229
 msgid "Verifying torrent"
 msgstr "Проверяване на поток"
 
@@ -2485,8 +2485,8 @@ msgstr "Проверяване на поток"
 #~ msgid "Torrent creation failed: %s"
 #~ msgstr "Създаването на торента е неуспешно: %s"
 
-#~ msgid "<big><b>Quit Transmission?</b></big>"
-#~ msgstr "<big><b>Затваряне на Transmission?</b></big>"
+#~ msgid "<big><b>Quit Leechmission?</b></big>"
+#~ msgstr "<big><b>Затваряне на Leechmission?</b></big>"
 
 #~ msgid "Invalid URL"
 #~ msgstr "Невалиден адрес"
@@ -2607,8 +2607,8 @@ msgstr "Проверяване на поток"
 #~ msgid "Announce URL"
 #~ msgstr "Адрес на съобщаване"
 
-#~ msgid "Transmission Bittorrent Client"
-#~ msgstr "BitTorrent клиент (Transmission)"
+#~ msgid "Leechmission Bittorrent Client"
+#~ msgstr "BitTorrent клиент (Leechmission)"
 
 #~ msgid "BitTorrent Activity"
 #~ msgstr "Дейност на BitTorrent"
@@ -2776,8 +2776,8 @@ msgstr "Проверяване на поток"
 #~ msgid "None sent"
 #~ msgstr "Нищо не е изпратено"
 
-#~ msgid "Show Transmission in the system _tray"
-#~ msgstr "Показване на Transmission в _областта за известия"
+#~ msgid "Show Leechmission in the system _tray"
+#~ msgstr "Показване на Leechmission в _областта за известия"
 
 #~ msgid "Show popup _notifications"
 #~ msgstr "Показване на изскачащи _известия"
@@ -2895,14 +2895,14 @@ msgstr "Проверяване на поток"
 #~ msgstr "Изчакващи"
 
 #~ msgid ""
-#~ "Transmission is already running, but is not responding.  To start a new "
-#~ "session, you must first close the existing Transmission process."
+#~ "Leechmission is already running, but is not responding.  To start a new "
+#~ "session, you must first close the existing Leechmission process."
 #~ msgstr ""
-#~ "Transmission е стартиран, но не отговаря. За да стартирате нова сесия, "
-#~ "трябва да затворите съществуващия процес на Transmission."
+#~ "Leechmission е стартиран, но не отговаря. За да стартирате нова сесия, "
+#~ "трябва да затворите съществуващия процес на Leechmission."
 
-#~ msgid "Transmission cannot be started."
-#~ msgstr "Transmission не може да бъде стартиран."
+#~ msgid "Leechmission cannot be started."
+#~ msgstr "Leechmission не може да бъде стартиран."
 
 #, c-format
 #~ msgid ""
@@ -2915,7 +2915,7 @@ msgstr "Проверяване на поток"
 #~ msgstr "_Нов…"
 
 #~ msgid "Copyright 2005-2009 The Transmission Project"
-#~ msgstr "Авторски права 2005-2009 Проект Transmission"
+#~ msgstr "Авторски права 2005-2009 Проект Leechmission"
 
 #~ msgid "Inhibit _hibernation when torrents are active"
 #~ msgstr "Забраняване на дълбоко _заспиване, когато има активни торенти"

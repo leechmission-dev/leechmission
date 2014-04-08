@@ -27,8 +27,8 @@
 
 #include <gtk/gtk.h>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/variant.h>
+#include <libleechmission/leechmission.h>
+#include <libleechmission/variant.h>
 
 G_BEGIN_DECLS
 

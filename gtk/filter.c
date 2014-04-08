@@ -15,8 +15,8 @@
 #include <gtk/gtk.h>
 #include <glib/gi18n.h>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/utils.h>
+#include <libleechmission/leechmission.h>
+#include <libleechmission/utils.h>
 
 #include "favicon.h" /* gtr_get_favicon () */
 #include "filter.h"

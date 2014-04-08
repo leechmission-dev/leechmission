@@ -85,7 +85,7 @@ function Inspector(controller) {
     updateInfoPage = function () {
         var torrents = data.torrents,
             e = data.elements,
-            fmt = Transmission.fmt,
+            fmt = Leechmission.fmt,
             none = 'None',
             mixed = 'Mixed',
             unknown = 'Unknown',
@@ -578,7 +578,7 @@ function Inspector(controller) {
     updatePeersPage = function() {
         var i, k, tor, peers, peer, parity,
             html = [],
-            fmt = Transmission.fmt,
+            fmt = Leechmission.fmt,
             peers_list = data.elements.peers_list,
             torrents = data.torrents;
 
@@ -637,7 +637,7 @@ function Inspector(controller) {
                 if (timeUntilAnnounce < 0) {
                     timeUntilAnnounce = 0;
                 }
-                s = 'Next announce in ' + Transmission.fmt.timeInterval(timeUntilAnnounce);
+                s = 'Next announce in ' + Leechmission.fmt.timeInterval(timeUntilAnnounce);
                 break;
             case Torrent._TrackerQueued:
                 s = 'Announce is queued';
@@ -660,9 +660,9 @@ function Inspector(controller) {
         lastAnnounceTime;
 
         if (tracker.hasAnnounced) {
-            lastAnnounceTime = Transmission.fmt.timestamp(tracker.lastAnnounceTime);
+            lastAnnounceTime = Leechmission.fmt.timestamp(tracker.lastAnnounceTime);
             if (tracker.lastAnnounceSucceeded) {
-                lastAnnounce = [ lastAnnounceTime, ' (got ',  Transmission.fmt.countString('peer','peers',tracker.lastAnnouncePeerCount), ')' ];
+                lastAnnounce = [ lastAnnounceTime, ' (got ',  Leechmission.fmt.countString('peer','peers',tracker.lastAnnouncePeerCount), ')' ];
             } else {
                 lastAnnounceLabel = 'Announce error';
                 lastAnnounce = [ (tracker.lastAnnounceResult ? (tracker.lastAnnounceResult + ' - ') : ''), lastAnnounceTime ];
@@ -678,7 +678,7 @@ function Inspector(controller) {
         lastScrapeTime;
 
         if (tracker.hasScraped) {
-            lastScrapeTime = Transmission.fmt.timestamp(tracker.lastScrapeTime);
+            lastScrapeTime = Leechmission.fmt.timestamp(tracker.lastScrapeTime);
             if (tracker.lastScrapeSucceeded) {
                 lastScrape = lastScrapeTime;
             } else {

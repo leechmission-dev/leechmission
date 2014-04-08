@@ -1,7 +1,7 @@
 /******************************************************************************
  * $Id: BlocklistDownloader.m 13326 2012-05-29 01:03:21Z livings124 $
  *
- * Copyright (c) 2008-2012 Transmission authors and contributors
+ * Copyright (c) 2008-2012 Leechmission authors and contributors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),

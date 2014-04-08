@@ -14,7 +14,7 @@
 #define GTR_FILTER_H
 
 #include <gtk/gtk.h>
-#include <libtransmission/transmission.h>
+#include <libleechmission/leechmission.h>
 
 GtkWidget * gtr_filter_bar_new (tr_session     * session,
                                 GtkTreeModel   * torrent_model,

@@ -262,7 +262,7 @@ Torrent.prototype =
 	isDone: function() { return this.getLeftUntilDone() < 1; },
 	needsMetaData: function(){ return this.getMetadataPercentComplete() < 1; },
 	getActivity: function() { return this.getDownloadSpeed() + this.getUploadSpeed(); },
-	getPercentDoneStr: function() { return Transmission.fmt.percentString(100*this.getPercentDone()); },
+	getPercentDoneStr: function() { return Leechmission.fmt.percentString(100*this.getPercentDone()); },
 	getPercentDone: function() { return this.fields.percentDone; },
 	getStateString: function() {
 		switch(this.getStatus()) {

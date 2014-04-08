@@ -1,4 +1,4 @@
-#import "transmission.h"
+#import "leechmission.h"
 #import "NSStringAdditions.h"
 
 OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview, CFURLRef url, CFStringRef contentTypeUTI, CFDictionaryRef options);
@@ -6,7 +6,7 @@ void CancelPreviewGeneration(void *thisInterface, QLPreviewRequestRef preview);
 
 NSString * generateIconData(NSString * fileExtension, NSUInteger width, NSMutableDictionary * allImgProps)
 {
-    NSString * rawFilename = ![fileExtension isEqualToString: @""] ? fileExtension : @"blank_file_name_transmission";
+    NSString * rawFilename = ![fileExtension isEqualToString: @""] ? fileExtension : @"blank_file_name_leechmission";
     NSString * iconFileName = [NSString stringWithFormat: @"%ldx%@.tiff", width, rawFilename]; //we need to do this once per file extension, per size
     
     if (![allImgProps objectForKey: iconFileName])
@@ -49,7 +49,7 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
     if (err)
         return noErr;
     
-    NSBundle * bundle = [NSBundle bundleWithIdentifier: @"org.m0k.transmission.QuickLookPlugin"];
+    NSBundle * bundle = [NSBundle bundleWithIdentifier: @"org.m0k.leechmission.QuickLookPlugin"];
     
     NSURL * styleURL = [bundle URLForResource: @"style" withExtension: @"css"];
     NSString * styleContents = [NSString stringWithContentsOfURL: styleURL encoding: NSUTF8StringEncoding error: NULL];

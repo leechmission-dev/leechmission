@@ -1,6 +1,6 @@
-TARGET = transmission-qt
-NAME = "Transmission"
-DESCRIPTION = "Transmission: a fast, easy, and free BitTorrent client"
+TARGET = leechmission-qt
+NAME = "Leechmission"
+DESCRIPTION = "Leechmission: a fast, easy, and free BitTorrent client"
 VERSION = 2.81
 LICENSE = "GPL"
 
@@ -9,21 +9,21 @@ INSTALLS += target
 
 unix: INSTALLS += man
 man.path = /share/man/man1/
-man.files = transmission-qt.1
+man.files = leechmission-qt.1
 
 CONFIG += qt thread debug link_pkgconfig
 QT += network dbus widgets
 PKGCONFIG = fontconfig libcurl openssl libevent
 
-TRANSMISSION_TOP = ..
+LEECHMISSION_TOP = ..
 
 include(config.pri) 
 
 INCLUDEPATH = $${EVENT_TOP}/include $${INCLUDEPATH}
-INCLUDEPATH += $${TRANSMISSION_TOP}
-LIBS += $${TRANSMISSION_TOP}/libtransmission/libtransmission.a
+INCLUDEPATH += $${LEECHMISSION_TOP}
+LIBS += $${LEECHMISSION_TOP}/libleechmission/libleechmission.a
 LIBS += $${LIBUTP_LIBS}
-LIBS += $${TRANSMISSION_TOP}/third-party/dht/libdht.a
+LIBS += $${LEECHMISSION_TOP}/third-party/dht/libdht.a
 LIBS += $${LIBUPNP_LIBS}
 LIBS += $${LIBNATPMP_LIBS}
 unix: LIBS += -L$${EVENT_TOP}/lib -lz -lrt
@@ -31,15 +31,15 @@ win32:DEFINES += QT_DBUS
 win32:LIBS += -levent-2.0 -lws2_32 -lintl
 win32:LIBS += -lidn -liconv -lwldap32 -liphlpapi
 
-TRANSLATIONS += translations/transmission_en.ts \
-                translations/transmission_es.ts \
-                translations/transmission_eu.ts \
-                translations/transmission_fr.ts \
-                translations/transmission_kk.ts \
-                translations/transmission_lt.ts \
-                translations/transmission_pt_BR.ts \
-                translations/transmission_ru.ts \
-                translations/transmission_hu.ts
+TRANSLATIONS += translations/leechmission_en.ts \
+                translations/leechmission_es.ts \
+                translations/leechmission_eu.ts \
+                translations/leechmission_fr.ts \
+                translations/leechmission_kk.ts \
+                translations/leechmission_lt.ts \
+                translations/leechmission_pt_BR.ts \
+                translations/leechmission_ru.ts \
+                translations/leechmission_hu.ts
 
 FORMS += mainwin.ui
 RESOURCES += application.qrc

@@ -16,9 +16,9 @@
 #include <QDir>
 #include <QFile>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/utils.h>
-#include <libtransmission/variant.h>
+#include <libleechmission/leechmission.h>
+#include <libleechmission/utils.h>
+#include <libleechmission/variant.h>
 #include <stdlib.h>
 #include "prefs.h"
 #include "types.h"
@@ -70,7 +70,7 @@ Prefs::PrefItem Prefs::myItems[] =
   { COMPLETE_SOUND_ENABLED, TR_KEY_torrent_complete_sound_enabled, QVariant::Bool },
   { USER_HAS_GIVEN_INFORMED_CONSENT, TR_KEY_user_has_given_informed_consent, QVariant::Bool },
 
-  /* libtransmission settings */
+  /* libleechmission settings */
   { ALT_SPEED_LIMIT_UP, TR_KEY_alt_speed_up, QVariant::Int },
   { ALT_SPEED_LIMIT_DOWN, TR_KEY_alt_speed_down, QVariant::Int },
   { ALT_SPEED_LIMIT_ENABLED, TR_KEY_alt_speed_enabled, QVariant::Bool },
@@ -297,7 +297,7 @@ Prefs :: initDefaults (tr_variant * d)
   tr_variantDictAddBool (d, TR_KEY_sort_reversed, false);
   tr_variantDictAddBool (d, TR_KEY_torrent_added_notification_enabled, true);
   tr_variantDictAddBool (d, TR_KEY_torrent_complete_notification_enabled, true);
-  tr_variantDictAddStr  (d, TR_KEY_torrent_complete_sound_command, "canberra-gtk-play -i complete-download -d 'transmission torrent downloaded'");
+  tr_variantDictAddStr  (d, TR_KEY_torrent_complete_sound_command, "canberra-gtk-play -i complete-download -d 'leechmission torrent downloaded'");
   tr_variantDictAddBool (d, TR_KEY_torrent_complete_sound_enabled, true);
   tr_variantDictAddBool (d, TR_KEY_user_has_given_informed_consent, false);
   tr_variantDictAddBool (d, TR_KEY_watch_dir_enabled, false);

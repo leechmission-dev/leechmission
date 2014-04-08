@@ -25,10 +25,10 @@
 #include <QProcess>
 #include <QRect>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/tr-getopt.h>
-#include <libtransmission/utils.h>
-#include <libtransmission/version.h>
+#include <libleechmission/leechmission.h>
+#include <libleechmission/tr-getopt.h>
+#include <libleechmission/utils.h>
+#include <libleechmission/version.h>
 
 #include "add-data.h"
 #include "app.h"
@@ -45,11 +45,11 @@
 
 namespace
 {
-  const QString DBUS_SERVICE     = QString::fromUtf8 ("com.transmissionbt.Transmission" );
-  const QString DBUS_OBJECT_PATH = QString::fromUtf8 ("/com/transmissionbt/Transmission");
-  const QString DBUS_INTERFACE   = QString::fromUtf8 ("com.transmissionbt.Transmission" );
+  const QString DBUS_SERVICE     = QString::fromUtf8 ("com.leechmissionbt.Leechmission" );
+  const QString DBUS_OBJECT_PATH = QString::fromUtf8 ("/com/leechmissionbt/Leechmission");
+  const QString DBUS_INTERFACE   = QString::fromUtf8 ("com.leechmissionbt.Leechmission" );
 
-  const char * MY_READABLE_NAME ("transmission-qt");
+  const char * MY_READABLE_NAME ("leechmission-qt");
 
   const tr_option opts[] =
   {
@@ -67,7 +67,7 @@ namespace
   getUsage (void)
   {
     return "Usage:\n"
-           "  transmission [OPTIONS...] [torrent files]";
+           "  leechmission [OPTIONS...] [torrent files]";
   }
 
   void
@@ -89,7 +89,7 @@ MyApp :: MyApp (int& argc, char ** argv):
   QApplication (argc, argv),
   myLastFullUpdateTime (0)
 {
-  const QString MY_CONFIG_NAME = QString::fromUtf8 ("transmission");
+  const QString MY_CONFIG_NAME = QString::fromUtf8 ("leechmission");
 
   setApplicationName (MY_CONFIG_NAME);
 
@@ -97,7 +97,7 @@ MyApp :: MyApp (int& argc, char ** argv):
   qtTranslator.load ("qt_" + QLocale::system ().name (), QLibraryInfo::location (QLibraryInfo::TranslationsPath));
   installTranslator (&qtTranslator);
 
-  // install the transmission translator
+  // install the leechmission translator
   appTranslator.load (QString (MY_CONFIG_NAME) + "_" + QLocale::system ().name (), QCoreApplication::applicationDirPath () + "/translations");
   installTranslator (&appTranslator);
 
@@ -108,7 +108,7 @@ MyApp :: MyApp (int& argc, char ** argv):
   QList<int> sizes;
   sizes << 16 << 22 << 24 << 32 << 48 << 64 << 72 << 96 << 128 << 192 << 256;
   foreach (int size, sizes)
-    icon.addPixmap (QPixmap (QString::fromUtf8 (":/icons/transmission-%1.png").arg (size)));
+    icon.addPixmap (QPixmap (QString::fromUtf8 (":/icons/leechmission-%1.png").arg (size)));
   setWindowIcon (icon);
 
   // parse the command-line arguments
@@ -139,14 +139,14 @@ MyApp :: MyApp (int& argc, char ** argv):
 
   // set the fallback config dir
   if (configDir == 0)
-    configDir = tr_getDefaultConfigDir ("transmission");
+    configDir = tr_getDefaultConfigDir ("leechmission");
 
   // ensure our config directory exists
   QDir dir (configDir);
   if (!dir.exists ())
     dir.mkpath (configDir);
 
-  // is this the first time we've run transmission?
+  // is this the first time we've run leechmission?
   const bool firstTime = !QFile (QDir (configDir).absoluteFilePath ("settings.json")).exists ();
 
   // initialize the prefs
@@ -231,7 +231,7 @@ MyApp :: MyApp (int& argc, char ** argv):
       QDialog * dialog = new QDialog (myWindow);
       dialog->setModal (true);
       QVBoxLayout * v = new QVBoxLayout (dialog);
-      QLabel * l = new QLabel (tr ("Transmission is a file sharing program. When you run a torrent, its data will be made available to others by means of upload. Any content you share is your sole responsibility."));
+      QLabel * l = new QLabel (tr ("Leechmission is a file sharing program. When you run a torrent, its data will be made available to others by means of upload. Any content you share is your sole responsibility."));
       l->setWordWrap (true);
       v->addWidget (l);
       QDialogButtonBox * box = new QDialogButtonBox;
@@ -251,7 +251,7 @@ MyApp :: MyApp (int& argc, char ** argv):
   for (QStringList::const_iterator it=filenames.begin (), end=filenames.end (); it!=end; ++it)
     addTorrent (*it);
 
-  // register as the dbus handler for Transmission
+  // register as the dbus handler for Leechmission
   new TrDBusAdaptor (this);
   QDBusConnection bus = QDBusConnection::sessionBus ();
   if (!bus.registerService (DBUS_SERVICE))
@@ -470,9 +470,9 @@ MyApp :: notify (const QString& title, const QString& body) const
 
   QDBusMessage m = QDBusMessage::createMethodCall (dbusServiceName, dbusPath, dbusInterfaceName, QString::fromUtf8 ("Notify"));
   QList<QVariant> args;
-  args.append (QString::fromUtf8 ("Transmission")); // app_name
+  args.append (QString::fromUtf8 ("Leechmission")); // app_name
   args.append (0U);                                   // replaces_id
-  args.append (QString::fromUtf8 ("transmission")); // icon
+  args.append (QString::fromUtf8 ("leechmission")); // icon
   args.append (title);                                // summary
   args.append (body);                                 // body
   args.append (QStringList ());                       // actions - unused for plain passive popups
@@ -501,7 +501,7 @@ main (int argc, char * argv[])
     if (c == TR_OPT_UNK)
       addme.append (optarg);
 
-  // try to delegate the work to an existing copy of Transmission
+  // try to delegate the work to an existing copy of Leechmission
   // before starting ourselves...
   bool delegated = false;
   QDBusConnection bus = QDBusConnection::sessionBus ();

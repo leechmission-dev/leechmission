@@ -332,7 +332,7 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-transmissionlocaledir = @transmissionlocaledir@
+leechmissionlocaledir = @leechmissionlocaledir@
 dist_data_DATA = \
   ui-bg_flat_75_ffffff_40x100.png \
   ui-bg_glass_65_ffffff_1x400.png \

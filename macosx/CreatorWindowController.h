@@ -1,7 +1,7 @@
 /******************************************************************************
  * $Id: CreatorWindowController.h 13323 2012-05-28 19:43:53Z livings124 $
  *
- * Copyright (c) 2007-2012 Transmission authors and contributors
+ * Copyright (c) 2007-2012 Leechmission authors and contributors
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
  *****************************************************************************/
 
 #import <Cocoa/Cocoa.h>
-#import "transmission.h"
+#import "leechmission.h"
 #import "makemeta.h"
 
 @interface CreatorWindowController : NSWindowController

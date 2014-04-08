@@ -13,8 +13,8 @@
 #include <glib/gstdio.h> /* g_remove () */
 #include <gtk/gtk.h>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/web.h> /* tr_webRun () */
+#include <libleechmission/leechmission.h>
+#include <libleechmission/web.h> /* tr_webRun () */
 
 #include "favicon.h"
 #include "util.h" /* gtr_get_host_from_url () */
@@ -47,7 +47,7 @@ favicon_get_cache_dir (void)
     if (dir == NULL)
     {
         dir = g_build_filename (g_get_user_cache_dir (),
-                                "transmission",
+                                "leechmission",
                                 "favicons",
                                 NULL);
         g_mkdir_with_parents (dir, 0777);

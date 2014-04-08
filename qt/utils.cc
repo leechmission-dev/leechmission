@@ -22,8 +22,8 @@
 #include <QSet>
 #include <QStyle>
 
-#include <libtransmission/transmission.h>
-#include <libtransmission/utils.h> // tr_formatter
+#include <libleechmission/leechmission.h>
+#include <libleechmission/utils.h> // tr_formatter
 
 #include "utils.h"
 
