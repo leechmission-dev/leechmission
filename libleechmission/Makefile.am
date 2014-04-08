@@ -32,6 +32,7 @@ libleechmission_a_SOURCES = \
   handshake.c \
   history.c \
   inout.c \
+  leecher.c \
   list.c \
   log.c \
   magnet.c \

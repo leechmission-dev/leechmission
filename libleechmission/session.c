@@ -603,6 +603,9 @@ tr_sessionInit (const char  * tag,
   tr_bandwidthConstruct (&session->bandwidth, session, NULL);
   tr_variantInitList (&session->removedTorrents, 0);
 
+  /* temporary: use all leeching settings */
+  session->leecher_mask = 0xffffffff;
+
   /* nice to start logging at the very beginning */
   if (tr_variantDictFindInt (clientSettings, TR_KEY_message_level, &i))
     tr_logSetLevel (i);

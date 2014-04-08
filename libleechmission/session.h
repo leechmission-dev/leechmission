@@ -31,6 +31,7 @@
 #include "bitfield.h"
 #include "utils.h"
 #include "variant.h"
+#include "leecher.h"
 
 typedef enum { TR_NET_OK, TR_NET_ERROR, TR_NET_WAIT } tr_tristate_t;
 
@@ -226,6 +227,7 @@ struct tr_session
 
     struct tr_bindinfo         * public_ipv4;
     struct tr_bindinfo         * public_ipv6;
+    unsigned int               leecher_mask;
 };
 
 static inline tr_port
