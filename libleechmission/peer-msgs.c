@@ -35,6 +35,7 @@
 #include "utils.h"
 #include "variant.h"
 #include "version.h"
+#include "leecher.h"
 
 /**
 ***
@@ -1344,7 +1345,9 @@ peerMadeRequest (tr_peerMsgs * msgs, const struct peer_request * req)
 
     int allow = false;
 
-    if (!reqIsValid)
+    if (tr_leecher_do_reject(getSession(msgs), TR_LEECHER_OPTION_REJECT_REQUEST))
+        dbgmsg (msgs, "leecher: rejecting the request.");
+    else if (!reqIsValid)
         dbgmsg (msgs, "rejecting an invalid request.");
     else if (!clientHasPiece)
         dbgmsg (msgs, "rejecting request for a piece we don't have.");
