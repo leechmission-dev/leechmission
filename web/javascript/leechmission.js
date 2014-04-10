@@ -5,12 +5,12 @@
  * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
-function Transmission()
+function Leechmission()
 {
 	this.initialize();
 }
 
-Transmission.prototype =
+Leechmission.prototype =
 {
 	/****
 	*****
@@ -23,7 +23,7 @@ Transmission.prototype =
 		var e;
 
 		// Initialize the helper classes
-		this.remote = new TransmissionRemote(this);
+		this.remote = new LeechmissionRemote(this);
 		this.inspector = new Inspector(this, this.remote);
 		this.prefsDialog = new PrefsDialog(this.remote);
 		$(this.prefsDialog).bind('closed', $.proxy(this.onPrefsDialogClosed,this));
@@ -242,7 +242,7 @@ Transmission.prototype =
 		{
 			e = $('label#add-dialog-folder-label');
 			if (bytes > 0)
-				str = '  <i>(' + Transmission.fmt.size(bytes) + ' Free)</i>';
+				str = '  <i>(' + Leechmission.fmt.size(bytes) + ' Free)</i>';
 			else
 				str = '';
 			e.html ('Destination folder' + str + ':');
@@ -670,7 +670,7 @@ Transmission.prototype =
 				break;
 
 			case 'about-button':
-				o = 'Transmission ' + this.serverVersion;
+				o = 'Leechmission ' + this.serverVersion;
 				$('#about-dialog #about-title').html(o);
 				$('#about-dialog').dialog({
 					title: 'About',
@@ -1146,7 +1146,7 @@ Transmission.prototype =
 	updateGuiFromSession: function(o)
 	{
 		var limit, limited, e, b, text,
-                    fmt = Transmission.fmt,
+                    fmt = Leechmission.fmt,
                     menu = $('#settings_menu');
 
 		this.serverVersion = o.version;
@@ -1200,7 +1200,7 @@ Transmission.prototype =
 	{
 		var u=0, d=0,
 		    i, row,
-		    fmt = Transmission.fmt,
+		    fmt = Leechmission.fmt,
 		    torrents = this.getAllTorrents();
 
 		// up/down speed
@@ -1630,7 +1630,7 @@ Transmission.prototype =
 	updateStats: function(stats)
 	{
 		var s, ratio,
-		    fmt = Transmission.fmt;
+		    fmt = Leechmission.fmt;
 
 		s = stats["current-stats"];
 		ratio = Math.ratio(s.uploadedBytes,s.downloadedBytes);
