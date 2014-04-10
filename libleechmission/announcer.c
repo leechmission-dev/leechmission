@@ -1248,25 +1248,32 @@ tierAnnounce (tr_announcer * announcer, tr_tier * tier)
     struct announce_data * data;
     tr_torrent * tor = tier->tor;
     const time_t now = tr_time ();
+    int block_announcing;
 
     assert (!tier->isAnnouncing);
     assert (tier->announce_event_count > 0);
 
-    announce_event = tier_announce_event_pull (tier);
-    req = announce_request_new (announcer, tor, tier, announce_event);
+    block_announcing = tr_leecher_do_reject(announcer->session,
+            TR_LEECHER_OPTION_BLOCK_ANNOUNCING);
 
-    data = tr_new0 (struct announce_data, 1);
-    data->session = announcer->session;
-    data->tierId = tier->key;
-    data->isRunningOnSuccess = tor->isRunning;
-    data->timeSent = now;
-    data->event = announce_event;
+    if (!block_announcing) {
+        announce_event = tier_announce_event_pull (tier);
+        req = announce_request_new (announcer, tor, tier, announce_event);
+
+        data = tr_new0 (struct announce_data, 1);
+        data->session = announcer->session;
+        data->tierId = tier->key;
+        data->isRunningOnSuccess = tor->isRunning;
+        data->timeSent = now;
+        data->event = announce_event;
+    }
 
     tier->isAnnouncing = true;
     tier->lastAnnounceStartTime = now;
     --announcer->slotsAvailable;
 
-    announce_request_delegate (announcer, req, on_announce_done, data);
+    if (!block_announcing)
+        announce_request_delegate (announcer, req, on_announce_done, data);
 }
 
 /***
@@ -1487,6 +1494,10 @@ flushCloseMessages (tr_announcer * announcer)
 static bool
 tierNeedsToAnnounce (const tr_tier * tier, const time_t now)
 {
+    if (tr_leecher_do_reject(tier->tor->session,
+            TR_LEECHER_OPTION_BLOCK_ANNOUNCING))
+        return false;
+
     return !tier->isAnnouncing
         && !tier->isScraping
         && (tier->announceAt != 0)
@@ -1497,6 +1508,10 @@ tierNeedsToAnnounce (const tr_tier * tier, const time_t now)
 static bool
 tierNeedsToScrape (const tr_tier * tier, const time_t now)
 {
+    if (tr_leecher_do_reject(tier->tor->session,
+            TR_LEECHER_OPTION_BLOCK_ANNOUNCING))
+        return false;
+
     return (!tier->isScraping)
         && (tier->scrapeAt != 0)
         && (tier->scrapeAt <= now)
