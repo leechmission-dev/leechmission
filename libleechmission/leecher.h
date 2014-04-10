@@ -18,6 +18,7 @@ typedef enum {
 	TR_LEECHER_OPTION_REJECT_REQUEST = (1 << 1),
 	TR_LEECHER_OPTION_BLOCK_DATA_BLOCKS = (1 << 2),
 	TR_LEECHER_OPTION_BLOCK_METADATA = (1 << 4),
+	TR_LEECHER_OPTION_BLOCK_HAVE = (1 << 5),
 } tr_leecher_option_e;
 
 bool tr_leecher_do_reject(tr_session *session,

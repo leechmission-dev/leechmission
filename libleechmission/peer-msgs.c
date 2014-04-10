@@ -875,6 +875,10 @@ tr_peerMsgsSetChoke (tr_peerMsgs * msgs, bool peer_is_choked)
 void
 tr_peerMsgsHave (tr_peerMsgs * msgs, uint32_t index)
 {
+
+  if (tr_leecher_do_reject(getSession(msgs), TR_LEECHER_OPTION_BLOCK_HAVE))
+      return;
+
   protocolSendHave (msgs, index);
 
   /* since we have more pieces now, we might not be interested in this peer */
