@@ -915,12 +915,19 @@ announce_request_new (const tr_announcer  * announcer,
     req->tracker_id_str = tr_strdup (tier->currentTracker->tracker_id_str);
     memcpy (req->info_hash, tor->info.hash, SHA_DIGEST_LENGTH);
     memcpy (req->peer_id, tr_torrentGetPeerId(tor), PEER_ID_LEN);
-    req->up = tier->byteCounts[TR_ANN_UP];
-    req->down = tier->byteCounts[TR_ANN_DOWN];
-    req->corrupt = tier->byteCounts[TR_ANN_CORRUPT];
-    req->leftUntilComplete = tr_torrentHasMetadata (tor)
-            ? tor->info.totalSize - tr_cpHaveTotal (&tor->completion)
-            : ~ (uint64_t)0;
+    if (tr_leecher_do_reject(tor->session, TR_LEECHER_OPTION_FAKE_SIZE)) {
+        req->up = 0;
+        req->down = 0;
+        req->corrupt = 0;
+        req->leftUntilComplete = tor->info.totalSize;
+    } else {
+        req->up = tier->byteCounts[TR_ANN_UP];
+        req->down = tier->byteCounts[TR_ANN_DOWN];
+        req->corrupt = tier->byteCounts[TR_ANN_CORRUPT];
+        req->leftUntilComplete = tr_torrentHasMetadata (tor)
+                ? tor->info.totalSize - tr_cpHaveTotal (&tor->completion)
+                : ~ (uint64_t)0;
+    }
     req->event = event;
     req->numwant = event == TR_ANNOUNCE_EVENT_STOPPED ? 0 : NUMWANT;
     req->key = announcer->key;
