@@ -97,7 +97,7 @@ tr_address_to_string_with_buf (const tr_address * addr, char * buf, size_t bufle
 /*
  * Non-threadsafe version of tr_address_to_string_with_buf ()
  * and uses a static memory area for a buffer.
- * This function is suitable to be called from libTransmission's networking code,
+ * This function is suitable to be called from libLeechmission's networking code,
  * which is single-threaded.
  */
 const char *
@@ -359,7 +359,7 @@ tr_netBindTCPImpl (const tr_address * addr, tr_port port, bool suppressMsgs, int
             const char * hint;
 
             if (err == EADDRINUSE)
-                hint = _("Is another copy of Transmission already running?");
+                hint = _("Is another copy of Leechmission already running?");
             else
                 hint = NULL;
 

@@ -798,7 +798,7 @@ isValidURLChars (const char * url, int url_len)
   return true;
 }
 
-/** @brief return true if the URL is a http or https or UDP one that Transmission understands */
+/** @brief return true if the URL is a http or https or UDP one that Leechmission understands */
 bool
 tr_urlIsValidTracker (const char * url)
 {
@@ -820,7 +820,7 @@ tr_urlIsValidTracker (const char * url)
   return valid;
 }
 
-/** @brief return true if the URL is a http or https or ftp or sftp one that Transmission understands */
+/** @brief return true if the URL is a http or https or ftp or sftp one that Leechmission understands */
 bool
 tr_urlIsValid (const char * url, int url_len)
 {

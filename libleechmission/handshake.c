@@ -29,7 +29,7 @@
 #include "tr-dht.h"
 #include "utils.h"
 
-/* enable LibTransmission extension protocol */
+/* enable LibLeechmission extension protocol */
 #define ENABLE_LTEP * /
 /* fast extensions */
 #define ENABLE_FAST * /

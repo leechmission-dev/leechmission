@@ -87,7 +87,7 @@ struct tr_variant;
 
 typedef int8_t tr_priority_t;
 
-#define TR_RPC_SESSION_ID_HEADER "X-Transmission-Session-Id"
+#define TR_RPC_SESSION_ID_HEADER "X-Leechmission-Session-Id"
 
 typedef enum
 {
@@ -124,7 +124,7 @@ tr_encryption_mode;
  */
 
 /**
- * @brief returns Transmission's default configuration file directory.
+ * @brief returns Leechmission's default configuration file directory.
  *
  * The default configuration directory is determined this way:
  * -# If the LEECHMISSION_HOME environment variable is set, its value is used.
@@ -232,14 +232,14 @@ void tr_sessionSaveSettings (tr_session              * session,
  *
  *     tr_variantInitDict (&settings, 0);
  *     tr_sessionGetDefaultSettings (&settings);
- *     configDir = tr_getDefaultConfigDir ("Transmission");
+ *     configDir = tr_getDefaultConfigDir ("Leechmission");
  *     session = tr_sessionInit ("mac", configDir, true, &settings);
  *
  *     tr_variantFree (&settings);
  * @endcode
  *
  * @param tag "gtk", "macosx", "daemon", etc... this is only for pre-1.30 resume files
- * @param configDir where Transmission will look for resume files, blocklists, etc.
+ * @param configDir where Leechmission will look for resume files, blocklists, etc.
  * @param messageQueueingEnabled if false, messages will be dumped to stderr
  * @param settings libleechmission settings
  * @see tr_sessionGetDefaultSettings ()
@@ -343,7 +343,7 @@ bool tr_sessionIsIncompleteDirEnabled (const tr_session * session);
  *        to their filename until the file is fully downloaded
  *
  * This is not retroactive -- toggling this will not rename existing files.
- * It only applies to new files created by Transmission after this API call.
+ * It only applies to new files created by Leechmission after this API call.
  *
  * @see tr_sessionIsIncompleteFileNamingEnabled ()
  */
@@ -846,7 +846,7 @@ void             tr_logFreeQueue       (tr_log_message * freeme);
     @{ */
 
 /**
- * Specify a range of IPs for Transmission to block.
+ * Specify a range of IPs for Leechmission to block.
  *
  * Filename must be an uncompressed ascii file.
  *
@@ -1607,7 +1607,7 @@ typedef struct
     /* the full scrape URL */
     char scrape[1024];
 
-    /* Transmission uses one tracker per tier,
+    /* Leechmission uses one tracker per tier,
      * and the others are kept as backups */
     bool isBackup;
 
@@ -1796,7 +1796,7 @@ struct tr_info
     /* The torrent's name. */
     char             * name;
 
-    /* Path to torrent Transmission's internal copy of the .torrent file. */
+    /* Path to torrent Leechmission's internal copy of the .torrent file. */
     char             * torrent;
 
     char            ** webseeds;

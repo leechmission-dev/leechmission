@@ -50,7 +50,7 @@
 #define REQUIRE_SESSION_ID
 
 #define MY_NAME "RPC Server"
-#define MY_REALM "Transmission"
+#define MY_REALM "Leechmission"
 #define TR_N_ELEMENTS(ary) (sizeof (ary) / sizeof (*ary))
 
 struct tr_rpc_server
@@ -486,8 +486,8 @@ handle_web_client (struct evhttp_request * req,
   if (!webClientDir || !*webClientDir)
     {
         send_simple_response (req, HTTP_NOTFOUND,
-          "<p>Couldn't find Transmission's web interface files!</p>"
-          "<p>Users: to tell Transmission where to look, "
+          "<p>Couldn't find Leechmission's web interface files!</p>"
+          "<p>Users: to tell Leechmission where to look, "
           "set the LEECHMISSION_WEB_HOME environment "
           "variable to the folder where the web interface's "
           "index.html is located.</p>"
@@ -673,7 +673,7 @@ handle_request (struct evhttp_request * req, void * arg)
           char * tmp = tr_strdup_printf (
             "<p>Your request had an invalid session-id header.</p>"
             "<p>To fix this, follow these steps:"
-            "<ol><li> When reading a response, get its X-Transmission-Session-Id header and remember it"
+            "<ol><li> When reading a response, get its X-Leechmission-Session-Id header and remember it"
             "<li> Add the updated header to your outgoing requests"
             "<li> When you get this 409 error message, resend your request with the updated header"
             "</ol></p>"

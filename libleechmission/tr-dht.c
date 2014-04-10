@@ -663,7 +663,7 @@ timer_callback (int s UNUSED, short type UNUSED, void *session)
 }
 
 /* This function should return true when a node is blacklisted.  We do
-   not support using a blacklist with the DHT in Transmission, since
+   not support using a blacklist with the DHT in Leechmission, since
    massive (ab)use of this feature could harm the DHT.  However, feel
    free to add support to your private copy as long as you don't
    redistribute it. */

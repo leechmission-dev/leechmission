@@ -305,7 +305,7 @@ tr_getDefaultConfigDir (const char * appname)
   static char * s = NULL;
 
   if (!appname || !*appname)
-    appname = "Transmission";
+    appname = "Leechmission";
 
   if (!s)
     {
@@ -469,10 +469,10 @@ tr_getWebClientDir (const tr_session * session UNUSED)
           /* Generally, Web interface should be stored in a Web subdir of
            * calling executable dir. */
 
-          if (s == NULL) /* check personal AppData/Transmission/Web */
+          if (s == NULL) /* check personal AppData/Leechmission/Web */
             {
               SHGetFolderPath (NULL, CSIDL_COMMON_APPDATA, NULL, 0, dir);
-              s = tr_buildPath (dir, "Transmission", "Web", NULL);
+              s = tr_buildPath (dir, "Leechmission", "Web", NULL);
               if (!isWebClientDir (s))
                 {
                   tr_free (s);
@@ -483,7 +483,7 @@ tr_getWebClientDir (const tr_session * session UNUSED)
           if (s == NULL) /* check personal AppData */
             {
               SHGetFolderPath (NULL, CSIDL_APPDATA, NULL, 0, dir);
-              s = tr_buildPath (dir, "Transmission", "Web", NULL);
+              s = tr_buildPath (dir, "Leechmission", "Web", NULL);
               if (!isWebClientDir (s))
                 {
                   tr_free (s);

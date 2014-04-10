@@ -325,10 +325,10 @@ void tr_hex_to_sha1 (uint8_t * out, const char * hex) TR_GNUC_NONNULL (1,2);
 /** @brief convenience function to determine if an address is an IP address (IPv4 or IPv6) */
 bool tr_addressIsIP (const char * address);
 
-/** @brief return true if the url is a http or https url that Transmission understands */
+/** @brief return true if the url is a http or https url that Leechmission understands */
 bool tr_urlIsValidTracker (const char * url) TR_GNUC_NONNULL (1);
 
-/** @brief return true if the url is a [ http, https, ftp, ftps ] url that Transmission understands */
+/** @brief return true if the url is a [ http, https, ftp, ftps ] url that Leechmission understands */
 bool tr_urlIsValid (const char * url, int url_len) TR_GNUC_NONNULL (1);
 
 /** @brief parse a URL into its component parts

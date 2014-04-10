@@ -520,7 +520,7 @@ tr_metainfoParseImpl (const tr_session  * session,
   /* get the url-list */
   geturllist (inf, meta);
 
-  /* filename of Transmission's copy */
+  /* filename of Leechmission's copy */
   tr_free (inf->torrent);
   inf->torrent = session ?  getTorrentFilename (session, inf) : NULL;
 
