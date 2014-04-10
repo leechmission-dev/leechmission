@@ -1090,6 +1090,9 @@ parseUtMetadata (tr_peerMsgs * msgs, int msglen, struct evbuffer * inbuf)
     int64_t piece = -1;
     int64_t total_size = 0;
     uint8_t * tmp = tr_new (uint8_t, msglen);
+    int block_metadata;
+
+    block_metadata = tr_leecher_do_reject(getSession(msgs), TR_LEECHER_OPTION_BLOCK_METADATA);
 
     tr_peerIoReadBytes (msgs->io, inbuf, tmp, msglen);
     msg_end = (char*)tmp + msglen;
@@ -1121,7 +1124,7 @@ parseUtMetadata (tr_peerMsgs * msgs, int msglen, struct evbuffer * inbuf)
 
     if (msg_type == METADATA_MSG_TYPE_REQUEST)
     {
-        if ((piece >= 0)
+        if (!block_metadata && (piece >= 0)
             && tr_torrentHasMetadata (msgs->torrent)
             && !tr_torrentIsPrivate (msgs->torrent)
             && (msgs->peerAskedForMetadataCount < METADATA_REQQ))
@@ -1911,6 +1914,10 @@ fillOutputBuffer (tr_peerMsgs * msgs, time_t now)
     struct peer_request req;
     const bool haveMessages = evbuffer_get_length (msgs->outMessages) != 0;
     const bool fext = tr_peerIoSupportsFEXT (msgs->io);
+    int block_metadata, block_data;
+
+    block_metadata = tr_leecher_do_reject(getSession(msgs), TR_LEECHER_OPTION_BLOCK_METADATA);
+    block_data = tr_leecher_do_reject(getSession(msgs), TR_LEECHER_OPTION_BLOCK_DATA_BLOCKS);
 
     /**
     ***  Protocol messages
@@ -1937,7 +1944,8 @@ fillOutputBuffer (tr_peerMsgs * msgs, time_t now)
     ***  Metadata Pieces
     **/
 
-    if ((tr_peerIoGetWriteBufferSpace (msgs->io, now) >= METADATA_PIECE_SIZE)
+    if (!block_metadata
+        && (tr_peerIoGetWriteBufferSpace (msgs->io, now) >= METADATA_PIECE_SIZE)
         && popNextMetadataRequest (msgs, &piece))
     {
         char * data;
@@ -2003,7 +2011,8 @@ fillOutputBuffer (tr_peerMsgs * msgs, time_t now)
     ***  Data Blocks
     **/
 
-    if ((tr_peerIoGetWriteBufferSpace (msgs->io, now) >= msgs->torrent->blockSize)
+    if (!block_data
+        && (tr_peerIoGetWriteBufferSpace (msgs->io, now) >= msgs->torrent->blockSize)
         && popNextRequest (msgs, &req))
     {
         --msgs->prefetchCount;
