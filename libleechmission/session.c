@@ -605,6 +605,8 @@ tr_sessionInit (const char  * tag,
 
   /* temporary: use all leeching settings */
   session->leecher_mask = 0xffffffff;
+  /* enable announcing to get peer info from the tracker */
+  session->leecher_mask &= ~TR_LEECHER_OPTION_BLOCK_ANNOUNCING;
 
   /* nice to start logging at the very beginning */
   if (tr_variantDictFindInt (clientSettings, TR_KEY_message_level, &i))
